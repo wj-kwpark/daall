@@ -4,8 +4,8 @@ Notice As screen:
         DropShadow: =DropShadow.None
         Height: =336
         Width: =1149
-        X: =160
-        Y: =377
+        X: =158
+        Y: =354
         ZIndex: =4
 
         "BoardBody As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":

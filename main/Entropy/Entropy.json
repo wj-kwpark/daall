@@ -2,6 +2,7 @@
   "ComponentIndexes": {
     "Board": 7,
     "Board_1": 7,
+    "Component1": 8,
     "gnb-boundary": 3,
     "Header": 4,
     "logo": 5,
@@ -33,6 +34,7 @@
     "Button-Demo": 106,
     "Button-login": 103,
     "ColumnChart1": 59,
+    "Component1": 133,
     "CompositeColumnChart1": 62,
     "CompositePieChart1": 68,
     "CompositePieChart2": 73,
@@ -114,7 +116,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/16/2023 09:30:12",
+  "HeaderLastSavedDateTimeUTC": "11/16/2023 09:51:56",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/ad25ff046610423b8a77f51ba9bed666\""
@@ -164,6 +166,7 @@
     "2570a21a948c4045b9bca9f6ad47cd92": 1,
     "38097c16f9cd48fa817505f586307ac2": 3,
     "78d8d2ba61154f049ae7020ce77c25f6": 4,
+    "80d3bdfffbc84b53a8cb9be0c1220426": 5,
     "a948b10f5f274abc87a509964412f33c": 0,
     "d34f1d1c13014e4abfa1941c0c20473d": 2
   },
@@ -171,6 +174,7 @@
     "2570a21a948c4045b9bca9f6ad47cd92": 1,
     "38097c16f9cd48fa817505f586307ac2": 3,
     "78d8d2ba61154f049ae7020ce77c25f6": 4,
+    "80d3bdfffbc84b53a8cb9be0c1220426": 5,
     "a948b10f5f274abc87a509964412f33c": 0,
     "d34f1d1c13014e4abfa1941c0c20473d": 2
   },
@@ -252,6 +256,7 @@
     "Button-Demo": {},
     "Button-login": {},
     "ColumnChart1": {},
+    "Component1": {},
     "CompositeColumnChart1": {},
     "CompositePieChart1": {},
     "CompositePieChart2": {},
@@ -358,6 +363,7 @@
     "Button-Demo": 10,
     "Button-login": 7,
     "ColumnChart1": 27,
+    "Component1": 0,
     "CompositeColumnChart1": 29,
     "CompositePieChart1": 35,
     "CompositePieChart2": 40,
