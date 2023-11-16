@@ -1,10 +1,11 @@
 Notice As screen:
 
     BoardNotice As groupContainer.manualLayoutContainer:
-        Height: =457
-        Width: =890
-        X: =384
-        Y: =164
+        DropShadow: =DropShadow.None
+        Height: =336
+        Width: =1149
+        X: =160
+        Y: =377
         ZIndex: =4
 
         "BoardBody As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
@@ -173,4 +174,12 @@ Notice As screen:
                 X: =Parent.Width-100
                 Y: =16
                 ZIndex: =15
+
+    Board_1 As Board:
+        BoardData: ='nocode-test.notice'
+        Height: =332
+        Width: =1147
+        X: =160
+        Y: =22
+        ZIndex: =5
 

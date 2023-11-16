@@ -28,7 +28,22 @@ Board As CanvasComponent:
         DisplayMode: =DisplayMode.View
         Height: |
             =Parent.Height-50
-        Items: =Parent.BoardData
+        Items: |-
+            =Switch(
+                Orderby,
+                    "title",
+                        If(OrderTitle,
+                            Sort(Parent.BoardData,NOTICE_TITLE),
+                            Sort(Parent.BoardData,NOTICE_TITLE,SortOrder.Descending)),
+                    "date",
+                        If(OrderDate,
+                            Sort(Parent.BoardData,REGI_DATE,SortOrder.Descending),
+                            Sort(Parent.BoardData,REGI_DATE)),
+                    "name",
+                        If(OrderName,
+                            Sort(Parent.BoardData,REGI_ID),
+                            Sort(Parent.BoardData,REGI_ID,SortOrder.Descending)),
+                Sort(Parent.BoardData,REGI_DATE,SortOrder.Descending))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -156,8 +171,8 @@ Board As CanvasComponent:
         Height: =18
         Image: =icon_sort_btn
         OnSelect: |-
-            =Set(Orderby,"date");
-            If(OrderDate,Set(OrderDate,false),Set(OrderDate,true))
+            =Set(Orderby,"name");
+            If(OrderName,Set(OrderName,false),Set(OrderName,true))
         Width: =18
         X: =Parent.Width-100
         Y: =16
