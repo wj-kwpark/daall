@@ -28,7 +28,7 @@
             "Name": "galleryTemplate3",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 87,
+            "PublishOrderIndex": 86,
             "Rules": [
               {
                 "Category": "Data",
@@ -154,7 +154,7 @@
             "Name": "Button1",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 88,
+            "PublishOrderIndex": 87,
             "Rules": [
               {
                 "Category": "Data",
@@ -490,7 +490,7 @@
             "Name": "menuLabel",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 89,
+            "PublishOrderIndex": 88,
             "Rules": [
               {
                 "Category": "Data",
@@ -810,7 +810,7 @@
             "Name": "imageMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 90,
+            "PublishOrderIndex": 89,
             "Rules": [
               {
                 "Category": "Data",
@@ -1031,7 +1031,7 @@
                 "Name": "galleryTemplate5",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 92,
+                "PublishOrderIndex": 91,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1135,7 +1135,7 @@
                 "Name": "Label6",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 93,
+                "PublishOrderIndex": 92,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1463,7 +1463,7 @@
                 "Name": "Image4",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 94,
+                "PublishOrderIndex": 93,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1730,7 +1730,7 @@
             "Name": "2depthMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 91,
+            "PublishOrderIndex": 90,
             "Rules": [
               {
                 "Category": "Data",
@@ -1947,7 +1947,7 @@
         "Name": "1depthMenu",
         "Parent": "MenuLeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 86,
+        "PublishOrderIndex": 85,
         "Rules": [
           {
             "Category": "Data",

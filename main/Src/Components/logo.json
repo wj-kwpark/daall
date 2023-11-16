@@ -58,7 +58,7 @@
         "Name": "Image1",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 85,
+        "PublishOrderIndex": 84,
         "Rules": [
           {
             "Category": "Data",

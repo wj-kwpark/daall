@@ -633,7 +633,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BoardHeader_1",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1676,7 +1676,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HeaderDate_1",
-      "ParentIndex": 5,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1987,7 +1987,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HeaderName_1",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2450,7 +2450,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HeaderTitle_1",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2724,7 +2724,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "OrderDate_1",
-      "ParentIndex": 2,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2953,7 +2953,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "OrderName_1",
-      "ParentIndex": 1,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3182,7 +3182,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "OrderTitle_1",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
