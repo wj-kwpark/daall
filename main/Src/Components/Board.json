@@ -5,7 +5,7 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "Component2_2",
+    "Name": "Board",
     "TemplateGuid": "78d8d2ba61154f049ae7020ce77c25f6"
   },
   "ComponentType": "CanvasComponent",
@@ -60,7 +60,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638357223331594312",
+  "LastModifiedTimestamp": "638357226343254003",
   "Name": "78d8d2ba61154f049ae7020ce77c25f6",
   "OverridableProperties": {},
   "TemplateOriginalName": "f5b99109da234076a63a085036c17190",

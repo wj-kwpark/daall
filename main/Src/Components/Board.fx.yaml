@@ -1,4 +1,4 @@
-Component2_2 As CanvasComponent:
+Board As CanvasComponent:
     BoardData: |-
         =Table({NOTICE_TITLE: "제목", REGI_DATE: "1999-01-01", REGI_ID: "이름"})
     Fill: =RGBA(0, 0, 0, 0)
