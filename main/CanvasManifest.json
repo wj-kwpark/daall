@@ -77,7 +77,7 @@
       "powerfxdecimal": false,
       "powerfxv1": false,
       "projectionmapping": true,
-      "reactformulabar": true,
+      "reactformulabar": false,
       "reliableconcurrent": true,
       "reservedkeywords": false,
       "reverttooldpowerautomate": false,

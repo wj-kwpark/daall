@@ -86,18 +86,18 @@
         ))
 
     HtmlText4 As htmlViewer:
-        Height: =662
+        Height: =639
         HtmlText: |
-            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            background-color: rgba(255, 255, 255, 0.5);
+            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            background-color: rgba(255, 255, 255, 0.4);
             
             border-radius: 30px 30px 30px 30px;
             
-            box-shadow: 35px 35px 68px 0px rgba(255, 255, 255, 0.5), inset -10px -10px 16px 0px rgba(255, 255, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255); '> </div>"
-        Width: =1250
+            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
+        Width: =1231
         X: =62
-        Y: =70
+        Y: =92
         ZIndex: =1
 
     Container2 As groupContainer.manualLayoutContainer:
