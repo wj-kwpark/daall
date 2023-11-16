@@ -96,7 +96,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 5,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -109,10 +109,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
-    "Id": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
+    "Id": "a1343f8b-266a-49a6-b582-6247765fe494",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "daall-mobile-new",
+    "Name": "daall-mobile-new.msapp",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
