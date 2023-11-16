@@ -1,0 +1,68 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "Component2_2",
+    "TemplateGuid": "78d8d2ba61154f049ae7020ce77c25f6"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "BoardData",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "BoardData",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "게시판데이터",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"NOTICE_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "\bhTitle",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "hTitle",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "헤더제목",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "hDate",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "hDate",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "헤더날짜",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "hName",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "hName",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "헤더이름",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638357223331594312",
+  "Name": "78d8d2ba61154f049ae7020ce77c25f6",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "f5b99109da234076a63a085036c17190",
+  "Version": "1.0"
+}
