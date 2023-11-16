@@ -132,7 +132,7 @@ MenuLeftNav As CanvasComponent:
 
         "'2depthMenu' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
-            Height: =If(open, 0, CountRows(ThisItem.SubMenu)*40)
+            Height: =If(clickedMenu = ThisItem.MenuLabel, CountRows(ThisItem.SubMenu)*40, 0)
             Items: =ThisItem.SubMenu
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data

@@ -1794,7 +1794,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(open, 0, CountRows(ThisItem.SubMenu)*40)",
+                "InvariantScript": "If(clickedMenu = ThisItem.MenuLabel, CountRows(ThisItem.SubMenu)*40, 0)",
                 "Property": "Height",
                 "RuleProviderType": "User"
               },
@@ -2134,7 +2134,7 @@
       "ZIndex",
       "MenuItems"
     ],
-    "LastModifiedTimestamp": "638357207172973394",
+    "LastModifiedTimestamp": "638357207982247093",
     "Name": "MenuLeftNav",
     "Rules": [
       {
@@ -2209,7 +2209,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638357207172973394",
+  "LastModifiedTimestamp": "638357207982247093",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

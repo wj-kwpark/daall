@@ -1174,36 +1174,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "MenuLeftNav.clickedMenu"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "MenuLeftNav.clickedMenu",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "clickedMenu",
-                "module": "MenuLeftNav",
-                "type": "MenuLeftNav"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Component2.Orderby"
                 }
               ],
