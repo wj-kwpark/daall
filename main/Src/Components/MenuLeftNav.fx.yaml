@@ -110,13 +110,21 @@ MenuLeftNav As CanvasComponent:
         X: =40
         ZIndex: =2
 
+        Rectangle4 As rectangle:
+            Fill: =If(clickedMenu = ThisItem.MenuLabel, Color.Blue, Color.Transparent)
+            Height: =40
+            OnSelect: =Select(Parent)
+            Width: =170
+            Y: =5
+            ZIndex: =1
+
         imageMenu As image:
             Height: =25
             Image: =ThisItem.MenuIcon
             OnSelect: =Select(Parent)
             Width: =47
             Y: =15
-            ZIndex: =1
+            ZIndex: =2
 
         menuLabel As label:
             Font: =Font.Lato
@@ -128,7 +136,7 @@ MenuLeftNav As CanvasComponent:
             Width: =123
             X: =47
             Y: =5
-            ZIndex: =2
+            ZIndex: =3
 
         "'2depthMenu' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
@@ -139,7 +147,7 @@ MenuLeftNav As CanvasComponent:
             TemplateSize: =CountRows(ThisItem.SubMenu)*40
             Width: =Parent.Width
             Y: =45
-            ZIndex: =3
+            ZIndex: =4
 
             Image4 As image:
                 Height: =5
@@ -161,7 +169,8 @@ MenuLeftNav As CanvasComponent:
                 ZIndex: =2
 
         Button1 As button:
-            Fill: =Color.Transparent
+            Fill: |
+                =Color.Transparent
             HoverFill: =Color.Transparent
             OnSelect: |-
                 =Set(open, !open);
@@ -170,5 +179,5 @@ MenuLeftNav As CanvasComponent:
             Text: =""
             Width: =170
             Y: =5
-            ZIndex: =4
+            ZIndex: =5
 
