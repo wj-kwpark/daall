@@ -1,0 +1,45 @@
+{
+  "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+        "apiVer": 1,
+        "appVer": "3.23105.18",
+        "modifiedOn": "2023-11-16 08:20:16",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[notice]\":[\"get\"]}}",
+        "version": 1
+      },
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1665/1.0.1665.3485/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "runtimePolicyName": "06ddcc4f-0b13-4a0e-bd22-149bb77f16a1",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/ad25ff046610423b8a77f51ba9bed666"
+    },
+    "datasets": {
+      "wjmonster-mysql.mysql.database.azure.com,nocode-test": {
+        "dataSources": {
+          "nocode-test.notice": {
+            "tableName": "[nocode-test].[notice]"
+          },
+          "nocode-test.user": {
+            "tableName": "[nocode-test].[user]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "nocode-test.user",
+      "nocode-test.notice"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9"
+  }
+}
