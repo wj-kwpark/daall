@@ -180,7 +180,7 @@ MenuLeftNav As CanvasComponent:
             Fill: |
                 =Color.Transparent
             HoverFill: =Color.Transparent
-            OnSelect: |-
+            OnSelect: |
                 =Set(open, !open);
                 Set(clickedMenu, ThisItem.MenuLabel);
             PressedFill: =Color.Transparent
