@@ -6,6 +6,7 @@ MenuLeftNav As CanvasComponent:
             {
                 MenuLabel: "자료실",
                 MenuIcon: icon_gnb_1,
+                MenuIconHover: icon_gnb_1_hover,
                 MenuScreenNavigate: App.ActiveScreen,
                 MenuID: 1,
                 SubMenu: Table(
@@ -26,6 +27,7 @@ MenuLeftNav As CanvasComponent:
             {
                 MenuLabel: "모니터링",
                 MenuIcon: icon_gnb_2,
+                MenuIconHover: icon_gnb_2_hover,
                 MenuScreenNavigate: App.ActiveScreen,
                 MenuID: 2,
                 SubMenu: Table(
@@ -52,18 +54,21 @@ MenuLeftNav As CanvasComponent:
             {
                 MenuLabel: "보고서",
                 MenuIcon: icon_gnb_3,
+                MenuIconHover: icon_gnb_3_hover,
                 MenuScreenNavigate: App.ActiveScreen,
                 MenuID: 3
             },
             {
                 MenuLabel: "데이터",
                 MenuIcon: icon_gnb_4,
+                MenuIconHover: icon_gnb_4_hover,
                 MenuScreenNavigate: App.ActiveScreen,
                 MenuID: 4
             },
             {
                 MenuLabel: "관리",
                 MenuIcon: icon_gnb_5,
+                MenuIconHover: icon_gnb_5_hover,
                 MenuScreenNavigate: App.ActiveScreen,
                 MenuID: 5,
                 SubMenu: Table(
@@ -120,13 +125,16 @@ MenuLeftNav As CanvasComponent:
 
         imageMenu As image:
             Height: =25
-            Image: =ThisItem.MenuIcon
+            Image: |-
+                =
+                If(clickedMenu = ThisItem.MenuLabel, ThisItem.MenuIconHover, ThisItem.MenuIcon)
             OnSelect: =Select(Parent)
             Width: =47
             Y: =15
             ZIndex: =2
 
         menuLabel As label:
+            Color: =If(clickedMenu = ThisItem.MenuLabel, Color.White, Color.Black)
             Font: =Font.Lato
             FontWeight: =FontWeight.Bold
             Height: =45
