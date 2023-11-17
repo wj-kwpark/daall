@@ -1,6 +1,8 @@
 Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =60
+    logout: =App.ActiveScreen
+    userId: ="텍스트"
     Width: =App.Width - 220
     X: =0
     Y: =0
@@ -9,14 +11,16 @@ Header As CanvasComponent:
     Image2 As image:
         Height: =29
         Image: =icon_logout
+        OnSelect: =Navigate(Header.logout)
         Width: =49
         X: =1064
         Y: =13
         ZIndex: =1
 
     Label4_1 As label:
+        Color: =Color.Black
         Size: =11
-        Text: ="라라"
+        Text: =
         X: =775
         Y: =8
         ZIndex: =3

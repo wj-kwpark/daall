@@ -5,6 +5,8 @@ main As screen:
 
     Header_1 As Header:
         Height: =61
+        logout: =loginScreen
+        userId: =User
         X: =220
         ZIndex: =2
 
