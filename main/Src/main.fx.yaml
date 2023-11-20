@@ -1,10 +1,13 @@
 main As screen:
-    OnVisible: =Set(open, false);
+    OnVisible: |-
+        =Set(open, false);
+        ClearCollect(maindata, Filter('nocode-test.url_history', user_id = User));
 
     logo_1 As logo:
 
     Header_1 As Header:
         Height: =61
+        loginDate: =LoginDate
         logout: =loginScreen
         userId: =User
         X: =220
@@ -54,7 +57,7 @@ main As screen:
                 Color: =RGBA(15, 108, 189, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =18
-                Text: ="0건"
+                Text: =CountIf('daall.url_history', user_id = User, url="/report/reportDetail",regi_date=Today()) & "건"
                 Width: =80
                 X: =17
                 Y: =40
@@ -85,7 +88,7 @@ main As screen:
                 Color: =RGBA(15, 108, 189, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =18
-                Text: ="0건"
+                Text: =CountIf('nocode-test.report', OWNER_ID = User) & "건"
                 Width: =87
                 X: =19
                 Y: =36
@@ -116,7 +119,7 @@ main As screen:
                 Color: =RGBA(15, 108, 189, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =18
-                Text: ="0건"
+                Text: =CountIf('nocode-test.data', OWNER_ID = User) & "건"
                 Width: =96
                 X: =16
                 Y: =40
@@ -184,8 +187,13 @@ main As screen:
                 ZIndex: =2
 
             ColumnChart1 As barChart:
+                GridStyle: =GridStyle.All
                 Height: =302
-                Items: =ColumnChartSample
+                Items: ='nocode-test.url_history'.report_title
+                ItemsGap: =2
+                Markers: =false
+                SeriesAxisMax: =0
+                SeriesAxisMin: =0
                 X: =1
                 ZIndex: =3
 

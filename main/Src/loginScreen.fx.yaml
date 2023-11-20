@@ -184,7 +184,11 @@ loginScreen As screen:
                         User,
                         id.Text
                     );
-                    Navigate('main');
+                    Set(
+                        LoginDate,
+                        Now()
+                    );
+                    Navigate(main);
                     
                 );
             RadiusBottomLeft: =15

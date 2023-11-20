@@ -1,8 +1,9 @@
 Header As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =60
+    loginDate: =DateTime(2000, 1, 1, 0, 0, 0)
     logout: =App.ActiveScreen
-    userId: ="텍스트"
+    userId: =
     Width: =App.Width - 220
     X: =0
     Y: =0
@@ -17,12 +18,12 @@ Header As CanvasComponent:
         Y: =13
         ZIndex: =1
 
-    Label4_1 As label:
+    loginId As label:
         Color: =Color.Black
-        Size: =11
-        Text: =
-        X: =775
-        Y: =8
+        Text: =Header.userId
+        Width: =118
+        X: =784
+        Y: =13
         ZIndex: =3
 
     Icon1 As icon.Person:
@@ -39,4 +40,11 @@ Header As CanvasComponent:
         Width: =1146
         Y: =60
         ZIndex: =5
+
+    loginDate As label:
+        Size: =9
+        Text: =Header.loginDate
+        X: =913
+        Y: =13
+        ZIndex: =6
 

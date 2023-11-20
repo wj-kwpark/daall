@@ -111,9 +111,8 @@
     "FileID": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
     "Id": "9974612a-4c1a-4667-b6f3-2e52987c08cd",
     "InstrumentationKey": "",
-    "LocalDatabaseReferences": "{}",
     "ManualOfflineProfileId": "",
-    "Name": "daall-mobile-new.msapp",
+    "Name": "daall-mobile-new",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
@@ -132,6 +131,7 @@
   "ScreenOrder": [
     "loginScreen",
     "main",
-    "Notice"
+    "Notice",
+    "관리-내정보"
   ]
 }
