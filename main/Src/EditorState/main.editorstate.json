@@ -346,7 +346,14 @@
           "NameMapSourceSchema": "?"
         },
         "ZIndex",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "10",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderThickness",
         {
           "AFDDataSourceName": "",
@@ -413,7 +420,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"report_title\",\"Series1\":\"report_title\",\"Series2\":\"report_title\",\"Series3\":\"report_title\",\"Series4\":\"report_title\",\"Series5\":\"report_title\",\"Series6\":\"report_title\",\"Series7\":\"report_title\",\"Series8\":\"report_title\",\"Series9\":\"report_title\"}",
+          "NameMap": "{\"Labels\":\"report_title\",\"Series1\":\"count\",\"Series2\":\"count\",\"Series3\":\"count\",\"Series4\":\"count\",\"Series5\":\"count\",\"Series6\":\"count\",\"Series7\":\"count\",\"Series8\":\"count\",\"Series9\":\"count\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
