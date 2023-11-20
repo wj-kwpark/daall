@@ -2,7 +2,7 @@ main As screen:
     OnVisible: |-
         =Set(open, false);
         ClearCollect(maindata, AddColumns(Filter('nocode-test.url_history', user_id = User), "count", 1));
-        AddColumns(GroupBy(maindata, "report_title", "detail"), "count", CountRows(detail.count));
+        ClearCollect(maindata_chart, AddColumns(GroupBy(maindata, "report_title", "detail"), "count", CountRows(detail.count)));
 
     logo_1 As logo:
 
