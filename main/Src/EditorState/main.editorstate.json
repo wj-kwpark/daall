@@ -413,7 +413,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"report_title\",\"Series9\":\"report_title\",\"Series1\":\"report_title\",\"Series2\":\"report_title\",\"Series3\":\"report_title\",\"Series4\":\"report_title\",\"Series5\":\"report_title\",\"Series6\":\"report_title\",\"Series7\":\"report_title\",\"Series8\":\"report_title\"}",
+          "NameMap": "{\"Labels\":\"report_title\",\"Series1\":\"day\",\"Series2\":\"report_title\",\"Series3\":\"report_title\",\"Series4\":\"report_title\",\"Series5\":\"report_title\",\"Series6\":\"report_title\",\"Series7\":\"report_title\",\"Series8\":\"report_title\",\"Series9\":\"report_title\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },

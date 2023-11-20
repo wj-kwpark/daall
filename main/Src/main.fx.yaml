@@ -1,7 +1,7 @@
 main As screen:
-    OnVisible: |-
+    OnVisible: |
         =Set(open, false);
-        ClearCollect(maindata, Filter('nocode-test.url_history', user_id = User));
+        ClearCollect(maindata, AddColumns(Filter('nocode-test.url_history', user_id = User), "Count", 1));
 
     logo_1 As logo:
 
@@ -189,7 +189,7 @@ main As screen:
             ColumnChart1 As barChart:
                 GridStyle: =GridStyle.All
                 Height: =302
-                Items: ='nocode-test.url_history'.report_title
+                Items: =maindata
                 ItemsGap: =2
                 Markers: =false
                 SeriesAxisMax: =0
