@@ -1,8 +1,8 @@
 main As screen:
     OnVisible: |-
-        =Set(open, false);
-        ClearCollect(maindata, AddColumns(Filter('nocode-test.url_history', user_id = User, report_title <> ""), "count", 1));
-        ClearCollect(maindata_chart, FirstN(SortByColumns(AddColumns(GroupBy(maindata, "report_title", "detail"), "count", CountRows(detail.count)),"count",SortOrder.Descending),7));
+        =Set(open, false );
+        ClearCollect(maindata,AddColumns(Filter('nocode-test.url_history',user_id=User,report_title<>""),"count",1));
+        ClearCollect(maindata_chart,FirstN(SortByColumns(AddColumns(GroupBy(maindata,"report_title","detail"),"count",CountRows(detail.count)),"count",SortOrder.Descending),7));
 
     logo_1 As logo:
 
