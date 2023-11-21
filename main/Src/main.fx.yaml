@@ -1,8 +1,56 @@
 main As screen:
-    OnVisible: |-
-        =Set(open, false );
-        ClearCollect(maindata,AddColumns(Filter('nocode-test.url_history',user_id=User,report_title<>""),"count",1));
-        ClearCollect(maindata_chart,FirstN(SortByColumns(AddColumns(GroupBy(maindata,"report_title","detail"),"count",CountRows(detail.count)),"count",SortOrder.Descending),7));
+    BackgroundImage: =bg_login
+    OnVisible: |
+        =Set(
+            open,
+            false
+        );
+        ClearCollect(
+            maindata,
+            AddColumns(
+                Filter(
+                    'nocode-test.url_history',
+                    user_id = User,
+                    report_title <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            maindata_chart,
+            FirstN(
+                SortByColumns(
+                    AddColumns(
+                        GroupBy(
+                            maindata,
+                            "report_title",
+                            "detail"
+                        ),
+                        "count",
+                        CountRows(detail.count)
+                    ),
+                    "count",
+                    SortOrder.Descending
+                ),
+                7
+            )
+        );
+
+    HtmlText4_2 As htmlViewer:
+        Height: =707
+        HtmlText: |
+            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            background-color: rgba(255, 255, 255, 0.4);
+            
+            border-radius: 30px 30px 30px 30px;
+            
+            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
+        Width: =1146
+        X: =220
+        Y: =61
+        ZIndex: =1
 
     "'resource-count' As groupContainer.manualLayoutContainer":
         DropShadow: =DropShadow.None
@@ -244,6 +292,7 @@ main As screen:
 
         logo_1 As logo:
             mainScreen: =main
+            ZIndex: =2
 
         Header_1 As Header:
             Height: =61
@@ -251,9 +300,9 @@ main As screen:
             logout: =loginScreen
             userId: =User
             X: =220
-            ZIndex: =2
+            ZIndex: =3
 
         MenuLeftNav_1 As MenuLeftNav:
             Y: =160
-            ZIndex: =3
+            ZIndex: =4
 

@@ -66,7 +66,7 @@
         "Name": "Image1",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 124,
+        "PublishOrderIndex": 135,
         "Rules": [
           {
             "Category": "Data",
@@ -368,7 +368,7 @@
         "Name": "Button2",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 125,
+        "PublishOrderIndex": 136,
         "Rules": [
           {
             "Category": "Data",

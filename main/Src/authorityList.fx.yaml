@@ -1,4 +1,5 @@
 authorityList As screen:
+    BackgroundImage: =bg_login
     OnVisible: |
         =ClearCollect(
             dataList,
@@ -51,13 +52,20 @@ authorityList As screen:
         );
         ClearCollect(authorityListdata, SortByColumns(authoritydata,"REGI_DATE"))
 
-    pageTitle_1 As label:
-        FontWeight: =FontWeight.Bold
-        Size: =24
-        Text: ="권한관리"
-        X: =245
-        Y: =90
-        ZIndex: =4
+    HtmlText4_1 As htmlViewer:
+        Height: =707
+        HtmlText: |
+            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            background-color: rgba(255, 255, 255, 0.4);
+            
+            border-radius: 30px 30px 30px 30px;
+            
+            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
+        Width: =1146
+        X: =220
+        Y: =61
+        ZIndex: =1
 
     common_1 As group:
         Height: =5
@@ -68,6 +76,7 @@ authorityList As screen:
 
         logo_3 As logo:
             mainScreen: =main
+            ZIndex: =2
 
         Header_3 As Header:
             Height: =61
@@ -75,17 +84,26 @@ authorityList As screen:
             logout: =loginScreen
             userId: =User
             X: =220
-            ZIndex: =2
+            ZIndex: =3
 
         MenuLeftNav_3 As MenuLeftNav:
             Y: =160
-            ZIndex: =3
+            ZIndex: =4
+
+    pageTitle_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="권한관리"
+        X: =245
+        Y: =90
+        ZIndex: =5
 
     Container7 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(214, 221, 224, 1)
         BorderStyle: =BorderStyle.Dotted
         BorderThickness: =1
         DropShadow: =DropShadow.None
+        Fill: =Color.White
         Height: =599
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
@@ -94,7 +112,7 @@ authorityList As screen:
         Width: =1095
         X: =245
         Y: =141
-        ZIndex: =5
+        ZIndex: =6
 
         검색필드 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
@@ -117,6 +135,12 @@ authorityList As screen:
                 X: =968
                 Y: =20
                 ZIndex: =1
+
+            Label14 As label:
+                FontWeight: =FontWeight.Bold
+                Size: =9
+                Text: ="보고서/데이터명"
+                ZIndex: =2
 
         검색목록 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
