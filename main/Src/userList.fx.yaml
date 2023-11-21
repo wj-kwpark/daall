@@ -1,0 +1,33 @@
+userList As screen:
+
+    pageTitle_2 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="사용자 관리"
+        Width: =185
+        X: =245
+        Y: =90
+        ZIndex: =4
+
+    common_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        logo_4 As logo:
+            mainScreen: =main
+
+        Header_4 As Header:
+            Height: =61
+            loginDate: =LoginDate
+            logout: =loginScreen
+            userId: =User
+            X: =220
+            ZIndex: =2
+
+        MenuLeftNav_4 As MenuLeftNav:
+            Y: =160
+            ZIndex: =3
+
