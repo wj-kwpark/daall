@@ -379,14 +379,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SeriesAxisMax",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SeriesAxisMax",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

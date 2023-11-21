@@ -193,7 +193,6 @@ main As screen:
                 Items: =maindata_chart
                 ItemsGap: =2
                 Markers: =false
-                SeriesAxisMax: =0
                 SeriesAxisMin: =0
                 Size: =CountRows(maindata_chart)
                 X: =1
