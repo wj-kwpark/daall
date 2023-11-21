@@ -3751,7 +3751,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "내정보",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3904,7 +3904,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "데이터현황",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4100,7 +4100,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "리소스현황",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4258,7 +4258,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "보고서현황",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

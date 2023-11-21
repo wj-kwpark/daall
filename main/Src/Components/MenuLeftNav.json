@@ -28,7 +28,7 @@
             "Name": "galleryTemplate3",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 89,
+            "PublishOrderIndex": 92,
             "Rules": [
               {
                 "Category": "Data",
@@ -99,7 +99,7 @@
             "Name": "Rectangle4",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 90,
+            "PublishOrderIndex": 93,
             "Rules": [
               {
                 "Category": "Design",
@@ -303,7 +303,7 @@
             "Name": "Button1",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 91,
+            "PublishOrderIndex": 94,
             "Rules": [
               {
                 "Category": "Data",
@@ -646,7 +646,7 @@
             "Name": "menuLabel",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 92,
+            "PublishOrderIndex": 95,
             "Rules": [
               {
                 "Category": "Data",
@@ -966,7 +966,7 @@
             "Name": "imageMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 93,
+            "PublishOrderIndex": 96,
             "Rules": [
               {
                 "Category": "Data",
@@ -1187,7 +1187,7 @@
                 "Name": "galleryTemplate5",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 95,
+                "PublishOrderIndex": 98,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1240,7 +1240,14 @@
                   "FocusedBorderColor",
                   "Color",
                   "DisabledColor",
-                  "PressedColor",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "Self.Fill",
+                    "InvariantPropertyName": "PressedColor",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   {
                     "AFDDataSourceName": "",
                     "AutoRuleBindingEnabled": false,
@@ -1259,7 +1266,14 @@
                     "NameMapSourceSchema": "?"
                   },
                   "DisabledFill",
-                  "PressedFill",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "Self.Color",
+                    "InvariantPropertyName": "PressedFill",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
                   {
                     "AFDDataSourceName": "",
                     "AutoRuleBindingEnabled": false,
@@ -1301,7 +1315,7 @@
                 "Name": "Button3",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 96,
+                "PublishOrderIndex": 99,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1359,7 +1373,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "Self.Fill",
+                    "InvariantScript": "Color.Transparent",
                     "Property": "PressedColor",
                     "RuleProviderType": "Unknown"
                   },
@@ -1389,7 +1403,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "Self.Color",
+                    "InvariantScript": "Color.Transparent",
                     "Property": "PressedFill",
                     "RuleProviderType": "Unknown"
                   },
@@ -1615,7 +1629,7 @@
                 "Name": "Label6",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 97,
+                "PublishOrderIndex": 100,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1943,7 +1957,7 @@
                 "Name": "Image4",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 98,
+                "PublishOrderIndex": 101,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2210,7 +2224,7 @@
             "Name": "2depthMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 94,
+            "PublishOrderIndex": 97,
             "Rules": [
               {
                 "Category": "Data",
@@ -2427,7 +2441,7 @@
         "Name": "1depthMenu",
         "Parent": "MenuLeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 88,
+        "PublishOrderIndex": 91,
         "Rules": [
           {
             "Category": "Data",
@@ -2621,7 +2635,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638361239616704150",
+    "LastModifiedTimestamp": "638361250051926845",
     "Name": "MenuLeftNav",
     "Rules": [
       {
@@ -2696,7 +2710,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638361239616704150",
+  "LastModifiedTimestamp": "638361250051926845",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

@@ -16,3 +16,17 @@ logo As CanvasComponent:
         Y: =50
         ZIndex: =1
 
+    Button2 As button:
+        Fill: =Color.Transparent
+        Height: =70
+        HoverColor: =Color.Transparent
+        HoverFill: =Color.Transparent
+        OnSelect: =Navigate(logo.mainScreen)
+        PressedColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =70
+        X: =75
+        Y: =50
+        ZIndex: =2
+

@@ -182,6 +182,8 @@ MenuLeftNav As CanvasComponent:
                 HoverColor: =Color.Transparent
                 HoverFill: =Color.Transparent
                 OnSelect: =Navigate(ThisItem.MenuScreenNavigate)
+                PressedColor: =Color.Transparent
+                PressedFill: =Color.Transparent
                 Text: =""
                 Width: =154
                 X: =10
