@@ -135,7 +135,7 @@ authorityList As screen:
                 TemplatePadding: =0
                 TemplateSize: =54
                 Width: =1078
-                Y: =31
+                Y: =60
                 ZIndex: =1
 
                 resourceName As label:
@@ -200,4 +200,47 @@ authorityList As screen:
                     X: =932
                     Y: =14
                     ZIndex: =7
+
+            Container11 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(245, 249, 255, 1)
+                Height: =60
+                Width: =1085
+                ZIndex: =2
+
+                Rectangle6 As rectangle:
+                    Fill: =RGBA(15, 84, 140, 1)
+                    Height: =1
+                    Width: =1085
+                    Y: =59
+                    ZIndex: =1
+
+                Label13 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="보고서/데이터명"
+                    Width: =458
+                    Y: =19
+                    ZIndex: =2
+
+                Label13_1 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="리소스타입"
+                    Width: =85
+                    X: =480
+                    Y: =20
+                    ZIndex: =3
+
+                Label13_2 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="생성일"
+                    Width: =85
+                    X: =693
+                    Y: =20
+                    ZIndex: =4
 
