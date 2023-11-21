@@ -86,7 +86,7 @@ MenuLeftNav As CanvasComponent:
                     },
                     {
                         MenuLabel: "권한관리",
-                        MenuScreenNavigate: App.ActiveScreen,
+                        MenuScreenNavigate: authorityList,
                         MenuID: 3,
                         ParentMenu: "관리"
                     },

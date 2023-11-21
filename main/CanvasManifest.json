@@ -132,6 +132,7 @@
     "loginScreen",
     "main",
     "Notice",
-    "myinfo"
+    "myinfo",
+    "authorityList"
   ]
 }

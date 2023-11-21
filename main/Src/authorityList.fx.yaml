@@ -1,0 +1,32 @@
+authorityList As screen:
+
+    pageTitle_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="권한관리"
+        X: =245
+        Y: =90
+        ZIndex: =4
+
+    common_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        logo_3 As logo:
+            mainScreen: =main
+
+        Header_3 As Header:
+            Height: =61
+            loginDate: =LoginDate
+            logout: =loginScreen
+            userId: =User
+            X: =220
+            ZIndex: =2
+
+        MenuLeftNav_3 As MenuLeftNav:
+            Y: =160
+            ZIndex: =3
+
