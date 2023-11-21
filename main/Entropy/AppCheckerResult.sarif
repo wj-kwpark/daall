@@ -134,6 +134,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 44,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('nocode-test.data', OWNER_ID = User)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_5.Label9_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 46,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('nocode-test.report', OWNER_ID = User)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_4.Label7_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 90,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('daall.url_history', user_id = User, url=\"/report/reportDetail\",regi_date=Today())"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_3.Label4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "MenuLeftNav.'1depthMenu'.AccessibleLabel"
                 }
               ],

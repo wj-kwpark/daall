@@ -28,7 +28,7 @@
             "Name": "galleryTemplate3",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 73,
+            "PublishOrderIndex": 89,
             "Rules": [
               {
                 "Category": "Data",
@@ -99,7 +99,7 @@
             "Name": "Rectangle4",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 74,
+            "PublishOrderIndex": 90,
             "Rules": [
               {
                 "Category": "Design",
@@ -303,7 +303,7 @@
             "Name": "Button1",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 75,
+            "PublishOrderIndex": 91,
             "Rules": [
               {
                 "Category": "Data",
@@ -646,7 +646,7 @@
             "Name": "menuLabel",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 76,
+            "PublishOrderIndex": 92,
             "Rules": [
               {
                 "Category": "Data",
@@ -966,7 +966,7 @@
             "Name": "imageMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 77,
+            "PublishOrderIndex": 93,
             "Rules": [
               {
                 "Category": "Data",
@@ -1187,7 +1187,7 @@
                 "Name": "galleryTemplate5",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 79,
+                "PublishOrderIndex": 95,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1208,6 +1208,330 @@
                   "Name": "galleryTemplate",
                   "OverridableProperties": {},
                   "Version": "1.0"
+                },
+                "Type": "ControlInfo",
+                "VariantName": ""
+              },
+              {
+                "AllowAccessToGlobals": true,
+                "Children": [],
+                "ControlPropertyState": [
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "Select(Parent)",
+                    "InvariantPropertyName": "OnSelect",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "",
+                    "InvariantPropertyName": "Text",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
+                  "BorderColor",
+                  "DisabledBorderColor",
+                  "PressedBorderColor",
+                  "HoverBorderColor",
+                  "BorderStyle",
+                  "FocusedBorderColor",
+                  "Color",
+                  "DisabledColor",
+                  "PressedColor",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+                    "InvariantPropertyName": "HoverColor",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
+                  "DisplayMode",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "RGBA(56, 96, 178, 1)",
+                    "InvariantPropertyName": "Fill",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
+                  "DisabledFill",
+                  "PressedFill",
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "ColorFade(RGBA(56, 96, 178, 1), -20%)",
+                    "InvariantPropertyName": "HoverFill",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  },
+                  "Font",
+                  "FontWeight",
+                  "Align",
+                  "VerticalAlign",
+                  "X",
+                  "Y",
+                  "Width",
+                  "Height",
+                  "ZIndex",
+                  "RadiusTopLeft",
+                  "RadiusTopRight",
+                  "RadiusBottomLeft",
+                  "RadiusBottomRight",
+                  "BorderThickness",
+                  "FocusedBorderThickness",
+                  "Size",
+                  "Italic",
+                  "Underline",
+                  "Strikethrough"
+                ],
+                "ControlUniqueId": "118",
+                "HasDynamicProperties": false,
+                "Index": 0,
+                "IsAutoGenerated": false,
+                "IsDataControl": false,
+                "IsFromScreenLayout": false,
+                "IsGroupControl": false,
+                "IsLocked": false,
+                "LayoutName": "",
+                "MetaDataIDKey": "",
+                "Name": "Button3",
+                "Parent": "2depthMenu",
+                "PersistMetaDataIDKey": false,
+                "PublishOrderIndex": 96,
+                "Rules": [
+                  {
+                    "Category": "Data",
+                    "InvariantScript": "\"\"",
+                    "Property": "Text",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "ColorFade(Self.Fill, -15%)",
+                    "Property": "BorderColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "RGBA(166, 166, 166, 1)",
+                    "Property": "DisabledBorderColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Self.Fill",
+                    "Property": "PressedBorderColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "ColorFade(Self.BorderColor, 20%)",
+                    "Property": "HoverBorderColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "BorderStyle.Solid",
+                    "Property": "BorderStyle",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Self.BorderColor",
+                    "Property": "FocusedBorderColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "RGBA(255, 255, 255, 1)",
+                    "Property": "Color",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "RGBA(166, 166, 166, 1)",
+                    "Property": "DisabledColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Self.Fill",
+                    "Property": "PressedColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Color.Transparent",
+                    "Property": "HoverColor",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "DisplayMode.Edit",
+                    "Property": "DisplayMode",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Color.Transparent",
+                    "Property": "Fill",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "RGBA(244, 244, 244, 1)",
+                    "Property": "DisabledFill",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Self.Color",
+                    "Property": "PressedFill",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Color.Transparent",
+                    "Property": "HoverFill",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Font.'Open Sans'",
+                    "Property": "Font",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "FontWeight.Semibold",
+                    "Property": "FontWeight",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "Align.Center",
+                    "Property": "Align",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "VerticalAlign.Middle",
+                    "Property": "VerticalAlign",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "10",
+                    "Property": "X",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "0",
+                    "Property": "Y",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "154",
+                    "Property": "Width",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "30",
+                    "Property": "Height",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "3",
+                    "Property": "ZIndex",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "10",
+                    "Property": "RadiusTopLeft",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "10",
+                    "Property": "RadiusTopRight",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "10",
+                    "Property": "RadiusBottomLeft",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "10",
+                    "Property": "RadiusBottomRight",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "2",
+                    "Property": "BorderThickness",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "4",
+                    "Property": "FocusedBorderThickness",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "15",
+                    "Property": "Size",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "false",
+                    "Property": "Italic",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "false",
+                    "Property": "Underline",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Design",
+                    "InvariantScript": "false",
+                    "Property": "Strikethrough",
+                    "RuleProviderType": "Unknown"
+                  },
+                  {
+                    "Category": "Behavior",
+                    "InvariantScript": "Navigate(ThisItem.MenuScreenNavigate)",
+                    "Property": "OnSelect",
+                    "RuleProviderType": "Unknown"
+                  }
+                ],
+                "StyleName": "defaultButtonStyle",
+                "Template": {
+                  "CustomGroupControlTemplateName": "",
+                  "FirstParty": true,
+                  "Id": "http://microsoft.com/appmagic/button",
+                  "IsComponentDefinition": false,
+                  "IsCustomGroupControlTemplate": false,
+                  "IsPremiumPcfControl": false,
+                  "LastModifiedTimestamp": "0",
+                  "Name": "button",
+                  "OverridableProperties": {},
+                  "Version": "2.2.0"
                 },
                 "Type": "ControlInfo",
                 "VariantName": ""
@@ -1291,7 +1615,7 @@
                 "Name": "Label6",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 80,
+                "PublishOrderIndex": 97,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1619,7 +1943,7 @@
                 "Name": "Image4",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 81,
+                "PublishOrderIndex": 98,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1886,7 +2210,7 @@
             "Name": "2depthMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 78,
+            "PublishOrderIndex": 94,
             "Rules": [
               {
                 "Category": "Data",
@@ -2103,7 +2427,7 @@
         "Name": "1depthMenu",
         "Parent": "MenuLeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 72,
+        "PublishOrderIndex": 88,
         "Rules": [
           {
             "Category": "Data",
@@ -2297,12 +2621,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638361211978758336",
+    "LastModifiedTimestamp": "638361239616704150",
     "Name": "MenuLeftNav",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\n    {\n        MenuLabel: \"자료실\",\n        MenuIcon: icon_gnb_1,\n        MenuIconHover: icon_gnb_1_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 1,\n        SubMenu: Table(\n            {\n                MenuLabel: \"공지사항\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"자료실\"\n            },\n            {\n                MenuLabel: \"Demo Report\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"자료실\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"모니터링\",\n        MenuIcon: icon_gnb_2,\n        MenuIconHover: icon_gnb_2_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 2,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Azure\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"Microsoft365\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"PowerPlatform\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"모니터링\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"보고서\",\n        MenuIcon: icon_gnb_3,\n        MenuIconHover: icon_gnb_3_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 3\n    },\n    {\n        MenuLabel: \"데이터\",\n        MenuIcon: icon_gnb_4,\n        MenuIconHover: icon_gnb_4_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 4\n    },\n    {\n        MenuLabel: \"관리\",\n        MenuIcon: icon_gnb_5,\n        MenuIconHover: icon_gnb_5_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 5,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Dashboard\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"내정보\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"권한관리\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"사용자관리\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 4,\n                ParentMenu: \"관리\"\n            }\n        )\n    }\n)",
+        "InvariantScript": "Table(\n    {\n        MenuLabel: \"자료실\",\n        MenuIcon: icon_gnb_1,\n        MenuIconHover: icon_gnb_1_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 1,\n        SubMenu: Table(\n            {\n                MenuLabel: \"공지사항\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"자료실\"\n            },\n            {\n                MenuLabel: \"Demo Report\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"자료실\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"모니터링\",\n        MenuIcon: icon_gnb_2,\n        MenuIconHover: icon_gnb_2_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 2,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Azure\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"Microsoft365\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"PowerPlatform\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"모니터링\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"보고서\",\n        MenuIcon: icon_gnb_3,\n        MenuIconHover: icon_gnb_3_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 3\n    },\n    {\n        MenuLabel: \"데이터\",\n        MenuIcon: icon_gnb_4,\n        MenuIconHover: icon_gnb_4_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 4\n    },\n    {\n        MenuLabel: \"관리\",\n        MenuIcon: icon_gnb_5,\n        MenuIconHover: icon_gnb_5_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 5,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Dashboard\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"내정보\",\n                MenuScreenNavigate: myinfo,\n                MenuID: 2,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"권한관리\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"사용자관리\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 4,\n                ParentMenu: \"관리\"\n            }\n        )\n    }\n)",
         "Property": "MenuItems",
         "RuleProviderType": "System"
       },
@@ -2372,7 +2696,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638361211978758336",
+  "LastModifiedTimestamp": "638361239616704150",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

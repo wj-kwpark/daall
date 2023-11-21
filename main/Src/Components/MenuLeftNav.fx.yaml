@@ -80,7 +80,7 @@ MenuLeftNav As CanvasComponent:
                     },
                     {
                         MenuLabel: "내정보",
-                        MenuScreenNavigate: App.ActiveScreen,
+                        MenuScreenNavigate: myinfo,
                         MenuID: 2,
                         ParentMenu: "관리"
                     },
@@ -175,6 +175,17 @@ MenuLeftNav As CanvasComponent:
                 X: =20
                 Y: =4
                 ZIndex: =2
+
+            Button3 As button:
+                Fill: =Color.Transparent
+                Height: =30
+                HoverColor: =Color.Transparent
+                HoverFill: =Color.Transparent
+                OnSelect: =Navigate(ThisItem.MenuScreenNavigate)
+                Text: =""
+                Width: =154
+                X: =10
+                ZIndex: =3
 
         Button1 As button:
             Fill: |
