@@ -1,2 +1,24 @@
 "'관리-내정보' As screen":
 
+    Group1_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =4
+
+        logo_2 As logo:
+            mainScreen: =main
+
+        Header_2 As Header:
+            Height: =61
+            loginDate: =LoginDate
+            logout: =loginScreen
+            userId: =User
+            X: =220
+            ZIndex: =2
+
+        MenuLeftNav_2 As MenuLeftNav:
+            Y: =160
+            ZIndex: =3
+
