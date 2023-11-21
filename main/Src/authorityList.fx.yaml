@@ -1,6 +1,6 @@
 authorityList As screen:
     OnVisible: |-
-        =ClearCollect(dataList,ShowColumns('nocode-test.data',"DATA_ID","NAME","OWNER_ID","OWNER","WORKSPACE_ID","REGI_DATE"));
+        =ClearCollect(dataList,AddColumns(ShowColumns('nocode-test.data',"DATA_ID","NAME","OWNER_ID","OWNER","WORKSPACE_ID","REGI_DATE"),"RESOURCE_TYPE","data"));
         ClearCollect(reportList,'nocode-test.report');
         ClearCollect(authoritydata,dataList,reportList);
 
