@@ -1184,19 +1184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.보고서데이터입력.AccessibleLabel"
+                  "fullyQualifiedName": "authorityList.Container7.검색필드.resourceEdit.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.보고서데이터입력.AccessibleLabel",
+                  "fullyQualifiedName": "authorityList.Container7.검색필드.resourceEdit.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "authorityList",
-                "type": "authorityList.Container7.검색필드.보고서데이터입력"
+                "type": "authorityList.Container7.검색필드.resourceEdit"
               }
             }
           ],
