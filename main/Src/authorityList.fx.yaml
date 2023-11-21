@@ -1,4 +1,8 @@
 authorityList As screen:
+    OnVisible: |-
+        =ClearCollect(dataList,ShowColumns('nocode-test.data',"DATA_ID","NAME","OWNER_ID","OWNER","WORKSPACE_ID","REGI_DATE"));
+        ClearCollect(reportList,'nocode-test.report');
+        ClearCollect(authoritydata,dataList,reportList);
 
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold
@@ -29,4 +33,35 @@ authorityList As screen:
         MenuLeftNav_3 As MenuLeftNav:
             Y: =160
             ZIndex: =3
+
+    Container7 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(214, 221, 224, 1)
+        BorderStyle: =BorderStyle.Dotted
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Height: =599
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1095
+        X: =245
+        Y: =141
+        ZIndex: =5
+
+        검색필드 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =91
+            Width: =1085
+            X: =5
+            Y: =5
+            ZIndex: =1
+
+        검색목록 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =482
+            Width: =1085
+            X: =5
+            Y: =109
+            ZIndex: =2
 

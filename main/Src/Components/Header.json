@@ -82,7 +82,7 @@
         "Name": "loginId",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 86,
+        "PublishOrderIndex": 96,
         "Rules": [
           {
             "Category": "Data",
@@ -406,7 +406,7 @@
         "Name": "loginDate",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 87,
+        "PublishOrderIndex": 97,
         "Rules": [
           {
             "Category": "Data",
@@ -721,7 +721,7 @@
         "Name": "Image2",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 88,
+        "PublishOrderIndex": 98,
         "Rules": [
           {
             "Category": "Data",
@@ -961,7 +961,7 @@
         "Name": "Icon1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 89,
+        "PublishOrderIndex": 99,
         "Rules": [
           {
             "Category": "Design",
@@ -1165,7 +1165,7 @@
         "Name": "Rectangle1",
         "Parent": "Header",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 90,
+        "PublishOrderIndex": 100,
         "Rules": [
           {
             "Category": "Design",
