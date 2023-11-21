@@ -155,7 +155,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/21/2023 02:03:53",
+  "HeaderLastSavedDateTimeUTC": "11/21/2023 02:07:44",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -224,10 +224,11 @@
   },
   "OrderDataSource": {
     "authoritydata": 14,
+    "authorityListdata": 16,
     "ColumnChartSample": 0,
     "CustomGallerySample": 1,
     "daall.url_history": 10,
-    "dataList": 16,
+    "dataList": 17,
     "LegendSample": 2,
     "LineChartSample": 3,
     "maindata": 13,

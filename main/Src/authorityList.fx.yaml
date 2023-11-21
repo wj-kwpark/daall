@@ -1,8 +1,55 @@
 authorityList As screen:
-    OnVisible: |-
-        =ClearCollect(dataList,AddColumns(ShowColumns(RenameColumns('nocode-test.data',"DATA_ID","RESOURCE_ID","NAME","RESOURCE_NAME"),"RESOURCE_ID","RESOURCE_NAME","OWNER_ID","OWNER","WORKSPACE_ID","REGI_DATE"),"RESOURCE_TYPE","data"));
-        ClearCollect(reportList,'nocode-test.report');
-        ClearCollect(authoritydata,dataList,reportList);
+    OnVisible: |
+        =ClearCollect(
+            dataList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.data',
+                        "DATA_ID",
+                        "RESOURCE_ID",
+                        "NAME",
+                        "RESOURCE_NAME"
+                    ),
+                    "RESOURCE_ID",
+                    "RESOURCE_NAME",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "data"
+            )
+        );
+        ClearCollect(
+            reportList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.report',
+                        "REPORT_ID",
+                        "RESOURCE_ID",
+                        "REPORT_TITLE",
+                        "RESOURCE_NAME"
+                    ),
+                    "RESOURCE_ID",
+                    "RESOURCE_NAME",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "report"
+            )
+        );
+        ClearCollect(
+            authoritydata,
+            dataList,
+            reportList
+        );
+        ClearCollect(authorityListdata, SortByColumns(authoritydata,"REGI_DATE"))
 
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold
