@@ -129,7 +129,7 @@ authorityList As screen:
             "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =418
-                Items: =authorityListdata
+                Items: =Filter(authorityListdata,OWNER_ID=User)
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
