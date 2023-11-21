@@ -122,7 +122,7 @@ authorityList As screen:
             Y: =5
             ZIndex: =1
 
-            Button6 As button:
+            검색버튼 As button:
                 Fill: =RGBA(71, 158, 245, 1)
                 Height: =31
                 RadiusBottomLeft: =20
@@ -136,11 +136,74 @@ authorityList As screen:
                 Y: =20
                 ZIndex: =1
 
-            Label14 As label:
+            보고서데이터명 As label:
                 FontWeight: =FontWeight.Bold
+                Height: =20
                 Size: =9
                 Text: ="보고서/데이터명"
+                Width: =116
+                X: =10
+                Y: =13
                 ZIndex: =2
+
+            보고서데이터입력 As text:
+                BorderThickness: =0
+                Color: =Color.Black
+                Default: =""
+                FocusedBorderColor: =Color.Transparent
+                Height: =36
+                HoverBorderColor: =Color.Transparent
+                HoverColor: =Color.Black
+                HoverFill: =Color.Transparent
+                PressedColor: =Color.Transparent
+                Width: =221
+                X: =26
+                Y: =40
+                ZIndex: =3
+
+            Rectangle8 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =221
+                X: =26
+                Y: =73
+                ZIndex: =4
+
+            생성일 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="생성일"
+                Width: =116
+                X: =286
+                Y: =13
+                ZIndex: =5
+
+            startdate As datepicker:
+                Height: =33
+                Size: =10
+                Width: =130
+                X: =302
+                Y: =41
+                ZIndex: =6
+
+            enddate As datepicker:
+                Height: =33
+                Size: =10
+                Width: =130
+                X: =471
+                Y: =40
+                ZIndex: =7
+
+            생성일_1 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =22
+                Size: =9
+                Text: ="-"
+                Width: =27
+                X: =444
+                Y: =46
+                ZIndex: =8
 
         검색목록 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
