@@ -187,6 +187,19 @@ myinfo As screen:
                 Y: =25
                 ZIndex: =2
 
+            Label11 As label:
+                FontWeight: =FontWeight.Bold
+                Text: ="라라 | 웅진IT"
+                X: =150
+                Y: =35
+                ZIndex: =3
+
+            Label11_1 As label:
+                Text: =User
+                X: =150
+                Y: =75
+                ZIndex: =4
+
         데이터현황 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
             Height: =302
