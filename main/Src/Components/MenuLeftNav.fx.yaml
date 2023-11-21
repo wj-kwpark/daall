@@ -74,7 +74,7 @@ MenuLeftNav As CanvasComponent:
                 SubMenu: Table(
                     {
                         MenuLabel: "Dashboard",
-                        MenuScreenNavigate: App.ActiveScreen,
+                        MenuScreenNavigate: dashboard,
                         MenuID: 1,
                         ParentMenu: "관리"
                     },
