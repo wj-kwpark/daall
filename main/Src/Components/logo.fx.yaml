@@ -21,11 +21,12 @@ logo As CanvasComponent:
         Height: =70
         HoverColor: =Color.Transparent
         HoverFill: =Color.Transparent
-        OnSelect: |
+        OnSelect: |+
             =Navigate(logo.mainScreen);
             // clickedMenu
             //Set(open, false );
-            Set(clickedMenu, "");
+             Set(clickedMenu, "pokp");
+            
         PressedColor: =Color.Transparent
         PressedFill: =Color.Transparent
         Text: =""

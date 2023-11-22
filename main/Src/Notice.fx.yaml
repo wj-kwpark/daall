@@ -177,9 +177,9 @@ Notice As screen:
 
     Board_1 As Board:
         BoardData: ='nocode-test.notice'
-        Height: =332
-        Width: =1147
-        X: =160
-        Y: =22
+        Height: =310
+        Width: =1229
+        X: =75
+        Y: =40
         ZIndex: =5
 

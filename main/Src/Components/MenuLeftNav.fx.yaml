@@ -92,7 +92,7 @@ MenuLeftNav As CanvasComponent:
                     },
                     {
                         SubMenuLabel: "사용자관리",
-                        SubMenuScreenNavigate: testscreen,
+                        SubMenuScreenNavigate: userList,
                         SubMenuID: 4,
                         ParentMenu: "관리"
                     }
@@ -196,9 +196,15 @@ MenuLeftNav As CanvasComponent:
                 =Color.Transparent
             HoverFill: =Color.Transparent
             OnSelect: |
-                = Set(open, !open);
-                 Set(clickedMenu, ThisItem.MenuLabel);
-                 Navigate(ThisItem.MenuScreenNavigate);
+                =Set(
+                    open,
+                    !open
+                );
+                Set(
+                    clickedMenu,
+                    ThisItem.MenuLabel
+                );
+                Navigate(ThisItem.MenuScreenNavigate);
             PressedFill: =Color.Transparent
             Text: =""
             Width: =170
