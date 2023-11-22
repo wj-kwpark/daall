@@ -5,7 +5,10 @@ main As screen:
             open,
             false
         );
-        // Set(clickedMenu, "");
+        Set(
+            clickedMenu,
+            "empty"
+        );
         ClearCollect(
             maindata,
             AddColumns(
@@ -304,6 +307,8 @@ main As screen:
             ZIndex: =3
 
         MenuLeftNav_1 As MenuLeftNav:
+            Visible: |
+                =true
             Y: =160
             ZIndex: =4
 
