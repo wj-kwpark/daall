@@ -25,7 +25,14 @@
         "ZIndex",
         "MenuItems",
         "mainScreen",
-        "logout",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "App.ActiveScreen",
+          "InvariantPropertyName": "logout",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "userId",
         "loginDate"
       ],
@@ -60,7 +67,7 @@
         {
           "Category": "Data",
           "PropertyName": "logout",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

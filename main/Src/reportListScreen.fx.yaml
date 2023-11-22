@@ -2,6 +2,8 @@ reportListScreen As screen:
     BackgroundImage: =bg_login
 
     Base_9 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
 
     pageTitle_7 As label:
         FontWeight: =FontWeight.Bold

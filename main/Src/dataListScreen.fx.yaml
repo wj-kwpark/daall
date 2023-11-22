@@ -2,6 +2,8 @@ dataListScreen As screen:
     BackgroundImage: =bg_login
 
     Base_8 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
 
     pageTitle_6 As label:
         FontWeight: =FontWeight.Bold

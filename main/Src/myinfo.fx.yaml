@@ -2,6 +2,7 @@ myinfo As screen:
     BackgroundImage: =bg_login
 
     Base_2 As Base:
+        logout: =loginScreen
 
     pageTitle As label:
         FontWeight: =FontWeight.Bold
