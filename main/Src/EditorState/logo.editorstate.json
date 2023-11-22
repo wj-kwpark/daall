@@ -502,7 +502,7 @@
       "Type": "ControlInfo"
     },
     "logo": {
-      "AllowAccessToGlobals": false,
+      "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
         {

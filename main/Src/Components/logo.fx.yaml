@@ -25,7 +25,7 @@ logo As CanvasComponent:
             =Navigate(logo.mainScreen);
             // clickedMenu
             //Set(open, false );
-             Set(clickedMenu, "pokp");
+            Set(clickedMenu, "pokp");
             
         PressedColor: =Color.Transparent
         PressedFill: =Color.Transparent
