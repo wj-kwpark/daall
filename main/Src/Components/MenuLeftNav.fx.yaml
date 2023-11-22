@@ -11,15 +11,15 @@ MenuLeftNav As CanvasComponent:
                 MenuID: 1,
                 SubMenu: Table(
                     {
-                        MenuLabel: "공지사항",
-                        MenuScreenNavigate: Notice,
-                        MenuID: 1,
+                        SubMenuLabel: "공지사항",
+                        SubMenuScreenNavigate: Notice,
+                        SubMenuID: 1,
                         ParentMenu: "자료실"
                     },
                     {
-                        MenuLabel: "Demo Report",
-                        MenuScreenNavigate: demoList,
-                        MenuID: 2,
+                        SubMenuLabel: "Demo Report",
+                        SubMenuScreenNavigate: demoList,
+                        SubMenuID: 2,
                         ParentMenu: "자료실"
                     }
                 )
@@ -32,21 +32,21 @@ MenuLeftNav As CanvasComponent:
                 MenuID: 2,
                 SubMenu: Table(
                     {
-                        MenuLabel: "Azure",
-                        MenuScreenNavigate: App.ActiveScreen,
-                        MenuID: 1,
+                        SubMenuLabel: "Azure",
+                        SubMenuScreenNavigate: App.ActiveScreen,
+                        SubMenuID: 1,
                         ParentMenu: "모니터링"
                     },
                     {
-                        MenuLabel: "Microsoft365",
-                        MenuScreenNavigate: App.ActiveScreen,
-                        MenuID: 2,
+                        SubMenuLabel: "Microsoft365",
+                        SubMenuScreenNavigate: App.ActiveScreen,
+                        SubMenuID: 2,
                         ParentMenu: "모니터링"
                     },
                     {
-                        MenuLabel: "PowerPlatform",
-                        MenuScreenNavigate: App.ActiveScreen,
-                        MenuID: 3,
+                        SubMenuLabel: "PowerPlatform",
+                        SubMenuScreenNavigate: App.ActiveScreen,
+                        SubMenuID: 3,
                         ParentMenu: "모니터링"
                     }
                 )
@@ -73,27 +73,27 @@ MenuLeftNav As CanvasComponent:
                 MenuID: 5,
                 SubMenu: Table(
                     {
-                        MenuLabel: "Dashboard",
-                        MenuScreenNavigate: dashboard,
-                        MenuID: 1,
+                        SubMenuLabel: "Dashboard",
+                        SubMenuScreenNavigate: dashboard,
+                        SubMenuID: 1,
                         ParentMenu: "관리"
                     },
                     {
-                        MenuLabel: "내정보",
-                        MenuScreenNavigate: myinfo,
-                        MenuID: 2,
+                        SubMenuLabel: "내정보",
+                        SubMenuScreenNavigate: myinfo,
+                        SubMenuID: 2,
                         ParentMenu: "관리"
                     },
                     {
-                        MenuLabel: "권한관리",
-                        MenuScreenNavigate: authorityList,
-                        MenuID: 3,
+                        SubMenuLabel: "권한관리",
+                        SubMenuScreenNavigate: authorityList,
+                        SubMenuID: 3,
                         ParentMenu: "관리"
                     },
                     {
-                        MenuLabel: "사용자관리",
-                        MenuScreenNavigate: userList,
-                        MenuID: 4,
+                        SubMenuLabel: "사용자관리",
+                        SubMenuScreenNavigate: userList,
+                        SubMenuID: 4,
                         ParentMenu: "관리"
                     }
                 )
