@@ -2,10 +2,19 @@ Notice As screen:
     OnVisible: |-
         =ClearCollect(
             noticeList,
-                RenameColumns(
+                ShowColumns(
+                    RenameColumns(
                     'nocode-test.notice',
                     "NOTICE_TITLE",
                     "BOARD_TITLE"
+                ),
+                "BOARD_TITLE",
+                "REGI_DATE",
+                "REGI_ID",
+                "MODY_DATE",
+                "MODY_ID",
+                "CONTENT",
+                "FILE_ID"
                 )
         );
 
@@ -222,6 +231,28 @@ Notice As screen:
             검색버튼_2 As button:
                 Fill: =RGBA(71, 158, 245, 1)
                 Height: =37
+                OnSelect: |-
+                    =ClearCollect(
+                        noticeList,
+                            Filter(
+                                ShowColumns(
+                                    RenameColumns(
+                                    'nocode-test.notice',
+                                    "NOTICE_TITLE",
+                                    "BOARD_TITLE"
+                                    ),
+                                "BOARD_TITLE",
+                                "REGI_DATE",
+                                "REGI_ID",
+                                "MODY_DATE",
+                                "MODY_ID",
+                                "CONTENT",
+                                "FILE_ID"
+                                ),
+                            startdate_1 <= REGI_DATE && REGI_DATE <= enddate_1,
+                            resourceEdit_2.Text in BOARD_TITLE
+                            )
+                    );
                 RadiusBottomLeft: =20
                 RadiusBottomRight: =20
                 RadiusTopLeft: =20
@@ -322,24 +353,7 @@ Notice As screen:
                 ZIndex: =10
 
         Board_1 As Board:
-            BoardData: |
-                =Filter(
-                    ShowColumns(
-                        RenameColumns(
-                        'nocode-test.notice',
-                        "NOTICE_TITLE",
-                        "BOARD_TITLE"
-                        ),
-                        "BOARD_TITLE",
-                        "REGI_DATE",
-                        "REGI_ID",
-                        "MODY_DATE",
-                        "MODY_ID",
-                        "CONTENT",
-                        "FILE_ID"
-                        ),
-                        startdate_1 <= REGI_DATE && REGI_DATE <= enddate_1
-                )
+            BoardData: =noticeList
             Height: =408
             Width: =1046
             X: =20
