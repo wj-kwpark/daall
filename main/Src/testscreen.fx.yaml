@@ -35,10 +35,6 @@ testscreen As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_10 As MenuLeftNav:
-            Y: =128
-            ZIndex: =4
-
     pageTitle_8 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

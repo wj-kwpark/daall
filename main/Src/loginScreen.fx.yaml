@@ -188,7 +188,7 @@ loginScreen As screen:
                         LoginDate,
                         Now()
                     );
-                    Navigate(main);
+                    Navigate(main2);
                     
                 );
             RadiusBottomLeft: =15

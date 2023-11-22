@@ -92,10 +92,6 @@ authorityList As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_3 As MenuLeftNav:
-            Y: =160
-            ZIndex: =4
-
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

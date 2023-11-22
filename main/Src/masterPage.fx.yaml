@@ -35,10 +35,6 @@ masterPage As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_6 As MenuLeftNav:
-            Y: =160
-            ZIndex: =4
-
     pageTitle_4 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

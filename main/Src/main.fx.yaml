@@ -303,9 +303,3 @@ main As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_1 As MenuLeftNav:
-            Visible: |
-                =true
-            Y: =160
-            ZIndex: =4
-

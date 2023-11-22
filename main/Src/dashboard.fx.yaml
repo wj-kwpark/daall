@@ -35,10 +35,6 @@ dashboard As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_5 As MenuLeftNav:
-            Y: =160
-            ZIndex: =4
-
     pageTitle_3 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

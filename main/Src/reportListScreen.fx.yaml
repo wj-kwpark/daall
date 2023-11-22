@@ -35,10 +35,6 @@ reportListScreen As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_9 As MenuLeftNav:
-            Y: =128
-            ZIndex: =4
-
     pageTitle_7 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

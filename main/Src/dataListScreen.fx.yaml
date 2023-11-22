@@ -35,10 +35,6 @@ dataListScreen As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_8 As MenuLeftNav:
-            Y: =128
-            ZIndex: =4
-
     pageTitle_6 As label:
         FontWeight: =FontWeight.Bold
         Size: =24

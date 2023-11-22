@@ -35,10 +35,6 @@ myinfo As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_2 As MenuLeftNav:
-            Y: =160
-            ZIndex: =4
-
     pageTitle As label:
         FontWeight: =FontWeight.Bold
         Size: =24

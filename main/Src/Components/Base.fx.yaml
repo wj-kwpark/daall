@@ -1,6 +1,9 @@
-MenuLeftNav As CanvasComponent:
+Base As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =App.Height - 160
+    Height: =App.Height
+    loginDate: =DateTime(2000, 1, 1, 0, 0, 0)
+    logout: =App.ActiveScreen
+    mainScreen: =App.ActiveScreen
     MenuItems: |-
         =Table(
             {
@@ -99,20 +102,28 @@ MenuLeftNav As CanvasComponent:
                 )
             }
         )
-    Width: =220
+    userId: ="텍스트"
+    Width: =App.Width
     X: =0
     Y: =0
     ZIndex: =1
 
+    Image8 As image:
+        Height: =768
+        Image: =bg_login
+        Width: =1366
+        ZIndex: =1
+
     "'1depthMenu' As gallery.variableTemplateHeightGallery":
         DelayItemLoading: =true
         Height: =608
-        Items: =MenuLeftNav.MenuItems
+        Items: =Base.MenuItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplateSize: =280
         Width: =180
-        X: =40
+        X: =28
+        Y: =160
         ZIndex: =2
 
         "'2depthMenu' As gallery.variableTemplateHeightGallery":
@@ -210,4 +221,94 @@ MenuLeftNav As CanvasComponent:
             Width: =170
             Y: =5
             ZIndex: =5
+
+    Image1_1 As image:
+        Height: =70
+        Image: =img_logo
+        OnSelect: =Navigate(Base.mainScreen)
+        Width: =70
+        X: =75
+        Y: =50
+        ZIndex: =3
+
+    Button2_1 As button:
+        Fill: =Color.Transparent
+        Height: =70
+        HoverColor: =Color.Transparent
+        HoverFill: =Color.Transparent
+        OnSelect: |+
+            =Navigate(Base.mainScreen);
+            // clickedMenu
+            //Set(open, false );
+            Set(clickedMenu, "");
+            
+        PressedColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =70
+        X: =75
+        Y: =50
+        ZIndex: =4
+
+    base_header As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Image2_1 As image:
+            Height: =29
+            Image: =icon_logout
+            OnSelect: =Navigate(Base.logout)
+            Width: =49
+            X: =1284
+            Y: =13
+            ZIndex: =5
+
+        loginId_1 As label:
+            Color: =Color.Black
+            Text: =Base.userId
+            Width: =118
+            X: =1004
+            Y: =13
+            ZIndex: =6
+
+        Icon1_1 As icon.Person:
+            Height: =32
+            Icon: =Icon.Person
+            Width: =33
+            X: =950
+            Y: =16
+            ZIndex: =7
+
+        Rectangle1_1 As rectangle:
+            Fill: =RGBA(153, 207, 236, 1)
+            Height: =1
+            Width: =1146
+            X: =220
+            Y: =60
+            ZIndex: =8
+
+        loginDate_1 As label:
+            Size: =9
+            Text: =Base.loginDate
+            X: =1133
+            Y: =13
+            ZIndex: =9
+
+    HtmlText4_13 As htmlViewer:
+        Height: =611
+        HtmlText: |
+            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            background-color: rgba(255, 255, 255, 0.4);
+            
+            border-radius: 30px 30px 30px 30px;
+            
+            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
+        Width: =1113
+        X: =220
+        Y: =107
+        ZIndex: =10
 

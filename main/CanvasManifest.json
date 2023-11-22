@@ -109,7 +109,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
-    "Id": "2dabb1ca-4c30-467c-be7d-3ab5c1a88cd1",
+    "Id": "8daa3989-8361-4de1-95f7-7e919811a30a",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
     "Name": "daall-mobile-new",
@@ -137,9 +137,12 @@
     "userList",
     "dashboard",
     "masterPage",
+    "masterPage_1",
+    "masterPage_2",
     "testscreen",
     "demoList",
     "dataListScreen",
-    "reportListScreen"
+    "reportListScreen",
+    "main2"
   ]
 }
