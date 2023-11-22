@@ -175,7 +175,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "1",
+                "InvariantScript": "2",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -782,7 +782,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "3",
+                "InvariantScript": "4",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -1054,7 +1054,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "2",
+                "InvariantScript": "3",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -1529,7 +1529,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Navigate(ThisItem.SubMenuScreenNavigate);\r\nSet(clickedMenu, ThisItem.ParentMenu);",
+                    "InvariantScript": "Navigate(ThisItem.SubMenuScreenNavigate);\r\n//Set(clickedMenu, ThisItem.ParentMenu);",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -2276,7 +2276,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "4",
+                "InvariantScript": "1",
                 "Property": "ZIndex",
                 "RuleProviderType": "Unknown"
               },
@@ -2628,7 +2628,7 @@
       "ZIndex",
       "MenuItems"
     ],
-    "LastModifiedTimestamp": "638362140178566941",
+    "LastModifiedTimestamp": "638362157852374649",
     "Name": "MenuLeftNav",
     "Rules": [
       {
@@ -2703,7 +2703,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362140178566941",
+  "LastModifiedTimestamp": "638362157852374649",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

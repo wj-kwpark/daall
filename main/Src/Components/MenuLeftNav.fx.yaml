@@ -115,37 +115,6 @@ MenuLeftNav As CanvasComponent:
         X: =40
         ZIndex: =2
 
-        Rectangle4 As rectangle:
-            Fill: =If(clickedMenu = ThisItem.MenuLabel, Color.Blue, Color.Transparent)
-            Height: =40
-            OnSelect: =Select(Parent)
-            Width: =170
-            Y: =5
-            ZIndex: =1
-
-        imageMenu As image:
-            Height: =25
-            Image: |-
-                =
-                If(clickedMenu = ThisItem.MenuLabel, ThisItem.MenuIconHover, ThisItem.MenuIcon)
-            OnSelect: =Select(Parent)
-            Width: =47
-            Y: =15
-            ZIndex: =2
-
-        menuLabel As label:
-            Color: =If(clickedMenu = ThisItem.MenuLabel, Color.White, Color.Black)
-            Font: =Font.Lato
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            LineHeight: =10
-            OnSelect: =Select(Parent)
-            Text: =ThisItem.MenuLabel
-            Width: =123
-            X: =47
-            Y: =5
-            ZIndex: =3
-
         "'2depthMenu' As gallery.variableTemplateHeightGallery":
             DelayItemLoading: =true
             Height: =If(clickedMenu = ThisItem.MenuLabel, CountRows(ThisItem.SubMenu)*40, 0)
@@ -155,7 +124,7 @@ MenuLeftNav As CanvasComponent:
             TemplateSize: =CountRows(ThisItem.SubMenu)*40
             Width: =Parent.Width
             Y: =45
-            ZIndex: =4
+            ZIndex: =1
 
             Image4 As image:
                 Height: =5
@@ -183,13 +152,44 @@ MenuLeftNav As CanvasComponent:
                 HoverFill: =Color.Transparent
                 OnSelect: |-
                     =Navigate(ThisItem.SubMenuScreenNavigate);
-                    Set(clickedMenu, ThisItem.ParentMenu);
+                    //Set(clickedMenu, ThisItem.ParentMenu);
                 PressedColor: =Color.Transparent
                 PressedFill: =Color.Transparent
                 Text: =""
                 Width: =154
                 X: =10
                 ZIndex: =3
+
+        Rectangle4 As rectangle:
+            Fill: =If(clickedMenu = ThisItem.MenuLabel, Color.Blue, Color.Transparent)
+            Height: =40
+            OnSelect: =Select(Parent)
+            Width: =170
+            Y: =5
+            ZIndex: =2
+
+        imageMenu As image:
+            Height: =25
+            Image: |-
+                =
+                If(clickedMenu = ThisItem.MenuLabel, ThisItem.MenuIconHover, ThisItem.MenuIcon)
+            OnSelect: =Select(Parent)
+            Width: =47
+            Y: =15
+            ZIndex: =3
+
+        menuLabel As label:
+            Color: =If(clickedMenu = ThisItem.MenuLabel, Color.White, Color.Black)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Bold
+            Height: =45
+            LineHeight: =10
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.MenuLabel
+            Width: =123
+            X: =47
+            Y: =5
+            ZIndex: =4
 
         Button1 As button:
             Fill: |
