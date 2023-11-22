@@ -5,6 +5,7 @@ main As screen:
             open,
             false
         );
+        Set(clickedMenu, "");
         ClearCollect(
             maindata,
             AddColumns(
