@@ -1,6 +1,6 @@
 Board As CanvasComponent:
     BoardData: |-
-        =Table({NOTICE_TITLE: "제목", REGI_DATE: "1999-01-01", REGI_ID: "이름"})
+        =Table({BOARD_TITLE: "제목", REGI_DATE: "1999-01-01", REGI_ID: "이름"})
     Fill: =RGBA(0, 0, 0, 0)
     hDate: ="생성일"
     Height: =640
@@ -33,8 +33,8 @@ Board As CanvasComponent:
                 Orderby,
                     "title",
                         If(OrderTitle,
-                            Sort(Parent.BoardData,NOTICE_TITLE),
-                            Sort(Parent.BoardData,NOTICE_TITLE,SortOrder.Descending)),
+                            Sort(Parent.BoardData,BOARD_TITLE),
+                            Sort(Parent.BoardData,BOARD_TITLE,SortOrder.Descending)),
                     "date",
                         If(OrderDate,
                             Sort(Parent.BoardData,REGI_DATE,SortOrder.Descending),
@@ -63,7 +63,7 @@ Board As CanvasComponent:
             PaddingRight: =0
             PaddingTop: =0
             PressedColor: =RGBA(255,0,0,100)
-            Text: =ThisItem.NOTICE_TITLE
+            Text: =ThisItem.BOARD_TITLE
             Width: =Parent.Width-400
             Y: =10
             ZIndex: =1
