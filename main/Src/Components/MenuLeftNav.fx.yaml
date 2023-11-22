@@ -170,7 +170,7 @@ MenuLeftNav As CanvasComponent:
                 Height: =26
                 OnSelect: =Select(Parent)
                 Size: =10
-                Text: =ThisItem.MenuLabel
+                Text: =ThisItem.SubMenuLabel
                 Width: =122
                 X: =20
                 Y: =4
@@ -182,7 +182,7 @@ MenuLeftNav As CanvasComponent:
                 HoverColor: =Color.Transparent
                 HoverFill: =Color.Transparent
                 OnSelect: |-
-                    =Navigate(ThisItem.MenuScreenNavigate);
+                    =Navigate(ThisItem.SubMenuScreenNavigate);
                     Set(clickedMenu, ThisItem.ParentMenu);
                 PressedColor: =Color.Transparent
                 PressedFill: =Color.Transparent

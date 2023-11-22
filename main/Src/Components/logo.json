@@ -66,7 +66,7 @@
         "Name": "Image1",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 159,
+        "PublishOrderIndex": 165,
         "Rules": [
           {
             "Category": "Data",
@@ -368,7 +368,7 @@
         "Name": "Button2",
         "Parent": "logo",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 160,
+        "PublishOrderIndex": 166,
         "Rules": [
           {
             "Category": "Data",
@@ -582,7 +582,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Navigate(logo.mainScreen);\r\n// clickedMenu\r\nSet(\r\n    open,\r\n    false\r\n);\r\n Set(clickedMenu, \"\");\r\n",
+            "InvariantScript": "Navigate(logo.mainScreen);\n// clickedMenu\n//Set(open, false );\n// Set(clickedMenu, \"\");\n",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -627,7 +627,7 @@
       "ZIndex",
       "mainScreen"
     ],
-    "LastModifiedTimestamp": "638362113468566939",
+    "LastModifiedTimestamp": "638362152729225441",
     "Name": "logo",
     "Rules": [
       {
@@ -702,7 +702,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362113468566939",
+  "LastModifiedTimestamp": "638362152729225441",
   "Name": "a948b10f5f274abc87a509964412f33c",
   "OverridableProperties": {},
   "Version": "1.0"

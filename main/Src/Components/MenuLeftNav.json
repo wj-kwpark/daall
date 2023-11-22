@@ -28,7 +28,7 @@
             "Name": "galleryTemplate3",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 162,
+            "PublishOrderIndex": 168,
             "Rules": [
               {
                 "Category": "Data",
@@ -99,7 +99,7 @@
             "Name": "Rectangle4",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 163,
+            "PublishOrderIndex": 169,
             "Rules": [
               {
                 "Category": "Design",
@@ -303,7 +303,7 @@
             "Name": "Button1",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 164,
+            "PublishOrderIndex": 170,
             "Rules": [
               {
                 "Category": "Data",
@@ -646,7 +646,7 @@
             "Name": "menuLabel",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 165,
+            "PublishOrderIndex": 171,
             "Rules": [
               {
                 "Category": "Data",
@@ -966,7 +966,7 @@
             "Name": "imageMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 166,
+            "PublishOrderIndex": 172,
             "Rules": [
               {
                 "Category": "Data",
@@ -1187,7 +1187,7 @@
                 "Name": "galleryTemplate5",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 168,
+                "PublishOrderIndex": 174,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1315,7 +1315,7 @@
                 "Name": "Button3",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 169,
+                "PublishOrderIndex": 175,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1529,7 +1529,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Navigate(ThisItem.MenuScreenNavigate);\r\nSet(clickedMenu, ThisItem.ParentMenu);",
+                    "InvariantScript": "Navigate(ThisItem.SubMenuScreenNavigate);\r\nSet(clickedMenu, ThisItem.ParentMenu);",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -1629,7 +1629,7 @@
                 "Name": "Label6",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 170,
+                "PublishOrderIndex": 176,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1639,7 +1639,7 @@
                   },
                   {
                     "Category": "Data",
-                    "InvariantScript": "ThisItem.MenuLabel",
+                    "InvariantScript": "ThisItem.SubMenuLabel",
                     "Property": "Text",
                     "RuleProviderType": "Unknown"
                   },
@@ -1957,7 +1957,7 @@
                 "Name": "Image4",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 171,
+                "PublishOrderIndex": 177,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2224,7 +2224,7 @@
             "Name": "2depthMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 167,
+            "PublishOrderIndex": 173,
             "Rules": [
               {
                 "Category": "Data",
@@ -2441,7 +2441,7 @@
         "Name": "1depthMenu",
         "Parent": "MenuLeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 161,
+        "PublishOrderIndex": 167,
         "Rules": [
           {
             "Category": "Data",
@@ -2628,7 +2628,7 @@
       "ZIndex",
       "MenuItems"
     ],
-    "LastModifiedTimestamp": "638362134888799007",
+    "LastModifiedTimestamp": "638362140178566941",
     "Name": "MenuLeftNav",
     "Rules": [
       {
@@ -2703,7 +2703,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362134888799007",
+  "LastModifiedTimestamp": "638362140178566941",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"
