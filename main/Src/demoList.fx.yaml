@@ -1,7 +1,7 @@
-masterPage As screen:
+demoList As screen:
     BackgroundImage: =bg_login
 
-    HtmlText4_6 As htmlViewer:
+    HtmlText4_7 As htmlViewer:
         Height: =707
         HtmlText: |
             ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
@@ -16,18 +16,18 @@ masterPage As screen:
         Y: =61
         ZIndex: =1
 
-    common_4 As group:
+    common_5 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =4
 
-        logo_6 As logo:
+        logo_7 As logo:
             mainScreen: =main
             ZIndex: =2
 
-        Header_6 As Header:
+        Header_7 As Header:
             Height: =61
             loginDate: =LoginDate
             logout: =loginScreen
@@ -35,15 +35,15 @@ masterPage As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_6 As MenuLeftNav:
-            Y: =160
+        MenuLeftNav_7 As MenuLeftNav:
+            Y: =128
             ZIndex: =4
 
-    pageTitle_4 As label:
+    pageTitle_5 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
-        Text: ="화면명"
-        Width: =185
+        Text: ="Demo Report"
+        Width: =259
         X: =245
         Y: =90
         ZIndex: =5

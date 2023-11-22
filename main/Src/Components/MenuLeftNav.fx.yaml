@@ -12,13 +12,13 @@ MenuLeftNav As CanvasComponent:
                 SubMenu: Table(
                     {
                         MenuLabel: "공지사항",
-                        MenuScreenNavigate: App.ActiveScreen,
+                        MenuScreenNavigate: Notice,
                         MenuID: 1,
                         ParentMenu: "자료실"
                     },
                     {
                         MenuLabel: "Demo Report",
-                        MenuScreenNavigate: App.ActiveScreen,
+                        MenuScreenNavigate: demoList,
                         MenuID: 2,
                         ParentMenu: "자료실"
                     }
@@ -55,14 +55,14 @@ MenuLeftNav As CanvasComponent:
                 MenuLabel: "보고서",
                 MenuIcon: icon_gnb_3,
                 MenuIconHover: icon_gnb_3_hover,
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: reportListScreen,
                 MenuID: 3
             },
             {
                 MenuLabel: "데이터",
                 MenuIcon: icon_gnb_4,
                 MenuIconHover: icon_gnb_4_hover,
-                MenuScreenNavigate: App.ActiveScreen,
+                MenuScreenNavigate: dataListScreen,
                 MenuID: 4
             },
             {
@@ -181,7 +181,9 @@ MenuLeftNav As CanvasComponent:
                 Height: =30
                 HoverColor: =Color.Transparent
                 HoverFill: =Color.Transparent
-                OnSelect: =Navigate(ThisItem.MenuScreenNavigate)
+                OnSelect: |-
+                    =Navigate(ThisItem.MenuScreenNavigate);
+                    Set(clickedMenu, ThisItem.ParentMenu);
                 PressedColor: =Color.Transparent
                 PressedFill: =Color.Transparent
                 Text: =""

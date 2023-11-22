@@ -136,6 +136,9 @@
     "authorityList",
     "userList",
     "dashboard",
-    "masterPage"
+    "masterPage",
+    "demoList",
+    "dataListScreen",
+    "reportListScreen"
   ]
 }

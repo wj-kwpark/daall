@@ -28,7 +28,7 @@
             "Name": "galleryTemplate3",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 149,
+            "PublishOrderIndex": 162,
             "Rules": [
               {
                 "Category": "Data",
@@ -99,7 +99,7 @@
             "Name": "Rectangle4",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 150,
+            "PublishOrderIndex": 163,
             "Rules": [
               {
                 "Category": "Design",
@@ -303,7 +303,7 @@
             "Name": "Button1",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 151,
+            "PublishOrderIndex": 164,
             "Rules": [
               {
                 "Category": "Data",
@@ -646,7 +646,7 @@
             "Name": "menuLabel",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 152,
+            "PublishOrderIndex": 165,
             "Rules": [
               {
                 "Category": "Data",
@@ -966,7 +966,7 @@
             "Name": "imageMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 153,
+            "PublishOrderIndex": 166,
             "Rules": [
               {
                 "Category": "Data",
@@ -1187,7 +1187,7 @@
                 "Name": "galleryTemplate5",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 155,
+                "PublishOrderIndex": 168,
                 "Rules": [
                   {
                     "Category": "Design",
@@ -1315,7 +1315,7 @@
                 "Name": "Button3",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 156,
+                "PublishOrderIndex": 169,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1529,7 +1529,7 @@
                   },
                   {
                     "Category": "Behavior",
-                    "InvariantScript": "Navigate(ThisItem.MenuScreenNavigate)",
+                    "InvariantScript": "Navigate(ThisItem.MenuScreenNavigate);\r\nSet(clickedMenu, ThisItem.ParentMenu);",
                     "Property": "OnSelect",
                     "RuleProviderType": "Unknown"
                   }
@@ -1629,7 +1629,7 @@
                 "Name": "Label6",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 157,
+                "PublishOrderIndex": 170,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -1957,7 +1957,7 @@
                 "Name": "Image4",
                 "Parent": "2depthMenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 158,
+                "PublishOrderIndex": 171,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -2224,7 +2224,7 @@
             "Name": "2depthMenu",
             "Parent": "1depthMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 154,
+            "PublishOrderIndex": 167,
             "Rules": [
               {
                 "Category": "Data",
@@ -2441,7 +2441,7 @@
         "Name": "1depthMenu",
         "Parent": "MenuLeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 148,
+        "PublishOrderIndex": 161,
         "Rules": [
           {
             "Category": "Data",
@@ -2635,12 +2635,12 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638362112334080467",
+    "LastModifiedTimestamp": "638362132119345473",
     "Name": "MenuLeftNav",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "Table(\n    {\n        MenuLabel: \"자료실\",\n        MenuIcon: icon_gnb_1,\n        MenuIconHover: icon_gnb_1_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 1,\n        SubMenu: Table(\n            {\n                MenuLabel: \"공지사항\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"자료실\"\n            },\n            {\n                MenuLabel: \"Demo Report\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"자료실\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"모니터링\",\n        MenuIcon: icon_gnb_2,\n        MenuIconHover: icon_gnb_2_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 2,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Azure\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"Microsoft365\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"PowerPlatform\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"모니터링\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"보고서\",\n        MenuIcon: icon_gnb_3,\n        MenuIconHover: icon_gnb_3_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 3\n    },\n    {\n        MenuLabel: \"데이터\",\n        MenuIcon: icon_gnb_4,\n        MenuIconHover: icon_gnb_4_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 4\n    },\n    {\n        MenuLabel: \"관리\",\n        MenuIcon: icon_gnb_5,\n        MenuIconHover: icon_gnb_5_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 5,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Dashboard\",\n                MenuScreenNavigate: dashboard,\n                MenuID: 1,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"내정보\",\n                MenuScreenNavigate: myinfo,\n                MenuID: 2,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"권한관리\",\n                MenuScreenNavigate: authorityList,\n                MenuID: 3,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"사용자관리\",\n                MenuScreenNavigate: userList,\n                MenuID: 4,\n                ParentMenu: \"관리\"\n            }\n        )\n    }\n)",
+        "InvariantScript": "Table(\n    {\n        MenuLabel: \"자료실\",\n        MenuIcon: icon_gnb_1,\n        MenuIconHover: icon_gnb_1_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 1,\n        SubMenu: Table(\n            {\n                MenuLabel: \"공지사항\",\n                MenuScreenNavigate: Notice,\n                MenuID: 1,\n                ParentMenu: \"자료실\"\n            },\n            {\n                MenuLabel: \"Demo Report\",\n                MenuScreenNavigate: demoList,\n                MenuID: 2,\n                ParentMenu: \"자료실\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"모니터링\",\n        MenuIcon: icon_gnb_2,\n        MenuIconHover: icon_gnb_2_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 2,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Azure\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 1,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"Microsoft365\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 2,\n                ParentMenu: \"모니터링\"\n            },\n            {\n                MenuLabel: \"PowerPlatform\",\n                MenuScreenNavigate: App.ActiveScreen,\n                MenuID: 3,\n                ParentMenu: \"모니터링\"\n            }\n        )\n    },\n    {\n        MenuLabel: \"보고서\",\n        MenuIcon: icon_gnb_3,\n        MenuIconHover: icon_gnb_3_hover,\n        MenuScreenNavigate: reportListScreen,\n        MenuID: 3\n    },\n    {\n        MenuLabel: \"데이터\",\n        MenuIcon: icon_gnb_4,\n        MenuIconHover: icon_gnb_4_hover,\n        MenuScreenNavigate: dataListScreen,\n        MenuID: 4\n    },\n    {\n        MenuLabel: \"관리\",\n        MenuIcon: icon_gnb_5,\n        MenuIconHover: icon_gnb_5_hover,\n        MenuScreenNavigate: App.ActiveScreen,\n        MenuID: 5,\n        SubMenu: Table(\n            {\n                MenuLabel: \"Dashboard\",\n                MenuScreenNavigate: dashboard,\n                MenuID: 1,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"내정보\",\n                MenuScreenNavigate: myinfo,\n                MenuID: 2,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"권한관리\",\n                MenuScreenNavigate: authorityList,\n                MenuID: 3,\n                ParentMenu: \"관리\"\n            },\n            {\n                MenuLabel: \"사용자관리\",\n                MenuScreenNavigate: userList,\n                MenuID: 4,\n                ParentMenu: \"관리\"\n            }\n        )\n    }\n)",
         "Property": "MenuItems",
         "RuleProviderType": "System"
       },
@@ -2710,7 +2710,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362112334080467",
+  "LastModifiedTimestamp": "638362132119345473",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

@@ -519,7 +519,7 @@
         {
           "Category": "Data",
           "PropertyName": "MenuItems",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
