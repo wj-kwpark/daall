@@ -2239,13 +2239,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1113",
+            "InvariantScript": "1128",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "611",
+            "InvariantScript": "707",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -2257,7 +2257,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "107",
+            "InvariantScript": "61",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -5011,7 +5011,7 @@
       "userId",
       "loginDate"
     ],
-    "LastModifiedTimestamp": "638362357808936999",
+    "LastModifiedTimestamp": "638362360041405618",
     "Name": "Base",
     "Rules": [
       {
@@ -5146,7 +5146,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362357808936999",
+  "LastModifiedTimestamp": "638362360041405618",
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"
