@@ -2,7 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "Children": [
       {
         "AllowAccessToGlobals": true,
@@ -2628,7 +2628,7 @@
       "ZIndex",
       "MenuItems"
     ],
-    "LastModifiedTimestamp": "638362157852374649",
+    "LastModifiedTimestamp": "638362257748025275",
     "Name": "MenuLeftNav",
     "Rules": [
       {
@@ -2676,7 +2676,7 @@
     ]
   },
   "ComponentManifest": {
-    "AllowAccessToGlobals": false,
+    "AllowAccessToGlobals": true,
     "AllowCustomization": true,
     "Description": "",
     "Name": "MenuLeftNav",
@@ -2703,7 +2703,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362157852374649",
+  "LastModifiedTimestamp": "638362257748025275",
   "Name": "2570a21a948c4045b9bca9f6ad47cd92",
   "OverridableProperties": {},
   "Version": "1.0"

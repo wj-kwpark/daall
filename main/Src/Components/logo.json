@@ -582,7 +582,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Navigate(logo.mainScreen);\n// clickedMenu\n//Set(open, false );\n// Set(clickedMenu, \"\");\n",
+            "InvariantScript": "Navigate(logo.mainScreen);\n// clickedMenu\n//Set(open, false );\nSet(clickedMenu, \"\");\n",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -627,7 +627,7 @@
       "ZIndex",
       "mainScreen"
     ],
-    "LastModifiedTimestamp": "638362152729225441",
+    "LastModifiedTimestamp": "638362258750431382",
     "Name": "logo",
     "Rules": [
       {
@@ -702,7 +702,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638362152729225441",
+  "LastModifiedTimestamp": "638362258750431382",
   "Name": "a948b10f5f274abc87a509964412f33c",
   "OverridableProperties": {},
   "Version": "1.0"

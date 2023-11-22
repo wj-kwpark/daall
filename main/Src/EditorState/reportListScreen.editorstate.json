@@ -426,7 +426,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": false,
+        "AllowAccessToGlobals": true,
         "AllowCustomization": true,
         "Description": ""
       },
