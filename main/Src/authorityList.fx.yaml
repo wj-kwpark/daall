@@ -58,39 +58,7 @@ authorityList As screen:
             )
         )
 
-    HtmlText4_1 As htmlViewer:
-        Height: =707
-        HtmlText: |
-            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
-            -webkit-backdrop-filter: blur(40px);
-            background-color: rgba(255, 255, 255, 0.4);
-            
-            border-radius: 30px 30px 30px 30px;
-            
-            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
-        Width: =1146
-        X: =220
-        Y: =61
-        ZIndex: =1
-
-    common_1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =4
-
-        logo_3 As logo:
-            mainScreen: =main
-            ZIndex: =2
-
-        Header_3 As Header:
-            Height: =61
-            loginDate: =LoginDate
-            logout: =loginScreen
-            userId: =User
-            X: =220
-            ZIndex: =3
+    Base_3 As Base:
 
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold
@@ -98,7 +66,7 @@ authorityList As screen:
         Text: ="권한관리"
         X: =245
         Y: =90
-        ZIndex: =5
+        ZIndex: =2
 
     Container7 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(214, 221, 224, 1)
@@ -114,7 +82,7 @@ authorityList As screen:
         Width: =1095
         X: =245
         Y: =141
-        ZIndex: =6
+        ZIndex: =3
 
         검색필드 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None

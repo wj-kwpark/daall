@@ -1,39 +1,7 @@
 myinfo As screen:
     BackgroundImage: =bg_login
 
-    HtmlText4_3 As htmlViewer:
-        Height: =707
-        HtmlText: |
-            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
-            -webkit-backdrop-filter: blur(40px);
-            background-color: rgba(255, 255, 255, 0.4);
-            
-            border-radius: 30px 30px 30px 30px;
-            
-            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
-        Width: =1146
-        X: =220
-        Y: =61
-        ZIndex: =1
-
-    common As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =4
-
-        logo_2 As logo:
-            mainScreen: =main
-            ZIndex: =2
-
-        Header_2 As Header:
-            Height: =61
-            loginDate: =LoginDate
-            logout: =loginScreen
-            userId: =User
-            X: =220
-            ZIndex: =3
+    Base_2 As Base:
 
     pageTitle As label:
         FontWeight: =FontWeight.Bold
@@ -41,7 +9,7 @@ myinfo As screen:
         Text: ="내 정보"
         X: =245
         Y: =90
-        ZIndex: =5
+        ZIndex: =2
 
     Container1 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(214, 221, 224, 1)
@@ -56,7 +24,7 @@ myinfo As screen:
         Width: =1080
         X: =245
         Y: =145
-        ZIndex: =6
+        ZIndex: =3
 
         리소스현황 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None

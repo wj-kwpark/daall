@@ -4,3 +4,234 @@ main2 As screen:
         loginDate: =Now()
         userId: =User
 
+    "'resource-count_1' As groupContainer.manualLayoutContainer":
+        DropShadow: =DropShadow.None
+        Height: =302
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =260
+        X: =220
+        Y: =86
+        ZIndex: =2
+
+        Container3_6 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 242, 255, 1)
+            Height: =93
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =260
+            ZIndex: =1
+
+            Image3_2 As image:
+                Height: =56
+                Image: =icon_report
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label3_2 As label:
+                Size: =10
+                Text: ="오늘의 보고서 조회수"
+                X: =5
+                ZIndex: =2
+
+            Label4_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('daall.url_history', user_id = User, url="/report/reportDetail",regi_date=Today()) & "건"
+                Width: =80
+                X: =17
+                Y: =40
+                ZIndex: =3
+
+        Container3_7 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(228, 231, 255, 1)
+            Height: =93
+            Width: =260
+            Y: =104
+            ZIndex: =2
+
+            Image6_2 As image:
+                Height: =56
+                Image: =bg_data
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label5_2 As label:
+                Size: =10
+                Text: ="보고서 개수"
+                X: =5
+                ZIndex: =2
+
+            Label7_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('nocode-test.report', OWNER_ID = User) & "건"
+                Width: =87
+                X: =19
+                Y: =36
+                ZIndex: =3
+
+        Container3_8 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 242, 255, 1)
+            Height: =93
+            Width: =260
+            Y: =209
+            ZIndex: =3
+
+            Image7_2 As image:
+                Height: =56
+                Image: =bg_graph
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label8_2 As label:
+                Size: =10
+                Text: ="데이터 개수"
+                X: =5
+                ZIndex: =2
+
+            Label9_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('nocode-test.data', OWNER_ID = User) & "건"
+                Width: =96
+                X: =16
+                Y: =40
+                ZIndex: =3
+
+    "'user-count-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =404
+        X: =504
+        Y: =86
+        ZIndex: =3
+
+        사용자조회수_1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            Title1_1 As label:
+                Align: =Align.Center
+                Height: =25
+                Text: ="차트 제목"
+                Width: =400
+                X: =4
+                Y: =40
+                ZIndex: =2
+
+            LineChart1_1 As lineChart:
+                Height: =302
+                Items: =LineChartSample
+                X: =4
+                ZIndex: =3
+
+            Legend1_1 As legend:
+                Height: =80
+                ItemColorSet: =LineChart1_1.ItemColorSet
+                Items: =LineChart1_1.SeriesLabels
+                Width: =320
+                X: =80
+                Y: =222
+                ZIndex: =4
+
+    "'report-count-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =401
+        X: =932
+        Y: =86
+        ZIndex: =4
+
+        CompositeColumnChart1_1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            Title2_1 As label:
+                Align: =Align.Center
+                Height: =25
+                Text: ="차트 제목"
+                Width: =400
+                X: =1
+                Y: =40
+                ZIndex: =2
+
+            ColumnChart1_1 As barChart:
+                GridStyle: =GridStyle.All
+                Height: =302
+                Items: =maindata_chart
+                ItemsGap: =2
+                Markers: =false
+                SeriesAxisMin: =0
+                Size: =CountRows(maindata_chart)
+                X: =1
+                ZIndex: =3
+
+            Legend2_1 As legend:
+                Height: =80
+                ItemColorSet: =ColumnChart1_1.ItemColorSet
+                Items: =ColumnChart1_1.SeriesLabels
+                Width: =320
+                X: =81
+                Y: =222
+                ZIndex: =4
+
+    "'report-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =260
+        X: =220
+        Y: =410
+        ZIndex: =5
+
+    "'data-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =260
+        X: =504
+        Y: =410
+        ZIndex: =6
+
+    "'demo-report_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =340
+        X: =788
+        Y: =410
+        ZIndex: =7
+
+    banner_1 As groupContainer.manualLayoutContainer:
+        Height: =175
+        Width: =187
+        X: =1146
+        Y: =410
+        ZIndex: =8
+
+    favority_1 As groupContainer.manualLayoutContainer:
+        Height: =113
+        Width: =89
+        X: =1146
+        Y: =599
+        ZIndex: =9
+
+    authority_1 As groupContainer.manualLayoutContainer:
+        Height: =113
+        Width: =83
+        X: =1250
+        Y: =599
+        ZIndex: =10
+

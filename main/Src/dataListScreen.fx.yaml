@@ -1,39 +1,7 @@
 dataListScreen As screen:
     BackgroundImage: =bg_login
 
-    HtmlText4_8 As htmlViewer:
-        Height: =707
-        HtmlText: |
-            ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
-            -webkit-backdrop-filter: blur(40px);
-            background-color: rgba(255, 255, 255, 0.4);
-            
-            border-radius: 30px 30px 30px 30px;
-            
-            box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
-        Width: =1146
-        X: =220
-        Y: =61
-        ZIndex: =1
-
-    common_6 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =4
-
-        logo_8 As logo:
-            mainScreen: =main
-            ZIndex: =2
-
-        Header_8 As Header:
-            Height: =61
-            loginDate: =LoginDate
-            logout: =loginScreen
-            userId: =User
-            X: =220
-            ZIndex: =3
+    Base_8 As Base:
 
     pageTitle_6 As label:
         FontWeight: =FontWeight.Bold
@@ -42,12 +10,5 @@ dataListScreen As screen:
         Width: =185
         X: =245
         Y: =90
-        ZIndex: =5
-
-    Button6 As button:
-        OnSelect: =Navigate(demoList);
-        Text: ="버튼"
-        X: =580
-        Y: =240
-        ZIndex: =6
+        ZIndex: =2
 

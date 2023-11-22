@@ -293,6 +293,7 @@ main As screen:
 
         logo_1 As logo:
             mainScreen: =main
+            Width: =239
             ZIndex: =2
 
         Header_1 As Header:
@@ -300,6 +301,7 @@ main As screen:
             loginDate: =LoginDate
             logout: =loginScreen
             userId: =User
+            Width: =1146
             X: =220
             ZIndex: =3
 

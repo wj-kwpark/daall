@@ -298,7 +298,7 @@ Base As CanvasComponent:
             ZIndex: =9
 
     HtmlText4_13 As htmlViewer:
-        Height: =707
+        Height: =690
         HtmlText: |
             ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
             -webkit-backdrop-filter: blur(40px);
@@ -307,8 +307,8 @@ Base As CanvasComponent:
             border-radius: 30px 30px 30px 30px;
             
             box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
-        Width: =1128
-        X: =220
+        Width: =1139
+        X: =208
         Y: =61
         ZIndex: =10
 
