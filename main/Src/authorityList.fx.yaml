@@ -1,6 +1,6 @@
 authorityList As screen:
     BackgroundImage: =bg_login
-    OnVisible: |
+    OnVisible: |-
         =ClearCollect(
             dataList,
             AddColumns(
@@ -50,7 +50,13 @@ authorityList As screen:
             dataList,
             reportList
         );
-        ClearCollect(authorityListdata, SortByColumns(authoritydata,"REGI_DATE"))
+        ClearCollect(
+            authorityListdata,
+            SortByColumns(
+                authoritydata,
+                "REGI_DATE"
+            )
+        )
 
     HtmlText4_1 As htmlViewer:
         Height: =707

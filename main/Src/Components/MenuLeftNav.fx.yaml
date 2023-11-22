@@ -92,7 +92,7 @@ MenuLeftNav As CanvasComponent:
                     },
                     {
                         SubMenuLabel: "사용자관리",
-                        SubMenuScreenNavigate: userList,
+                        SubMenuScreenNavigate: testscreen,
                         SubMenuID: 4,
                         ParentMenu: "관리"
                     }

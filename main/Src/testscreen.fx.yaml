@@ -1,7 +1,7 @@
-dataListScreen As screen:
+testscreen As screen:
     BackgroundImage: =bg_login
 
-    HtmlText4_8 As htmlViewer:
+    HtmlText4_10 As htmlViewer:
         Height: =707
         HtmlText: |
             ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
@@ -16,18 +16,18 @@ dataListScreen As screen:
         Y: =61
         ZIndex: =1
 
-    common_6 As group:
+    common_8 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =4
 
-        logo_8 As logo:
+        logo_10 As logo:
             mainScreen: =main
             ZIndex: =2
 
-        Header_8 As Header:
+        Header_10 As Header:
             Height: =61
             loginDate: =LoginDate
             logout: =loginScreen
@@ -35,23 +35,16 @@ dataListScreen As screen:
             X: =220
             ZIndex: =3
 
-        MenuLeftNav_8 As MenuLeftNav:
+        MenuLeftNav_10 As MenuLeftNav:
             Y: =128
             ZIndex: =4
 
-    pageTitle_6 As label:
+    pageTitle_8 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
-        Text: ="데이터"
+        Text: ="테스트 화면"
         Width: =185
         X: =245
         Y: =90
         ZIndex: =5
-
-    Button6 As button:
-        OnSelect: =Navigate(demoList);
-        Text: ="버튼"
-        X: =580
-        Y: =240
-        ZIndex: =6
 
