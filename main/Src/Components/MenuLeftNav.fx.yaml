@@ -198,6 +198,7 @@ MenuLeftNav As CanvasComponent:
             OnSelect: |
                 = Set(open, !open);
                  Set(clickedMenu, ThisItem.MenuLabel);
+                 Navigate(ThisItem.MenuScreenNavigate);
             PressedFill: =Color.Transparent
             Text: =""
             Width: =170
