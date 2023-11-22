@@ -21,7 +21,13 @@ logo As CanvasComponent:
         Height: =70
         HoverColor: =Color.Transparent
         HoverFill: =Color.Transparent
-        OnSelect: =Navigate(logo.mainScreen)
+        OnSelect: |-
+            =Navigate(logo.mainScreen);
+            // clickedMenu
+            Set(
+                open,
+                false
+            );
         PressedColor: =Color.Transparent
         PressedFill: =Color.Transparent
         Text: =""
