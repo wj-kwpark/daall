@@ -19,6 +19,8 @@ Notice As screen:
         );
 
     Base_10 As Base:
+        logout: =loginScreen
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     BoardNotice As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
