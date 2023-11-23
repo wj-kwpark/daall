@@ -6527,7 +6527,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Series\":\"myReport\",\"Labels\":\"myReport\"}",
+          "NameMap": "{\"Series\":\"shareReport\",\"Labels\":\"shareReport\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
