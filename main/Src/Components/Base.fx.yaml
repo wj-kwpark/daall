@@ -280,10 +280,14 @@ Base As CanvasComponent:
 
         Container4_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.ExtraBold
-            Height: =659
-            Width: =1267
-            X: =49
-            Y: =50
+            Height: =691
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =1294
+            X: =36
+            Y: =35
             ZIndex: =2
 
         HtmlText4_18 As htmlViewer:
@@ -310,8 +314,8 @@ Base As CanvasComponent:
                 
                 border-radius: 30px 30px 0px 0px;
                 '> </div>"
-            Width: =1305
-            X: =28
+            Width: =1243
+            X: =92
             Y: =27
             ZIndex: =4
 
@@ -326,8 +330,8 @@ Base As CanvasComponent:
         Container6_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.ExtraBold
             Height: =691
-            Width: =19
-            X: =194
+            Width: =2
+            X: =213
             Y: =35
             ZIndex: =6
 
