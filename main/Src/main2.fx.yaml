@@ -344,8 +344,8 @@ main2 As screen:
             Height: =42
             Text: ="전체보고서"
             Width: =109
-            X: =82
-            Y: =94
+            X: =85
+            Y: =96
             ZIndex: =3
 
         Label16_7 As label:
