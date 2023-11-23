@@ -61,14 +61,14 @@ main2 As screen:
         ClearCollect(
             reportStatus,
             {
-                보고서: CountRows(reportCnt),
-                공유보고서: CountRows(shareReportCnt)
+                myReport: CountRows(reportCnt),
+                shareReport: CountRows(shareReportCnt)
             }
         );
         ClearCollect(
             reportStatusChart,
             {
-                보고서현황:reportStatus
+                reportStatus:reportStatus
             }
         );
 
@@ -289,7 +289,7 @@ main2 As screen:
 
             PieChart1 As pieChart:
                 Height: =214
-                Items: =reportStatus
+                Items: =reportStatusChart
                 Width: =224
                 X: =18
                 Y: =40
