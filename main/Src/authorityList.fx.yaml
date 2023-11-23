@@ -61,6 +61,7 @@ authorityList As screen:
     Base_3 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =User
 
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold

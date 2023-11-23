@@ -4,6 +4,7 @@ userList As screen:
     Base_4 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =User
 
     pageTitle_2 As label:
         FontWeight: =FontWeight.Bold

@@ -32,6 +32,39 @@ main2 As screen:
                 7
             )
         );
+        
+        ClearCollect(
+            reportCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.report',
+                    OWNER_ID = User,
+                    REPORT_TITLE <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            shareReportCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.share_authority',
+                    USER_ID = User,
+                    RESOURCE_TYPE = "보고서",
+                    RESOURCE_NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            reportStatus,
+            {
+                myReport: CountRows(reportCnt),
+                shareReport: CountRows(shareReportCnt)
+            }
+        );
 
     Base_1 As Base:
         loginDate: =Now()

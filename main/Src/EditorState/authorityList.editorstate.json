@@ -134,7 +134,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "userId",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"텍스트\"",
+          "InvariantPropertyName": "userId",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "loginDate"
       ],
       "HasDynamicProperties": false,
@@ -173,7 +180,7 @@
         {
           "Category": "Data",
           "PropertyName": "userId",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

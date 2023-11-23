@@ -4,6 +4,7 @@ demoList As screen:
     Base_7 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =User
 
     pageTitle_5 As label:
         FontWeight: =FontWeight.Bold

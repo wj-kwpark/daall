@@ -4,6 +4,7 @@ reportListScreen As screen:
     Base_9 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =User
 
     pageTitle_7 As label:
         FontWeight: =FontWeight.Bold
