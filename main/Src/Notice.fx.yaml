@@ -212,12 +212,12 @@ Notice As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =Color.White
-        Height: =577
+        Height: =568
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
-        Width: =1092
+        Width: =1086
         X: =232
         Y: =141
         ZIndex: =5
