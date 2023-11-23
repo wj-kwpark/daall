@@ -1,5 +1,5 @@
 dataListScreen As screen:
-    BackgroundImage: =bg_login
+    BackgroundImage: =
 
     Base_8 As Base:
         logout: =loginScreen

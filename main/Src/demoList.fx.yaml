@@ -1,5 +1,5 @@
 demoList As screen:
-    BackgroundImage: =bg_login
+    BackgroundImage: =
 
     Base_7 As Base:
         logout: =loginScreen
