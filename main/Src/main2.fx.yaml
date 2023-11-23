@@ -85,7 +85,7 @@ main2 As screen:
         RadiusTopRight: =0
         Width: =260
         X: =220
-        Y: =86
+        Y: =97
         ZIndex: =2
 
         Container3_6 As groupContainer.manualLayoutContainer:
@@ -185,10 +185,10 @@ main2 As screen:
                 ZIndex: =3
 
     "'user-count-chart_1' As groupContainer.manualLayoutContainer":
-        Height: =302
-        Width: =404
+        Height: =291
+        Width: =397
         X: =504
-        Y: =86
+        Y: =97
         ZIndex: =3
 
         사용자조회수_1 As group:
@@ -223,10 +223,10 @@ main2 As screen:
                 ZIndex: =4
 
     "'report-count-chart_1' As groupContainer.manualLayoutContainer":
-        Height: =302
-        Width: =401
-        X: =932
-        Y: =86
+        Height: =290
+        Width: =403
+        X: =918
+        Y: =97
         ZIndex: =4
 
         CompositeColumnChart1_1 As group:
@@ -425,7 +425,7 @@ main2 As screen:
         Fill: =RGBA(228, 231, 255, 1)
         Height: =175
         Width: =187
-        X: =1146
+        X: =1136
         Y: =410
         ZIndex: =8
 
@@ -457,7 +457,7 @@ main2 As screen:
         Fill: =RGBA(232, 248, 255, 1)
         Height: =113
         Width: =89
-        X: =1146
+        X: =1138
         Y: =599
         ZIndex: =9
 
@@ -480,7 +480,7 @@ main2 As screen:
         Fill: =RGBA(232, 248, 255, 1)
         Height: =113
         Width: =83
-        X: =1250
+        X: =1238
         Y: =599
         ZIndex: =10
 
