@@ -337,6 +337,7 @@ Notice As screen:
                 ZIndex: =10
 
             "startDate As '날짜 선택'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
