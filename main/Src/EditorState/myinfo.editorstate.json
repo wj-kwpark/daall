@@ -561,7 +561,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle2_2",
-      "ParentIndex": 7,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -673,7 +673,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle3_4",
-      "ParentIndex": 2,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -785,7 +785,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle3_5",
-      "ParentIndex": 3,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2896,7 +2896,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label16_4",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3172,7 +3172,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label16_5",
-      "ParentIndex": 6,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3448,7 +3448,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label17_4",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3724,7 +3724,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label17_5",
-      "ParentIndex": 1,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5979,7 +5979,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PieChart1_2",
-      "ParentIndex": 8,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6132,7 +6132,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle3_2",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6285,7 +6285,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Title3_2",
-      "ParentIndex": 9,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6696,7 +6696,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "데이터현황",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7085,7 +7085,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "보고서현황",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

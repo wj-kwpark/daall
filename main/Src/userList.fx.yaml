@@ -21,14 +21,14 @@ userList As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =Color.White
-        Height: =569
+        Height: =577
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
-        Width: =1095
-        X: =265
-        Y: =161
+        Width: =1083
+        X: =236
+        Y: =140
         ZIndex: =3
 
         검색필드_1 As groupContainer.manualLayoutContainer:

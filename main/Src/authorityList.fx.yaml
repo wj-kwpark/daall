@@ -83,8 +83,8 @@ authorityList As screen:
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =1095
-        X: =245
-        Y: =141
+        X: =227
+        Y: =130
         ZIndex: =3
 
         검색필드 As groupContainer.manualLayoutContainer:
