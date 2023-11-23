@@ -1,18 +1,11 @@
 {
   "ControlStates": {
     "Board": {
-      "AllowAccessToGlobals": true,
+      "AllowAccessToGlobals": false,
       "ControlPropertyState": [
         "Fill",
         "Height",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Width",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Width",
         "X",
         "Y",
         "ZIndex",
@@ -71,7 +64,7 @@
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",

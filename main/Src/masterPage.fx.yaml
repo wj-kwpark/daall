@@ -4,6 +4,7 @@ masterPage As screen:
     Base_6 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =User
 
     pageTitle_4 As label:
         FontWeight: =FontWeight.Bold
