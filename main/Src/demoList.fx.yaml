@@ -13,20 +13,19 @@ demoList As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =4
-        TemplateSize: =254
-        Width: =1072
+        TemplateSize: =257
+        Width: =1066
         WrapCount: =3
-        X: =245
+        X: =237
         Y: =226
         ZIndex: =1
 
         PowerBI2 As powerbi:
-            Height: =222
+            Height: =212
             OnSelect: =Select(Parent)
             TileUrl: |-
                 ="https://app.powerbi.com/reportEmbed?reportId=" & ThisItem.REPORT_ID & "&autoAuth=true&ctid=a7da4436-e498-4245-8b58-1e0554afa193"
-            Width: =351
-            X: =10
+            Width: =345
             ZIndex: =1
 
         Label6 As label:
@@ -34,9 +33,9 @@ demoList As screen:
             Height: =45
             OnSelect: =Select(Parent)
             Text: =ThisItem.REPORT_TITLE
-            Width: =358.3333333333333
-            X: =10
-            Y: =233
+            Width: =349
+            X: =1
+            Y: =212
             ZIndex: =2
 
     pageTitle_5 As label:
