@@ -287,21 +287,6 @@ main2 As screen:
             Y: =40
             ZIndex: =8
 
-            Title3 As label:
-                FontWeight: =FontWeight.Bold
-                Height: =25
-                Size: =12
-                Text: ="   보고서 현황"
-                Width: =260
-                Y: =15
-                ZIndex: =2
-
-            PieChart1 As pieChart:
-                Height: =270
-                Items: =reportStatus
-                Width: =260
-                ZIndex: =3
-
             Circle2 As circle:
                 Fill: =Color.White
                 Height: =121
