@@ -62,7 +62,7 @@ main2 As screen:
             reportStatus,
             {
                 myReport: CountRows(reportCnt),
-                shareReport: CountRows(shareReportCnt)
+                shareReport: 2//CountRows(shareReportCnt)
             }
         );
         ClearCollect(
@@ -289,7 +289,7 @@ main2 As screen:
 
             PieChart1 As pieChart:
                 Height: =214
-                Items: =reportStatusChart
+                Items: =reportStatus
                 Width: =224
                 X: =18
                 Y: =40
