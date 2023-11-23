@@ -291,7 +291,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/23/2023 02:14:15",
+  "HeaderLastSavedDateTimeUTC": "11/23/2023 02:25:42",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -386,8 +386,9 @@
     "PieChartSample": 6,
     "reportCnt": 20,
     "reportList": 16,
-    "reportStatus": 22,
-    "shareReportCnt": 21
+    "reportStatus": 23,
+    "reportStatusChart": 21,
+    "shareReportCnt": 22
   },
   "OrderGroupControls": {
     "base_header": {

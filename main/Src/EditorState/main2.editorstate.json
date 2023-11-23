@@ -352,7 +352,14 @@
         "ZIndex",
         "MenuItems",
         "mainScreen",
-        "logout",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "App.ActiveScreen",
+          "InvariantPropertyName": "logout",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -401,7 +408,7 @@
         {
           "Category": "Data",
           "PropertyName": "logout",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -6478,7 +6485,14 @@
     "PieChart1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "PieChartSample",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ItemColorSet",
         "LabelPosition",
         "ItemBorderColor",
@@ -6513,7 +6527,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Labels\":\"City\",\"Series\":\"Area\"}",
+          "NameMap": "{\"Series\":\"myReport\",\"Labels\":\"myReport\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
