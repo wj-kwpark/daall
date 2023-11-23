@@ -219,12 +219,6 @@ myinfo As screen:
                     Y: =17
                     ZIndex: =2
 
-                PieChart1_2 As pieChart:
-                    Height: =302
-                    Items: =reportStatus
-                    Width: =360
-                    ZIndex: =3
-
                 Circle2_2 As circle:
                     Fill: =Color.White
                     Height: =143
@@ -285,6 +279,66 @@ myinfo As screen:
                 Y: =277
                 ZIndex: =12
 
+            Chart_4 As Chart:
+                Data: |
+                    ={
+                        legends: ["Test 1", "Test 1"],
+                        labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
+                        table: Table(
+                            {key:"values", values:[CountRows(reportCnt),CountRows(shareReportCnt)]}
+                        )
+                    }
+                Height: =216
+                Legend: |-
+                    ={
+                        enabled: false,
+                        source: "labels",
+                        placement: "bottom",
+                        width: 100,
+                        height: 45,
+                        itemGap: 5,
+                        fontSize: 14,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#666666",
+                        align: "center"
+                    }
+                Options: |-
+                    =Table(
+                        {key:"pie.innerRadius",value:"0.7"},{key:"pie.dataLabels", value:"false"}
+                    )
+                Subtitle: |-
+                    ={
+                        text: "",
+                        height: 0,
+                        align: "center",
+                        paddingTop: 0,
+                        fontSize: 12,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#808080",
+                        additionalStyles: ""
+                    }
+                Title: |-
+                    ={
+                        text: "",
+                        height: 0,
+                        align: "center",
+                        paddingTop: 0,
+                        fontSize: 20,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#666666",
+                        additionalStyles: ""
+                    }
+                Width: =193
+                X: =79
+                Y: =32
+                ZIndex: =13
+
         데이터현황 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
             Height: =302
@@ -297,35 +351,62 @@ myinfo As screen:
             Y: =230
             ZIndex: =4
 
-            CompositePieChart1 As group:
-                Height: =5
-                Width: =5
-                X: =40
-                Y: =40
-                ZIndex: =1
-
-                Title3 As label:
-                    FontWeight: =FontWeight.Bold
-                    Height: =25
-                    Size: =12
-                    Text: ="   데이터 현황"
-                    Width: =360
-                    Y: =12
-                    ZIndex: =2
-
-                PieChart1 As pieChart:
-                    Height: =302
-                    Items: =reportStatus
-                    Width: =360
-                    ZIndex: =3
-
-                Legend3 As legend:
-                    Height: =50
-                    ItemColorSet: =PieChart1.ItemColorSet
-                    Items: =PieChart1.SeriesLabels
-                    Size: =9
-                    Width: =133
-                    X: =227
-                    Y: =12
-                    ZIndex: =4
+            Chart_2 As Chart:
+                Data: |-
+                    ={
+                        legends: ["Test 1", "Test 1"],
+                        labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
+                        table: Table(
+                            {key:"values", values:[90, 20]}
+                        )
+                    }
+                Height: =216
+                Legend: |-
+                    ={
+                        enabled: false,
+                        source: "labels",
+                        placement: "bottom",
+                        width: 100,
+                        height: 45,
+                        itemGap: 5,
+                        fontSize: 14,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#666666",
+                        align: "center"
+                    }
+                Options: |-
+                    =Table(
+                        {key:"pie.innerRadius",value:"0.7"},{key:"pie.dataLabels", value:"false"}
+                    )
+                Subtitle: |-
+                    ={
+                        text: "",
+                        height: 0,
+                        align: "center",
+                        paddingTop: 0,
+                        fontSize: 12,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#808080",
+                        additionalStyles: ""
+                    }
+                Title: |-
+                    ={
+                        text: "",
+                        height: 0,
+                        align: "center",
+                        paddingTop: 0,
+                        fontSize: 20,
+                        fontFamily: "",
+                        fontWeight: "bold",
+                        fontStyle: "normal",
+                        color: "#666666",
+                        additionalStyles: ""
+                    }
+                Width: =193
+                X: =79
+                Y: =32
 
