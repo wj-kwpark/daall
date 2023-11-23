@@ -272,6 +272,8 @@ main2 As screen:
         ZIndex: =5
 
         Chart_1 As Chart:
+            Colors: |-
+                =["#CCCCFF", "#30a667", "#5ec16c", "#f6c790", "#f7c772", "#f7b45b", "#f68f64", "#d46068", "#946eb0", "#769acc", "#60c5ea"]
             Data: |
                 ={
                     legends: ["Test 1", "Test 1"],
@@ -408,6 +410,8 @@ main2 As screen:
         ZIndex: =6
 
         Chart_3 As Chart:
+            Colors: |-
+                =["#CCE5FF", "#30a667", "#5ec16c", "#f6c790", "#f7c772", "#f7b45b", "#f68f64", "#d46068", "#946eb0", "#769acc", "#60c5ea"]
             Data: |
                 ={
                     legends: ["Test 1", "Test 1"],

@@ -498,7 +498,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Colors",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "[\"#31825d\", \"#30a667\", \"#5ec16c\", \"#f6c790\", \"#f7c772\", \"#f7b45b\", \"#f68f64\", \"#d46068\", \"#946eb0\", \"#769acc\", \"#60c5ea\"]",
+          "InvariantPropertyName": "Colors",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -555,7 +562,7 @@
         {
           "Category": "Data",
           "PropertyName": "Colors",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -664,7 +671,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Colors",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "[\"#31825d\", \"#30a667\", \"#5ec16c\", \"#f6c790\", \"#f7c772\", \"#f7b45b\", \"#f68f64\", \"#d46068\", \"#946eb0\", \"#769acc\", \"#60c5ea\"]",
+          "InvariantPropertyName": "Colors",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -721,7 +735,7 @@
         {
           "Category": "Data",
           "PropertyName": "Colors",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
