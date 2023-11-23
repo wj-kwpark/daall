@@ -85,15 +85,6 @@ main As screen:
         Y: =61
         ZIndex: =1
 
-    Header_1 As Header:
-        Height: =61
-        loginDate: =LoginDate
-        logout: =loginScreen
-        userId: =User
-        Width: =1146
-        X: =220
-        ZIndex: =3
-
     "'resource-count' As groupContainer.manualLayoutContainer":
         DropShadow: =DropShadow.None
         Height: =302
