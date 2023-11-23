@@ -108,6 +108,12 @@ Base As CanvasComponent:
     Y: =0
     ZIndex: =1
 
+    Image1 As image:
+        Height: =768
+        Image: =bg_login
+        Width: =1366
+        ZIndex: =1
+
     "'1depthMenu' As gallery.variableTemplateHeightGallery":
         DelayItemLoading: =true
         Height: =536
@@ -241,7 +247,7 @@ Base As CanvasComponent:
             Width: =70
             X: =90
             Y: =69
-            ZIndex: =16
+            ZIndex: =9
 
         Button2_1 As button:
             Fill: =Color.Transparent
@@ -255,7 +261,7 @@ Base As CanvasComponent:
             Width: =70
             X: =90
             Y: =69
-            ZIndex: =18
+            ZIndex: =10
 
     Group3_1 As group:
         Height: =5
@@ -345,7 +351,7 @@ Base As CanvasComponent:
             Width: =49
             X: =1242
             Y: =58
-            ZIndex: =19
+            ZIndex: =11
 
         loginId_1 As label:
             Color: =Color.Black
@@ -354,7 +360,7 @@ Base As CanvasComponent:
             Width: =118
             X: =975
             Y: =53
-            ZIndex: =20
+            ZIndex: =12
 
         Icon1_1 As icon.Person:
             Height: =33
@@ -362,7 +368,7 @@ Base As CanvasComponent:
             Width: =33
             X: =921
             Y: =56
-            ZIndex: =22
+            ZIndex: =13
 
         loginDate_1 As label:
             Height: =41
@@ -370,5 +376,5 @@ Base As CanvasComponent:
             Text: =Base.loginDate
             X: =1071
             Y: =52
-            ZIndex: =23
+            ZIndex: =14
 
