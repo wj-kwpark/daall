@@ -213,7 +213,6 @@
     "Legend1": 249,
     "Legend1_1": 280,
     "Legend2": 254,
-    "Legend2_1": 285,
     "Line": 58,
     "LineChart1": 247,
     "LineChart1_1": 278,
@@ -323,7 +322,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:59:06",
+  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:59:53",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -436,7 +435,6 @@
     },
     "CompositeColumnChart1_1": {
       "ColumnChart1_1": 1,
-      "Legend2_1": 2,
       "Title2_1": 0
     },
     "Group2_2": {
@@ -690,7 +688,6 @@
     "Legend1": {},
     "Legend1_1": {},
     "Legend2": {},
-    "Legend2_1": {},
     "Line": {},
     "LineChart1": {},
     "LineChart1_1": {},
@@ -1029,7 +1026,6 @@
     "Legend1": 31,
     "Legend1_1": 193,
     "Legend2": 36,
-    "Legend2_1": 198,
     "Line": 273,
     "LineChart1": 29,
     "LineChart1_1": 191,

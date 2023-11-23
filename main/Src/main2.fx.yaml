@@ -256,15 +256,6 @@ main2 As screen:
                 X: =1
                 ZIndex: =3
 
-            Legend2_1 As legend:
-                Height: =80
-                ItemColorSet: =ColumnChart1_1.ItemColorSet
-                Items: =ColumnChart1_1.SeriesLabels
-                Width: =320
-                X: =81
-                Y: =222
-                ZIndex: =4
-
     "'report-chart_1' As groupContainer.manualLayoutContainer":
         Height: =302
         Width: =260
