@@ -241,7 +241,6 @@
     "PieChart1": 112,
     "PieChart1_2": 99,
     "PlotArea": 59,
-    "PowerBI1": 299,
     "PowerBI2": 211,
     "pw": 225,
     "Radar": 57,
@@ -321,7 +320,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:12:05",
+  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:18:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -727,7 +726,6 @@
     "PieChart1": {},
     "PieChart1_2": {},
     "PlotArea": {},
-    "PowerBI1": {},
     "PowerBI2": {},
     "pw": {},
     "Radar": {},
@@ -1068,7 +1066,6 @@
     "PieChart1": 249,
     "PieChart1_2": 237,
     "PlotArea": 56,
-    "PowerBI1": 202,
     "PowerBI2": 113,
     "pw": 125,
     "Radar": 54,
@@ -1178,7 +1175,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.8016653,
     "ControlCount": {
-      "11eb2bdcb8cc446f936b6a174302ce25": 2,
+      "11eb2bdcb8cc446f936b6a174302ce25": 4,
       "38097c16f9cd48fa817505f586307ac2": 1,
       "53f8dd07d50e4ecaa8c204a0dff0e111": 1,
       "78d8d2ba61154f049ae7020ce77c25f6": 2,

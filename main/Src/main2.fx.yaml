@@ -414,13 +414,6 @@ main2 As screen:
         Y: =410
         ZIndex: =7
 
-        PowerBI1 As powerbi:
-            Height: =302
-            TileUrl: |-
-                ="https://app.powerbi.com/reportEmbed?reportId=53b77b0a-37cf-4904-ac3c-3e6f71fd1780&autoAuth=true&ctid=a7da4436-e498-4245-8b58-1e0554afa193"
-            Width: =340
-            ZIndex: =1
-
     banner_1 As groupContainer.manualLayoutContainer:
         Fill: =RGBA(228, 231, 255, 1)
         Height: =175
