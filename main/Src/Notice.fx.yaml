@@ -203,7 +203,7 @@ Notice As screen:
         Size: =24
         Text: ="공지사항"
         X: =246
-        Y: =136
+        Y: =118
         ZIndex: =4
 
     Container7_2 As groupContainer.manualLayoutContainer:
@@ -212,14 +212,14 @@ Notice As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =Color.White
-        Height: =516
+        Height: =537
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =1086
         X: =232
-        Y: =192
+        Y: =171
         ZIndex: =5
 
         검색필드_2 As groupContainer.manualLayoutContainer:

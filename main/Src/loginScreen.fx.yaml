@@ -85,6 +85,14 @@ loginScreen As screen:
             }
         ))
 
+    Container4_2 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.ExtraBold
+        Height: =596
+        Width: =1204
+        X: =75
+        Y: =108
+        ZIndex: =1
+
     HtmlText4 As htmlViewer:
         Height: =639
         HtmlText: |
@@ -98,7 +106,7 @@ loginScreen As screen:
         Width: =1231
         X: =62
         Y: =92
-        ZIndex: =1
+        ZIndex: =2
 
     Container2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
@@ -110,7 +118,7 @@ loginScreen As screen:
         Width: =958
         X: =176
         Y: =108
-        ZIndex: =2
+        ZIndex: =3
 
         id As text:
             BorderThickness: =0

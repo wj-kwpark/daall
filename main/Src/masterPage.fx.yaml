@@ -4,6 +4,7 @@ masterPage As screen:
     Base_6 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     pageTitle_4 As label:
         FontWeight: =FontWeight.Bold

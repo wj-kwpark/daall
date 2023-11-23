@@ -9,7 +9,7 @@ myinfo As screen:
         Size: =24
         Text: ="내 정보"
         X: =245
-        Y: =90
+        Y: =108
         ZIndex: =2
 
     Container1 As groupContainer.manualLayoutContainer:
