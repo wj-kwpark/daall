@@ -297,3 +297,35 @@ myinfo As screen:
             Y: =230
             ZIndex: =4
 
+            CompositePieChart1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =1
+
+                Title3 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =25
+                    Size: =12
+                    Text: ="   데이터 현황"
+                    Width: =360
+                    Y: =12
+                    ZIndex: =2
+
+                PieChart1 As pieChart:
+                    Height: =302
+                    Items: =reportStatus
+                    Width: =360
+                    ZIndex: =3
+
+                Legend3 As legend:
+                    Height: =50
+                    ItemColorSet: =PieChart1.ItemColorSet
+                    Items: =PieChart1.SeriesLabels
+                    Size: =9
+                    Width: =133
+                    X: =227
+                    Y: =12
+                    ZIndex: =4
+
