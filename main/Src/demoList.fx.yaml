@@ -38,6 +38,18 @@ demoList As screen:
             Y: =212
             ZIndex: =2
 
+        Button1 As button:
+            DisabledFill: =Color.Transparent
+            Fill: =Color.Transparent
+            Height: =212
+            HoverFill: =Color.Transparent
+            OnSelect: =Select(Parent)
+            PressedFill: =Color.Transparent
+            Text: =""
+            Width: =349
+            X: =1
+            ZIndex: =3
+
     pageTitle_5 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
