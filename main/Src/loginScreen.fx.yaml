@@ -240,6 +240,7 @@ loginScreen As screen:
 
         "'Button-Demo' As button":
             Fill: =RGBA(0, 0, 0, 1)
+            OnSelect: =Navigate(demoList)
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20

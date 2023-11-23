@@ -67,8 +67,8 @@ authorityList As screen:
         FontWeight: =FontWeight.Bold
         Size: =24
         Text: ="권한관리"
-        X: =245
-        Y: =120
+        X: =235
+        Y: =104
         ZIndex: =2
 
     Container7 As groupContainer.manualLayoutContainer:
