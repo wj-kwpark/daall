@@ -7,6 +7,7 @@
     "Chart_2": 14,
     "Chart_3": 14,
     "Chart_4": 14,
+    "Chart_5": 14,
     "GanttChart": 15,
     "gnb-boundary": 16,
     "Header": 17
@@ -63,6 +64,7 @@
     "Chart_2": 321,
     "Chart_3": 323,
     "Chart_4": 326,
+    "Chart_5": 328,
     "Circle1": 81,
     "Circle2_2": 101,
     "Circle3_4": 107,
@@ -321,7 +323,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:32:25",
+  "HeaderLastSavedDateTimeUTC": "11/23/2023 08:42:49",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -539,6 +541,7 @@
     "Chart_2": {},
     "Chart_3": {},
     "Chart_4": {},
+    "Chart_5": {},
     "Circle1": {},
     "Circle2_2": {},
     "Circle3_4": {},
@@ -877,6 +880,7 @@
     "Chart_2": 46,
     "Chart_3": 46,
     "Chart_4": 46,
+    "Chart_5": 46,
     "Circle1": 221,
     "Circle2_2": 239,
     "Circle3_4": 245,
@@ -1165,7 +1169,7 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.8016653,
     "ControlCount": {
-      "11eb2bdcb8cc446f936b6a174302ce25": 9,
+      "11eb2bdcb8cc446f936b6a174302ce25": 10,
       "38097c16f9cd48fa817505f586307ac2": 1,
       "53f8dd07d50e4ecaa8c204a0dff0e111": 1,
       "78d8d2ba61154f049ae7020ce77c25f6": 2,
