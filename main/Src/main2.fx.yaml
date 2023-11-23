@@ -74,7 +74,6 @@ main2 As screen:
 
     Base_1 As Base:
         loginDate: =Now()
-        logout: =loginScreen
         userId: =User
 
     "'resource-count_1' As groupContainer.manualLayoutContainer":

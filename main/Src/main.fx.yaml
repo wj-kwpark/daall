@@ -316,24 +316,3 @@ main As screen:
         Y: =599
         ZIndex: =13
 
-    Group1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =14
-
-        logo_1 As logo:
-            mainScreen: =main
-            Width: =239
-            ZIndex: =2
-
-        Header_1 As Header:
-            Height: =61
-            loginDate: =LoginDate
-            logout: =loginScreen
-            userId: =User
-            Width: =1146
-            X: =220
-            ZIndex: =3
-
