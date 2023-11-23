@@ -250,6 +250,7 @@ main2 As screen:
                 Items: =maindata_chart
                 ItemsGap: =2
                 Markers: =false
+                PaddingLeft: =20
                 SeriesAxisMin: =0
                 Size: =CountRows(maindata_chart)
                 X: =1
