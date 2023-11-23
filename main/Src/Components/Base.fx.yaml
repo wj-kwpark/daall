@@ -254,7 +254,7 @@ Base As CanvasComponent:
             OnSelect: =Navigate(Base.mainScreen)
             Width: =70
             X: =90
-            Y: =69
+            Y: =62
             ZIndex: =8
 
         Button2_1 As button:
@@ -268,7 +268,7 @@ Base As CanvasComponent:
             Text: =""
             Width: =70
             X: =90
-            Y: =69
+            Y: =62
             ZIndex: =9
 
     Group3_1 As group:
@@ -302,7 +302,7 @@ Base As CanvasComponent:
             ZIndex: =3
 
         HtmlText4_19 As htmlViewer:
-            Height: =93
+            Height: =78
             HtmlText: |
                 ="<div style=' width:"& Self.Width-10&"px; height: "&Self.Height-20&"px; backdrop-filter: blur(40px);
                 -webkit-backdrop-filter: blur(40px);
@@ -320,7 +320,7 @@ Base As CanvasComponent:
             Height: =1
             Width: =1146
             X: =184
-            Y: =104
+            Y: =90
             ZIndex: =5
 
         Container6_1 As groupContainer.manualLayoutContainer:
@@ -358,7 +358,7 @@ Base As CanvasComponent:
             OnSelect: =Navigate(Base.logout)
             Width: =49
             X: =1242
-            Y: =58
+            Y: =51
             ZIndex: =10
 
         loginId_1 As label:
@@ -367,7 +367,7 @@ Base As CanvasComponent:
             Text: =Base.userId
             Width: =118
             X: =975
-            Y: =53
+            Y: =46
             ZIndex: =11
 
         Icon1_1 As icon.Person:
@@ -375,7 +375,7 @@ Base As CanvasComponent:
             Icon: =Icon.Person
             Width: =33
             X: =921
-            Y: =56
+            Y: =49
             ZIndex: =13
 
         loginDate_1 As label:
@@ -383,6 +383,6 @@ Base As CanvasComponent:
             Size: =10
             Text: =Base.loginDate
             X: =1071
-            Y: =52
+            Y: =45
             ZIndex: =14
 
