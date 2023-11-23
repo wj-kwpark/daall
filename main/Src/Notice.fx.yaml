@@ -202,8 +202,8 @@ Notice As screen:
         FontWeight: =FontWeight.Bold
         Size: =24
         Text: ="공지사항"
-        X: =245
-        Y: =90
+        X: =246
+        Y: =136
         ZIndex: =4
 
     Container7_2 As groupContainer.manualLayoutContainer:
@@ -212,14 +212,14 @@ Notice As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =Color.White
-        Height: =568
+        Height: =516
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Width: =1086
         X: =232
-        Y: =141
+        Y: =192
         ZIndex: =5
 
         검색필드_2 As groupContainer.manualLayoutContainer:
@@ -231,6 +231,7 @@ Notice As screen:
             ZIndex: =1
 
             검색버튼_2 As button:
+                BorderThickness: =0
                 Fill: =RGBA(71, 158, 245, 1)
                 Height: =37
                 OnSelect: |-
@@ -251,7 +252,7 @@ Notice As screen:
                                 "CONTENT",
                                 "FILE_ID"
                                 ),
-                            startdate_1 <= REGI_DATE && REGI_DATE <= enddate_1,
+                            startDate.SelectedDate <= REGI_DATE && REGI_DATE <= endDate.SelectedDate,
                             resourceEdit_2.Text in BOARD_TITLE
                             )
                     );
@@ -309,25 +310,6 @@ Notice As screen:
                 Y: =13
                 ZIndex: =5
 
-            startdate_1 As datepicker:
-                BorderThickness: =0
-                DefaultDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
-                Height: =27
-                Size: =10
-                Width: =130
-                X: =302
-                Y: =41
-                ZIndex: =6
-
-            enddate_1 As datepicker:
-                BorderThickness: =0
-                Height: =28
-                Size: =10
-                Width: =130
-                X: =471
-                Y: =40
-                ZIndex: =7
-
             생성일_3 As label:
                 FontWeight: =FontWeight.Bold
                 Height: =22
@@ -354,9 +336,30 @@ Notice As screen:
                 Y: =72
                 ZIndex: =10
 
+            "startDate As '날짜 선택'":
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+                Width: =130
+                X: =302
+                Y: =38
+                ZIndex: =11
+
+            "endDate As '날짜 선택'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Today()
+                Width: =130
+                X: =471
+                Y: =40
+                ZIndex: =12
+
         Board_1 As Board:
             BoardData: =noticeList
-            Height: =408
+            Height: =354
             Width: =1046
             X: =20
             Y: =112
