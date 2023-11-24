@@ -244,7 +244,7 @@ myinfo As screen:
                     Size: =24
                     Text: =CountRows(reportCnt)+CountRows(shareReportCnt)
                     Width: =57
-                    X: =165
+                    X: =161
                     Y: =136
                     ZIndex: =6
 
@@ -267,7 +267,7 @@ myinfo As screen:
 
             Circle3_4 As circle:
                 Fill: =RGBA(71, 158, 245, 1)
-                Height: =10
+                Height: =12
                 Width: =12
                 X: =67
                 Y: =277
@@ -275,7 +275,7 @@ myinfo As screen:
 
             Circle3_5 As circle:
                 Fill: =RGBA(45, 128, 40, 1)
-                Height: =10
+                Height: =12
                 Width: =12
                 X: =202
                 Y: =277
@@ -355,15 +355,15 @@ myinfo As screen:
             Y: =230
             ZIndex: =4
 
-            Chart_2 As Chart:
+            Chart_6 As Chart:
                 Colors: |-
                     =["#CCE5FF", "#30a667", "#5ec16c", "#f6c790", "#f7c772", "#f7b45b", "#f68f64", "#d46068", "#946eb0", "#769acc", "#60c5ea"]
-                Data: |-
+                Data: |
                     ={
                         legends: ["Test 1", "Test 1"],
                         labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
                         table: Table(
-                            {key:"values", values:[90, 20]}
+                            {key:"values", values:[CountRows(reportCnt),CountRows(shareReportCnt)]}
                         )
                     }
                 Height: =216
@@ -413,6 +413,76 @@ myinfo As screen:
                         additionalStyles: ""
                     }
                 Width: =193
-                X: =79
-                Y: =32
+                X: =91
+                Y: =36
+
+            Title3_5 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =28
+                Size: =12
+                Text: ="   데이터 현황"
+                Width: =260
+                Y: =8
+                ZIndex: =2
+
+            Label16_10 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =42
+                Text: ="전체데이터"
+                Width: =109
+                X: =142
+                Y: =102
+                ZIndex: =3
+
+            Label16_11 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =52
+                Size: =24
+                Text: =CountRows(dataCnt)+CountRows(shareDataCnt)
+                Width: =57
+                X: =176
+                Y: =130
+                ZIndex: =4
+
+            Label17_10 As label:
+                Align: =Align.Center
+                Size: =10
+                Text: ="공유데이터" & CountRows(shareDataCnt) & "개"
+                Width: =128
+                X: =59
+                Y: =262
+                ZIndex: =5
+
+            Label17_11 As label:
+                Align: =Align.Center
+                Size: =10
+                Text: ="내데이터" & CountRows(dataCnt) & "개"
+                Width: =132
+                X: =168
+                Y: =262
+                ZIndex: =6
+
+            Circle3_10 As circle:
+                Fill: =RGBA(71, 158, 245, 1)
+                Height: =12
+                Width: =12
+                X: =63
+                Y: =276
+                ZIndex: =7
+
+            Circle3_11 As circle:
+                Fill: =RGBA(45, 128, 40, 1)
+                Height: =12
+                Width: =12
+                X: =181
+                Y: =276
+                ZIndex: =8
+
+            Rectangle3_5 As rectangle:
+                BorderColor: =RGBA(139, 154, 159, 1)
+                Fill: =RGBA(214, 221, 224, 1)
+                Height: =1
+                Width: =357
+                Y: =263
+                ZIndex: =9
 

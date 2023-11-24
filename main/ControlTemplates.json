@@ -294,5 +294,20 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "날짜 선택",
     "Version": "0.0.11"
+  },
+  "버튼": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ButtonCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_ButtonCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "버튼",
+    "Version": "0.0.22"
   }
 }

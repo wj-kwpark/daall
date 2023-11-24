@@ -43,7 +43,10 @@ demoList As screen:
             Fill: =Color.Transparent
             Height: =212
             HoverFill: =Color.Transparent
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Navigate(reportDetail);
+                
+                Set(galReportId,ThisItem.REPORT_ID);
             PressedFill: =Color.Transparent
             Text: =""
             Width: =349
