@@ -113,6 +113,7 @@ main2 As screen:
 
     Base_1 As Base:
         loginDate: =Now()
+        logout: =loginScreen
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     "'resource-count_1' As groupContainer.manualLayoutContainer":
