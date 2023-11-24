@@ -225,8 +225,28 @@ authorityList As screen:
             보고서버튼 As button:
                 Height: =32
                 OnSelect: |-
-                    =// Filter(authorityListdata,OWNER_ID=User)
-                    ClearCollect(authorityListdata,Filter(authorityListdata,OWNER_ID=User,RESOURCE_TYPE="보고서"))
+                    =ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User,
+                            RESOURCE_TYPE = "report"
+                        )
+                    )
                 RadiusBottomLeft: =15
                 RadiusBottomRight: =15
                 RadiusTopLeft: =15
@@ -240,6 +260,29 @@ authorityList As screen:
 
             데이터버튼 As button:
                 Height: =32
+                OnSelect: |-
+                    =ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User,
+                            RESOURCE_TYPE = "data"
+                        )
+                    )
                 RadiusBottomLeft: =15
                 RadiusBottomRight: =15
                 RadiusTopLeft: =15
