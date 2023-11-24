@@ -1,7 +1,7 @@
 Notice As screen:
     OnVisible: |-
         =ClearCollect(
-            noticeList,
+            noticeData,
                 ShowColumns(
                     RenameColumns(
                     'nocode-test.notice',
@@ -16,6 +16,10 @@ Notice As screen:
                 "CONTENT",
                 "FILE_ID"
                 )
+        );
+        ClearCollect(
+            noticeList,
+            noticeData
         );
 
     Base_10 As Base:
@@ -238,22 +242,9 @@ Notice As screen:
                     =ClearCollect(
                         noticeList,
                             Filter(
-                                ShowColumns(
-                                    RenameColumns(
-                                    'nocode-test.notice',
-                                    "NOTICE_TITLE",
-                                    "BOARD_TITLE"
-                                    ),
-                                "BOARD_TITLE",
-                                "REGI_DATE",
-                                "REGI_ID",
-                                "MODY_DATE",
-                                "MODY_ID",
-                                "CONTENT",
-                                "FILE_ID"
-                                ),
-                            startDate.SelectedDate <= REGI_DATE && REGI_DATE <= endDate.SelectedDate,
-                            resourceEdit_2.Text in BOARD_TITLE
+                                noticeData,
+                                startDate.SelectedDate <= REGI_DATE && REGI_DATE <= endDate.SelectedDate,
+                                resourceEdit_2.Text in BOARD_TITLE
                             )
                     );
                 RadiusBottomLeft: =20

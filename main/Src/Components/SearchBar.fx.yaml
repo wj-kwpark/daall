@@ -1,0 +1,130 @@
+SearchBar As CanvasComponent:
+    cData: |-
+        =Table({BOARD_TITLE: "제목", REGI_DATE: 2023/01/01})
+    cList: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    tDate: ="기간"
+    tTitle: ="제목"
+    Width: |
+        =1000
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    검색버튼_3 As button:
+        BorderThickness: =0
+        Fill: =RGBA(71, 158, 245, 1)
+        Height: =30
+        OnSelect: |-
+            =ClearCollect(
+                Parent.cList,
+                    Filter(
+                        Parent.cData,
+                        startDate_1.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_1.SelectedDate,
+                        resourceEdit_3.Text in BOARD_TITLE
+                    )
+            );
+        RadiusBottomLeft: =20
+        RadiusBottomRight: =20
+        RadiusTopLeft: =20
+        RadiusTopRight: =20
+        Size: =10
+        Text: ="검색"
+        Width: =97
+        X: =Parent.Width - 120
+        Y: =37
+        ZIndex: =2
+
+    보고서데이터명_3 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =20
+        Size: =9
+        Text: =Parent.tTitle
+        Width: =116
+        X: =10
+        Y: =10
+        ZIndex: =3
+
+    resourceEdit_3 As text:
+        BorderThickness: =0
+        Color: =Color.Black
+        Default: =""
+        FocusedBorderColor: =Color.Transparent
+        Height: =30
+        HoverBorderColor: =Color.Transparent
+        HoverColor: =Color.Black
+        HoverFill: =Color.Transparent
+        PressedColor: =Color.Transparent
+        Width: =221
+        X: =30
+        Y: =35
+        ZIndex: =4
+
+    Rectangle8_10 As rectangle:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =1
+        Width: =221
+        X: =30
+        Y: =68
+        ZIndex: =5
+
+    생성일_4 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =20
+        Size: =9
+        Text: =Parent.tDate
+        Width: =116
+        X: =302
+        Y: =10
+        ZIndex: =6
+
+    생성일_5 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =22
+        Size: =9
+        Text: ="-"
+        Width: =27
+        X: =460
+        Y: =40
+        ZIndex: =7
+
+    Rectangle8_8 As rectangle:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =1
+        Width: =130
+        X: =318
+        Y: =68
+        ZIndex: =8
+
+    Rectangle8_9 As rectangle:
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =1
+        Width: =130
+        X: =487
+        Y: =68
+        ZIndex: =9
+
+    "startDate_1 As '날짜 선택'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Format: ='DatePickerCanvas.Format'.Short
+        Height: =30
+        SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+        Width: =130
+        X: =318
+        Y: =35
+        ZIndex: =10
+
+    "endDate_1 As '날짜 선택'":
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        Format: ='DatePickerCanvas.Format'.Short
+        Height: =30
+        SelectedDate: =Today()
+        Width: =130
+        X: =487
+        Y: =35
+        ZIndex: =11
+
