@@ -130,7 +130,7 @@
   },
   "ScreenOrder": [
     "loginScreen",
-    "main",
+    "main2",
     "Notice",
     "myinfo",
     "authorityList",
@@ -140,6 +140,6 @@
     "demoList",
     "dataListScreen",
     "reportListScreen",
-    "main2"
+    "main"
   ]
 }
