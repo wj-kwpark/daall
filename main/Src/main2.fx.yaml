@@ -71,6 +71,45 @@ main2 As screen:
             reportStatusChart,
             {reportStatus: reportStatus}
         );
+        
+        
+        
+        ClearCollect(
+            dataCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.data',
+                    OWNER_ID = User,
+                    NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            shareDataCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.share_authority',
+                    USER_ID = User,
+                    RESOURCE_TYPE = "데이터",
+                    RESOURCE_NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            dataStatus,
+            {
+                reportType: "myData",
+                count: CountRows(dataCnt)
+            },
+            {
+                reportType: "shareData",
+                count: CountRows(shareDataCnt)
+            }
+        );
 
     Base_1 As Base:
         loginDate: =Now()
@@ -463,6 +502,76 @@ main2 As screen:
             Y: =35
             ZIndex: =2
 
+        Title3_4 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =12
+            Text: ="   데이터 현황"
+            Width: =260
+            Y: =8
+            ZIndex: =3
+
+        Label16_8 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            Text: ="전체데이터"
+            Width: =109
+            X: =85
+            Y: =97
+            ZIndex: =4
+
+        Label16_9 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Size: =24
+            Text: =CountRows(dataCnt)+CountRows(shareDataCnt)
+            Width: =57
+            X: =119
+            Y: =126
+            ZIndex: =5
+
+        Rectangle3_4 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =260
+            Y: =263
+            ZIndex: =6
+
+        Label17_8 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="공유데이터" & CountRows(shareDataCnt) & "개"
+            Width: =128
+            X: =19
+            Y: =262
+            ZIndex: =7
+
+        Label17_9 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="내데이터" & CountRows(dataCnt) & "개"
+            Width: =132
+            X: =128
+            Y: =262
+            ZIndex: =8
+
+        Circle3_8 As circle:
+            Fill: =RGBA(71, 158, 245, 1)
+            Height: =12
+            Width: =12
+            X: =23
+            Y: =276
+            ZIndex: =9
+
+        Circle3_9 As circle:
+            Fill: =RGBA(45, 128, 40, 1)
+            Height: =12
+            Width: =12
+            X: =141
+            Y: =276
+            ZIndex: =10
+
     "'demo-report_1' As groupContainer.manualLayoutContainer":
         Height: =302
         Width: =340
@@ -476,10 +585,10 @@ main2 As screen:
                     legends: ["Test 1", "Test 1"],
                     labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
                     table: Table(
-                        {key:"values", values:[3,4]}
+                        {key:"values", values:[6,4,5,6,7,8,9,12]}
                     )
                 }
-            Height: =216
+            Height: =276
             Legend: |-
                 ={
                     enabled: false,
@@ -525,9 +634,8 @@ main2 As screen:
                     color: "#666666",
                     additionalStyles: ""
                 }
-            Width: =193
-            X: =88
-            Y: =36
+            Width: =253
+            X: =48
             ZIndex: =2
 
     banner_1 As groupContainer.manualLayoutContainer:
