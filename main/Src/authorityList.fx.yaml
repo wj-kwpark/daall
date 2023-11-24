@@ -199,6 +199,18 @@ authorityList As screen:
 
             전체버튼 As button:
                 Height: =32
+                OnSelect: |-
+                    =//ClearCollect(authorityListdata,Filter(authorityListdata,OWNER_ID=User))
+                    ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                    Filter(authorityListdata,OWNER_ID=User))
                 RadiusBottomLeft: =15
                 RadiusBottomRight: =15
                 RadiusTopLeft: =15
@@ -212,6 +224,9 @@ authorityList As screen:
 
             보고서버튼 As button:
                 Height: =32
+                OnSelect: |-
+                    =// Filter(authorityListdata,OWNER_ID=User)
+                    ClearCollect(authorityListdata,Filter(authorityListdata,OWNER_ID=User,RESOURCE_TYPE="보고서"))
                 RadiusBottomLeft: =15
                 RadiusBottomRight: =15
                 RadiusTopLeft: =15
@@ -244,7 +259,7 @@ authorityList As screen:
             Y: =131
             ZIndex: =2
 
-            "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            "galResourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =418
                 Items: =Filter(authorityListdata,OWNER_ID=User)
