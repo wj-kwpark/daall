@@ -46,6 +46,33 @@
       "PropertyDataTypeKey": "Table",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "endDate",
+      "Hidden": true,
+      "Name": "endDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "startDate",
+      "Hidden": true,
+      "Name": "startDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "sTitle",
+      "Hidden": true,
+      "Name": "sTitle",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
