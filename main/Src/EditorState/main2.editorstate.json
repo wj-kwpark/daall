@@ -392,7 +392,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Base_1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -511,7 +511,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 0,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -967,7 +967,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Chart_3",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11312,7 +11312,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Title3_4",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
