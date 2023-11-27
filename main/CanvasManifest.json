@@ -112,13 +112,13 @@
     "Id": "e49986ff-b11f-43a7-a9d4-4c1be080b2bf",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "daallDev.msapp",
+    "Name": "daallDev",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "daall-mobile-new",
+    "AppName": "daallDev",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
