@@ -6,10 +6,14 @@
   "ClientPerFileChecksums": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "AppCheckerResult.sarif": "C8_kLM8TB1D0QcWaNgbCzQJcAAEdCvT8E+FdEO/iJbwK/c=",
 =======
     "AppCheckerResult.sarif": "C8_n4WKoHSZhXsWF/FP1LvE/AYQa27G1N5wap5AaScHJ+o=",
 >>>>>>> parent of 934324e (Commit)
+=======
+    "AppCheckerResult.sarif": "C8_JcoCzg9cRjSQYilbeevpmpjgGx6p9Nbwpq9iSqYvPp8=",
+>>>>>>> parent of ee5da72 (Commit)
 =======
     "AppCheckerResult.sarif": "C8_JcoCzg9cRjSQYilbeevpmpjgGx6p9Nbwpq9iSqYvPp8=",
 >>>>>>> parent of ee5da72 (Commit)
@@ -38,6 +42,7 @@
     "Assets\\Images\\0023.png": "C8_g1CWsjsCRBGnE3yd1DHYdm7phsy/HsjB9WJfzz+aNQw=",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Components\\34.json": "C8_HfNBdhPgdLDelqCAtmai/Bu1tqcGB+Kpm3xZa+R579w=",
     "Components\\4.json": "C8_2e4GmrqMyC+lCN61sTyQdAosYQB7s5iTrQHizp3JrZo=",
     "Components\\49.json": "C8_XeXQr3fj1UTUs/mDgGedpfN3OTr5fv7I2D7xvVSuIWk=",
@@ -47,6 +52,8 @@
     "Components\\73.json": "C8_FS9M4MliDW/2lqKO8mMY4/ccLN2gkxyuVsgyYhqA4qY=",
     "ComponentsMetadata.json": "C8_bvhLmP62+STAT7nfufach6KKEA1sv3UI7L7K0jHudWw=",
 =======
+=======
+>>>>>>> parent of ee5da72 (Commit)
     "Components\\19.json": "C8_rqYJsS3iBcoWK/hJeusnVaLh67hinPjkhE18IOJ3yWY=",
     "Components\\4.json": "C8_ZUpzJ+nYiouaIvdFE4aE7VN1U9uoGQBPzNS70nf+6mk=",
     "Components\\49.json": "C8_wTkwy+CqqdNv0ccAUeAI17lgVwU+7C/O6/K+2l0gl3Q=",
@@ -55,6 +62,9 @@
     "Components\\67.json": "C8_o3a/BO/B1utusk5rfEiooh7tKHa7zcAKnOMDtk6teJ8=",
     "Components\\73.json": "C8_pY3NLkcTUpin3DhCr2nJ2/LNwqGRlcFSFimtfsERfkM=",
     "ComponentsMetadata.json": "C8_W3iLxusgjew39njVrKz9lhMn37tBJ3ZuLzEozl1tghg=",
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
     "Controls\\1.json": "C8_JvfWIWerSM+kcitxUcAsDv+6cB3yDZV37EGcu3NhKPg=",
     "Controls\\116.json": "C8_c6jh5ha8louiFQdMGG7NPpJlw8qf+bC2dDsK1h01r2A=",
@@ -82,6 +92,7 @@
   },
   "ClientStampedChecksum": "C8_lU3GK5no+e/joJnW79WKUlvXpSVFHZHuzoW+Danul3M=",
   "ServerPerFileChecksums": {
+<<<<<<< HEAD
 <<<<<<< HEAD
     "AppCheckerResult.sarif": "C8_kLM8TB1D0QcWaNgbCzQJcAAEdCvT8E+FdEO/iJbwK/c=",
 =======
@@ -124,6 +135,9 @@
 =======
     "AppCheckerResult.sarif": "C8_JcoCzg9cRjSQYilbeevpmpjgGx6p9Nbwpq9iSqYvPp8=",
 >>>>>>> parent of ee5da72 (Commit)
+=======
+    "AppCheckerResult.sarif": "C8_JcoCzg9cRjSQYilbeevpmpjgGx6p9Nbwpq9iSqYvPp8=",
+>>>>>>> parent of ee5da72 (Commit)
     "Assets\\Images\\0001.png": "C8_5Y7HMMU8i0d9Ae1M8Y0tYLdq+uZTYILuFZ0W7O6Vq1Q=",
     "Assets\\Images\\0002.png": "C8_ICe4Gem+Cv+LicVYx6GdiEsTE1rWjLVCPgLApECgPbw=",
     "Assets\\Images\\0003.png": "C8_SIeozJ/cSaOI7A5C88f5w71TfZx1tPlVACqDGZaOs2s=",
@@ -149,6 +163,7 @@
     "Assets\\Images\\0023.png": "C8_g1CWsjsCRBGnE3yd1DHYdm7phsy/HsjB9WJfzz+aNQw=",
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "Components\\34.json": "C8_HfNBdhPgdLDelqCAtmai/Bu1tqcGB+Kpm3xZa+R579w=",
     "Components\\4.json": "C8_2e4GmrqMyC+lCN61sTyQdAosYQB7s5iTrQHizp3JrZo=",
     "Components\\49.json": "C8_XeXQr3fj1UTUs/mDgGedpfN3OTr5fv7I2D7xvVSuIWk=",
@@ -158,6 +173,8 @@
     "Components\\73.json": "C8_FS9M4MliDW/2lqKO8mMY4/ccLN2gkxyuVsgyYhqA4qY=",
     "ComponentsMetadata.json": "C8_bvhLmP62+STAT7nfufach6KKEA1sv3UI7L7K0jHudWw=",
 =======
+=======
+>>>>>>> parent of ee5da72 (Commit)
     "Components\\19.json": "C8_rqYJsS3iBcoWK/hJeusnVaLh67hinPjkhE18IOJ3yWY=",
     "Components\\4.json": "C8_ZUpzJ+nYiouaIvdFE4aE7VN1U9uoGQBPzNS70nf+6mk=",
     "Components\\49.json": "C8_wTkwy+CqqdNv0ccAUeAI17lgVwU+7C/O6/K+2l0gl3Q=",
@@ -166,6 +183,9 @@
     "Components\\67.json": "C8_o3a/BO/B1utusk5rfEiooh7tKHa7zcAKnOMDtk6teJ8=",
     "Components\\73.json": "C8_pY3NLkcTUpin3DhCr2nJ2/LNwqGRlcFSFimtfsERfkM=",
     "ComponentsMetadata.json": "C8_W3iLxusgjew39njVrKz9lhMn37tBJ3ZuLzEozl1tghg=",
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
     "Controls\\1.json": "C8_JvfWIWerSM+kcitxUcAsDv+6cB3yDZV37EGcu3NhKPg=",
     "Controls\\116.json": "C8_c6jh5ha8louiFQdMGG7NPpJlw8qf+bC2dDsK1h01r2A=",
@@ -191,6 +211,7 @@
     "References\\Themes.json": "C8_zuMgLpz3IJQlVgGqo3GtyhriL3PR35GxXf+rtPR4Gfc=",
     "Resources\\PublishInfo.json": "C8_yZ9vB6kEsAqRW2WAN/aFWGlZge6ath1X1aXCOIazsd4="
   },
+<<<<<<< HEAD
 <<<<<<< HEAD
   "ServerStampedChecksum": "C8_xTQufR4zL8CA0isYMutlpijROGs3d5Qmtyw+2Qhx9o0="
 =======
@@ -228,6 +249,9 @@
   },
   "ServerStampedChecksum": "C8_GGiL7GE1kHGdQZgyy7gAx3K2T6NuizHXi6qfy7aizqw="
 >>>>>>> parent of 934324e (Commit)
+=======
+  "ServerStampedChecksum": "C8_lU3GK5no+e/joJnW79WKUlvXpSVFHZHuzoW+Danul3M="
+>>>>>>> parent of ee5da72 (Commit)
 =======
   "ServerStampedChecksum": "C8_lU3GK5no+e/joJnW79WKUlvXpSVFHZHuzoW+Danul3M="
 >>>>>>> parent of ee5da72 (Commit)

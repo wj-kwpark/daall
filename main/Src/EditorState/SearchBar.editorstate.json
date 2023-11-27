@@ -1037,6 +1037,7 @@
           "Category": "Design",
           "PropertyName": "Fill",
           "RuleProviderType": "System"
+<<<<<<< HEAD
         }
       ],
       "StyleName": "",
@@ -1088,6 +1089,8 @@
           "Category": "Design",
           "PropertyName": "X",
           "RuleProviderType": "Unknown"
+=======
+>>>>>>> parent of ee5da72 (Commit)
         }
       ],
       "StyleName": "",

@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 {
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
@@ -5635,6 +5636,70 @@
   "OverridableProperties": {},
   "Version": "1.0"
 >>>>>>> parent of 934324e (Commit)
+=======
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": true,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "SearchBar",
+    "TemplateGuid": "823d5afd64d843d298cf05a300665fea"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "tTitle",
+      "Hidden": false,
+      "Name": "tTitle",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "검색 제목",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "\btDate",
+      "Hidden": false,
+      "Name": "tDate",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "검색기간",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "cData",
+      "Hidden": false,
+      "Name": "cData",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "cList",
+      "Hidden": true,
+      "Name": "cList",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"SampleBooleanField\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleNumberField\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"SampleStringField\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638366410813775730",
+  "Name": "823d5afd64d843d298cf05a300665fea",
+  "OverridableProperties": {},
+  "Version": "1.0"
+>>>>>>> parent of ee5da72 (Commit)
 =======
 {
   "ComponentAllowCustomization": true,

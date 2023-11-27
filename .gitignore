@@ -1,0 +1,15 @@
+
+main/Connections/Connections.json
+main/Entropy/AppCheckerResult.sarif
+main/Entropy/checksum.json
+main/Entropy/Entropy.json
+main/Src/Components/Base.json
+main/Src/Components/Board.json
+main/Src/Components/Chart.json
+main/Src/Components/GanttChart.json
+main/Src/Components/gnb-boundary.json
+main/Src/Components/Header.json
+main/Src/Components/SearchBar.fx.yaml
+main/Src/Components/SearchBar.json
+main/Src/EditorState/SearchBar.editorstate.json
+main/Src/Notice.fx.yaml

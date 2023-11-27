@@ -370,6 +370,7 @@ Notice As screen:
             ZIndex: =3
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         SearchBar_1 As SearchBar:
             Height: =91
             Width: =1046
@@ -377,5 +378,7 @@ Notice As screen:
             Y: =4
             ZIndex: =4
 
+=======
+>>>>>>> parent of ee5da72 (Commit)
 =======
 >>>>>>> parent of ee5da72 (Commit)

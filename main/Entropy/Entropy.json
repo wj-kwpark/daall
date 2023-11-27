@@ -37,17 +37,23 @@
     "App": 1,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "authority": 204,
     "authority_1": 260,
     "authorityList": 115,
     "banner": 202,
     "banner_1": 253,
 =======
+=======
+>>>>>>> parent of ee5da72 (Commit)
     "authority": 236,
     "authority_1": 290,
     "authorityList": 147,
     "banner": 234,
     "banner_1": 283,
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
     "Bar": 55,
     "Base": 19,
@@ -143,6 +149,7 @@
     "favority": 235,
     "favority_1": 287,
     "Funnel": 51,
+<<<<<<< HEAD
 <<<<<<< HEAD
     "gal_userList": 109,
     "Gallery2": 155,
@@ -265,6 +272,8 @@
     "galResourceList": 218,
 >>>>>>> parent of 934324e (Commit)
 =======
+=======
+>>>>>>> parent of ee5da72 (Commit)
     "gal_userList": 141,
     "Gallery2": 187,
     "galleryTemplate1": 172,
@@ -275,12 +284,16 @@
     "galleryTemplate3_2": 34,
     "galleryTemplate5_2": 42,
     "galResourceList": 171,
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
     "Gantt": 63,
     "GanttChart": 61,
     "GanttHeader": 62,
     "GanttLegend": 64,
     "gnb-boundary": 65,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "Group2_2": 299,
@@ -529,6 +542,114 @@
     "pageTitle_8": 312,
     "pageTitle_9": 89,
 =======
+=======
+    "Group2_2": 329,
+    "Group3_1": 47,
+    "Header": 67,
+    "Header_1": 59,
+    "HeaderDate": 104,
+    "HeaderDate_1": 7,
+    "HeaderName": 105,
+    "HeaderName_1": 8,
+    "HeaderSeparator": 109,
+    "HeaderSeparator_1": 12,
+    "HeaderTitle": 103,
+    "HeaderTitle_1": 6,
+    "Host": 3,
+    "HtmlText1": 66,
+    "HtmlText4": 193,
+    "HtmlText4_17": 22,
+    "HtmlText4_18": 21,
+    "HtmlText4_19": 23,
+    "HtmlText4_2": 207,
+    "Icon1": 71,
+    "Icon1_1": 28,
+    "Icon2_1": 39,
+    "id": 199,
+    "Image1": 20,
+    "Image1_1": 30,
+    "Image10": 289,
+    "Image11": 292,
+    "Image2": 70,
+    "Image2_1": 29,
+    "Image3": 211,
+    "Image3_1": 308,
+    "Image3_2": 242,
+    "Image4_1": 45,
+    "Image5": 196,
+    "Image6": 215,
+    "Image6_1": 312,
+    "Image6_2": 246,
+    "Image7": 219,
+    "Image7_1": 316,
+    "Image7_2": 250,
+    "Image9": 286,
+    "imageMenu_1": 40,
+    "Label1": 197,
+    "Label1_1": 198,
+    "Label10": 284,
+    "Label10_1": 285,
+    "Label11": 302,
+    "Label11_1": 304,
+    "Label12": 288,
+    "Label12_1": 291,
+    "Label13": 167,
+    "Label13_1": 168,
+    "Label13_2": 169,
+    "Label13_3": 136,
+    "Label13_4": 137,
+    "Label13_5": 138,
+    "Label13_6": 139,
+    "Label14": 341,
+    "Label16_10": 332,
+    "Label16_11": 333,
+    "Label16_4": 323,
+    "Label16_5": 322,
+    "Label16_6": 264,
+    "Label16_7": 265,
+    "Label16_8": 274,
+    "Label16_9": 275,
+    "Label17_10": 334,
+    "Label17_11": 335,
+    "Label17_4": 325,
+    "Label17_5": 326,
+    "Label17_6": 266,
+    "Label17_7": 267,
+    "Label17_8": 276,
+    "Label17_9": 277,
+    "Label2": 203,
+    "Label2_1": 205,
+    "Label3": 210,
+    "Label3_1": 307,
+    "Label3_2": 241,
+    "Label4": 212,
+    "Label4_1": 309,
+    "Label4_2": 243,
+    "Label5": 214,
+    "Label5_1": 311,
+    "Label5_2": 245,
+    "Label6": 191,
+    "Label6_1": 44,
+    "Label7": 216,
+    "Label7_1": 313,
+    "Label7_2": 247,
+    "Label8": 218,
+    "Label8_1": 315,
+    "Label8_2": 249,
+    "Label9": 220,
+    "Label9_1": 317,
+    "Label9_2": 251,
+    "Legend": 60,
+    "Legend1": 224,
+    "Legend1_1": 255,
+    "Legend2": 229,
+    "Line": 57,
+    "LineChart1": 222,
+    "LineChart1_1": 253,
+    "loginDate": 69,
+    "loginDate_1": 26,
+    "loginId": 68,
+>>>>>>> parent of ee5da72 (Commit)
     "loginId_1": 27,
     "loginScreen": 192,
     "main": 206,
@@ -553,6 +674,9 @@
     "pageTitle_7": 124,
     "pageTitle_8": 86,
     "pageTitle_9": 121,
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
     "Pie": 50,
     "PlotArea": 58,
@@ -655,6 +779,7 @@
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
     "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/ad25ff046610423b8a77f51ba9bed666\"",
+<<<<<<< HEAD
 <<<<<<< HEAD
     "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/06980f00c2cd434c9d24afbf85b5ec32-0607426ff765735b\""
 =======
@@ -786,6 +911,9 @@
 =======
     "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/06980F00C2CD434C9D24AFBF85B5EC32-0607426FF765735B\""
 >>>>>>> parent of ee5da72 (Commit)
+=======
+    "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/06980F00C2CD434C9D24AFBF85B5EC32-0607426FF765735B\""
+>>>>>>> parent of ee5da72 (Commit)
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -814,6 +942,7 @@
     "img_logo": "0023.png"
   },
   "LocalResourceRootPaths": {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     "bg_data": "https://docserverpwaprodeas.blob.core.windows.net/804a3be7-7b4b-40b2-b8bf-5024babac063-1/resource/Assets0Images00001.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T01%3A30%3A37Z&ske=2023-11-28T01%3A45%3A37Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T01%3A45%3A37Z&sr=b&sp=r&sig=UqDKgsw%2BgjKsWDfSed%2FgfbdaI3nkMB%2BIXwR5hMd1neI%3D",
@@ -865,6 +994,8 @@
     "img_logo": "https://docserverpwaprodseas.blob.core.windows.net/57f99427-db59-4a3f-b89b-15218acd66b1-1/resource/Assets0Images00023.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-24T05%3A39%3A14Z&ske=2023-11-25T05%3A54%3A14Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-25T05%3A54%3A14Z&sr=b&sp=r&sig=FkQzpUUc46HURNrWtibo5vmoomMhLbRphWKQ4Bo%2BcuY%3D"
 >>>>>>> parent of 934324e (Commit)
 =======
+=======
+>>>>>>> parent of ee5da72 (Commit)
     "bg_data": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00001.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A00Z&ske=2023-11-28T00%3A33%3A00Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A00Z&sr=b&sp=r&sig=QRRfqitjh6IhSDVmG7ZhS1yawY%2FMvPR6Ekb4e2CxTKI%3D",
     "bg_favorite": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00002.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A00Z&ske=2023-11-28T00%3A33%3A00Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A00Z&sr=b&sp=r&sig=QDp3tkKxQ%2B5%2FB7BrUB0bJK9eMXpJk%2BJ9G6m74goKWOY%3D",
     "bg_graph": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00003.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A00Z&ske=2023-11-28T00%3A33%3A00Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A00Z&sr=b&sp=r&sig=5LAHyXfzil1IQGZdNn%2FhbFOrWAvEX%2Bn8kSEM%2F6Qn4x4%3D",
@@ -888,6 +1019,9 @@
     "icon_report": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00021.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A01Z&ske=2023-11-28T00%3A33%3A01Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A01Z&sr=b&sp=r&sig=1WjI4dId14OjZ7UNpA%2FnYkaB3IgZxgXkIVP2u8k37LQ%3D",
     "icon_sort_btn": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00022.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A01Z&ske=2023-11-28T00%3A33%3A01Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A01Z&sr=b&sp=r&sig=njffq973nECFPEqAKgTI%2BKXJj5L4D6lReUYI0%2FDgqxo%3D",
     "img_logo": "https://docserverpwaprodeas.blob.core.windows.net/a1057fe9-9d8b-46e9-ad00-458ccf2a2f42-1/resource/Assets0Images00023.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-27T00%3A18%3A01Z&ske=2023-11-28T00%3A33%3A01Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-28T00%3A33%3A01Z&sr=b&sp=r&sig=W1%2FDcOrZ82qMt9o0DGSPdCdawIkr3MWC%2B8jAw42P9QY%3D"
+<<<<<<< HEAD
+>>>>>>> parent of ee5da72 (Commit)
+=======
 >>>>>>> parent of ee5da72 (Commit)
   },
   "OrderComponentMetadata": {
@@ -1499,6 +1633,10 @@
     "Button1": 126,
     "Button1_1": 23,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "Button2": 0,
+>>>>>>> parent of ee5da72 (Commit)
 =======
     "Button2": 0,
 >>>>>>> parent of ee5da72 (Commit)
@@ -1637,6 +1775,10 @@
     "Label13_5": 331,
     "Label13_6": 332,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "Label14": 0,
+>>>>>>> parent of ee5da72 (Commit)
 =======
     "Label14": 0,
 >>>>>>> parent of ee5da72 (Commit)
@@ -1842,10 +1984,14 @@
   "VolatileProperties": {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "AnalysisLoadTime": 1.5420108,
 =======
     "AnalysisLoadTime": 1.0885987,
 >>>>>>> parent of 934324e (Commit)
+=======
+    "AnalysisLoadTime": 1.3654414,
+>>>>>>> parent of ee5da72 (Commit)
 =======
     "AnalysisLoadTime": 1.3654414,
 >>>>>>> parent of ee5da72 (Commit)
@@ -1880,10 +2026,14 @@
     },
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     "DeserializationLoadTime": 4.2517229
 =======
     "DeserializationLoadTime": 3.6430145
 >>>>>>> parent of 934324e (Commit)
+=======
+    "DeserializationLoadTime": 4.3701362
+>>>>>>> parent of ee5da72 (Commit)
 =======
     "DeserializationLoadTime": 4.3701362
 >>>>>>> parent of ee5da72 (Commit)
