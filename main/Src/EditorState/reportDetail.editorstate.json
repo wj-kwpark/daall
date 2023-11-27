@@ -65,7 +65,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Base_11",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -186,7 +186,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ButtonCanvas1",
-      "ParentIndex": 0,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -539,7 +539,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pageTitle_9",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -787,7 +787,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PowerBI1",
-      "ParentIndex": 1,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
