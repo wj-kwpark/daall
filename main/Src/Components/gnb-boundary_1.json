@@ -1,0 +1,27 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "gnb-boundary_1",
+    "TemplateGuid": "8a3cdd9cc8e34a2390d9ca9d9bfbaf87"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638366713343115977",
+  "Name": "8a3cdd9cc8e34a2390d9ca9d9bfbaf87",
+  "OverridableProperties": {},
+  "TemplateOriginalName": "d34f1d1c13014e4abfa1941c0c20473d",
+  "Version": "1.0"
+}
