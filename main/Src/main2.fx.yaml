@@ -718,7 +718,7 @@ main2 As screen:
             ZIndex: =2
 
     Button2 As button:
-        OnSelect: =ClearCollect(return, excuteQuery.Run());
+        OnSelect: =ClearCollect(return, excuteQuery.Run().result);
         Text: ="버튼"
         X: =220
         Y: =42
