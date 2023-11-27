@@ -251,38 +251,3 @@ loginScreen As screen:
             Y: =516
             ZIndex: =10
 
-        "'Button-login_1' As button":
-            Fill: =RGBA(39, 113, 194, 1)
-            OnSelect: |
-                =If(
-                    IsEmpty(
-                        Search(
-                            'nocode-test.user',
-                            id.Text,
-                            "USER_ID"
-                        )
-                    ) || id.Text = "",
-                    Notify("아이디 혹은 비번 확인요. 제발 "),
-                   
-                    Set(
-                        User,
-                        id.Text
-                    );
-                    Set(
-                        LoginDate,
-                        Now()
-                    );
-                    Navigate(main2);
-                    
-                );
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =12
-            Text: ="로그인"
-            Width: =320
-            X: =40
-            Y: =40
-            ZIndex: =11
-

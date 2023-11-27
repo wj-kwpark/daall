@@ -1765,19 +1765,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.resourceEdit.AccessibleLabel"
+                  "fullyQualifiedName": "authorityList.galResourceList.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.resourceEdit.AccessibleLabel",
+                  "fullyQualifiedName": "authorityList.galResourceList.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "authorityList",
-                "type": "authorityList.Container7.검색필드.resourceEdit"
+                "type": "authorityList.galResourceList"
               }
             }
           ],
@@ -1795,109 +1795,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.enddate.AccessibleLabel"
+                  "fullyQualifiedName": "authorityList.galResourceList.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.enddate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "authorityList",
-                "type": "authorityList.Container7.검색필드.enddate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.startdate.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색필드.startdate.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "authorityList",
-                "type": "authorityList.Container7.검색필드.startdate"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "authorityList.Container7.검색목록.galResourceList.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색목록.galResourceList.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "authorityList",
-                "type": "authorityList.Container7.검색목록.galResourceList"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "authorityList.Container7.검색목록.galResourceList.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "authorityList.Container7.검색목록.galResourceList.TabIndex",
+                  "fullyQualifiedName": "authorityList.galResourceList.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "authorityList",
-                "type": "authorityList.Container7.검색목록.galResourceList"
+                "type": "authorityList.galResourceList"
               }
             }
           ],
@@ -1926,36 +1836,6 @@
               },
               "properties": {
                 "member": "LoginDate",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "App.boardList"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.boardList",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "boardList",
                 "module": "App",
                 "type": "App"
               }

@@ -34,6 +34,7 @@ userList As screen:
         검색필드_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =91
+            Visible: =false
             Width: =1085
             X: =5
             Y: =5
@@ -89,20 +90,20 @@ userList As screen:
         검색목록_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =461
-            Width: =1085
-            X: =5
+            Width: =1047
+            X: =19
             Y: =96
             ZIndex: =2
 
             "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =418
-                Items: ='nocode-test.user'
+                Items: =SearchBar_3.cList
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
                 TemplateSize: =54
-                Width: =1078
+                Width: =1047
                 Y: =42
                 ZIndex: =1
 
@@ -158,7 +159,7 @@ userList As screen:
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(245, 249, 255, 1)
                 Height: =42
-                Width: =1085
+                Width: =1047
                 ZIndex: =2
 
                 Rectangle6_1 As rectangle:
@@ -206,4 +207,13 @@ userList As screen:
                     X: =939
                     Y: =2
                     ZIndex: =5
+
+    SearchBar_3 As SearchBar:
+        cData: ='nocode-test.user'
+        forUser: =true
+        Height: =86
+        Width: =1074
+        X: =245
+        Y: =140
+        ZIndex: =4
 

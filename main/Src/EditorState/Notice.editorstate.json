@@ -5143,7 +5143,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": true,
+        "AllowAccessToGlobals": false,
         "AllowCustomization": true,
         "Description": ""
       },
@@ -5165,7 +5165,7 @@
         {
           "Category": "Data",
           "PropertyName": "cData",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

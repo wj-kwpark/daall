@@ -1,12 +1,11 @@
 SearchBar As CanvasComponent:
     cData: |-
-        =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01),USER_NAME:"이름"})
-    cList: |-
-        =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01)})
+        =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01),USER_NAME:"이름",USER_ID:"ID",RESOURCE_TYPE:"TYPE"})
+    cList: =boardList
     Fill: =RGBA(0, 0, 0, 0)
-    forUser: =true
-    Height: =100
-    OnReset: =ClearCollect(Self.cList,Self.cData);
+    forUser: =false
+    Height: =95
+    OnReset: =Set(boardList,Self.cData);
     tDate: ="기간"
     tTitle: ="제목"
     Width: |
@@ -23,12 +22,16 @@ SearchBar As CanvasComponent:
         OnSelect: |-
             =Set(
                 boardList,
+                If(Parent.forUser,Filter(
+                        Parent.cData,
+                        resourceEdit_7.Text in USER_NAME
+                    ),
                     Filter(
                         Parent.cData,
                         startDate_3.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_3.SelectedDate,
-                        resourceEdit_6.Text in BOARD_TITLE,
-                        resourceEdit_7.Text in USER_NAME
+                        resourceEdit_6.Text in BOARD_TITLE
                     )
+                )
             );
         RadiusBottomLeft: =20
         RadiusBottomRight: =20

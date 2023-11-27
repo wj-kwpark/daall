@@ -1405,7 +1405,7 @@
       "Type": "ControlInfo"
     },
     "SearchBar": {
-      "AllowAccessToGlobals": true,
+      "AllowAccessToGlobals": false,
       "ControlPropertyState": [
         "Fill",
         {
@@ -1446,13 +1446,20 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"\"})",
+          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"이름\",USER_ID:\"ID\",RESOURCE_TYPE:\"\"})",
           "InvariantPropertyName": "cData",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
         "cList",
-        "forUser",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "forUser",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -1522,7 +1529,7 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
