@@ -1658,7 +1658,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "ClearCollect(\n    Parent.cList,\n        Filter(\n            Parent.cData,\n            startDate_1.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_1.SelectedDate,\n            resourceEdit_3.Text in BOARD_TITLE\n        )\n);",
+            "InvariantScript": "Set(\n    boardList,\n        Filter(\n            Parent.cData,\n            startDate_1.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_1.SelectedDate,\n            resourceEdit_3.Text in BOARD_TITLE\n        )\n);",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -2552,7 +2552,14 @@
         "NameMapSourceSchema": "?"
       },
       "cData",
-      "cList",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01)})",
+        "InvariantPropertyName": "cList",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "onSlect",
       {
         "AFDDataSourceName": "",
@@ -2587,7 +2594,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638366495480021049",
+    "LastModifiedTimestamp": "638366592311759480",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -2610,7 +2617,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01)})",
+        "InvariantScript": "boardList",
         "Property": "cList",
         "RuleProviderType": "System"
       },
@@ -2676,7 +2683,7 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "ClearCollect(Self.cList,Self.cData);",
+        "InvariantScript": "Set(boardList,Self.cData);",
         "Property": "OnReset",
         "RuleProviderType": "System"
       }
@@ -2778,7 +2785,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638366495480021049",
+  "LastModifiedTimestamp": "638366592311759480",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

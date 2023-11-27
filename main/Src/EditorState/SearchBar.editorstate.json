@@ -858,7 +858,14 @@
           "NameMapSourceSchema": "?"
         },
         "cData",
-        "cList",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01)})",
+          "InvariantPropertyName": "cList",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "onSlect",
         {
           "AFDDataSourceName": "",
