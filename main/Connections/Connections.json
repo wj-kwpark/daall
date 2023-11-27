@@ -1,0 +1,164 @@
+{
+  "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": {
+    "connectionRef": {
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+        "apiVer": 1,
+        "appVer": "3.23105.18",
+        "modifiedOn": "2023-11-27 02:38:04",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
+        "version": 1
+      },
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1665/1.0.1665.3485/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6",
+      "xrmConnectionReferenceLogicalName": "new_sharedazuremysql_04766"
+    },
+    "datasets": {
+      "wjmonster-mysql.mysql.database.azure.com,daall": {
+        "dataSources": {
+          "daall.url_history": {
+            "tableName": "[daall].[url_history]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "daall.url_history"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69"
+    ],
+    "id": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+  },
+  "32d48576-693c-4980-9da9-9a782a8c43c5": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": {
+          "value": "shared_azuremysql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_azuremysql": {
+          "value": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "excuteQuery"
+    ],
+    "dependencies": {
+      "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+    },
+    "dependents": [],
+    "id": "32d48576-693c-4980-9da9-9a782a8c43c5"
+  },
+  "8558c814-ae65-4c4e-a1d2-b38dfc3f156e": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": {
+          "value": "shared_azuremysql"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff820727-f193-4e72-abac-a866c48bb372"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_azuremysql": {
+          "value": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "ff820727-f193-4e72-abac-a866c48bb372"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppV2->변수초기화,ExecuteaMySQLquery,응답"
+    ],
+    "dependencies": {
+      "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+    },
+    "dependents": [],
+    "id": "8558c814-ae65-4c4e-a1d2-b38dfc3f156e"
+  },
+  "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "mysqlAuthentication",
+      "displayName": "Azure Database for MySQL",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+        "apiVer": 1,
+        "appVer": "3.23105.18",
+        "modifiedOn": "2023-11-27 02:38:04",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"]}}",
+        "version": 1
+      },
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1665/1.0.1665.3485/azuremysql/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "runtimePolicyName": "06ddcc4f-0b13-4a0e-bd22-149bb77f16a1",
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azuremysql/connections/ad25ff046610423b8a77f51ba9bed666"
+    },
+    "datasets": {
+      "wjmonster-mysql.mysql.database.azure.com,nocode-test": {
+        "dataSources": {
+          "nocode-test.data": {
+            "tableName": "[nocode-test].[data]"
+          },
+          "nocode-test.notice": {
+            "tableName": "[nocode-test].[notice]"
+          },
+          "nocode-test.report": {
+            "tableName": "[nocode-test].[report]"
+          },
+          "nocode-test.share_authority": {
+            "tableName": "[nocode-test].[share_authority]"
+          },
+          "nocode-test.url_history": {
+            "tableName": "[nocode-test].[url_history]"
+          },
+          "nocode-test.user": {
+            "tableName": "[nocode-test].[user]"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "nocode-test.notice",
+      "nocode-test.user",
+      "nocode-test.report",
+      "nocode-test.data",
+      "nocode-test.url_history",
+      "nocode-test.share_authority"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9"
+  }
+}

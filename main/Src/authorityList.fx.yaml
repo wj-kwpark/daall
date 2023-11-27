@@ -1,0 +1,329 @@
+authorityList As screen:
+    BackgroundImage: =bg_login
+    OnVisible: |-
+        =ClearCollect(
+            dataList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.data',
+                        "DATA_ID",
+                        "RESOURCE_ID",
+                        "NAME",
+                        "BOARD_TITLE"
+                    ),
+                    "RESOURCE_ID",
+                    "BOARD_TITLE",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "data"
+            )
+        );
+        ClearCollect(
+            reportList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.report',
+                        "REPORT_ID",
+                        "RESOURCE_ID",
+                        "REPORT_TITLE",
+                        "BOARD_TITLE"
+                    ),
+                    "RESOURCE_ID",
+                    "BOARD_TITLE",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "report"
+            )
+        );
+        ClearCollect(
+            authoritydata,
+            dataList,
+            reportList
+        );
+        ClearCollect(
+            authorityListdata,
+            SortByColumns(
+                authoritydata,
+                "REGI_DATE"
+            )
+        )
+
+    Base_3 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    pageTitle_1 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="권한관리"
+        X: =235
+        Y: =104
+        ZIndex: =2
+
+    Container7 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(214, 221, 224, 1)
+        BorderStyle: =BorderStyle.Dotted
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =Color.White
+        Height: =531
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1077
+        X: =235
+        Y: =176
+        ZIndex: =3
+
+        검색필드 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =91
+            Width: =1085
+            X: =5
+            Y: =5
+            ZIndex: =1
+
+            SearchBar_2 As SearchBar:
+                Height: =91
+                tDate: ="생성일"
+                tTitle: ="보고서/데이터명"
+                Width: =1067
+
+            전체버튼 As button:
+                Height: =32
+                OnSelect: |-
+                    =//ClearCollect(authorityListdata,Filter(authorityListdata,OWNER_ID=User))
+                    ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                    Filter(authorityListdata,OWNER_ID=User))
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =10
+                Text: ="전체"
+                Width: =55
+                X: =671
+                Y: =38
+                ZIndex: =2
+
+            보고서버튼 As button:
+                Height: =32
+                OnSelect: |-
+                    =ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User,
+                            RESOURCE_TYPE = "report"
+                        )
+                    )
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =10
+                Text: ="보고서"
+                Width: =71
+                X: =738
+                Y: =38
+                ZIndex: =3
+
+            데이터버튼 As button:
+                Height: =32
+                OnSelect: |-
+                    =ClearCollect(
+                        authorityListdata,
+                        SortByColumns(
+                            authoritydata,
+                            "REGI_DATE"
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User
+                        )
+                    );
+                    ClearCollect(
+                        authorityListdata,
+                        Filter(
+                            authorityListdata,
+                            OWNER_ID = User,
+                            RESOURCE_TYPE = "data"
+                        )
+                    )
+                RadiusBottomLeft: =15
+                RadiusBottomRight: =15
+                RadiusTopLeft: =15
+                RadiusTopRight: =15
+                Size: =10
+                Text: ="데이터"
+                Width: =71
+                X: =820
+                Y: =38
+                ZIndex: =4
+
+        검색목록 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =460
+            Width: =1085
+            X: =5
+            Y: =131
+            ZIndex: =2
+
+            "galResourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =418
+                Items: =SearchBar_2.cList
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =54
+                Width: =1078
+                Y: =42
+                ZIndex: =1
+
+                resourceName As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.BOARD_TITLE
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =382
+                    X: =35
+                    Y: =19
+                    ZIndex: =2
+
+                resourceType As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =22
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.RESOURCE_TYPE
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =140
+                    X: =507
+                    Y: =19
+                    ZIndex: =3
+
+                Separator1 As rectangle:
+                    Fill: =RGBA(214, 221, 224, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                regiDate As label:
+                    OnSelect: =Select(Parent)
+                    Size: =11
+                    Text: =ThisItem.REGI_DATE
+                    X: =686
+                    Y: =9
+                    ZIndex: =6
+
+                Button5 As button:
+                    BorderColor: =ColorFade(Color.Black, -15%)
+                    BorderThickness: =1
+                    Color: =RGBA(0, 0, 0, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =27
+                    OnSelect: =Select(Parent)
+                    RadiusBottomLeft: =20
+                    RadiusBottomRight: =20
+                    RadiusTopLeft: =20
+                    RadiusTopRight: =20
+                    Size: =10
+                    Text: ="권한관리"
+                    Width: =115
+                    X: =932
+                    Y: =14
+                    ZIndex: =7
+
+            Container11 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(245, 249, 255, 1)
+                Height: =42
+                Width: =1085
+                ZIndex: =2
+
+                Rectangle6 As rectangle:
+                    Fill: =RGBA(15, 84, 140, 1)
+                    Height: =1
+                    Width: =1085
+                    Y: =40
+                    ZIndex: =1
+
+                Label13 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="보고서/데이터명"
+                    Width: =458
+                    Y: =1
+                    ZIndex: =2
+
+                Label13_1 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="리소스타입"
+                    Width: =85
+                    X: =477
+                    Y: =1
+                    ZIndex: =3
+
+                Label13_2 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="생성일"
+                    Width: =85
+                    X: =698
+                    Y: =1
+                    ZIndex: =4
+

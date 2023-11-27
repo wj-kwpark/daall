@@ -1,0 +1,64 @@
+demoList As screen:
+    BackgroundImage: =
+
+    Base_7 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =472
+        Items: ='nocode-test.report'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =4
+        TemplateSize: =257
+        Width: =1066
+        WrapCount: =3
+        X: =237
+        Y: =226
+        ZIndex: =1
+
+        PowerBI2 As powerbi:
+            Height: =212
+            OnSelect: =Select(Parent)
+            TileUrl: |-
+                ="https://app.powerbi.com/reportEmbed?reportId=" & ThisItem.REPORT_ID & "&autoAuth=true&ctid=a7da4436-e498-4245-8b58-1e0554afa193"
+            Width: =345
+            ZIndex: =1
+
+        Label6 As label:
+            Align: =Align.Center
+            Height: =45
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.REPORT_TITLE
+            Width: =349
+            X: =1
+            Y: =212
+            ZIndex: =2
+
+        Button1 As button:
+            DisabledFill: =Color.Transparent
+            Fill: =Color.Transparent
+            Height: =212
+            HoverFill: =Color.Transparent
+            OnSelect: |-
+                =Navigate(reportDetail);
+                
+                Set(galReportId,ThisItem.REPORT_ID);
+            PressedFill: =Color.Transparent
+            Text: =""
+            Width: =349
+            X: =1
+            ZIndex: =3
+
+    pageTitle_5 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="Demo Report"
+        Width: =259
+        X: =245
+        Y: =105
+        ZIndex: =2
+

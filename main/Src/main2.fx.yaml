@@ -1,0 +1,719 @@
+main2 As screen:
+    OnVisible: |
+        =ClearCollect(
+            maindata,
+            AddColumns(
+                Filter(
+                    'nocode-test.url_history',
+                    user_id = User,
+                    report_title <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            maindata_chart,
+            FirstN(
+                SortByColumns(
+                    AddColumns(
+                        GroupBy(
+                            maindata,
+                            "report_title",
+                            "detail"
+                        ),
+                        "count",
+                        CountRows(detail.count)
+                    ),
+                    "count",
+                    SortOrder.Descending
+                ),
+                7
+            )
+        );
+        ClearCollect(
+            reportCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.report',
+                    OWNER_ID = User,
+                    REPORT_TITLE <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            shareReportCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.share_authority',
+                    USER_ID = User,
+                    RESOURCE_TYPE = "보고서",
+                    RESOURCE_NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            reportStatus,
+            {
+                reportType: "myReport",
+                count: CountRows(reportCnt)
+            },
+            {
+                reportType: "shareReport",
+                count: CountRows(shareReportCnt)
+            }
+        );
+        ClearCollect(
+            reportStatusChart,
+            {reportStatus: reportStatus}
+        );
+        
+        
+        
+        ClearCollect(
+            dataCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.data',
+                    OWNER_ID = User,
+                    NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            shareDataCnt,
+            AddColumns(
+                Filter(
+                    'nocode-test.share_authority',
+                    USER_ID = User,
+                    RESOURCE_TYPE = "데이터",
+                    RESOURCE_NAME <> ""
+                ),
+                "count",
+                1
+            )
+        );
+        ClearCollect(
+            dataStatus,
+            {
+                reportType: "myData",
+                count: CountRows(dataCnt)
+            },
+            {
+                reportType: "shareData",
+                count: CountRows(shareDataCnt)
+            }
+        );
+
+    Base_1 As Base:
+        loginDate: =Now()
+        logout: =loginScreen
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    "'resource-count_1' As groupContainer.manualLayoutContainer":
+        DropShadow: =DropShadow.None
+        Height: =302
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =260
+        X: =220
+        Y: =97
+        ZIndex: =2
+
+        Container3_6 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 242, 255, 1)
+            Height: =93
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Width: =260
+            ZIndex: =1
+
+            Image3_2 As image:
+                Height: =56
+                Image: =icon_report
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label3_2 As label:
+                Size: =10
+                Text: ="오늘의 보고서 조회수"
+                X: =5
+                ZIndex: =2
+
+            Label4_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('daall.url_history', user_id = User, url="/report/reportDetail",regi_date=Today()) & "건"
+                Width: =80
+                X: =17
+                Y: =40
+                ZIndex: =3
+
+        Container3_7 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(228, 231, 255, 1)
+            Height: =93
+            Width: =260
+            Y: =104
+            ZIndex: =2
+
+            Image6_2 As image:
+                Height: =56
+                Image: =bg_data
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label5_2 As label:
+                Size: =10
+                Text: ="보고서 개수"
+                X: =5
+                ZIndex: =2
+
+            Label7_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('nocode-test.report', OWNER_ID = User) & "건"
+                Width: =87
+                X: =19
+                Y: =36
+                ZIndex: =3
+
+        Container3_8 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(227, 242, 255, 1)
+            Height: =93
+            Width: =260
+            Y: =209
+            ZIndex: =3
+
+            Image7_2 As image:
+                Height: =56
+                Image: =bg_graph
+                Width: =61
+                X: =180
+                Y: =20
+                ZIndex: =1
+
+            Label8_2 As label:
+                Size: =10
+                Text: ="데이터 개수"
+                X: =5
+                ZIndex: =2
+
+            Label9_2 As label:
+                Color: =RGBA(15, 108, 189, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =18
+                Text: =CountIf('nocode-test.data', OWNER_ID = User) & "건"
+                Width: =96
+                X: =16
+                Y: =40
+                ZIndex: =3
+
+    "'user-count-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =291
+        Width: =397
+        X: =504
+        Y: =97
+        ZIndex: =3
+
+        사용자조회수_1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            Title1_1 As label:
+                Align: =Align.Center
+                Height: =25
+                Text: ="차트 제목"
+                Width: =400
+                X: =4
+                Y: =40
+                ZIndex: =2
+
+            LineChart1_1 As lineChart:
+                Height: =302
+                Items: =LineChartSample
+                X: =4
+                ZIndex: =3
+
+            Legend1_1 As legend:
+                Height: =80
+                ItemColorSet: =LineChart1_1.ItemColorSet
+                Items: =LineChart1_1.SeriesLabels
+                Width: =320
+                X: =80
+                Y: =222
+                ZIndex: =4
+
+    "'report-count-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =290
+        Width: =403
+        X: =918
+        Y: =97
+        ZIndex: =4
+
+        CompositeColumnChart1_1 As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =1
+
+            Title2_1 As label:
+                Align: =Align.Center
+                Height: =25
+                Text: ="보고서 별 사용자 조회수"
+                Width: =400
+                X: =1
+                ZIndex: =2
+
+            ColumnChart1_1 As barChart:
+                GridStyle: =GridStyle.All
+                Height: =302
+                Items: =maindata_chart
+                ItemsGap: =2
+                Markers: =false
+                PaddingLeft: =20
+                SeriesAxisMin: =0
+                Size: =CountRows(maindata_chart)
+                X: =1
+                ZIndex: =3
+
+    "'report-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =260
+        X: =220
+        Y: =410
+        ZIndex: =5
+
+        Chart_1 As Chart:
+            Colors: |-
+                =["#CCCCFF", "#30a667", "#5ec16c", "#f6c790", "#f7c772", "#f7b45b", "#f68f64", "#d46068", "#946eb0", "#769acc", "#60c5ea"]
+            Data: |
+                ={
+                    legends: ["Test 1", "Test 1"],
+                    labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
+                    table: Table(
+                        {key:"values", values:[CountRows(reportCnt),CountRows(shareReportCnt)]}
+                    )
+                }
+            Height: =216
+            Legend: |-
+                ={
+                    enabled: false,
+                    source: "labels",
+                    placement: "bottom",
+                    width: 100,
+                    height: 45,
+                    itemGap: 5,
+                    fontSize: 14,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    align: "center"
+                }
+            Options: |-
+                =Table(
+                    {key:"pie.innerRadius",value:"0.7"},{key:"pie.dataLabels", value:"false"}
+                )
+            Subtitle: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 12,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#808080",
+                    additionalStyles: ""
+                }
+            Title: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 20,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    additionalStyles: ""
+                }
+            Width: =193
+            X: =35
+            Y: =35
+
+        Title3_3 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =12
+            Text: ="   보고서 현황"
+            Width: =260
+            Y: =7
+            ZIndex: =2
+
+        Label16_6 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            Text: ="전체보고서"
+            Width: =109
+            X: =85
+            Y: =96
+            ZIndex: =3
+
+        Label16_7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Size: =24
+            Text: =CountRows(reportCnt)+CountRows(shareReportCnt)
+            Width: =57
+            X: =119
+            Y: =125
+            ZIndex: =4
+
+        Rectangle3_3 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =260
+            Y: =262
+            ZIndex: =5
+
+        Label17_6 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="공유보고서" & CountRows(shareReportCnt) & "개"
+            Width: =128
+            X: =19
+            Y: =261
+            ZIndex: =6
+
+        Label17_7 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="내보고서" & CountRows(reportCnt) & "개"
+            Width: =132
+            X: =128
+            Y: =261
+            ZIndex: =7
+
+        Circle3_6 As circle:
+            Fill: =RGBA(71, 158, 245, 1)
+            Height: =12
+            Width: =12
+            X: =23
+            Y: =275
+            ZIndex: =8
+
+        Circle3_7 As circle:
+            Fill: =RGBA(45, 128, 40, 1)
+            Height: =12
+            Width: =12
+            X: =141
+            Y: =275
+            ZIndex: =9
+
+    "'data-chart_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =260
+        X: =504
+        Y: =410
+        ZIndex: =6
+
+        Chart_3 As Chart:
+            Colors: |-
+                =["#CCE5FF", "#30a667", "#5ec16c", "#f6c790", "#f7c772", "#f7b45b", "#f68f64", "#d46068", "#946eb0", "#769acc", "#60c5ea"]
+            Data: |
+                ={
+                    legends: ["Test 1", "Test 1"],
+                    labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
+                    table: Table(
+                        {key:"values", values:[CountRows(reportCnt),CountRows(shareReportCnt)]}
+                    )
+                }
+            Height: =216
+            Legend: |-
+                ={
+                    enabled: false,
+                    source: "labels",
+                    placement: "bottom",
+                    width: 100,
+                    height: 45,
+                    itemGap: 5,
+                    fontSize: 14,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    align: "center"
+                }
+            Options: |-
+                =Table(
+                    {key:"pie.innerRadius",value:"0.7"},{key:"pie.dataLabels", value:"false"}
+                )
+            Subtitle: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 12,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#808080",
+                    additionalStyles: ""
+                }
+            Title: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 20,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    additionalStyles: ""
+                }
+            Width: =193
+            X: =35
+            Y: =35
+            ZIndex: =2
+
+        Title3_4 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =12
+            Text: ="   데이터 현황"
+            Width: =260
+            Y: =8
+            ZIndex: =3
+
+        Label16_8 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            Text: ="전체데이터"
+            Width: =109
+            X: =85
+            Y: =97
+            ZIndex: =4
+
+        Label16_9 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            Size: =24
+            Text: =CountRows(dataCnt)+CountRows(shareDataCnt)
+            Width: =57
+            X: =119
+            Y: =126
+            ZIndex: =5
+
+        Rectangle3_4 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =260
+            Y: =263
+            ZIndex: =6
+
+        Label17_8 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="공유데이터" & CountRows(shareDataCnt) & "개"
+            Width: =128
+            X: =19
+            Y: =262
+            ZIndex: =7
+
+        Label17_9 As label:
+            Align: =Align.Center
+            Size: =10
+            Text: ="내데이터" & CountRows(dataCnt) & "개"
+            Width: =132
+            X: =128
+            Y: =262
+            ZIndex: =8
+
+        Circle3_8 As circle:
+            Fill: =RGBA(71, 158, 245, 1)
+            Height: =12
+            Width: =12
+            X: =23
+            Y: =276
+            ZIndex: =9
+
+        Circle3_9 As circle:
+            Fill: =RGBA(45, 128, 40, 1)
+            Height: =12
+            Width: =12
+            X: =141
+            Y: =276
+            ZIndex: =10
+
+    "'demo-report_1' As groupContainer.manualLayoutContainer":
+        Height: =302
+        Width: =340
+        X: =788
+        Y: =410
+        ZIndex: =7
+
+        Chart_5 As Chart:
+            Data: |
+                ={
+                    legends: ["Test 1", "Test 1"],
+                    labels: ["Label 1","Label 2","Label 3","Label 4","Label 5"],
+                    table: Table(
+                        {key:"values", values:[6,4,5,6,7,8,9,12]}
+                    )
+                }
+            Height: =276
+            Legend: |-
+                ={
+                    enabled: false,
+                    source: "labels",
+                    placement: "bottom",
+                    width: 100,
+                    height: 45,
+                    itemGap: 5,
+                    fontSize: 14,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    align: "center"
+                }
+            Options: |-
+                =Table(
+                    {key:"pie.roseType",value:"radius"},{key:"pie.dataLabels", value:"false"}
+                )
+            Subtitle: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 12,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#808080",
+                    additionalStyles: ""
+                }
+            Title: |-
+                ={
+                    text: "",
+                    height: 0,
+                    align: "center",
+                    paddingTop: 0,
+                    fontSize: 20,
+                    fontFamily: "",
+                    fontWeight: "bold",
+                    fontStyle: "normal",
+                    color: "#666666",
+                    additionalStyles: ""
+                }
+            Width: =253
+            X: =48
+            ZIndex: =2
+
+    banner_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(228, 231, 255, 1)
+        Height: =175
+        Width: =187
+        X: =1136
+        Y: =410
+        ZIndex: =8
+
+        Image9 As image:
+            Height: =128
+            Image: =bg_portal
+            Width: =95
+            X: =80
+            Y: =40
+            ZIndex: =1
+
+        Label10 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="웅진"
+            Width: =54
+            X: =12
+            ZIndex: =2
+
+        Label10_1 As label:
+            Color: =RGBA(15, 84, 140, 1)
+            FontWeight: =FontWeight.Bold
+            Size: =15
+            Text: ="DaAll Portal"
+            X: =12
+            Y: =23
+            ZIndex: =3
+
+    favority_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(232, 248, 255, 1)
+        Height: =113
+        Width: =89
+        X: =1138
+        Y: =599
+        ZIndex: =9
+
+        Image10 As image:
+            Height: =67
+            Image: =bg_favorite
+            Width: =66
+            X: =12
+            Y: =44
+            ZIndex: =1
+
+        Label12 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="즐겨찾기"
+            Width: =89
+            ZIndex: =2
+
+    authority_1 As groupContainer.manualLayoutContainer:
+        Fill: =RGBA(232, 248, 255, 1)
+        Height: =113
+        Width: =83
+        X: =1238
+        Y: =599
+        ZIndex: =10
+
+        Image11 As image:
+            Height: =65
+            Image: =bg_permission
+            Width: =70
+            X: =8
+            Y: =48
+            ZIndex: =1
+
+        Label12_1 As label:
+            FontWeight: =FontWeight.Bold
+            Size: =10
+            Text: ="권한관리"
+            Width: =83
+            ZIndex: =2
+
