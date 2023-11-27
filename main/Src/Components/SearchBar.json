@@ -2587,7 +2587,9 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638366495480021049",
+
+    "LastModifiedTimestamp": "638366712790427018",
+
     "Name": "SearchBar",
     "Rules": [
       {
@@ -2732,6 +2734,7 @@
     {
       "Category": 2,
       "DisplayName": "onSlect",
+
       "Hidden": false,
       "Name": "onSlect",
       "PropertyDataTypeKey": "Boolean",
@@ -2768,16 +2771,6 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "forUser",
-      "Hidden": false,
-      "IsResettable": true,
-      "Name": "forUser",
-      "PropertyDataTypeKey": "Boolean",
-      "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2788,7 +2781,9 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638366495480021049",
+
+  "LastModifiedTimestamp": "638366712790427018",
+
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"
