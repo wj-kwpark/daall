@@ -47,7 +47,11 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
+<<<<<<< HEAD
   "LastModifiedTimestamp": "638366454376474515",
+=======
+  "LastModifiedTimestamp": "638364011546612343",
+>>>>>>> parent of 934324e (Commit)
   "Name": "38097c16f9cd48fa817505f586307ac2",
   "OverridableProperties": {},
   "Version": "1.0"

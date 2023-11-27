@@ -3903,7 +3903,11 @@
       "hDate",
       "hName"
     ],
+<<<<<<< HEAD
     "LastModifiedTimestamp": "638366494589317145",
+=======
+    "LastModifiedTimestamp": "638364011546605532",
+>>>>>>> parent of 934324e (Commit)
     "Name": "Board",
     "Rules": [
       {
@@ -4027,7 +4031,11 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
+<<<<<<< HEAD
   "LastModifiedTimestamp": "638366494589317145",
+=======
+  "LastModifiedTimestamp": "638364011546605532",
+>>>>>>> parent of 934324e (Commit)
   "Name": "78d8d2ba61154f049ae7020ce77c25f6",
   "OverridableProperties": {},
   "TemplateOriginalName": "f5b99109da234076a63a085036c17190",

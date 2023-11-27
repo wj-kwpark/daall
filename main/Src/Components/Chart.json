@@ -3144,7 +3144,11 @@
       },
       "OnReset"
     ],
+<<<<<<< HEAD
     "LastModifiedTimestamp": "638366454376467250",
+=======
+    "LastModifiedTimestamp": "638364011546607075",
+>>>>>>> parent of 934324e (Commit)
     "Name": "Chart",
     "Rules": [
       {
@@ -3315,7 +3319,11 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
+<<<<<<< HEAD
   "LastModifiedTimestamp": "638366454376467250",
+=======
+  "LastModifiedTimestamp": "638364011546607075",
+>>>>>>> parent of 934324e (Commit)
   "Name": "11eb2bdcb8cc446f936b6a174302ce25",
   "OverridableProperties": {},
   "TemplateOriginalName": "f06d4642bcff40f091423eb8af2debbc",

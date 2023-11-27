@@ -14,6 +14,126 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 90,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('daall.url_history', user_id = User, url=\"/report/reportDetail\",regi_date=Today())"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_3.Label4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 46,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('nocode-test.report', OWNER_ID = User)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_4.Label7_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 44,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "CountIf('nocode-test.data', OWNER_ID = User)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "myinfo",
+                "type": "myinfo.Container1.리소스현황.Container3_5.Label9_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountIf"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "main.'resource-count'.Container3.Label4.Text"
                 }
               ],
@@ -294,126 +414,247 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text"
+                  "fullyQualifiedName": "Base.Image2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_3.Label4_1.Text",
+                  "fullyQualifiedName": "Base.Image2_1.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 90,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountIf('daall.url_history', user_id = User, url=\"/report/reportDetail\",regi_date=Today())"
-                  }
                 }
               },
               "properties": {
-                "member": "Text",
-                "module": "myinfo",
-                "type": "myinfo.Container1.리소스현황.Container3_3.Label4_1"
+                "member": "AccessibleLabel",
+                "module": "Base",
+                "type": "Base.Image2_1"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "CountIf"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text"
+                  "fullyQualifiedName": "Base.Image2_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_4.Label7_1.Text",
+                  "fullyQualifiedName": "Base.Image2_1.TabIndex",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 46,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountIf('nocode-test.report', OWNER_ID = User)"
-                  }
                 }
               },
               "properties": {
-                "member": "Text",
-                "module": "myinfo",
-                "type": "myinfo.Container1.리소스현황.Container3_4.Label7_1"
+                "member": "TabIndex",
+                "module": "Base",
+                "type": "Base.Image2_1"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "CountIf"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text"
+                  "fullyQualifiedName": "Base.Image1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "myinfo.Container1.리소스현황.Container3_5.Label9_1.Text",
+                  "fullyQualifiedName": "Base.Image1_1.AccessibleLabel",
                   "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 44,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "CountIf('nocode-test.data', OWNER_ID = User)"
-                  }
                 }
               },
               "properties": {
-                "member": "Text",
-                "module": "myinfo",
-                "type": "myinfo.Container1.리소스현황.Container3_5.Label9_1"
+                "member": "AccessibleLabel",
+                "module": "Base",
+                "type": "Base.Image1_1"
               }
             }
           ],
           "message": {
-            "arguments": [
-              "CountIf"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 0
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Base.Image1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Base.Image1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Base",
+                "type": "Base.Image1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Base",
+                "type": "Base.'1depthMenu_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Base",
+                "type": "Base.'1depthMenu_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.'2depthMenu_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.'2depthMenu_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Base",
+                "type": "Base.'1depthMenu_1'.'2depthMenu_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.'2depthMenu_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Base.'1depthMenu_1'.'2depthMenu_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Base",
+                "type": "Base.'1depthMenu_1'.'2depthMenu_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+<<<<<<< HEAD
                   "fullyQualifiedName": "Base.Image2_1.AccessibleLabel"
                 }
               ],
@@ -654,6 +895,8 @@
             {
               "logicalLocations": [
                 {
+=======
+>>>>>>> parent of 934324e (Commit)
                   "fullyQualifiedName": "Board.OrderTitle_2.AccessibleLabel"
                 }
               ],
@@ -677,7 +920,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
+<<<<<<< HEAD
           "ruleIndex": 2
+=======
+          "ruleIndex": 1
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -707,7 +954,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+<<<<<<< HEAD
           "ruleIndex": 3
+=======
+          "ruleIndex": 2
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -737,7 +988,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
+<<<<<<< HEAD
           "ruleIndex": 2
+=======
+          "ruleIndex": 1
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -767,7 +1022,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+<<<<<<< HEAD
           "ruleIndex": 3
+=======
+          "ruleIndex": 2
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -797,7 +1056,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
+<<<<<<< HEAD
           "ruleIndex": 2
+=======
+          "ruleIndex": 1
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -827,7 +1090,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+<<<<<<< HEAD
           "ruleIndex": 3
+=======
+          "ruleIndex": 2
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -857,7 +1124,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
+<<<<<<< HEAD
           "ruleIndex": 2
+=======
+          "ruleIndex": 1
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [
@@ -887,7 +1158,11 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+<<<<<<< HEAD
           "ruleIndex": 3
+=======
+          "ruleIndex": 2
+>>>>>>> parent of 934324e (Commit)
         },
         {
           "locations": [

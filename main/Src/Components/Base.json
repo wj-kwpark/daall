@@ -6333,7 +6333,11 @@
       "userId",
       "loginDate"
     ],
+<<<<<<< HEAD
     "LastModifiedTimestamp": "638366454376427448",
+=======
+    "LastModifiedTimestamp": "638364011546596063",
+>>>>>>> parent of 934324e (Commit)
     "Name": "Base",
     "Rules": [
       {
@@ -6468,7 +6472,11 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
+<<<<<<< HEAD
   "LastModifiedTimestamp": "638366454376427448",
+=======
+  "LastModifiedTimestamp": "638364011546596063",
+>>>>>>> parent of 934324e (Commit)
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"
