@@ -1,0 +1,209 @@
+userList As screen:
+    BackgroundImage: =bg_login
+
+    Base_4 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    pageTitle_2 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="사용자 관리"
+        Width: =185
+        X: =245
+        Y: =90
+        ZIndex: =2
+
+    Container7_1 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(214, 221, 224, 1)
+        BorderStyle: =BorderStyle.Dotted
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =Color.White
+        Height: =577
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1083
+        X: =236
+        Y: =140
+        ZIndex: =3
+
+        검색필드_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =91
+            Width: =1085
+            X: =5
+            Y: =5
+            ZIndex: =1
+
+            검색버튼_1 As button:
+                Fill: =RGBA(71, 158, 245, 1)
+                Height: =37
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =10
+                Text: ="검색"
+                Width: =97
+                X: =970
+                Y: =33
+                ZIndex: =1
+
+            보고서데이터명_1 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="사용자/아이디"
+                Width: =116
+                X: =691
+                Y: =13
+                ZIndex: =2
+
+            resourceEdit_1 As text:
+                BorderThickness: =0
+                Color: =Color.Black
+                Default: =""
+                FocusedBorderColor: =Color.Transparent
+                Height: =36
+                HoverBorderColor: =Color.Transparent
+                HoverColor: =Color.Black
+                HoverFill: =Color.Transparent
+                PressedColor: =Color.Transparent
+                Width: =221
+                X: =707
+                Y: =40
+                ZIndex: =3
+
+            Rectangle8_5 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =221
+                X: =707
+                Y: =73
+                ZIndex: =4
+
+        검색목록_1 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =461
+            Width: =1085
+            X: =5
+            Y: =96
+            ZIndex: =2
+
+            "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =418
+                Items: ='nocode-test.user'
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                TemplatePadding: =0
+                TemplateSize: =54
+                Width: =1078
+                Y: =42
+                ZIndex: =1
+
+                userName As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.USER_NAME
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =382
+                    X: =35
+                    Y: =19
+                    ZIndex: =2
+
+                userId As label:
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =22
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.USER_ID
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =140
+                    X: =507
+                    Y: =19
+                    ZIndex: =3
+
+                Separator1_1 As rectangle:
+                    Fill: =RGBA(214, 221, 224, 1)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                regiDate_1 As label:
+                    OnSelect: =Select(Parent)
+                    Size: =11
+                    Text: =ThisItem.REGI_DATE
+                    X: =686
+                    Y: =9
+                    ZIndex: =6
+
+            Container11_1 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(245, 249, 255, 1)
+                Height: =42
+                Width: =1085
+                ZIndex: =2
+
+                Rectangle6_1 As rectangle:
+                    Fill: =RGBA(15, 84, 140, 1)
+                    Height: =1
+                    Width: =1085
+                    Y: =40
+                    ZIndex: =1
+
+                Label13_3 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="사용자명"
+                    Width: =458
+                    Y: =1
+                    ZIndex: =2
+
+                Label13_4 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="아이디"
+                    Width: =85
+                    X: =477
+                    Y: =1
+                    ZIndex: =3
+
+                Label13_5 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="보유보고서수"
+                    Width: =102
+                    X: =698
+                    Y: =1
+                    ZIndex: =4
+
+                Label13_6 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="보유데이터수"
+                    Width: =102
+                    X: =939
+                    Y: =2
+                    ZIndex: =5
+
