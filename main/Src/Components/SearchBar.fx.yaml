@@ -1,4 +1,7 @@
 SearchBar As CanvasComponent:
+    onSlect():
+        ThisProperty:
+            Default: =true
     cData: |-
         =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01),USER_NAME:"이름"})
     cList: =boardList
@@ -49,42 +52,6 @@ SearchBar As CanvasComponent:
         X: =60
         Y: =60
         ZIndex: =15
-
-        보고서데이터명_2 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =20
-            Size: =9
-            Text: ="사용자/아이디"
-            Visible: =If(Parent.forUser,true,false)
-            Width: =116
-            X: =630
-            Y: =10
-            ZIndex: =12
-
-        resourceEdit_2 As text:
-            BorderThickness: =0
-            Color: =Color.Black
-            Default: =""
-            FocusedBorderColor: =Color.Transparent
-            Height: =30
-            HoverBorderColor: =Color.Transparent
-            HoverColor: =Color.Black
-            HoverFill: =Color.Transparent
-            PressedColor: =Color.Transparent
-            Visible: =If(Parent.forUser,true,false)
-            Width: =221
-            X: =646
-            Y: =37
-            ZIndex: =13
-
-        Rectangle8_6 As rectangle:
-            Fill: =RGBA(0, 0, 0, 1)
-            Height: =1
-            Visible: =If(Parent.forUser,true,false)
-            Width: =221
-            X: =646
-            Y: =68
-            ZIndex: =14
 
     sDate As group:
         Height: =5

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ff820727-f193-4e72-abac-a866c48bb372",
+    "Name": "PowerAppV2->변수초기화,ExecuteaMySQLquery,응답",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]

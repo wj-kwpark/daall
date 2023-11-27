@@ -3874,7 +3874,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "데이터버튼",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4160,7 +4160,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "보고서버튼",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4446,7 +4446,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "전체버튼",
-      "ParentIndex": 1,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
