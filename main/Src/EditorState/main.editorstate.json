@@ -36,7 +36,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "authority",
-      "ParentIndex": 11,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -189,7 +189,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "banner",
-      "ParentIndex": 9,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1380,7 +1380,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "data-chart",
-      "ParentIndex": 7,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1533,7 +1533,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "demo-report",
-      "ParentIndex": 8,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1686,7 +1686,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "favority",
-      "ParentIndex": 10,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1848,7 +1848,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HtmlText4_2",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5103,7 +5103,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "report-chart",
-      "ParentIndex": 6,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5256,7 +5256,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "report-count-chart",
-      "ParentIndex": 5,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5452,7 +5452,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "resource-count",
-      "ParentIndex": 3,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6027,7 +6027,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "user-count-chart",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
