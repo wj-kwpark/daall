@@ -316,3 +316,19 @@ main As screen:
         Y: =599
         ZIndex: =13
 
+    Button2 As button:
+        OnSelect: =ClearCollect(return2, excuteQuery.Run().result);
+        Text: ="버튼"
+        X: =240
+        Y: =62
+        ZIndex: =14
+
+    Label14 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =226
+        Text: =return2
+        Width: =463
+        X: =445
+        Y: =57
+        ZIndex: =15
+
