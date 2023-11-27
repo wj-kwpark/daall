@@ -1,8 +1,13 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PowerAppV2-&gt;ExecuteaMySQLquery" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="PowerAppV2 -&gt; Execute a MySQL query" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="excuteQuery" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="excuteQuery" />
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <object name="ManualTriggerInput" />
+      <string name="ResponseActionOutput_result_def" />
+      <object name="ResponseActionOutput">
+        <property name="result" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://asia-001.azure-apim.net/apim/logicflows">
@@ -16,6 +21,9 @@
           </param>
           <representation mediaType="application/json" />
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>

@@ -2,7 +2,7 @@
   {
     "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
     "FlowNameId": "06980f00-c2cd-434c-9d24-afbf85b5ec32",
-    "Name": "PowerAppV2->ExecuteaMySQLquery",
+    "Name": "excuteQuery",
     "ServiceKind": "ConnectedWadl",
     "Type": "ServiceInfo",
     "WorkflowEntityId": null
