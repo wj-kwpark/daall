@@ -1,6 +1,6 @@
 Board As CanvasComponent:
     BoardData: |-
-        =Table({BOARD_TITLE: "제목", REGI_DATE: Date(1999,01,01), REGI_ID: "이름"})
+        =Table({BOARD_TITLE: "제목", REGI_DATE: "1999-01-01", REGI_ID: "이름"})
     Fill: =RGBA(0, 0, 0, 0)
     hDate: ="생성일"
     Height: =640

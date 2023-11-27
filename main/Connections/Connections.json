@@ -7,7 +7,11 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "appVer": "3.23105.18",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "modifiedOn": "2023-11-27 02:38:04",
+=======
+        "modifiedOn": "2023-11-27 01:02:01",
+>>>>>>> parent of ee5da72 (Commit)
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
 =======
         "modifiedOn": "2023-11-23 08:00:09",
@@ -123,7 +127,11 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "appVer": "3.23105.18",
 <<<<<<< HEAD
+<<<<<<< HEAD
         "modifiedOn": "2023-11-27 02:38:04",
+=======
+        "modifiedOn": "2023-11-27 01:02:01",
+>>>>>>> parent of ee5da72 (Commit)
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"]}}",
 =======
         "modifiedOn": "2023-11-23 08:00:09",
@@ -173,5 +181,36 @@
     "dependencies": {},
     "dependents": [],
     "id": "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9"
+<<<<<<< HEAD
+=======
+  },
+  "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "excuteQuery"
+    ],
+    "dependencies": {
+      "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+    },
+    "dependents": [],
+    "id": "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69"
+>>>>>>> parent of ee5da72 (Commit)
   }
 }
