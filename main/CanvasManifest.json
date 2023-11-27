@@ -109,10 +109,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
-    "Id": "f911be1e-ee62-4f84-9443-91cdbae0893c",
+    "Id": "20f98633-43a8-4f9d-a921-57073725483f",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "daall-mobile-new",
+    "Name": "daall-mobile-new.msapp",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false

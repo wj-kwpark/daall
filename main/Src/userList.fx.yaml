@@ -34,57 +34,10 @@ userList As screen:
         검색필드_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
             Height: =91
-            Width: =1085
+            Width: =1072
             X: =5
             Y: =5
             ZIndex: =1
-
-            검색버튼_1 As button:
-                Fill: =RGBA(71, 158, 245, 1)
-                Height: =37
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Size: =10
-                Text: ="검색"
-                Width: =97
-                X: =970
-                Y: =33
-                ZIndex: =1
-
-            보고서데이터명_1 As label:
-                FontWeight: =FontWeight.Bold
-                Height: =20
-                Size: =9
-                Text: ="사용자/아이디"
-                Width: =116
-                X: =691
-                Y: =13
-                ZIndex: =2
-
-            resourceEdit_1 As text:
-                BorderThickness: =0
-                Color: =Color.Black
-                Default: =""
-                FocusedBorderColor: =Color.Transparent
-                Height: =36
-                HoverBorderColor: =Color.Transparent
-                HoverColor: =Color.Black
-                HoverFill: =Color.Transparent
-                PressedColor: =Color.Transparent
-                Width: =221
-                X: =707
-                Y: =40
-                ZIndex: =3
-
-            Rectangle8_5 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =1
-                Width: =221
-                X: =707
-                Y: =73
-                ZIndex: =4
 
         검색목록_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
