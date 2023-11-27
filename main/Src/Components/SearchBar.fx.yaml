@@ -1,4 +1,7 @@
 SearchBar As CanvasComponent:
+    onSlect():
+        ThisProperty:
+            Default: =true
     cData: |-
         =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01),USER_NAME:"이름"})
     cList: |-

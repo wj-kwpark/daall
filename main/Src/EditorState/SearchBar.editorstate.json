@@ -1443,20 +1443,30 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        "cData",
+        "cList",
+        "onSlect",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"\"})",
-          "InvariantPropertyName": "cData",
+          "AutoRuleBindingString": "DateTime(2000, 1, 1, 0, 0, 0)",
+          "InvariantPropertyName": "startDate",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "cList",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "forUser",
+          "AutoRuleBindingString": "DateTime(2000, 1, 1, 0, 0, 0)",
+          "InvariantPropertyName": "endDate",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"텍스트\"",
+          "InvariantPropertyName": "sTitle",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
@@ -1503,7 +1513,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "forUser",
+          "PropertyName": "startDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "endDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "sTitle",
           "RuleProviderType": "System"
         },
         {
@@ -1534,6 +1554,11 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "onSlect",
           "RuleProviderType": "System"
         },
         {

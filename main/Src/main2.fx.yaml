@@ -717,19 +717,3 @@ main2 As screen:
             Width: =83
             ZIndex: =2
 
-    Button2 As button:
-        OnSelect: =ClearCollect(return, excuteQuery.Run().result);
-        Text: ="버튼"
-        X: =220
-        Y: =42
-        ZIndex: =11
-
-    Label14 As label:
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =694
-        Text: =return.result
-        Width: =898
-        X: =425
-        Y: =37
-        ZIndex: =12
-

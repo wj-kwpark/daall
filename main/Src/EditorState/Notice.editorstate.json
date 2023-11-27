@@ -5131,7 +5131,17 @@
           "NameMapSourceSchema": "?"
         },
         "cList",
-        "forUser",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "onSlect",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        "startDate",
+        "endDate",
+        "sTitle",
         "OnReset"
       ],
       "HasDynamicProperties": false,
@@ -5165,7 +5175,7 @@
         {
           "Category": "Data",
           "PropertyName": "cData",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -5174,7 +5184,17 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "forUser",
+          "PropertyName": "startDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "endDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "sTitle",
           "RuleProviderType": "System"
         },
         {
@@ -5205,6 +5225,11 @@
         {
           "Category": "Design",
           "PropertyName": "Fill",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "onSlect",
           "RuleProviderType": "System"
         },
         {
