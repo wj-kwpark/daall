@@ -717,3 +717,19 @@ main2 As screen:
             Width: =83
             ZIndex: =2
 
+    Button2 As button:
+        OnSelect: =Set(result, 'PowerAppV2->ExecuteaMySQLquery'.Run());
+        Text: ="버튼"
+        X: =220
+        Y: =42
+        ZIndex: =11
+
+    Label14 As label:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =427
+        Text: =result
+        Width: =747
+        X: =448
+        Y: =42
+        ZIndex: =12
+
