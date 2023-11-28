@@ -317,7 +317,7 @@ main As screen:
         ZIndex: =13
 
     Button2 As button:
-        OnSelect: =Set(result, excuteQuery.Run().return);
+        OnSelect: =Set(result, excuteQuery.Run());
         Text: ="버튼"
         X: =60
         Y: =61

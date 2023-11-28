@@ -159,14 +159,15 @@
           ],
           "message": {
             "arguments": [
-              "result"
+              "Text",
+              "Error"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
           "ruleIndex": 1
         },
         {
@@ -183,10 +184,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 7,
-                  "charOffset": 29,
+                  "charLength": 17,
+                  "charOffset": 12,
                   "snippet": {
-                    "text": ".return"
+                    "text": "excuteQuery.Run()"
                   }
                 }
               },
@@ -198,12 +199,16 @@
             }
           ],
           "message": {
+            "arguments": [
+              "Run",
+              "excuteQuery"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
+          "ruleId": "app-ErrUnknownNamespaceFunction",
           "ruleIndex": 2
         },
         {
@@ -220,10 +225,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 37,
+                  "charLength": 30,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "Set(result, excuteQuery.Run().return)"
+                    "text": "Set(result, excuteQuery.Run())"
                   }
                 }
               },
@@ -2018,36 +2023,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.result"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.result",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "result",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.icon_nav_arrow_down"
                 }
               ],
@@ -2129,16 +2104,16 @@
               }
             },
             {
-              "id": "app-ErrInvalidName",
+              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
               "messageStrings": {
                 "issue": {
-                  "text": "Name isn't valid. '{0}' isn't recognized."
+                  "text": "Expected {0} value."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Remove or correct the reference to the name that isn't valid."
+                  "Change the rule to produce a {0} value."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",
@@ -2146,10 +2121,10 @@
               }
             },
             {
-              "id": "app-ErrInvalidDot",
+              "id": "app-ErrUnknownNamespaceFunction",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid use of '.'"
+                  "text": "'{0}' is an unknown or unsupported function in namespace '{1}'."
                 }
               },
               "properties": {

@@ -29,9 +29,7 @@
       "daall.url_history"
     ],
     "dependencies": {},
-    "dependents": [
-      "f2dd3885-0f09-4f9c-8f02-dd5480c23764"
-    ],
+    "dependents": [],
     "id": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
   },
   "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": {
@@ -92,39 +90,5 @@
     "dependencies": {},
     "dependents": [],
     "id": "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9"
-  },
-  "f2dd3885-0f09-4f9c-8f02-dd5480c23764": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": {
-          "value": "shared_azuremysql"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_azuremysql": {
-          "value": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "06980f00-c2cd-434c-9d24-afbf85b5ec32"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "excuteQuery"
-    ],
-    "dependencies": {
-      "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
-    },
-    "dependents": [],
-    "id": "f2dd3885-0f09-4f9c-8f02-dd5480c23764"
   }
 }
