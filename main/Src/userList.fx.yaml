@@ -221,9 +221,6 @@ userList As screen:
                     ZIndex: =5
 
     SearchBar_3 As SearchBar:
-        cData: |-
-            =//'nocode-test.user'
-            userScreenList
         forUser: =true
         Height: =100
         Width: =1074

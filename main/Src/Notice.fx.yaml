@@ -364,7 +364,6 @@ Notice As screen:
             ZIndex: =3
 
         SearchBar_1 As SearchBar:
-            cData: =noticeData
             Height: =91
             Width: =1046
             X: =20

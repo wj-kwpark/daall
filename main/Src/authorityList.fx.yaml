@@ -97,7 +97,6 @@ authorityList As screen:
         ZIndex: =3
 
     SearchBar_2 As SearchBar:
-        cData: =Filter(authoritydata,OWNER_ID=User)
         Height: =91
         tDate: ="생성일"
         tTitle: ="보고서/데이터명"

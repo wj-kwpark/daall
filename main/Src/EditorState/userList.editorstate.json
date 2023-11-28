@@ -3274,14 +3274,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"\"})",
-          "InvariantPropertyName": "cData",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "cData",
         "cList",
         {
           "AFDDataSourceName": "",
@@ -3331,7 +3324,7 @@
         {
           "Category": "Data",
           "PropertyName": "cData",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",

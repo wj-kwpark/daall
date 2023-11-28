@@ -1443,14 +1443,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"이름\",USER_ID:\"ID\",RESOURCE_TYPE:\"\"})",
-          "InvariantPropertyName": "cData",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "cData",
         "cList",
         {
           "AFDDataSourceName": "",
