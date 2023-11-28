@@ -231,7 +231,7 @@ userList As screen:
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =228
-        Items: =userScreenList
+        Items: =return
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -312,4 +312,11 @@ userList As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+    Button2_2 As button:
+        OnSelect: =Set(return, 'PowerAppV2->ExecuteaMySQLquery,응답'.Run().ret)
+        Text: ="버튼"
+        X: =270
+        Y: =346
+        ZIndex: =6
 

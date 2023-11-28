@@ -1964,6 +1964,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.userScreenList"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.userScreenList",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "userScreenList",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.icon_nav_arrow_down"
                 }
               ],
