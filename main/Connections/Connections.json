@@ -7,7 +7,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 04:37:03",
+        "modifiedOn": "2023-11-28 04:45:01",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
         "version": 1
       },
@@ -44,7 +44,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 04:37:03",
+        "modifiedOn": "2023-11-28 04:45:01",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"]}}",
         "version": 1
       },

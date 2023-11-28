@@ -200,79 +200,12 @@ main As screen:
         Y: =86
         ZIndex: =6
 
-        사용자조회수 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =1
-
-            Title1 As label:
-                Align: =Align.Center
-                Height: =25
-                Text: ="차트 제목"
-                Width: =400
-                X: =4
-                Y: =40
-                ZIndex: =2
-
-            LineChart1 As lineChart:
-                Height: =302
-                Items: =LineChartSample
-                X: =4
-                ZIndex: =3
-
-            Legend1 As legend:
-                Height: =80
-                ItemColorSet: =LineChart1.ItemColorSet
-                Items: =LineChart1.SeriesLabels
-                Width: =320
-                X: =80
-                Y: =222
-                ZIndex: =4
-
     "'report-count-chart' As groupContainer.manualLayoutContainer":
         Height: =302
         Width: =401
         X: =932
         Y: =86
         ZIndex: =7
-
-        CompositeColumnChart1 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
-            ZIndex: =1
-
-            Title2 As label:
-                Align: =Align.Center
-                Height: =25
-                Text: ="차트 제목"
-                Width: =400
-                X: =1
-                Y: =40
-                ZIndex: =2
-
-            ColumnChart1 As barChart:
-                GridStyle: =GridStyle.All
-                Height: =302
-                Items: =maindata_chart
-                ItemsGap: =2
-                Markers: =false
-                SeriesAxisMin: =0
-                Size: =CountRows(maindata_chart)
-                X: =1
-                ZIndex: =3
-
-            Legend2 As legend:
-                Height: =80
-                ItemColorSet: =ColumnChart1.ItemColorSet
-                Items: =ColumnChart1.SeriesLabels
-                Width: =320
-                X: =81
-                Y: =222
-                ZIndex: =4
 
     "'report-chart' As groupContainer.manualLayoutContainer":
         Height: =302
@@ -315,17 +248,4 @@ main As screen:
         X: =1250
         Y: =599
         ZIndex: =13
-
-    Button2 As button:
-        OnSelect: =Set(result, excuteQuery.Run());
-        Text: ="버튼"
-        X: =60
-        Y: =61
-        ZIndex: =14
-
-    Label14 As label:
-        Text: =result
-        X: =615
-        Y: =160
-        ZIndex: =15
 
