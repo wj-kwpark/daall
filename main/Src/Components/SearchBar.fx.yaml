@@ -1,6 +1,20 @@
 SearchBar As CanvasComponent:
     cData: |-
-        =Table({BOARD_TITLE:"제목",REGI_DATE:Date(2022,01,01),USER_NAME:"이름",USER_ID:"ID",RESOURCE_TYPE:"TYPE",reportCnt:0,dataCnt:0})
+        =Table(
+            {
+                BOARD_TITLE: "제목",
+                REGI_DATE: Date(
+                    2022,
+                    01,
+                    01
+                ),
+                USER_NAME: "이름",
+                USER_ID: "ID",
+                RESOURCE_TYPE: "TYPE",
+                REPORT_CNT: 0,
+                DATA_CNT: 0
+            }
+        )
     cList: =boardList
     Fill: =RGBA(0, 0, 0, 0)
     forUser: =false

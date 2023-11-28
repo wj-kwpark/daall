@@ -3839,7 +3839,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638367553096937612",
+    "LastModifiedTimestamp": "638367555377460613",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3856,7 +3856,7 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "Table({BOARD_TITLE:\"제목\",REGI_DATE:Date(2022,01,01),USER_NAME:\"이름\",USER_ID:\"ID\",RESOURCE_TYPE:\"TYPE\",reportCnt:0,dataCnt:0})",
+        "InvariantScript": "Table(\n    {\n        BOARD_TITLE: \"제목\",\n        REGI_DATE: Date(\n            2022,\n            01,\n            01\n        ),\n        USER_NAME: \"이름\",\n        USER_ID: \"ID\",\n        RESOURCE_TYPE: \"TYPE\",\n        REPORT_CNT: 0,\n        DATA_CNT: 0\n    }\n)",
         "Property": "cData",
         "RuleProviderType": "System"
       },
@@ -3952,7 +3952,7 @@
       "Name": "cData",
       "PropertyDataTypeKey": "Table",
       "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"dataCnt\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"reportCnt\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     },
     {
       "Category": 0,
@@ -3981,7 +3981,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638367553096937612",
+  "LastModifiedTimestamp": "638367555377460613",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"
