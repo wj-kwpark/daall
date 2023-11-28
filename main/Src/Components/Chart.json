@@ -73,7 +73,7 @@
         "Name": "Header_1",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 280,
+        "PublishOrderIndex": 297,
         "Rules": [
           {
             "Category": "Data",
@@ -355,7 +355,7 @@
         "Name": "Pie",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 281,
+        "PublishOrderIndex": 298,
         "Rules": [
           {
             "Category": "Data",
@@ -637,7 +637,7 @@
         "Name": "Funnel",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 282,
+        "PublishOrderIndex": 299,
         "Rules": [
           {
             "Category": "Data",
@@ -919,7 +919,7 @@
         "Name": "SolidGauge",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 283,
+        "PublishOrderIndex": 300,
         "Rules": [
           {
             "Category": "Data",
@@ -1201,7 +1201,7 @@
         "Name": "Candle",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 284,
+        "PublishOrderIndex": 301,
         "Rules": [
           {
             "Category": "Data",
@@ -1483,7 +1483,7 @@
         "Name": "Scatter",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 285,
+        "PublishOrderIndex": 302,
         "Rules": [
           {
             "Category": "Data",
@@ -1765,7 +1765,7 @@
         "Name": "Bar",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 286,
+        "PublishOrderIndex": 303,
         "Rules": [
           {
             "Category": "Data",
@@ -2047,7 +2047,7 @@
         "Name": "Radar",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 287,
+        "PublishOrderIndex": 304,
         "Rules": [
           {
             "Category": "Data",
@@ -2329,7 +2329,7 @@
         "Name": "Line",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 288,
+        "PublishOrderIndex": 305,
         "Rules": [
           {
             "Category": "Data",
@@ -2611,7 +2611,7 @@
         "Name": "PlotArea",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 289,
+        "PublishOrderIndex": 306,
         "Rules": [
           {
             "Category": "Data",
@@ -2893,7 +2893,7 @@
         "Name": "Legend",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 290,
+        "PublishOrderIndex": 307,
         "Rules": [
           {
             "Category": "Data",
