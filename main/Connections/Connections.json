@@ -7,7 +7,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 04:23:32",
+        "modifiedOn": "2023-11-28 04:37:03",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
         "version": 1
       },
@@ -30,7 +30,7 @@
     ],
     "dependencies": {},
     "dependents": [
-      "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69"
+      "f2dd3885-0f09-4f9c-8f02-dd5480c23764"
     ],
     "id": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
   },
@@ -46,7 +46,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 04:23:32",
+        "modifiedOn": "2023-11-28 04:37:03",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"]}}",
         "version": 1
       },
@@ -93,7 +93,7 @@
     "dependents": [],
     "id": "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9"
   },
-  "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69": {
+  "f2dd3885-0f09-4f9c-8f02-dd5480c23764": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
@@ -125,6 +125,6 @@
       "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
     },
     "dependents": [],
-    "id": "ccb72421-32a1-45cc-b3f7-3cebdfbc0a69"
+    "id": "f2dd3885-0f09-4f9c-8f02-dd5480c23764"
   }
 }

@@ -143,10 +143,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 7,
+                  "charLength": 6,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "return2"
+                    "text": "result"
                   }
                 }
               },
@@ -159,15 +159,14 @@
           ],
           "message": {
             "arguments": [
-              "Text",
-              "Table"
+              "result"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
+          "ruleId": "app-ErrInvalidName",
           "ruleIndex": 1
         },
         {
@@ -185,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 39,
+                  "charOffset": 29,
                   "snippet": {
                     "text": ".return"
                   }
@@ -199,15 +198,12 @@
             }
           ],
           "message": {
-            "arguments": [
-              "return"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
+          "ruleId": "app-ErrInvalidDot",
           "ruleIndex": 2
         },
         {
@@ -224,10 +220,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 47,
+                  "charLength": 37,
                   "charOffset": 0,
                   "snippet": {
-                    "text": "ClearCollect(return2, excuteQuery.Run().return)"
+                    "text": "Set(result, excuteQuery.Run().return)"
                   }
                 }
               },
@@ -239,15 +235,12 @@
             }
           ],
           "message": {
-            "arguments": [
-              "ClearCollect"
-            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
           "ruleIndex": 3
         },
         {
@@ -2025,6 +2018,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.result"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.result",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "result",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.icon_nav_arrow_down"
                 }
               ],
@@ -2106,23 +2129,6 @@
               }
             },
             {
-              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-              "messageStrings": {
-                "issue": {
-                  "text": "Expected {0} value."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Change the rule to produce a {0} value."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrInvalidName",
               "messageStrings": {
                 "issue": {
@@ -2140,14 +2146,31 @@
               }
             },
             {
-              "id": "app-ErrInvalidArgs-Func",
+              "id": "app-ErrInvalidDot",
               "messageStrings": {
                 "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
+                  "text": "Invalid use of '.'"
                 }
               },
               "properties": {
                 "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleCtxtVariableTypes",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
+                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
