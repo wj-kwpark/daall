@@ -131,6 +131,8 @@ authorityList As screen:
             ClearCollect(
                 authorityListdata,
             Filter(authorityListdata,OWNER_ID=User));
+            
+            Set(boardList,authorityListdata)
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -180,7 +182,10 @@ authorityList As screen:
                     OWNER_ID = User,
                     RESOURCE_TYPE = "report"
                 )
-            )
+            );
+            
+            
+            Set(boardList,authorityListdata);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -230,7 +235,10 @@ authorityList As screen:
                     OWNER_ID = User,
                     RESOURCE_TYPE = "data"
                 )
-            )
+            );
+            
+            
+            Set(boardList,authorityListdata);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)

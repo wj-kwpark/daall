@@ -1405,7 +1405,7 @@
       "Type": "ControlInfo"
     },
     "SearchBar": {
-      "AllowAccessToGlobals": false,
+      "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
         {
