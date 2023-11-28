@@ -1,6 +1,6 @@
 userList As screen:
     BackgroundImage: =bg_login
-    OnVisible: =Set(userScreenList,'PowerAppV2->ExecuteaMySQLquery,응답'.Run().ret);
+    OnVisible: =Set(userScreenList,'PowerAppV2->ExecuteaMySQLquery,응답'.Run().return);
 
     Base_4 As Base:
         logout: =loginScreen
@@ -227,96 +227,4 @@ userList As screen:
         X: =245
         Y: =140
         ZIndex: =4
-
-    "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =228
-        Items: =return
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =104
-        Width: =618
-        X: =374
-        Y: =447
-        ZIndex: =5
-
-        Image8 As image:
-            Height: =72
-            OnSelect: =Select(Parent)
-            RadiusBottomLeft: =8
-            RadiusBottomRight: =8
-            RadiusTopLeft: =8
-            RadiusTopRight: =8
-            Width: =72
-            X: =16
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =1
-
-        Title2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.USER_ID
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle2.Size * 1.8)) / 2
-            ZIndex: =2
-
-        Subtitle2 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.USER_NAME
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title2.Width
-            X: =Title2.X
-            Y: =Title2.Y + Title2.Height
-            ZIndex: =3
-
-        NextArrow2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: =Select(Parent)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="항목 세부 정보 보기"
-            Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
-
-        Separator3 As rectangle:
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Rectangle4 As rectangle:
-            Height: =Parent.TemplateHeight - Separator3.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =6
-
-    Button2_2 As button:
-        OnSelect: =Set(return, 'PowerAppV2->ExecuteaMySQLquery,응답'.Run().ret)
-        Text: ="버튼"
-        X: =270
-        Y: =346
-        ZIndex: =6
 
