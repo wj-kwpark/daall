@@ -7,7 +7,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 08:37:50",
+        "modifiedOn": "2023-11-28 08:54:41",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
         "version": 1
       },
@@ -30,22 +30,28 @@
     ],
     "dependencies": {},
     "dependents": [
-      "2b321eb4-6d89-49b8-be23-339c87e45053"
+      "5738a08b-a8ef-4edf-93b5-f41b718a4327"
     ],
     "id": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
   },
-  "2b321eb4-6d89-49b8-be23-339c87e45053": {
+  "5738a08b-a8ef-4edf-93b5-f41b718a4327": {
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": {
+          "value": "shared_azuremysql"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "42bd720d-1877-4ede-95cf-3baf52d8d1bf"
         }
       },
       "parameterHintsV2": {
+        "shared_azuremysql": {
+          "value": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "42bd720d-1877-4ede-95cf-3baf52d8d1bf"
@@ -54,13 +60,13 @@
     },
     "datasets": {},
     "dataSources": [
-      "PowerAppV2->ExecuteaMySQLquery,응답"
+      "userListTest"
     ],
     "dependencies": {
       "shared_azuremysql": "0d3f3df5-cbdc-4b13-9853-6b514c8e07da"
     },
     "dependents": [],
-    "id": "2b321eb4-6d89-49b8-be23-339c87e45053"
+    "id": "5738a08b-a8ef-4edf-93b5-f41b718a4327"
   },
   "ca1db8dd-4853-4b86-b3f0-dedebf21c0e9": {
     "appActions": [
@@ -74,7 +80,7 @@
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
         "appVer": "3.23105.18",
-        "modifiedOn": "2023-11-28 08:37:50",
+        "modifiedOn": "2023-11-28 08:54:41",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"]}}",
         "version": 1
       },

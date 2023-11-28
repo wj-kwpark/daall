@@ -1,6 +1,6 @@
 userList As screen:
     BackgroundImage: =bg_login
-    OnVisible: =Set(userScreenList,'PowerAppV2->ExecuteaMySQLquery,응답'.Run().return);
+    OnVisible: =ClearCollect(userScreenList,userListTest.Run().return);
 
     Base_4 As Base:
         logout: =loginScreen
@@ -221,6 +221,7 @@ userList As screen:
                     ZIndex: =5
 
     SearchBar_3 As SearchBar:
+        cData: =userScreenList
         forUser: =true
         Height: =100
         Width: =1074

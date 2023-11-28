@@ -1,15 +1,15 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PowerAppV2-&gt;ExecuteaMySQLquery,응답" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="PowerAppV2 -&gt; Execute a MySQL query,응답" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://asia-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="userListTest" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="userListTest" />
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <object name="ManualTriggerInput" />
-      <string name="ResponseActionOutput_items_def_USER_ID_def" />
-      <string name="ResponseActionOutput_items_def_USER_NAME_def" />
-      <string name="ResponseActionOutput_items_def_companyName_def" />
-      <integer name="ResponseActionOutput_items_def_REPORT_CNT_def" />
-      <integer name="ResponseActionOutput_items_def_DATA_CNT_def" />
-      <string name="ResponseActionOutput_items_def_regi_date_def" />
-      <object name="ResponseActionOutput_items_def">
+      <string name="ResponseActionOutput_return_def_items_def_USER_ID_def" />
+      <string name="ResponseActionOutput_return_def_items_def_USER_NAME_def" />
+      <string name="ResponseActionOutput_return_def_items_def_companyName_def" />
+      <integer name="ResponseActionOutput_return_def_items_def_REPORT_CNT_def" />
+      <integer name="ResponseActionOutput_return_def_items_def_DATA_CNT_def" />
+      <string name="ResponseActionOutput_return_def_items_def_regi_date_def" />
+      <object name="ResponseActionOutput_return_def_items_def">
         <property name="USER_ID" type="string" />
         <property name="USER_NAME" type="string" />
         <property name="companyName" type="string" />
@@ -17,7 +17,10 @@
         <property name="DATA_CNT" type="integer" />
         <property name="regi_date" type="string" />
       </object>
-      <array typeRef="ResponseActionOutput_items_def" name="ResponseActionOutput" />
+      <array typeRef="ResponseActionOutput_return_def_items_def" name="ResponseActionOutput_return_def" />
+      <object name="ResponseActionOutput">
+        <property name="return" typeRef="ResponseActionOutput_return_def" />
+      </object>
       <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
