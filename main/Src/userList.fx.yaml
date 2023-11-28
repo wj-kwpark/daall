@@ -211,7 +211,7 @@ userList As screen:
     SearchBar_3 As SearchBar:
         cData: ='nocode-test.user'
         forUser: =true
-        Height: =86
+        Height: =100
         Width: =1074
         X: =245
         Y: =140
