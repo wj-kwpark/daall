@@ -1520,7 +1520,14 @@
     "Gallery1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        "Items",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "CustomGallerySample",
+          "InvariantPropertyName": "Items",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "WrapCount",
         "TemplateSize",
         "TemplatePadding",
@@ -2100,7 +2107,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryImage.ID%",
       "Name": "Image4",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4508,7 +4515,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryNextIcon.ID%",
       "Name": "NextArrow1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4691,7 +4698,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryRectangle1.ID%",
       "Name": "Rectangle3",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5320,7 +5327,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator2",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5412,7 +5419,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.userName",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         "Color",
         "DisabledColor",
@@ -5456,7 +5470,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySubtitle.ID%",
       "Name": "Subtitle1",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5643,7 +5657,14 @@
       "ControlPropertyState": [
         "Live",
         "Overflow",
-        "Text",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "ThisItem.userId",
+          "InvariantPropertyName": "Text",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Role",
         "Color",
         "DisabledColor",
@@ -5687,7 +5708,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGalleryTitle.ID%",
       "Name": "Title1",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

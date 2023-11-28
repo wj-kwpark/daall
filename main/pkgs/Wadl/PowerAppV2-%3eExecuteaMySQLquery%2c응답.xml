@@ -3,11 +3,17 @@
   <grammars>
     <jsonTypes targetNamespace="https://asia-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <object name="ManualTriggerInput" />
-      <string name="ResponseActionOutput_ret_def_items_def_userName_def" />
-      <string name="ResponseActionOutput_ret_def_items_def_userId_def" />
+      <string name="ResponseActionOutput_ret_def_items_def_USER_ID_def" />
+      <string name="ResponseActionOutput_ret_def_items_def_PASSWORD_def" />
+      <string name="ResponseActionOutput_ret_def_items_def_USER_NAME_def" />
+      <string name="ResponseActionOutput_ret_def_items_def_WORKSPACE_ID_def" />
+      <string name="ResponseActionOutput_ret_def_items_def_REGI_DATE_def" />
       <object name="ResponseActionOutput_ret_def_items_def">
-        <property name="userName" type="string" />
-        <property name="userId" type="string" />
+        <property name="USER_ID" type="string" />
+        <property name="PASSWORD" type="string" />
+        <property name="USER_NAME" type="string" />
+        <property name="WORKSPACE_ID" type="string" />
+        <property name="REGI_DATE" type="string" />
       </object>
       <array typeRef="ResponseActionOutput_ret_def_items_def" name="ResponseActionOutput_ret_def" />
       <object name="ResponseActionOutput">

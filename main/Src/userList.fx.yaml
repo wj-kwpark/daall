@@ -1,5 +1,6 @@
 userList As screen:
     BackgroundImage: =bg_login
+    OnVisible: =Set(userScreenList,'PowerAppV2->ExecuteaMySQLquery,응답'.Run().ret);
 
     Base_4 As Base:
         logout: =loginScreen
@@ -98,7 +99,10 @@ userList As screen:
             "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =418
-                Items: =SearchBar_3.cList
+                Items: |+
+                    =SearchBar_3.cList
+                    
+                    
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 TemplatePadding: =0
@@ -147,13 +151,21 @@ userList As screen:
                     Y: =Parent.TemplateHeight - Self.Height
                     ZIndex: =5
 
-                regiDate_1 As label:
+                reportCount As label:
                     OnSelect: =Select(Parent)
                     Size: =11
-                    Text: =ThisItem.REGI_DATE
+                    Text: =ThisItem.USER_ID
                     X: =686
                     Y: =9
                     ZIndex: =6
+
+                dataCount As label:
+                    OnSelect: =Select(Parent)
+                    Size: =11
+                    Text: =ThisItem.REGI_DATE
+                    X: =897
+                    Y: =14
+                    ZIndex: =7
 
             Container11_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
@@ -209,7 +221,9 @@ userList As screen:
                     ZIndex: =5
 
     SearchBar_3 As SearchBar:
-        cData: ='nocode-test.user'
+        cData: |-
+            =//'nocode-test.user'
+            userScreenList
         forUser: =true
         Height: =100
         Width: =1074

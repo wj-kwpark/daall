@@ -104,7 +104,7 @@
         "Name": "보고서데이터명_6",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 258,
+        "PublishOrderIndex": 259,
         "Rules": [
           {
             "Category": "Data",
@@ -801,7 +801,7 @@
         "Name": "보고서데이터명_7",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 262,
+        "PublishOrderIndex": 261,
         "Rules": [
           {
             "Category": "Data",
@@ -1194,7 +1194,7 @@
         "Name": "resourceEdit_6",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 264,
+        "PublishOrderIndex": 262,
         "Rules": [
           {
             "Category": "Data",
@@ -1503,7 +1503,7 @@
         "Name": "startDate_3",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 265,
+        "PublishOrderIndex": 263,
         "Rules": [
           {
             "Category": "Data",
@@ -1640,7 +1640,7 @@
         "Name": "endDate_3",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 266,
+        "PublishOrderIndex": 264,
         "Rules": [
           {
             "Category": "Data",
@@ -1848,7 +1848,7 @@
         "Name": "resourceEdit_7",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 267,
+        "PublishOrderIndex": 265,
         "Rules": [
           {
             "Category": "Data",
@@ -2246,7 +2246,7 @@
         "Name": "검색버튼_5",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 268,
+        "PublishOrderIndex": 266,
         "Rules": [
           {
             "Category": "Data",
@@ -2574,7 +2574,7 @@
         "Name": "-text",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 269,
+        "PublishOrderIndex": 267,
         "Rules": [
           {
             "Category": "Data",
@@ -2902,7 +2902,7 @@
         "Name": "Rectangle8_15",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 270,
+        "PublishOrderIndex": 271,
         "Rules": [
           {
             "Category": "Design",
@@ -3079,7 +3079,7 @@
         "Name": "Rectangle8_17",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 271,
+        "PublishOrderIndex": 272,
         "Rules": [
           {
             "Category": "Design",
@@ -3256,7 +3256,7 @@
         "Name": "Rectangle8_16",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 272,
+        "PublishOrderIndex": 273,
         "Rules": [
           {
             "Category": "Design",
@@ -3433,7 +3433,7 @@
         "Name": "Rectangle8_18",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 273,
+        "PublishOrderIndex": 274,
         "Rules": [
           {
             "Category": "Design",
@@ -3576,7 +3576,7 @@
         "Name": "sTitle",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 259,
+        "PublishOrderIndex": 268,
         "Rules": [
           {
             "Category": "Design",
@@ -3656,7 +3656,7 @@
         "Name": "sDate",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 261,
+        "PublishOrderIndex": 269,
         "Rules": [
           {
             "Category": "Design",
@@ -3733,7 +3733,7 @@
         "Name": "sName",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 263,
+        "PublishOrderIndex": 270,
         "Rules": [
           {
             "Category": "Design",
