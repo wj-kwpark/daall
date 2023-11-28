@@ -1,5 +1,6 @@
 myinfo As screen:
     BackgroundImage: =bg_login
+    OnVisible: =Set(setPswd, false);
 
     Base_2 As Base:
         logout: =loginScreen
@@ -154,6 +155,7 @@ myinfo As screen:
                 Fill: =RGBA(71, 158, 245, 1)
                 Height: =26
                 HoverFill: =Color.LightSkyBlue
+                OnSelect: =Set(setPswd,true);
                 RadiusBottomLeft: =25
                 RadiusBottomRight: =25
                 RadiusTopLeft: =25
@@ -488,6 +490,7 @@ myinfo As screen:
 
     popup As groupContainer.manualLayoutContainer:
         Height: =768
+        Visible: =setPswd
         Width: =1366
         ZIndex: =5
 
@@ -512,6 +515,7 @@ myinfo As screen:
             Button3 As button:
                 Fill: =RGBA(0, 0, 0, 1)
                 Height: =32
+                OnSelect: =Set(setPswd, false);
                 RadiusBottomLeft: =25
                 RadiusBottomRight: =25
                 RadiusTopLeft: =25
