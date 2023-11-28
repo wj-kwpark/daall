@@ -28,7 +28,7 @@ SearchBar As CanvasComponent:
                     ),
                     Filter(
                         Parent.cData,
-                        startDate_3.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_3.SelectedDate,
+                        startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,
                         resourceEdit_6.Text in BOARD_TITLE
                     )
                 )
@@ -94,7 +94,7 @@ SearchBar As CanvasComponent:
         Y: =60
         ZIndex: =15
 
-        생성일_9 As label:
+        "'기간-text' As label":
             FontWeight: =FontWeight.Bold
             Height: =20
             Size: =9
@@ -105,7 +105,7 @@ SearchBar As CanvasComponent:
             Y: =10
             ZIndex: =5
 
-        생성일_8 As label:
+        "'-text' As label":
             FontWeight: =FontWeight.Bold
             Height: =22
             Size: =9
@@ -134,18 +134,6 @@ SearchBar As CanvasComponent:
             Y: =68
             ZIndex: =8
 
-        "startDate_3 As '날짜 선택'":
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            Format: ='DatePickerCanvas.Format'.Short
-            Height: =30
-            SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
-            Visible: =If(Parent.forUser,false,true)
-            Width: =130
-            X: =318
-            Y: =35
-            ZIndex: =9
-
         "endDate_3 As '날짜 선택'":
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
@@ -155,6 +143,18 @@ SearchBar As CanvasComponent:
             Visible: =If(Parent.forUser,false,true)
             Width: =130
             X: =487
+            Y: =35
+            ZIndex: =9
+
+        "startDate_3 As '날짜 선택'":
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            Format: ='DatePickerCanvas.Format'.Short
+            Height: =30
+            SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+            Visible: =If(Parent.forUser,false,true)
+            Width: =130
+            X: =318
             Y: =35
             ZIndex: =10
 

@@ -1,5 +1,6 @@
 myinfo As screen:
     BackgroundImage: =bg_login
+    OnVisible: =Set(setPswd, false);
 
     Base_2 As Base:
         logout: =loginScreen
@@ -154,6 +155,7 @@ myinfo As screen:
                 Fill: =RGBA(71, 158, 245, 1)
                 Height: =26
                 HoverFill: =Color.LightSkyBlue
+                OnSelect: =Set(setPswd,true);
                 RadiusBottomLeft: =25
                 RadiusBottomRight: =25
                 RadiusTopLeft: =25
@@ -485,4 +487,177 @@ myinfo As screen:
                 Width: =357
                 Y: =263
                 ZIndex: =9
+
+    popup As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =setPswd
+        Width: =1366
+        ZIndex: =5
+
+        background As rectangle:
+            BorderColor: =RGBA(53, 61, 63, 0.33)
+            Fill: =RGBA(53, 61, 63, 0.51)
+            Height: =768
+            Width: =1366
+            ZIndex: =1
+
+        Container5 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =305
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            X: =433
+            Y: =284
+            ZIndex: =2
+
+            Button3 As button:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =32
+                OnSelect: =Set(setPswd, false);
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =11
+                Text: ="취소"
+                Width: =113
+                X: =122
+                Y: =236
+                ZIndex: =1
+
+            Button3_2 As button:
+                Fill: =RGBA(71, 158, 245, 1)
+                Height: =32
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =11
+                Text: ="확인"
+                Width: =113
+                X: =254
+                Y: =236
+                ZIndex: =2
+
+            Group1 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =6
+
+                기존비밀번호 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="기존비밀번호"
+                    Width: =116
+                    X: =44
+                    Y: =28
+                    ZIndex: =3
+
+                curPawd As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =60
+                    Y: =48
+                    ZIndex: =4
+
+                Rectangle8_19 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =81
+                    ZIndex: =5
+
+            Group1_1 As group:
+                Height: =5
+                Width: =5
+                X: =-4
+                Y: =12
+                ZIndex: =9
+
+                기존비밀번호_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="새 비밀번호"
+                    Width: =116
+                    X: =40
+                    Y: =91
+                    ZIndex: =6
+
+                curPawd_1 As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =56
+                    Y: =111
+                    ZIndex: =7
+
+                Rectangle8_20 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =144
+                    ZIndex: =8
+
+            Group1_2 As group:
+                Height: =5
+                Width: =5
+                X: =36
+                Y: =52
+                ZIndex: =12
+
+                기존비밀번호_2 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="새 비밀번호 재입력"
+                    Width: =179
+                    X: =44
+                    Y: =157
+                    ZIndex: =9
+
+                curPawd_2 As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =60
+                    Y: =177
+                    ZIndex: =10
+
+                Rectangle8_21 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =210
+                    ZIndex: =11
 
