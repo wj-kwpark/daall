@@ -154,7 +154,7 @@ userList As screen:
                 reportCount As label:
                     OnSelect: =Select(Parent)
                     Size: =11
-                    Text: =ThisItem.reportCnt
+                    Text: =ThisItem.REPORT_CNT
                     X: =686
                     Y: =9
                     ZIndex: =6
@@ -162,7 +162,7 @@ userList As screen:
                 dataCount As label:
                     OnSelect: =Select(Parent)
                     Size: =11
-                    Text: =ThisItem.dataCnt
+                    Text: =ThisItem.DATA_CNT
                     X: =897
                     Y: =14
                     ZIndex: =7
