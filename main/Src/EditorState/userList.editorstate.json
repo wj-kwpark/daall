@@ -3034,7 +3034,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": true,
+        "AllowAccessToGlobals": false,
         "AllowCustomization": true,
         "Description": ""
       },
