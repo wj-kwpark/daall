@@ -1452,14 +1452,7 @@
           "NameMapSourceSchema": "?"
         },
         "cList",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "forUser",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "forUser",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,

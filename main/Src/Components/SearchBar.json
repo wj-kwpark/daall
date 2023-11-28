@@ -3829,14 +3829,7 @@
         "NameMapSourceSchema": "?"
       },
       "cList",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "true",
-        "InvariantPropertyName": "forUser",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "forUser",
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -3846,7 +3839,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638367411859235311",
+    "LastModifiedTimestamp": "638367415367452030",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3974,6 +3967,7 @@
       "Category": 0,
       "DisplayName": "forUser",
       "Hidden": false,
+      "IsResettable": true,
       "Name": "forUser",
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "사용자 지정 속성",
@@ -3988,7 +3982,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638367411859235311",
+  "LastModifiedTimestamp": "638367415367452030",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"
