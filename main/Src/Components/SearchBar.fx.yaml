@@ -22,7 +22,8 @@ SearchBar As CanvasComponent:
         OnSelect: |-
             =Set(
                 boardList,
-                If(Parent.forUser,Filter(
+                If(Parent.forUser,
+                    Filter(
                         Parent.cData,
                         resourceEdit_7.Text in USER_NAME
                     ),
