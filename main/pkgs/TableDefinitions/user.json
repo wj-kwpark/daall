@@ -3,10 +3,6 @@
   "EntityName": "user",
   "environmentVariableName": "",
   "InstanceUrl": "https://org2551b789.crm5.dynamics.com/",
-  "LocalReferenceDSJson": {
-    "entitySetName": "cre6f_users",
-    "logicalName": "cre6f_user"
-  },
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org2551b789.crm5.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('cre6f_user')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",
