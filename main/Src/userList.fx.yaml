@@ -108,7 +108,7 @@ userList As screen:
                     =Set(userRecord, Parent.Selected);
                     //Select(Parent);
                     false;
-                    Navigate(userDetail_xxx);
+                    Navigate(userDetail);
                 TemplatePadding: =0
                 TemplateSize: =54
                 Width: =1047
