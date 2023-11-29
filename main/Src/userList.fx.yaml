@@ -100,10 +100,10 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =418
                 Items: |-
-                    =//SearchBar_3.cList
+                    =SearchBar_3.cList
                     
                     
-                    'nocode-test.user_detail'
+                    //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
