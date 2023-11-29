@@ -210,8 +210,8 @@ userDetail As screen:
         ZIndex: =4
 
     Label14 As label:
-        Text: =userRecord.Selected.USER
-        X: =245
-        Y: =302
+        Text: =userRecord.USER_ID
+        X: =262
+        Y: =266
         ZIndex: =5
 
