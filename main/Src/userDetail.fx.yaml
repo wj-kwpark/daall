@@ -212,6 +212,24 @@ userDetail As screen:
     Label14 As label:
         Text: =userRecord.USER_ID
         X: =262
-        Y: =266
+        Y: =289
         ZIndex: =5
+
+    Label14_1 As label:
+        Text: =userRecord.USER_NAME
+        X: =430
+        Y: =289
+        ZIndex: =6
+
+    Label14_2 As label:
+        Text: =userRecord.reportCount
+        X: =262
+        Y: =364
+        ZIndex: =7
+
+    Label14_3 As label:
+        Text: =userRecord.dataCount
+        X: =430
+        Y: =364
+        ZIndex: =8
 
