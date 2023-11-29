@@ -3839,7 +3839,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638368299464145378",
+    "LastModifiedTimestamp": "638368376594331626",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3981,7 +3981,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638368299464145378",
+  "LastModifiedTimestamp": "638368376594331626",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"
