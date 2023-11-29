@@ -3336,7 +3336,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "cData",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table(\n    {\n        BOARD_TITLE: \"제목\",\n        REGI_DATE: Date(\n            2022,\n            01,\n            01\n        ),\n        USER_NAME: \"이름\",\n        USER_ID: \"ID\",\n        RESOURCE_TYPE: \"TYPE\",\n        REPORT_CNT: 0,\n        DATA_CNT: 0\n    }\n)",
+          "InvariantPropertyName": "cData",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "cList",
         {
           "AFDDataSourceName": "",
@@ -3364,7 +3371,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "Metadata": {
-        "AllowAccessToGlobals": true,
+        "AllowAccessToGlobals": false,
         "AllowCustomization": true,
         "Description": ""
       },
@@ -3386,7 +3393,7 @@
         {
           "Category": "Data",
           "PropertyName": "cData",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
