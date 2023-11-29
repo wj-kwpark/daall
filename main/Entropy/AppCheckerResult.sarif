@@ -134,124 +134,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userDetail.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "userListTest.Run()"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userDetail",
-                "type": "userDetail"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Run",
-              "userListTest"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrUnknownNamespaceFunction",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "userDetail.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userDetail.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 46,
-                  "snippet": {
-                    "text": ".return"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userDetail",
-                "type": "userDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "userDetail.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userDetail.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 54,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ClearCollect(userScreenList,userListTest.Run().return)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userDetail",
-                "type": "userDetail"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ClearCollect"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "userDetail.Form1.Item"
                 }
               ],
@@ -285,7 +167,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
-          "ruleIndex": 4
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -325,7 +207,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -362,7 +244,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -402,7 +284,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -439,7 +321,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -479,7 +361,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -516,7 +398,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -556,7 +438,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -593,7 +475,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -633,7 +515,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -670,124 +552,6 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "userList.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userList.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 18,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "userListTest.Run()"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userList",
-                "type": "userList"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Run",
-              "userListTest"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrUnknownNamespaceFunction",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "userList.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userList.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 46,
-                  "snippet": {
-                    "text": ".return"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userList",
-                "type": "userList"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "userList.OnVisible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "userList.OnVisible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 54,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ClearCollect(userScreenList,userListTest.Run().return)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnVisible",
-                "module": "userList",
-                "type": "userList"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ClearCollect"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 3
         },
         {
@@ -829,7 +593,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -869,7 +633,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -906,7 +670,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -946,7 +710,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -983,7 +747,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1023,7 +787,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1060,7 +824,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1100,7 +864,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1140,7 +904,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1177,7 +941,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1217,7 +981,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 5
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -1254,7 +1018,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1294,7 +1058,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 3
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1335,7 +1099,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrUnknownNamespaceFunction",
-          "ruleIndex": 1
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1372,7 +1136,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 2
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1650,126 +1414,6 @@
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SearchBar.resourceEdit_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SearchBar.resourceEdit_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SearchBar",
-                "type": "SearchBar.resourceEdit_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SearchBar.startDate_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SearchBar.startDate_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SearchBar",
-                "type": "SearchBar.startDate_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SearchBar.endDate_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SearchBar.endDate_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SearchBar",
-                "type": "SearchBar.endDate_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SearchBar.resourceEdit_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SearchBar.resourceEdit_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SearchBar",
-                "type": "SearchBar.resourceEdit_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2310,6 +1954,126 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchBar.resourceEdit_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchBar.resourceEdit_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SearchBar",
+                "type": "SearchBar.resourceEdit_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchBar.startDate_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchBar.startDate_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SearchBar",
+                "type": "SearchBar.startDate_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchBar.endDate_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchBar.endDate_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SearchBar",
+                "type": "SearchBar.endDate_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SearchBar.resourceEdit_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SearchBar.resourceEdit_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SearchBar",
+                "type": "SearchBar.resourceEdit_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -3627,48 +3391,6 @@
               }
             },
             {
-              "id": "app-ErrUnknownNamespaceFunction",
-              "messageStrings": {
-                "issue": {
-                  "text": "'{0}' is an unknown or unsupported function in namespace '{1}'."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid use of '.'"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidArgs-Func",
-              "messageStrings": {
-                "issue": {
-                  "text": "The function '{0}' has some invalid arguments."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-ErrBadTypeExpectedCompatibleWith-PropertyName",
               "messageStrings": {
                 "issue": {
@@ -3700,6 +3422,20 @@
               }
             },
             {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
               "messageStrings": {
                 "issue": {
@@ -3711,6 +3447,34 @@
                 "howToFix": [
                   "Change the rule to produce a {0} value."
                 ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidArgs-Func",
+              "messageStrings": {
+                "issue": {
+                  "text": "The function '{0}' has some invalid arguments."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrUnknownNamespaceFunction",
+              "messageStrings": {
+                "issue": {
+                  "text": "'{0}' is an unknown or unsupported function in namespace '{1}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
