@@ -2105,19 +2105,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.DATA_COUNT_DataCard1.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.DATA_COUNT_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.DATA_COUNT_DataCard1.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.DATA_COUNT_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.DATA_COUNT_DataCard1.DataCardValue1"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.DATA_COUNT_DataCard1.DataCardValue1"
               }
             }
           ],
@@ -2135,19 +2135,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.PASSWORD_DataCard1.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.PASSWORD_DataCard1.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.PASSWORD_DataCard1.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.PASSWORD_DataCard1.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.PASSWORD_DataCard1.DataCardValue2"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.PASSWORD_DataCard1.DataCardValue2"
               }
             }
           ],
@@ -2165,19 +2165,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.REGI_DATE_DataCard1.DataCardValue3.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.REGI_DATE_DataCard1.DataCardValue3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.REGI_DATE_DataCard1.DataCardValue3.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.REGI_DATE_DataCard1.DataCardValue3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.REGI_DATE_DataCard1.DataCardValue3"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.REGI_DATE_DataCard1.DataCardValue3"
               }
             }
           ],
@@ -2195,19 +2195,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.REPORT_COUNT_DataCard1.DataCardValue4.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.REPORT_COUNT_DataCard1.DataCardValue4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.REPORT_COUNT_DataCard1.DataCardValue4.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.REPORT_COUNT_DataCard1.DataCardValue4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.REPORT_COUNT_DataCard1.DataCardValue4"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.REPORT_COUNT_DataCard1.DataCardValue4"
               }
             }
           ],
@@ -2225,19 +2225,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.ROLE_NAME_DataCard1.DataCardValue5.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.ROLE_NAME_DataCard1.DataCardValue5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.ROLE_NAME_DataCard1.DataCardValue5.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.ROLE_NAME_DataCard1.DataCardValue5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.ROLE_NAME_DataCard1.DataCardValue5"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.ROLE_NAME_DataCard1.DataCardValue5"
               }
             }
           ],
@@ -2255,19 +2255,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard1.DataCardValue6.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.USER_ID_DataCard1.DataCardValue6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard1.DataCardValue6.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.USER_ID_DataCard1.DataCardValue6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.USER_ID_DataCard1.DataCardValue6"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.USER_ID_DataCard1.DataCardValue6"
               }
             }
           ],
@@ -2285,19 +2285,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard1.DataCardValue7.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.USER_NAME_DataCard1.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard1.DataCardValue7.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.USER_NAME_DataCard1.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.USER_NAME_DataCard1.DataCardValue7"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.USER_NAME_DataCard1.DataCardValue7"
               }
             }
           ],
@@ -2315,19 +2315,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.WORKSPACE_ID_DataCard1.DataCardValue8.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.WORKSPACE_ID_DataCard1.DataCardValue8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.WORKSPACE_ID_DataCard1.DataCardValue8.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.WORKSPACE_ID_DataCard1.DataCardValue8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.WORKSPACE_ID_DataCard1.DataCardValue8"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.WORKSPACE_ID_DataCard1.DataCardValue8"
               }
             }
           ],
@@ -2345,19 +2345,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.COMPANY_NAME_DataCard1.DataCardValue9.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.Form1.COMPANY_NAME_DataCard1.DataCardValue9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.COMPANY_NAME_DataCard1.DataCardValue9.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.Form1.COMPANY_NAME_DataCard1.DataCardValue9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.Form1.COMPANY_NAME_DataCard1.DataCardValue9"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.Form1.COMPANY_NAME_DataCard1.DataCardValue9"
               }
             }
           ],
@@ -2375,19 +2375,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.ButtonCanvas1_1.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.ButtonCanvas1_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.ButtonCanvas1_1.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.ButtonCanvas1_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.ButtonCanvas1_1"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.ButtonCanvas1_1"
               }
             }
           ],
@@ -2405,19 +2405,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.TextInput1.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail_xxx.TextInput1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.TextInput1.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail_xxx.TextInput1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "userDetail",
-                "type": "userDetail.TextInput1"
+                "module": "userDetail_xxx",
+                "type": "userDetail_xxx.TextInput1"
               }
             }
           ],
@@ -2808,6 +2808,36 @@
                 "member": "AccessibleLabel",
                 "module": "main2",
                 "type": "main2.'report-count-chart_1'.ColumnChart1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "userDetail.ButtonCanvas1_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "userDetail.ButtonCanvas1_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "userDetail",
+                "type": "userDetail.ButtonCanvas1_2"
               }
             }
           ],
