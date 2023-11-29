@@ -190,8 +190,8 @@ userDetail As screen:
                 DelayItemLoading: =true
                 Height: =224
                 Items: |-
-                    =SearchBar_3.cList
-                    //'nocode-test.user_detail'
+                    =
+                    'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
