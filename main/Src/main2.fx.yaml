@@ -156,7 +156,9 @@ main2 As screen:
                 Color: =RGBA(15, 108, 189, 1)
                 FontWeight: =FontWeight.Bold
                 Size: =18
-                Text: =CountIf('daall.url_history', user_id = User, url="/report/reportDetail",regi_date=Today()) & "건"
+                Text: |+
+                    =CountIf('daall.url_history', user_id = User, url="/report/reportDetail",regi_date=Today()) & "건"
+                    
                 Width: =80
                 X: =17
                 Y: =40
