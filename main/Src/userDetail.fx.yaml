@@ -1,6 +1,64 @@
 userDetail As screen:
     BackgroundImage: =bg_login
-    OnVisible: =ClearCollect(userScreenList,userListTest.Run().return);
+    OnVisible: |-
+        =ClearCollect(
+            dataList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.data',
+                        "DATA_ID",
+                        "RESOURCE_ID",
+                        "NAME",
+                        "BOARD_TITLE"
+                    ),
+                    "RESOURCE_ID",
+                    "BOARD_TITLE",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "data"
+            )
+        );
+        ClearCollect(
+            reportList,
+            AddColumns(
+                ShowColumns(
+                    RenameColumns(
+                        'nocode-test.report',
+                        "REPORT_ID",
+                        "RESOURCE_ID",
+                        "REPORT_TITLE",
+                        "BOARD_TITLE"
+                    ),
+                    "RESOURCE_ID",
+                    "BOARD_TITLE",
+                    "OWNER_ID",
+                    "OWNER",
+                    "WORKSPACE_ID",
+                    "REGI_DATE"
+                ),
+                "RESOURCE_TYPE",
+                "report"
+            )
+        );
+        ClearCollect(
+            authoritydata,
+            dataList,
+            reportList
+        );
+        ClearCollect(
+            authorityListdata,
+            SortByColumns(
+                Filter(
+                authoritydata,OWNER_ID=userRecord.USER_ID
+                ),
+                "REGI_DATE"
+            )
+        )
 
     Base_13 As Base:
         logout: =loginScreen
@@ -191,7 +249,7 @@ userDetail As screen:
                 Height: =224
                 Items: |-
                     =
-                    'nocode-test.user_detail'
+                    authorityListdata
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
@@ -215,7 +273,7 @@ userDetail As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11
-                    Text: =ThisItem.USER_NAME
+                    Text: =ThisItem.BOARD_TITLE
                     VerticalAlign: =VerticalAlign.Top
                     Width: =378
                     X: =62
@@ -232,7 +290,7 @@ userDetail As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11
-                    Text: =ThisItem.USER_ID
+                    Text: =ThisItem.RESOURCE_TYPE
                     VerticalAlign: =VerticalAlign.Top
                     Width: =298
                     X: =461
@@ -251,11 +309,20 @@ userDetail As screen:
                     Align: =Align.Center
                     OnSelect: =
                     Size: =11
-                    Text: =ThisItem.REPORT_COUNT
+                    Text: =ThisItem.REGI_DATE
                     Width: =263
                     X: =759
                     Y: =9
                     ZIndex: =6
+
+                Checkbox1_1 As checkbox:
+                    CheckboxSize: =25
+                    Height: =30
+                    Text: =
+                    Width: =30
+                    X: =13
+                    Y: =14
+                    ZIndex: =7
 
             Container11_2 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None

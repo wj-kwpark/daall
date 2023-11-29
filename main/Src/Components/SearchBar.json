@@ -104,7 +104,7 @@
         "Name": "보고서데이터명_6",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 334,
+        "PublishOrderIndex": 335,
         "Rules": [
           {
             "Category": "Data",
@@ -456,7 +456,7 @@
         "Name": "기간-text",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 335,
+        "PublishOrderIndex": 336,
         "Rules": [
           {
             "Category": "Data",
@@ -801,7 +801,7 @@
         "Name": "보고서데이터명_7",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 336,
+        "PublishOrderIndex": 337,
         "Rules": [
           {
             "Category": "Data",
@@ -1194,7 +1194,7 @@
         "Name": "resourceEdit_6",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 337,
+        "PublishOrderIndex": 338,
         "Rules": [
           {
             "Category": "Data",
@@ -1503,7 +1503,7 @@
         "Name": "startDate_3",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 338,
+        "PublishOrderIndex": 339,
         "Rules": [
           {
             "Category": "Data",
@@ -1640,7 +1640,7 @@
         "Name": "endDate_3",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 339,
+        "PublishOrderIndex": 340,
         "Rules": [
           {
             "Category": "Data",
@@ -1848,7 +1848,7 @@
         "Name": "resourceEdit_7",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 340,
+        "PublishOrderIndex": 341,
         "Rules": [
           {
             "Category": "Data",
@@ -2246,7 +2246,7 @@
         "Name": "검색버튼_5",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 341,
+        "PublishOrderIndex": 342,
         "Rules": [
           {
             "Category": "Data",
@@ -2574,7 +2574,7 @@
         "Name": "-text",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 342,
+        "PublishOrderIndex": 343,
         "Rules": [
           {
             "Category": "Data",
@@ -2902,7 +2902,7 @@
         "Name": "Rectangle8_15",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 346,
+        "PublishOrderIndex": 347,
         "Rules": [
           {
             "Category": "Design",
@@ -3079,7 +3079,7 @@
         "Name": "Rectangle8_17",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 347,
+        "PublishOrderIndex": 348,
         "Rules": [
           {
             "Category": "Design",
@@ -3256,7 +3256,7 @@
         "Name": "Rectangle8_16",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 348,
+        "PublishOrderIndex": 349,
         "Rules": [
           {
             "Category": "Design",
@@ -3433,7 +3433,7 @@
         "Name": "Rectangle8_18",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 349,
+        "PublishOrderIndex": 350,
         "Rules": [
           {
             "Category": "Design",
@@ -3576,7 +3576,7 @@
         "Name": "sTitle",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 343,
+        "PublishOrderIndex": 344,
         "Rules": [
           {
             "Category": "Design",
@@ -3656,7 +3656,7 @@
         "Name": "sDate",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 344,
+        "PublishOrderIndex": 345,
         "Rules": [
           {
             "Category": "Design",
@@ -3733,7 +3733,7 @@
         "Name": "sName",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 345,
+        "PublishOrderIndex": 346,
         "Rules": [
           {
             "Category": "Design",
