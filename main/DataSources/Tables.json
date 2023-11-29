@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cre6f_tables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cre6f_table",
+    "MaxGetRowsCount": 500,
+    "Name": "Tables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "담당자",
+      "cre6f_category": "Category",
+      "cre6f_imageimage": "Image [image]",
+      "cre6f_name": "Name",
+      "cre6f_overview": "Overview",
+      "cre6f_price": "Price",
+      "cre6f_table_AsyncOperations": "시스템 작업 ",
+      "cre6f_table_BulkDeleteFailures": "대량 삭제 실패 ",
+      "cre6f_table_MailboxTrackingFolders": "사서함 자동 추적 폴더",
+      "cre6f_table_PrincipalObjectAttributeAccesses": "필드 공유",
+      "cre6f_table_ProcessSession": "프로세스 세션",
+      "cre6f_table_SyncErrors": "동기화 오류",
+      "cre6f_tableid": "Table",
+      "createdby": "만든 사람",
+      "createdon": "만든 날짜",
+      "createdonbehalfby": "만든 사람(대리인)",
+      "importsequencenumber": "가져오기 시퀀스 번호",
+      "modifiedby": "수정한 사람",
+      "modifiedon": "수정한 날짜",
+      "modifiedonbehalfby": "수정한 사람(대리인)",
+      "overriddencreatedon": "레코드를 만든 날짜",
+      "owningbusinessunit": "담당 사업부",
+      "owningteam": "담당 팀",
+      "owninguser": "담당 사용자",
+      "statecode": "상태",
+      "statuscode": "상태 설명",
+      "timezoneruleversionnumber": "표준 시간대 규칙 버전 번호",
+      "utcconversiontimezonecode": "UTC 변환 표준 시간대 코드",
+      "versionnumber": "버전 번호"
+    },
+    "PreferredName": "Tables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Tables (뷰)",
+    "Name": "_cre6f_table_views",
+    "RelatedEntityName": "Tables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "031473ef-23a8-40cf-89c0-f1c8df000da4": "활성 Tables",
+      "4aca6411-1f0e-480d-8349-4f458ffe7840": "Table 조회 보기",
+      "bc4b8884-fde0-483a-90de-4519a69b4a81": "Table의 상세하게 찾기 보기",
+      "dd4de2eb-9afe-4d0f-a650-998f6a9b1fd3": "Table 관련 보기",
+      "ebd5279b-566d-4247-ba92-43f1cbe739aa": "비활성 Tables"
+    }
+  },
+  {
+    "DisplayName": "상태 (Tables)",
+    "Name": "cre6f_table_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "활성",
+      "1": "비활성"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Tables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Tables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "상태 설명 (Tables)",
+    "Name": "cre6f_table_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "활성",
+      "2": "비활성"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Tables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Tables",
+    "Type": "OptionSetInfo"
+  }
+]

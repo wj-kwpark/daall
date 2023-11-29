@@ -108,18 +108,128 @@ userDetail As screen:
     pageTitle_10 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
-        Text: ="사용자 관리"
+        Text: ="사용자 상세"
         Width: =185
         X: =245
         Y: =90
         ZIndex: =2
 
     Form1 As form.PowerApps_CoreControls_Form:
-        DataSource: =userScreenList
-        Height: =556
+        DataSource: =userRecord
+        Height: =96
         UseFluentV9Cards: =true
         Width: =1076
         X: =231
         Y: =148
         ZIndex: =3
+
+        USER_ID_DataCard5 As typedDataCard.fluentV9TextualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="USER_ID"
+            Default: =
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'nocode-test.user'],DataSourceInfo.DisplayName,"USER_ID")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =true
+            Width: =358
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey19 As 텍스트:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue19 As '텍스트 입력'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =ThisItem.USER_ID
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey19.Y + DataCardKey19.Height + 4
+                ZIndex: =2
+
+        USER_NAME_DataCard3 As typedDataCard.fluentV9TextualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="USER_NAME"
+            Default: =ThisItem.USER_NAME
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'nocode-test.user'],DataSourceInfo.DisplayName,"USER_NAME")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Width: =358
+            X: =1
+            Y: =0
+            ZIndex: =1
+
+            DataCardKey17 As 텍스트:
+                DisplayMode: =DisplayMode.Edit
+                Height: =22
+                Text: =Parent.DisplayName
+                Weight: ='TextCanvas.Weight'.Semibold
+                Width: =Parent.Width - 48
+                Wrap: =false
+                X: =24
+                Y: =10
+                ZIndex: =1
+
+            "DataCardValue17 As '텍스트 입력'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.View
+                Height: =32
+                Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
+                ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
+                Value: =Parent.Default
+                Width: =Parent.Width - 48
+                X: =24
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 4
+                ZIndex: =2
+
+    ButtonCanvas1_1 As 버튼:
+        Appearance: ='ButtonCanvas.Appearance'.Primary
+        BasePaletteColor: =RGBA(12, 59, 94, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =Back()
+        Text: ="나가기"
+        Width: =96
+        X: =1211
+        Y: =148
+        ZIndex: =4
+
+    Label14 As label:
+        Text: =userRecord.USER_ID
+        X: =262
+        Y: =289
+        ZIndex: =5
+
+    Label14_1 As label:
+        Text: =userRecord.USER_NAME
+        X: =430
+        Y: =289
+        ZIndex: =6
+
+    Label14_2 As label:
+        Text: =userRecord.reportCount
+        X: =262
+        Y: =364
+        ZIndex: =7
+
+    Label14_3 As label:
+        Text: =userRecord.dataCount
+        X: =430
+        Y: =364
+        ZIndex: =8
 
