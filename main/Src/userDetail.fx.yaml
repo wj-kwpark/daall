@@ -178,6 +178,138 @@ userDetail As screen:
                 Y: =55
                 ZIndex: =4
 
+        검색목록_2 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =266
+            Width: =1024
+            X: =33
+            Y: =235
+            ZIndex: =3
+
+            "gal_resourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                DelayItemLoading: =true
+                Height: =224
+                Items: |-
+                    =SearchBar_3.cList
+                    //'nocode-test.user_detail'
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Set(userRecord, Parent.Selected);
+                    //Select(Parent);
+                    false;
+                    Navigate(userDetail);
+                TemplatePadding: =0
+                TemplateSize: =54
+                Width: =1022
+                Y: =42
+                ZIndex: =1
+
+                userName_1 As label:
+                    Align: =Align.Center
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.USER_NAME
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =378
+                    X: =62
+                    Y: =19
+                    ZIndex: =2
+
+                userId_1 As label:
+                    Align: =Align.Center
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.USER_ID
+                    VerticalAlign: =VerticalAlign.Top
+                    Width: =298
+                    X: =461
+                    Y: =19
+                    ZIndex: =3
+
+                Separator1_2 As rectangle:
+                    Fill: =RGBA(214, 221, 224, 1)
+                    Height: =1
+                    OnSelect: =
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                reportCount_1 As label:
+                    Align: =Align.Center
+                    OnSelect: =
+                    Size: =11
+                    Text: =ThisItem.REPORT_COUNT
+                    Width: =263
+                    X: =759
+                    Y: =9
+                    ZIndex: =6
+
+            Container11_2 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(245, 249, 255, 1)
+                Height: =42
+                Width: =1021
+                ZIndex: =2
+
+                Rectangle6_2 As rectangle:
+                    Fill: =RGBA(15, 84, 140, 1)
+                    Height: =1
+                    Width: =1047
+                    Y: =40
+                    ZIndex: =1
+
+                Label13_7 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="리소스명"
+                    Width: =381
+                    X: =61
+                    Y: =1
+                    ZIndex: =2
+
+                Label13_8 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="리소스 구분"
+                    Width: =318
+                    X: =442
+                    Y: =1
+                    ZIndex: =3
+
+                Label13_9 As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Size: =11
+                    Text: ="생성일"
+                    Width: =259
+                    X: =760
+                    Y: =1
+                    ZIndex: =4
+
+                Checkbox1 As checkbox:
+                    CheckboxSize: =25
+                    Height: =30
+                    Text: =
+                    Width: =30
+                    X: =14
+                    Y: =6
+                    ZIndex: =5
+
     ButtonCanvas1_2 As 버튼:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(53, 61, 63, 1)

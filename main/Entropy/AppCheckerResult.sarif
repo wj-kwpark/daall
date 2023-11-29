@@ -2855,6 +2855,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "userDetail",
+                "type": "userDetail.Container1_1.검색목록_2.gal_resourceList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "userDetail",
+                "type": "userDetail.Container1_1.검색목록_2.gal_resourceList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "userDetail.popup_1.Container5_1.curPawd_5.AccessibleLabel"
                 }
               ],
@@ -3029,6 +3089,36 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "userDetail.Container1_1.검색목록_2.gal_resourceList.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "userDetail",
+                "type": "userDetail.Container1_1.검색목록_2.gal_resourceList"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
         }
       ],
       "tool": {
@@ -3231,6 +3321,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "이 미디어 파일은 어떤 컨트롤 수식에서도 참조되지 않으므로 필요하지 않습니다. 이 파일을 제거하면 성능이 개선됩니다."
+              }
+            },
+            {
+              "id": "app-InefficientDelayLoading",
+              "messageStrings": {
+                "issue": {
+                  "text": "비효율적인 지연 로드"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "대신 변수, 컬렉션 및 탐색 컨텍스트를 사용하여 화면 전체에서 상태를 공유합니다."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "다른 화면의 컨트롤을 참조하는 컨트롤은 앱 로딩 및 탐색 속도를 느리게 만들 수 있습니다. 그러면 사용자가 해당 화면으로 이동할 때까지 기다리지 않고 앱이 즉시 다른 화면을 로드할 수 있습니다."
               }
             }
           ],
