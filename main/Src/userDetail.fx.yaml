@@ -108,10 +108,10 @@ userDetail As screen:
     pageTitle_11 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
-        Text: ="사용자 상세"
+        Text: ="사용자 관리"
         Width: =185
         X: =245
-        Y: =90
+        Y: =97
         ZIndex: =2
 
     Container1_1 As groupContainer.manualLayoutContainer:
@@ -132,14 +132,14 @@ userDetail As screen:
 
         내정보_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Semibold
-            Height: =162
+            Height: =135
             RadiusBottomLeft: =10
             RadiusBottomRight: =10
             RadiusTopLeft: =10
             RadiusTopRight: =10
-            Width: =1015
+            Width: =1037
             X: =20
-            Y: =30
+            Y: =36
             ZIndex: =2
 
             Button4_1 As button:
@@ -155,27 +155,27 @@ userDetail As screen:
                 Size: =10
                 Text: ="비밀번호 변경"
                 Width: =115
-                X: =867
-                Y: =62
+                X: =900
+                Y: =52
                 ZIndex: =1
 
             Circle1_1 As circle:
                 Fill: =RGBA(214, 221, 224, 1)
-                X: =38
-                Y: =25
+                X: =30
+                Y: =15
                 ZIndex: =2
 
             Label11_2 As label:
                 FontWeight: =FontWeight.Bold
                 Text: =userRecord.USER_NAME & "|" & userRecord.COMPANY_NAME
                 X: =150
-                Y: =35
+                Y: =22
                 ZIndex: =3
 
             Label11_3 As label:
                 Text: =userRecord.USER_ID
                 X: =150
-                Y: =75
+                Y: =55
                 ZIndex: =4
 
     ButtonCanvas1_2 As 버튼:
@@ -183,11 +183,184 @@ userDetail As screen:
         BasePaletteColor: =RGBA(53, 61, 63, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =10
-        Height: =25
+        Height: =30
         OnSelect: =Back()
         Text: ="나가기"
         Width: =80
-        X: =1198
-        Y: =145
+        X: =1221
+        Y: =148
         ZIndex: =4
+
+    popup_1 As groupContainer.manualLayoutContainer:
+        Height: =768
+        Visible: =setPswd
+        Width: =1366
+        ZIndex: =5
+
+        background_1 As rectangle:
+            BorderColor: =RGBA(53, 61, 63, 0.33)
+            Fill: =RGBA(53, 61, 63, 0.51)
+            Height: =768
+            Width: =1366
+            ZIndex: =1
+
+        Container5_1 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =305
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            X: =433
+            Y: =284
+            ZIndex: =2
+
+            Button3_3 As button:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =32
+                OnSelect: =Set(setPswd, false);
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =11
+                Text: ="취소"
+                Width: =113
+                X: =122
+                Y: =236
+                ZIndex: =1
+
+            Button3_4 As button:
+                Fill: =RGBA(71, 158, 245, 1)
+                Height: =32
+                RadiusBottomLeft: =25
+                RadiusBottomRight: =25
+                RadiusTopLeft: =25
+                RadiusTopRight: =25
+                Size: =11
+                Text: ="확인"
+                Width: =113
+                X: =254
+                Y: =236
+                ZIndex: =2
+
+            Group1_3 As group:
+                Height: =5
+                Width: =5
+                X: =40
+                Y: =40
+                ZIndex: =6
+
+                기존비밀번호_3 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="기존비밀번호"
+                    Width: =116
+                    X: =44
+                    Y: =28
+                    ZIndex: =3
+
+                curPawd_3 As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =60
+                    Y: =48
+                    ZIndex: =4
+
+                Rectangle8_22 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =81
+                    ZIndex: =5
+
+            Group1_4 As group:
+                Height: =5
+                Width: =5
+                X: =-4
+                Y: =12
+                ZIndex: =9
+
+                기존비밀번호_4 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="새 비밀번호"
+                    Width: =116
+                    X: =40
+                    Y: =91
+                    ZIndex: =6
+
+                curPawd_4 As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =56
+                    Y: =111
+                    ZIndex: =7
+
+                Rectangle8_23 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =144
+                    ZIndex: =8
+
+            Group1_5 As group:
+                Height: =5
+                Width: =5
+                X: =36
+                Y: =52
+                ZIndex: =12
+
+                기존비밀번호_5 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =20
+                    Size: =10
+                    Text: ="새 비밀번호 재입력"
+                    Width: =179
+                    X: =44
+                    Y: =157
+                    ZIndex: =9
+
+                curPawd_5 As text:
+                    BorderThickness: =0
+                    Color: =Color.Black
+                    Default: =""
+                    FocusedBorderColor: =Color.Transparent
+                    Height: =33
+                    HoverBorderColor: =Color.Transparent
+                    HoverColor: =Color.Black
+                    HoverFill: =Color.Transparent
+                    PressedColor: =Color.Transparent
+                    Width: =392
+                    X: =60
+                    Y: =177
+                    ZIndex: =10
+
+                Rectangle8_24 As rectangle:
+                    Fill: =RGBA(139, 154, 159, 1)
+                    Height: =1
+                    Width: =420
+                    X: =40
+                    Y: =210
+                    ZIndex: =11
 
