@@ -101,13 +101,11 @@ userList As screen:
                 Height: =418
                 Items: |-
                     =SearchBar_3.cList
-                    
-                    
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
-                    =//Set(userRecord, Parent.Selected);
+                    =Set(userRecord, Parent.Selected);
                     //Select(Parent);
                     false;
                     Navigate(userDetail);

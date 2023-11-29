@@ -116,12 +116,12 @@ userDetail As screen:
 
     Form1 As form.PowerApps_CoreControls_Form:
         DataSource: ='nocode-test.user_detail'
-        Height: =511
-        Item: =gal_userList.Selected
+        Height: =432
+        Item: =// gal_userList.Selected
         UseFluentV9Cards: =true
         Width: =674
         X: =633
-        Y: =148
+        Y: =225
         ZIndex: =3
 
         DATA_COUNT_DataCard1 As typedDataCard.fluentV9TextualViewCard:
@@ -466,7 +466,7 @@ userDetail As screen:
         Text: ="나가기"
         Width: =96
         X: =1211
-        Y: =148
+        Y: =116
         ZIndex: =4
 
     Label14 As label:
