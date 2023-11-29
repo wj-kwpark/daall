@@ -154,7 +154,7 @@ userDetail As screen:
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
-                Value: =ThisItem.userId.Text
+                Value: =ThisItem.USER_ID
                 Width: =Parent.Width - 48
                 X: =24
                 Y: =DataCardKey19.Y + DataCardKey19.Height + 4
@@ -163,7 +163,7 @@ userDetail As screen:
         USER_NAME_DataCard3 As typedDataCard.fluentV9TextualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="USER_NAME"
-            Default: =ThisItem.userName
+            Default: =ThisItem.USER_NAME
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'nocode-test.user'],DataSourceInfo.DisplayName,"USER_NAME")
             Fill: =RGBA(0, 0, 0, 0)

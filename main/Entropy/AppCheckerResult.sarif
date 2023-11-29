@@ -995,66 +995,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Header.Image2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.Image2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Header",
-                "type": "Header.Image2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Header.Image2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Header.Image2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Header",
-                "type": "Header.Image2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "SearchBar.resourceEdit_6.AccessibleLabel"
                 }
               ],
@@ -1398,6 +1338,66 @@
                 "member": "TabIndex",
                 "module": "Base",
                 "type": "Base.'1depthMenu_1'.'2depthMenu_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Header.Image2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Header.Image2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Header",
+                "type": "Header.Image2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Header.Image2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Header.Image2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Header",
+                "type": "Header.Image2"
               }
             }
           ],
@@ -2105,19 +2105,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "userDetail",
-                "type": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17"
+                "type": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19"
               }
             }
           ],
@@ -2135,19 +2135,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19.AccessibleLabel"
+                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19.AccessibleLabel",
+                  "fullyQualifiedName": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "userDetail",
-                "type": "userDetail.Form1.USER_ID_DataCard5.DataCardValue19"
+                "type": "userDetail.Form1.USER_NAME_DataCard3.DataCardValue17"
               }
             }
           ],
