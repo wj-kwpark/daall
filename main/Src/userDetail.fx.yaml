@@ -150,6 +150,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue1 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -186,6 +187,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue2 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -222,6 +224,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue3 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -258,6 +261,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue4 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -294,6 +298,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue5 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -330,6 +335,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue6 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -366,6 +372,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue7 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -402,6 +409,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue8 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
@@ -438,6 +446,7 @@ userDetail As screen:
                 ZIndex: =1
 
             "DataCardValue9 As '텍스트 입력'":
+                BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
