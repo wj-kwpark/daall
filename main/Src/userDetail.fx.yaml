@@ -114,3 +114,12 @@ userDetail As screen:
         Y: =90
         ZIndex: =2
 
+    Form1 As form.PowerApps_CoreControls_Form:
+        DataSource: =userScreenList
+        Height: =556
+        UseFluentV9Cards: =true
+        Width: =1076
+        X: =231
+        Y: =148
+        ZIndex: =3
+
