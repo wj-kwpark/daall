@@ -99,12 +99,16 @@ userList As screen:
             "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
                 Height: =418
-                Items: |+
+                Items: |-
                     =SearchBar_3.cList
                     
                     
+                    //'nocode-test.user'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
+                OnSelect: |-
+                    =Select(Parent);
+                    Navigate(userDetail);
                 TemplatePadding: =0
                 TemplateSize: =54
                 Width: =1047
@@ -115,7 +119,9 @@ userList As screen:
                     Align: =Align.Center
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: =30
-                    OnSelect: =Select(Parent)
+                    OnSelect: |-
+                        =Select(Parent);
+                        Navigate(userDetail);
                     PaddingBottom: =0
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -227,7 +233,9 @@ userList As screen:
                     ZIndex: =5
 
     SearchBar_3 As SearchBar:
-        cData: =userScreenList
+        cData: |-
+            =userScreenList
+            //'nocode-test.user'
         forUser: =true
         Height: =100
         Width: =1074
