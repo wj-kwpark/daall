@@ -97,7 +97,7 @@ authorityList As screen:
         ZIndex: =3
 
     SearchBar_2 As SearchBar:
-        cData: =Filter(authoritydata,OWNER_ID=User)
+        cData: =Filter(authorityListdata,OWNER_ID=User)
         Height: =91
         tDate: ="생성일"
         tTitle: ="보고서/데이터명"
@@ -110,8 +110,8 @@ authorityList As screen:
         BorderColor: =RGBA(122, 138, 143, 1)
         BorderThickness: =1
         Color: =RGBA(122, 138, 143, 1)
-        DisabledBorderColor: =RGBA(122, 138, 143, 1)
-        DisabledColor: =RGBA(122, 138, 143, 1)
+        DisabledBorderColor: =RGBA(15, 84, 140, 1)
+        DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(0, 0, 0, 0)
         FontWeight: =FontWeight.Bold
@@ -143,16 +143,16 @@ authorityList As screen:
         Size: =10
         Text: ="전체"
         Width: =55
-        X: =915
-        Y: =204
+        X: =916
+        Y: =210
         ZIndex: =5
 
     보고서버튼 As button:
         BorderColor: =RGBA(122, 138, 143, 1)
         BorderThickness: =1
         Color: =RGBA(122, 138, 143, 1)
-        DisabledBorderColor: =RGBA(122, 138, 143, 1)
-        DisabledColor: =RGBA(122, 138, 143, 1)
+        DisabledBorderColor: =RGBA(15, 84, 140, 1)
+        DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(0, 0, 0, 0)
         FontWeight: =FontWeight.Bold
@@ -196,16 +196,16 @@ authorityList As screen:
         Size: =10
         Text: ="보고서"
         Width: =71
-        X: =982
-        Y: =204
+        X: =983
+        Y: =210
         ZIndex: =6
 
     데이터버튼 As button:
         BorderColor: =RGBA(122, 138, 143, 1)
         BorderThickness: =1
         Color: =RGBA(122, 138, 143, 1)
-        DisabledBorderColor: =RGBA(122, 138, 143, 1)
-        DisabledColor: =RGBA(122, 138, 143, 1)
+        DisabledBorderColor: =RGBA(15, 84, 140, 1)
+        DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
         Fill: =RGBA(0, 0, 0, 0)
         FontWeight: =FontWeight.Bold
@@ -249,8 +249,8 @@ authorityList As screen:
         Size: =10
         Text: ="데이터"
         Width: =71
-        X: =1064
-        Y: =204
+        X: =1065
+        Y: =210
         ZIndex: =7
 
     "galResourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
