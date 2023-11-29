@@ -135,6 +135,7 @@
     "myinfo",
     "authorityList",
     "userList",
+    "userDetail",
     "dashboard",
     "masterPage",
     "demoList",

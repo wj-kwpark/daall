@@ -1,0 +1,116 @@
+userDetail As screen:
+    BackgroundImage: =bg_login
+    OnVisible: =ClearCollect(userScreenList,userListTest.Run().return);
+
+    Base_12 As Base:
+        logout: =loginScreen
+        mainScreen: =main2
+        MenuItems: |-
+            =Table(
+                {
+                    MenuLabel: "자료실",
+                    MenuIcon: icon_gnb_1,
+                    MenuIconHover: icon_gnb_1_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 1,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "공지사항",
+                            SubMenuScreenNavigate: Notice,
+                            SubMenuID: 1,
+                            ParentMenu: "자료실"
+                        },
+                        {
+                            SubMenuLabel: "Demo Report",
+                            SubMenuScreenNavigate: demoList,
+                            SubMenuID: 2,
+                            ParentMenu: "자료실"
+                        }
+                    )
+                },
+                {
+                    MenuLabel: "모니터링",
+                    MenuIcon: icon_gnb_2,
+                    MenuIconHover: icon_gnb_2_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 2,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "Azure",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 1,
+                            ParentMenu: "모니터링"
+                        },
+                        {
+                            SubMenuLabel: "Microsoft365",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 2,
+                            ParentMenu: "모니터링"
+                        },
+                        {
+                            SubMenuLabel: "PowerPlatform",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 3,
+                            ParentMenu: "모니터링"
+                        }
+                    )
+                },
+                {
+                    MenuLabel: "보고서",
+                    MenuIcon: icon_gnb_3,
+                    MenuIconHover: icon_gnb_3_hover,
+                    MenuScreenNavigate: reportListScreen,
+                    MenuID: 3
+                },
+                {
+                    MenuLabel: "데이터",
+                    MenuIcon: icon_gnb_4,
+                    MenuIconHover: icon_gnb_4_hover,
+                    MenuScreenNavigate: dataListScreen,
+                    MenuID: 4
+                },
+                {
+                    MenuLabel: "관리",
+                    MenuIcon: icon_gnb_5,
+                    MenuIconHover: icon_gnb_5_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 5,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "Dashboard",
+                            SubMenuScreenNavigate: dashboard,
+                            SubMenuID: 1,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "내정보",
+                            SubMenuScreenNavigate: myinfo,
+                            SubMenuID: 2,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "권한관리",
+                            SubMenuScreenNavigate: authorityList,
+                            SubMenuID: 3,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "사용자관리",
+                            SubMenuScreenNavigate: userDetail,
+                            SubMenuID: 4,
+                            ParentMenu: "관리"
+                        }
+                    )
+                }
+            )
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    pageTitle_10 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="사용자 관리"
+        Width: =185
+        X: =245
+        Y: =90
+        ZIndex: =2
+
