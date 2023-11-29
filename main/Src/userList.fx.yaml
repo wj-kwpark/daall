@@ -100,14 +100,16 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =418
                 Items: |-
-                    =SearchBar_3.cList
+                    =//SearchBar_3.cList
                     
                     
-                    //'nocode-test.user'
+                    'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
                 OnSelect: |-
-                    =Set(userRecord, Parent.Selected);
+                    =//Set(userRecord, Parent.Selected);
+                    //Select(Parent);
+                    false;
                     Navigate(userDetail);
                 TemplatePadding: =0
                 TemplateSize: =54
@@ -161,7 +163,7 @@ userList As screen:
                     Align: =Align.Center
                     OnSelect: =
                     Size: =11
-                    Text: =ThisItem.REPORT_CNT
+                    Text: =ThisItem.REPORT_COUNT
                     Width: =161
                     X: =681
                     Y: =9
@@ -171,7 +173,7 @@ userList As screen:
                     Align: =Align.Center
                     OnSelect: =
                     Size: =11
-                    Text: =ThisItem.DATA_CNT
+                    Text: =ThisItem.DATA_COUNT
                     Width: =170
                     X: =877
                     Y: =14
@@ -232,8 +234,9 @@ userList As screen:
 
     SearchBar_3 As SearchBar:
         cData: |-
-            =userScreenList
+            =//userScreenList
             //'nocode-test.user'
+            'nocode-test.user_detail'
         forUser: =true
         Height: =100
         Width: =1074
