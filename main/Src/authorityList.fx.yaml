@@ -56,7 +56,8 @@ authorityList As screen:
                 authoritydata,
                 "REGI_DATE"
             )
-        )
+        );
+        Set(aFilter,"전체");
 
     Base_3 As Base:
         logout: =loginScreen
@@ -115,9 +116,9 @@ authorityList As screen:
         ZIndex: =4
 
     전체버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -136,6 +137,7 @@ authorityList As screen:
                         SearchBar_2.title in BOARD_TITLE
                     )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -151,9 +153,9 @@ authorityList As screen:
         ZIndex: =5
 
     보고서버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -167,10 +169,13 @@ authorityList As screen:
             =ClearCollect(
                 authorityListdata,
                 Filter(
-                    authorityListdata,
-                    RESOURCE_TYPE = "report"
-                )
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE,
+                        RESOURCE_TYPE = "report"
+                    )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -186,9 +191,9 @@ authorityList As screen:
         ZIndex: =6
 
     데이터버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -202,10 +207,13 @@ authorityList As screen:
             =ClearCollect(
                 authorityListdata,
                 Filter(
-                    authorityListdata,
-                    RESOURCE_TYPE = "data"
-                )
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE,
+                        RESOURCE_TYPE = "data"
+                    )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
