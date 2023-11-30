@@ -1,11 +1,20 @@
 PageControl As CanvasComponent:
     CurrentPage: =Selected
     Fill: =RGBA(0, 0, 0, 0)
+    firstN: =Self.CurrentPage*Self.perPage
     Height: =40
+    isLast: =If(Self.CurrentPage=Self.TotalPage,true,false)
+    lastN: |-
+        =If(Self.isLast,
+            Self.TotalItems-((RoundUp(Self.TotalItems/Self.perPage,0)-1)*Self.perPage),
+            Self.perPage
+        )
     OnReset: |-
         =Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), "Value", "Index"));
         Set(Selected,1);
-    TotalPage: =10
+    perPage: =100
+    TotalItems: =100
+    TotalPage: =RoundUp(Self.TotalItems/Self.perPage,0)
     Width: =600
     X: =0
     Y: =0

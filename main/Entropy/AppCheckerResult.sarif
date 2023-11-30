@@ -2624,17 +2624,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "authorityList.PageControl_2.TotalPage"
+                  "fullyQualifiedName": "authorityList.PageControl_2.TotalItems"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "authorityList.PageControl_2.TotalPage",
+                  "fullyQualifiedName": "authorityList.PageControl_2.TotalItems",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TotalPage",
+                "member": "TotalItems",
                 "module": "authorityList",
                 "type": "authorityList.PageControl_2"
               }

@@ -1983,7 +1983,7 @@
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "100",
+        "AutoRuleBindingString": "10",
         "InvariantPropertyName": "TotalPage",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
@@ -2003,14 +2003,40 @@
         "InvariantPropertyName": "OnReset",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
+      },
+      "TotalItems",
+      "perPage",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "firstN",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "lastN",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "isLast",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638369102848870703",
+    "LastModifiedTimestamp": "638369127175510397",
     "Name": "PageControl",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "10",
+        "InvariantScript": "RoundUp(Self.TotalItems/Self.perPage,0)",
         "Property": "TotalPage",
         "RuleProviderType": "System"
       },
@@ -2018,6 +2044,36 @@
         "Category": "Data",
         "InvariantScript": "Selected",
         "Property": "CurrentPage",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "100",
+        "Property": "TotalItems",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "100",
+        "Property": "perPage",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "Self.CurrentPage*Self.perPage",
+        "Property": "firstN",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "If(Self.isLast,\n    Self.TotalItems-((RoundUp(Self.TotalItems/Self.perPage,0)-1)*Self.perPage),\n    Self.perPage\n)",
+        "Property": "lastN",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "If(Self.CurrentPage=Self.TotalPage,true,false)",
+        "Property": "isLast",
         "RuleProviderType": "System"
       },
       {
@@ -2077,8 +2133,7 @@
     {
       "Category": 0,
       "DisplayName": "TotalPage",
-      "Hidden": false,
-      "IsResettable": true,
+      "Hidden": true,
       "Name": "TotalPage",
       "PropertyDataTypeKey": "Number",
       "Tooltip": "사용자 지정 속성",
@@ -2092,6 +2147,53 @@
       "PropertyDataTypeKey": "Number",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TotalItems",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TotalItems",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "perPage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "perPage",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "firstN",
+      "Hidden": true,
+      "Name": "firstN",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "lastN",
+      "Hidden": true,
+      "Name": "lastN",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "isLast",
+      "Hidden": true,
+      "Name": "isLast",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2102,7 +2204,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369102848870703",
+  "LastModifiedTimestamp": "638369127175510397",
   "Name": "f4017991d841427180630d9c4cb076e1",
   "OverridableProperties": {},
   "Version": "1.0"

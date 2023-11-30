@@ -100,11 +100,7 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =342
                 Items: |-
-                    =If(PageControl_3.CurrentPage=PageControl_3.TotalPage,
-                        LastN(FirstN(SearchBar_3.cList,PageControl_3.CurrentPage*6),
-                            CountRows(SearchBar_3.cList)-((RoundUp(CountRows(SearchBar_3.cList)/6,0)-1)*6)),
-                        LastN(FirstN(SearchBar_3.cList,PageControl_3.CurrentPage*6),6)
-                    )
+                    =LastN(FirstN(SearchBar_3.cList,PageControl_3.firstN),PageControl_3.lastN)
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -236,7 +232,8 @@ userList As screen:
                     ZIndex: =5
 
             PageControl_3 As PageControl:
-                TotalPage: =RoundUp(CountRows(SearchBar_3.cList)/6,0)
+                perPage: =6
+                TotalItems: =CountRows(SearchBar_3.cList)
                 X: =223
                 Y: =403
                 ZIndex: =3

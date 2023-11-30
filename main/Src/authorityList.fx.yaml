@@ -256,12 +256,7 @@ authorityList As screen:
     "galResourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =271
-        Items: |-
-            =If(PageControl_2.CurrentPage=PageControl_2.TotalPage,
-                LastN(FirstN(SearchBar_2.cList,PageControl_2.CurrentPage*7),
-                    CountRows(SearchBar_2.cList)-((RoundUp(CountRows(SearchBar_2.cList)/7,0)-1)*7)),
-                LastN(FirstN(SearchBar_2.cList,PageControl_2.CurrentPage*7),7)
-            )
+        Items: =LastN(FirstN(SearchBar_2.cList,PageControl_2.firstN),PageControl_2.lastN)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -383,7 +378,8 @@ authorityList As screen:
             ZIndex: =4
 
     PageControl_2 As PageControl:
-        TotalPage: =RoundUp(CountRows(SearchBar_1.cList)/7,0)
+        perPage: =7
+        TotalItems: =CountRows(SearchBar_3.cList)
         X: =475
         Y: =642
         ZIndex: =10
