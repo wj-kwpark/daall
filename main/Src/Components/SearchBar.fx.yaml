@@ -1,4 +1,7 @@
 SearchBar As CanvasComponent:
+    onSearch():
+        ThisProperty:
+            Default: =true
     cData: |-
         =Table(
             {
@@ -16,11 +19,15 @@ SearchBar As CanvasComponent:
             }
         )
     cList: =boardList
+    endDate: =endDate_3.SelectedDate
     Fill: =RGBA(0, 0, 0, 0)
     forUser: =false
     Height: =95
+    name: =resourceEdit_7.Text
     OnReset: =Set(boardList,Self.cData);
+    startDate: =startDate_3.SelectedDate
     tDate: ="기간"
+    title: =resourceEdit_6.Text
     tTitle: ="제목"
     Width: |
         =1000
@@ -48,6 +55,7 @@ SearchBar As CanvasComponent:
                     )
                 )
             );
+            Parent.onSearch();
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

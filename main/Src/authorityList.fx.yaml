@@ -99,6 +99,15 @@ authorityList As screen:
     SearchBar_2 As SearchBar:
         cData: =Filter(authorityListdata,OWNER_ID=User)
         Height: =91
+        onSearch: |-
+            =ClearCollect(
+                authorityListdata,
+                Filter(
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE
+                    )
+            );
         tDate: ="생성일"
         tTitle: ="보고서/데이터명"
         Width: =1083
@@ -256,7 +265,7 @@ authorityList As screen:
     "galResourceList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =271
-        Items: =LastN(FirstN(SearchBar_2.cList,PageControl_2.firstN),PageControl_2.lastN)
+        Items: =LastN(FirstN(authorityListdata,PageControl_2.firstN),PageControl_2.lastN)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
@@ -379,7 +388,7 @@ authorityList As screen:
 
     PageControl_2 As PageControl:
         perPage: =7
-        TotalItems: =CountRows(SearchBar_3.cList)
+        TotalItems: =CountRows(authorityListdata)
         X: =475
         Y: =642
         ZIndex: =10

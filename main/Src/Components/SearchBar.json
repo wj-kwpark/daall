@@ -2468,7 +2468,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(\n    boardList,\n    If(Parent.forUser,\n        Filter(\n            Parent.cData,\n            resourceEdit_7.Text in USER_NAME\n        ),\n        Filter(\n            Parent.cData,\n            startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,\n            resourceEdit_6.Text in BOARD_TITLE\n        )\n    )\n);",
+            "InvariantScript": "Set(\n    boardList,\n    If(Parent.forUser,\n        Filter(\n            Parent.cData,\n            resourceEdit_7.Text in USER_NAME\n        ),\n        Filter(\n            Parent.cData,\n            startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,\n            resourceEdit_6.Text in BOARD_TITLE\n        )\n    )\n);\nParent.onSearch();",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -3853,9 +3853,14 @@
         "InvariantPropertyName": "OnReset",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "title",
+      "startDate",
+      "endDate",
+      "name",
+      "onSearch"
     ],
-    "LastModifiedTimestamp": "638369100384304399",
+    "LastModifiedTimestamp": "638369133062496335",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3886,6 +3891,30 @@
         "Category": "Data",
         "InvariantScript": "false",
         "Property": "forUser",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "resourceEdit_6.Text",
+        "Property": "title",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "startDate_3.SelectedDate",
+        "Property": "startDate",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "endDate_3.SelectedDate",
+        "Property": "endDate",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "resourceEdit_7.Text",
+        "Property": "name",
         "RuleProviderType": "System"
       },
       {
@@ -3928,6 +3957,12 @@
         "Category": "Behavior",
         "InvariantScript": "Set(boardList,Self.cData);",
         "Property": "OnReset",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Behavior",
+        "InvariantScript": "true",
+        "Property": "onSearch",
         "RuleProviderType": "System"
       }
     ]
@@ -3987,6 +4022,55 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "title",
+      "Hidden": true,
+      "Name": "title",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "startDate",
+      "Hidden": true,
+      "Name": "startDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "endDate",
+      "Hidden": true,
+      "Name": "endDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "name",
+      "Hidden": true,
+      "Name": "name",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "onSearch",
+      "Hidden": false,
+      "Name": "onSearch",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "59",
+        "PropertyScopeRulesKey": []
+      },
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -3997,7 +4081,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369100384304399",
+  "LastModifiedTimestamp": "638369133062496335",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

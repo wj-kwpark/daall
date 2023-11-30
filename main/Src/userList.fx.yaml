@@ -100,7 +100,7 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =342
                 Items: |-
-                    =LastN(FirstN(SearchBar_3.cList,PageControl_3.firstN),PageControl_3.lastN)
+                    =LastN(FirstN(UserList,PageControl_3.firstN),PageControl_3.lastN)
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -245,6 +245,14 @@ userList As screen:
             'nocode-test.user_detail'
         forUser: =true
         Height: =100
+        onSearch: |-
+            =ClearCollect(
+                UserList,
+                Filter(
+                        'nocode-test.user',
+                        SearchBar_3.name in USER_NAME
+                    )
+            );
         Width: =1074
         X: =245
         Y: =140

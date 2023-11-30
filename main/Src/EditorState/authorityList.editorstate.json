@@ -3542,6 +3542,18 @@
           "InvariantPropertyName": "OnReset",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        "title",
+        "startDate",
+        "endDate",
+        "name",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "onSearch",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -3589,6 +3601,26 @@
           "RuleProviderType": "System"
         },
         {
+          "Category": "Data",
+          "PropertyName": "title",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "startDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "endDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "name",
+          "RuleProviderType": "System"
+        },
+        {
           "Category": "Design",
           "PropertyName": "ZIndex",
           "RuleProviderType": "Unknown"
@@ -3622,6 +3654,11 @@
           "Category": "Behavior",
           "PropertyName": "OnReset",
           "RuleProviderType": "System"
+        },
+        {
+          "Category": "Behavior",
+          "PropertyName": "onSearch",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "",
