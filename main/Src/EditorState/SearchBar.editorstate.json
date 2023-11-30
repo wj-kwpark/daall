@@ -1451,24 +1451,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "cData",
-        "cList",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "forUser",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "OnReset",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "forUser",
+        "OnReset",
         "title",
         "startDate",
         "endDate",
@@ -1496,16 +1480,6 @@
         {
           "Category": "Data",
           "PropertyName": "tDate",
-          "RuleProviderType": "System"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "cData",
-          "RuleProviderType": "System"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "cList",
           "RuleProviderType": "System"
         },
         {

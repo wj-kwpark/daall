@@ -2,29 +2,12 @@ SearchBar As CanvasComponent:
     onSearch():
         ThisProperty:
             Default: =true
-    cData: |-
-        =Table(
-            {
-                BOARD_TITLE: "제목",
-                REGI_DATE: Date(
-                    2022,
-                    01,
-                    01
-                ),
-                USER_NAME: "이름",
-                USER_ID: "ID",
-                RESOURCE_TYPE: "TYPE",
-                REPORT_CNT: 0,
-                DATA_CNT: 0
-            }
-        )
-    cList: =boardList
     endDate: =endDate_3.SelectedDate
     Fill: =RGBA(0, 0, 0, 0)
     forUser: =false
     Height: =95
     name: =resourceEdit_7.Text
-    OnReset: =Set(boardList,Self.cData);
+    OnReset: =
     startDate: =startDate_3.SelectedDate
     tDate: ="기간"
     title: =resourceEdit_6.Text
@@ -40,22 +23,7 @@ SearchBar As CanvasComponent:
         Fill: =RGBA(71, 158, 245, 1)
         Height: =30
         HoverBorderColor: =
-        OnSelect: |-
-            =Set(
-                boardList,
-                If(Parent.forUser,
-                    Filter(
-                        Parent.cData,
-                        resourceEdit_7.Text in USER_NAME
-                    ),
-                    Filter(
-                        Parent.cData,
-                        startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,
-                        resourceEdit_6.Text in BOARD_TITLE
-                    )
-                )
-            );
-            Parent.onSearch();
+        OnSelect: =Parent.onSearch();
         RadiusBottomLeft: =20
         RadiusBottomRight: =20
         RadiusTopLeft: =20

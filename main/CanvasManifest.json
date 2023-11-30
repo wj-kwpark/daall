@@ -111,10 +111,10 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "1360e7d0-a641-4aad-a01d-ea2a0bc43d75",
-    "Id": "1853a5f4-ab14-4125-9cac-8fba7384228e",
+    "Id": "cd3ac49a-1219-4ae1-ae5c-3de6a5c87fba",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "daallDev",
+    "Name": "daallDev.msapp",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false

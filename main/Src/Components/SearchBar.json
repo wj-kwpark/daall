@@ -2468,7 +2468,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Set(\n    boardList,\n    If(Parent.forUser,\n        Filter(\n            Parent.cData,\n            resourceEdit_7.Text in USER_NAME\n        ),\n        Filter(\n            Parent.cData,\n            startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,\n            resourceEdit_6.Text in BOARD_TITLE\n        )\n    )\n);\nParent.onSearch();",
+            "InvariantScript": "Parent.onSearch();",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -3836,31 +3836,15 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "cData",
-      "cList",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "true",
-        "InvariantPropertyName": "forUser",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "",
-        "InvariantPropertyName": "OnReset",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      },
+      "forUser",
+      "OnReset",
       "title",
       "startDate",
       "endDate",
       "name",
       "onSearch"
     ],
-    "LastModifiedTimestamp": "638369133062496335",
+    "LastModifiedTimestamp": "638369140910740142",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3873,18 +3857,6 @@
         "Category": "Data",
         "InvariantScript": "\"기간\"",
         "Property": "tDate",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Data",
-        "InvariantScript": "Table(\n    {\n        BOARD_TITLE: \"제목\",\n        REGI_DATE: Date(\n            2022,\n            01,\n            01\n        ),\n        USER_NAME: \"이름\",\n        USER_ID: \"ID\",\n        RESOURCE_TYPE: \"TYPE\",\n        REPORT_CNT: 0,\n        DATA_CNT: 0\n    }\n)",
-        "Property": "cData",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Data",
-        "InvariantScript": "boardList",
-        "Property": "cList",
         "RuleProviderType": "System"
       },
       {
@@ -3955,7 +3927,7 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "Set(boardList,Self.cData);",
+        "InvariantScript": "",
         "Property": "OnReset",
         "RuleProviderType": "System"
       },
@@ -3994,25 +3966,6 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "검색기간",
       "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "cData",
-      "Hidden": false,
-      "IsResettable": true,
-      "Name": "cData",
-      "PropertyDataTypeKey": "Table",
-      "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "cList",
-      "Hidden": true,
-      "Name": "cList",
-      "PropertyDataTypeKey": "Table",
-      "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"COMPANY_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"CONTENT\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_COUNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"FILE_ID\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"PASSWORD\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_COUNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"ROLE_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"WORKSPACE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     },
     {
       "Category": 0,
@@ -4081,7 +4034,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369133062496335",
+  "LastModifiedTimestamp": "638369140910740142",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

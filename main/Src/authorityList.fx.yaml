@@ -97,7 +97,6 @@ authorityList As screen:
         ZIndex: =3
 
     SearchBar_2 As SearchBar:
-        cData: =Filter(authorityListdata,OWNER_ID=User)
         Height: =91
         onSearch: |-
             =ClearCollect(
@@ -129,19 +128,14 @@ authorityList As screen:
         HoverColor: =RGBA(15, 84, 140, 1)
         HoverFill: =RGBA(0, 0, 0, 0)
         OnSelect: |-
-            =//ClearCollect(authorityListdata,Filter(authorityListdata,OWNER_ID=User))
-            ClearCollect(
+            =ClearCollect(
                 authorityListdata,
-                SortByColumns(
-                    authoritydata,
-                    "REGI_DATE"
-                )
+                Filter(
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE
+                    )
             );
-            ClearCollect(
-                authorityListdata,
-            Filter(authorityListdata,OWNER_ID=User));
-            
-            Set(boardList,authorityListdata)
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -172,29 +166,11 @@ authorityList As screen:
         OnSelect: |-
             =ClearCollect(
                 authorityListdata,
-                SortByColumns(
-                    authoritydata,
-                    "REGI_DATE"
-                )
-            );
-            ClearCollect(
-                authorityListdata,
                 Filter(
                     authorityListdata,
-                    OWNER_ID = User
-                )
-            );
-            ClearCollect(
-                authorityListdata,
-                Filter(
-                    authorityListdata,
-                    OWNER_ID = User,
                     RESOURCE_TYPE = "report"
                 )
             );
-            
-            
-            Set(boardList,authorityListdata);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -225,29 +201,11 @@ authorityList As screen:
         OnSelect: |-
             =ClearCollect(
                 authorityListdata,
-                SortByColumns(
-                    authoritydata,
-                    "REGI_DATE"
-                )
-            );
-            ClearCollect(
-                authorityListdata,
                 Filter(
                     authorityListdata,
-                    OWNER_ID = User
-                )
-            );
-            ClearCollect(
-                authorityListdata,
-                Filter(
-                    authorityListdata,
-                    OWNER_ID = User,
                     RESOURCE_TYPE = "data"
                 )
             );
-            
-            
-            Set(boardList,authorityListdata);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)

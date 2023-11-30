@@ -235,16 +235,12 @@ userList As screen:
 
             PageControl_3 As PageControl:
                 perPage: =6
-                TotalItems: =CountRows(userScreenList)
+                TotalItems: =CountRows(SearchUserList)
                 X: =223
                 Y: =403
                 ZIndex: =3
 
     SearchBar_3 As SearchBar:
-        cData: |-
-            =//userScreenList
-            //'nocode-test.user'
-            'nocode-test.user_detail'
         forUser: =true
         Height: =100
         onSearch: |-
