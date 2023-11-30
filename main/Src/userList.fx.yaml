@@ -65,7 +65,7 @@ userList As screen:
                 userName As label:
                     Align: =Align.Center
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =50
+                    Height: =49
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -73,8 +73,7 @@ userList As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: =ThisItem.USER_NAME
-                    Width: =382
-                    X: =36
+                    Width: =234
                     ZIndex: =2
 
                 userId As label:
@@ -89,7 +88,7 @@ userList As screen:
                     Size: =11
                     Text: =ThisItem.USER_ID
                     Width: =186
-                    X: =461
+                    X: =266
                     ZIndex: =3
 
                 Separator1_1 As rectangle:
@@ -107,7 +106,7 @@ userList As screen:
                     Size: =11
                     Text: =ThisItem.REPORT_CNT
                     Width: =161
-                    X: =681
+                    X: =565
                     ZIndex: =6
 
                 dataCount As label:
@@ -117,13 +116,17 @@ userList As screen:
                     Size: =11
                     Text: =ThisItem.DATA_CNT
                     Width: =170
-                    X: =877
+                    X: =834
                     ZIndex: =7
 
             Container11_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(245, 249, 255, 1)
                 Height: =50
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
                 Width: =1047
                 ZIndex: =2
 
@@ -133,7 +136,7 @@ userList As screen:
                     Height: =49
                     Size: =11
                     Text: ="사용자명"
-                    Width: =458
+                    Width: =235
                     Y: =1
                     ZIndex: =1
 
@@ -144,7 +147,7 @@ userList As screen:
                     Size: =11
                     Text: ="아이디"
                     Width: =123
-                    X: =477
+                    X: =297
                     Y: =1
                     ZIndex: =2
 
@@ -155,7 +158,7 @@ userList As screen:
                     Size: =11
                     Text: ="보유보고서수"
                     Width: =169
-                    X: =675
+                    X: =566
                     Y: =1
                     ZIndex: =3
 
@@ -166,15 +169,15 @@ userList As screen:
                     Size: =11
                     Text: ="보유데이터수"
                     Width: =159
-                    X: =882
+                    X: =839
                     Y: =2
                     ZIndex: =4
 
                 Rectangle6_1 As rectangle:
                     Fill: =RGBA(15, 84, 140, 1)
-                    Height: =1
+                    Height: =2
                     Width: =1046
-                    Y: =49
+                    Y: =48
                     ZIndex: =5
 
         SearchBar_3 As SearchBar:
