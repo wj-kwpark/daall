@@ -1221,9 +1221,23 @@
         "BorderStyle",
         "Fill",
         "X",
-        "Y",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Y",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -1266,7 +1280,7 @@
       "MetaDataIDKey": "",
       "Name": "BoardNotice",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5308,6 +5322,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        "cData",
+        "cList",
         "forUser",
         "OnReset",
         "title",
@@ -5350,6 +5366,16 @@
         {
           "Category": "Data",
           "PropertyName": "tDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "cData",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "cList",
           "RuleProviderType": "System"
         },
         {
