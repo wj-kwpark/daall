@@ -114,7 +114,7 @@
     "Id": "cd3ac49a-1219-4ae1-ae5c-3de6a5c87fba",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "daallDev.msapp",
+    "Name": "daallDev",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
@@ -134,6 +134,7 @@
     "loginScreen",
     "main2",
     "Notice",
+    "NoticeDetail",
     "myinfo",
     "authorityList",
     "userList",

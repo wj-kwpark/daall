@@ -1,0 +1,281 @@
+NoticeDetail As screen:
+
+    Base_14 As Base:
+        logout: =loginScreen
+        userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+
+    pageTitle_12 As label:
+        FontWeight: =FontWeight.Bold
+        Size: =24
+        Text: ="공지사항"
+        X: =246
+        Y: =118
+        ZIndex: =2
+
+    Container7_5 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(214, 221, 224, 1)
+        BorderStyle: =BorderStyle.Dotted
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =Color.White
+        Height: =537
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1086
+        X: =232
+        Y: =171
+        ZIndex: =3
+
+        검색필드_3 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Height: =91
+            Visible: =false
+            Width: =1085
+            X: =1
+            Y: =5
+            ZIndex: =1
+
+            검색버튼_3 As button:
+                BorderThickness: =0
+                Fill: =RGBA(71, 158, 245, 1)
+                Height: =37
+                OnSelect: |-
+                    =ClearCollect(
+                        noticeList,
+                            Filter(
+                                noticeData,
+                                startDate_1.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_1.SelectedDate,
+                                resourceEdit_3.Text in BOARD_TITLE
+                            )
+                    );
+                RadiusBottomLeft: =20
+                RadiusBottomRight: =20
+                RadiusTopLeft: =20
+                RadiusTopRight: =20
+                Size: =10
+                Text: ="검색"
+                Width: =97
+                X: =970
+                Y: =33
+                ZIndex: =1
+
+            보고서데이터명_3 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="제목"
+                Width: =116
+                X: =10
+                Y: =13
+                ZIndex: =2
+
+            resourceEdit_3 As text:
+                BorderThickness: =0
+                Color: =Color.Black
+                Default: =""
+                FocusedBorderColor: =Color.Transparent
+                Height: =36
+                HoverBorderColor: =Color.Transparent
+                HoverColor: =Color.Black
+                HoverFill: =Color.Transparent
+                PressedColor: =Color.Transparent
+                Width: =221
+                X: =26
+                Y: =40
+                ZIndex: =3
+
+            Rectangle8_10 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =221
+                X: =26
+                Y: =73
+                ZIndex: =4
+
+            생성일_4 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="기간"
+                Width: =116
+                X: =286
+                Y: =13
+                ZIndex: =5
+
+            생성일_5 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =22
+                Size: =9
+                Text: ="-"
+                Width: =27
+                X: =444
+                Y: =46
+                ZIndex: =8
+
+            Rectangle8_5 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =302
+                Y: =72
+                ZIndex: =9
+
+            Rectangle8_9 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =471
+                Y: =72
+                ZIndex: =10
+
+            "startDate_1 As '날짜 선택'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+                Width: =130
+                X: =302
+                Y: =38
+                ZIndex: =11
+
+            "endDate_1 As '날짜 선택'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Today()
+                Width: =130
+                X: =471
+                Y: =40
+                ZIndex: =12
+
+        Board_2 As Board:
+            BoardData: =LastN(FirstN(noticeList,PageControl_1.firstN),PageControl_1.lastN)
+            Height: =355
+            Visible: =false
+            Width: =1046
+            X: =20
+            Y: =110
+            ZIndex: =2
+
+        Rectangle8_12 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =1046
+            X: =20
+            Y: =467
+            ZIndex: =3
+
+        Rectangle8_13 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =1046
+            X: =20
+            Y: =427
+            ZIndex: =4
+
+        HeaderSeparator_3 As rectangle:
+            Fill: =RGBA(16, 87, 192, 1)
+            Height: =2
+            OnSelect: =
+            Width: =1046
+            X: =20
+            Y: =67
+            ZIndex: =5
+
+        Label3 As label:
+            FontWeight: =FontWeight.Bold
+            Text: ="텍스트"
+            Width: =895
+            X: =20
+            Y: =27
+            ZIndex: =6
+
+        Label3_3 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Bold
+            Text: ="텍스트"
+            Width: =151
+            X: =915
+            Y: =27
+            ZIndex: =7
+
+        HtmlText2 As htmlViewer:
+            Height: =328
+            Width: =1046
+            X: =20
+            Y: =84
+            ZIndex: =8
+
+        Button2 As button:
+            Fill: =RGBA(79, 90, 94, 1)
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Navigate(Notice)
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =14
+            Text: ="목록"
+            Width: =110
+            X: =488
+            Y: =484
+            ZIndex: =9
+
+        Label3_4 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            Text: ="텍스트"
+            Width: =67
+            X: =77
+            Y: =430
+            ZIndex: =10
+
+        Image3 As image:
+            Height: =40
+            Image: =icon_prev_btn
+            Width: =40
+            X: =37
+            Y: =429
+            ZIndex: =11
+
+        Image4 As image:
+            Height: =40
+            Image: =icon_next_btn
+            Width: =40
+            X: =984
+            Y: =427
+            ZIndex: =12
+
+        Label3_5 As label:
+            Align: =Align.Right
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            Text: ="텍스트"
+            Width: =67
+            X: =917
+            Y: =429
+            ZIndex: =13
+
+        Label4 As label:
+            Height: =35
+            Text: ="텍스트"
+            Width: =399
+            X: =144
+            Y: =430
+            ZIndex: =14
+
+        Label4_3 As label:
+            Align: =Align.Right
+            Height: =35
+            Text: ="텍스트"
+            Width: =374
+            X: =543
+            Y: =430
+            ZIndex: =15
+

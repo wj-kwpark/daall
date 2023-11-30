@@ -74,7 +74,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 47,
+        "PublishOrderIndex": 59,
         "Rules": [
           {
             "Category": "Data",
@@ -357,7 +357,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 48,
+        "PublishOrderIndex": 60,
         "Rules": [
           {
             "Category": "Data",
@@ -640,7 +640,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 49,
+        "PublishOrderIndex": 61,
         "Rules": [
           {
             "Category": "Data",
@@ -923,7 +923,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 50,
+        "PublishOrderIndex": 62,
         "Rules": [
           {
             "Category": "Data",
@@ -1206,7 +1206,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 51,
+        "PublishOrderIndex": 63,
         "Rules": [
           {
             "Category": "Data",
@@ -1489,7 +1489,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 52,
+        "PublishOrderIndex": 64,
         "Rules": [
           {
             "Category": "Data",
@@ -1772,7 +1772,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 53,
+        "PublishOrderIndex": 65,
         "Rules": [
           {
             "Category": "Data",
@@ -2055,7 +2055,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 54,
+        "PublishOrderIndex": 66,
         "Rules": [
           {
             "Category": "Data",
@@ -2338,7 +2338,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 55,
+        "PublishOrderIndex": 67,
         "Rules": [
           {
             "Category": "Data",
@@ -2621,7 +2621,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 56,
+        "PublishOrderIndex": 68,
         "Rules": [
           {
             "Category": "Data",
@@ -2904,7 +2904,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 57,
+        "PublishOrderIndex": 69,
         "Rules": [
           {
             "Category": "Data",
