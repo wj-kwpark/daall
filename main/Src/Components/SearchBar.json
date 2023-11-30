@@ -2,7 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentDefinitionInfo": {
-    "AllowAccessToGlobals": true,
+    "AllowAccessToGlobals": false,
     "Children": [
       {
         "AllowAccessToGlobals": true,
@@ -105,7 +105,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 322,
+        "PublishOrderIndex": 323,
         "Rules": [
           {
             "Category": "Data",
@@ -458,7 +458,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 323,
+        "PublishOrderIndex": 324,
         "Rules": [
           {
             "Category": "Data",
@@ -804,7 +804,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 324,
+        "PublishOrderIndex": 325,
         "Rules": [
           {
             "Category": "Data",
@@ -1198,7 +1198,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 325,
+        "PublishOrderIndex": 326,
         "Rules": [
           {
             "Category": "Data",
@@ -1508,7 +1508,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 326,
+        "PublishOrderIndex": 327,
         "Rules": [
           {
             "Category": "Data",
@@ -1646,7 +1646,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 327,
+        "PublishOrderIndex": 328,
         "Rules": [
           {
             "Category": "Data",
@@ -1855,7 +1855,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 328,
+        "PublishOrderIndex": 329,
         "Rules": [
           {
             "Category": "Data",
@@ -2254,7 +2254,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 329,
+        "PublishOrderIndex": 330,
         "Rules": [
           {
             "Category": "Data",
@@ -2583,7 +2583,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 330,
+        "PublishOrderIndex": 331,
         "Rules": [
           {
             "Category": "Data",
@@ -2912,7 +2912,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 334,
+        "PublishOrderIndex": 335,
         "Rules": [
           {
             "Category": "Design",
@@ -3090,7 +3090,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 335,
+        "PublishOrderIndex": 336,
         "Rules": [
           {
             "Category": "Design",
@@ -3268,7 +3268,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 336,
+        "PublishOrderIndex": 337,
         "Rules": [
           {
             "Category": "Design",
@@ -3446,7 +3446,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 337,
+        "PublishOrderIndex": 338,
         "Rules": [
           {
             "Category": "Design",
@@ -3590,7 +3590,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 331,
+        "PublishOrderIndex": 332,
         "Rules": [
           {
             "Category": "Design",
@@ -3671,7 +3671,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 332,
+        "PublishOrderIndex": 333,
         "Rules": [
           {
             "Category": "Design",
@@ -3749,7 +3749,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "SearchBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 333,
+        "PublishOrderIndex": 334,
         "Rules": [
           {
             "Category": "Design",
@@ -3855,7 +3855,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638369075494998443",
+    "LastModifiedTimestamp": "638369100384304399",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3933,7 +3933,7 @@
     ]
   },
   "ComponentManifest": {
-    "AllowAccessToGlobals": true,
+    "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
     "Name": "SearchBar",
@@ -3977,7 +3977,7 @@
       "Name": "cList",
       "PropertyDataTypeKey": "Table",
       "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"COMPANY_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"COMPANY_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"CONTENT\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"FILE_ID\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"PASSWORD\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"ROLE_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_STATUS\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"WORKSPACE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BOARD_TITLE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"COMPANY_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"CONTENT\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"DATA_COUNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"FILE_ID\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MODY_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OWNER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"PASSWORD\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_DATE\",\"Kind\":\"Date\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REGI_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_CNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"REPORT_COUNT\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"RESOURCE_TYPE\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"ROLE_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"USER_NAME\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"WORKSPACE_ID\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
     },
     {
       "Category": 0,
@@ -3997,7 +3997,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369075494998443",
+  "LastModifiedTimestamp": "638369100384304399",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

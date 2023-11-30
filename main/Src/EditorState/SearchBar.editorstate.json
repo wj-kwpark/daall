@@ -1413,7 +1413,7 @@
       "Type": "ControlInfo"
     },
     "SearchBar": {
-      "AllowAccessToGlobals": true,
+      "AllowAccessToGlobals": false,
       "ControlPropertyState": [
         "Fill",
         {

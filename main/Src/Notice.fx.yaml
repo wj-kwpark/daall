@@ -347,7 +347,12 @@ Notice As screen:
                 ZIndex: =12
 
         Board_1 As Board:
-            BoardData: =LastN(FirstN(SearchBar_1.cList,PageControl_1.CurrentPage*6),6)
+            BoardData: |-
+                =If(PageControl_1.CurrentPage=PageControl_1.TotalPage,
+                    LastN(FirstN(SearchBar_1.cList,PageControl_1.CurrentPage*6),
+                        CountRows(SearchBar_1.cList)-((RoundUp(CountRows(SearchBar_1.cList)/6,0)-1)*6)),
+                    LastN(FirstN(SearchBar_1.cList,PageControl_1.CurrentPage*6),6)
+                )
             Height: =354
             Width: =1046
             X: =20

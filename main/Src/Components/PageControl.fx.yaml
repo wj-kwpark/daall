@@ -9,6 +9,7 @@ PageControl As CanvasComponent:
         =Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), "Value", "Index"));
         Set(Selected,1);
     TotalPage: =10
+    TotalPages: =Self.TotalPage
     Width: =600
     X: =0
     Y: =0
