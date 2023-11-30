@@ -154,6 +154,7 @@ main As screen:
         ZIndex: =13
 
     ButtonCanvas2 As 버튼:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
