@@ -234,7 +234,7 @@ Base As CanvasComponent:
             Color: =If(clickedMenu = ThisItem.MenuLabel, Color.White, RGBA(56, 96, 178, 1))
             DisplayMode: =DisplayMode.View
             Height: =19
-            Icon: =If(clickedMenu = ThisItem.MenuLabel, Icon.ChevronUp, Icon.ChevronDown)
+            Icon: =If(CountRows(ThisItem.SubMenu) > 1,If(clickedMenu = ThisItem.MenuLabel, Icon.ChevronUp, Icon.ChevronDown),false)
             OnSelect: =Select(Parent)
             Width: =10
             X: =130

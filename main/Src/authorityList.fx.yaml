@@ -56,7 +56,8 @@ authorityList As screen:
                 authoritydata,
                 "REGI_DATE"
             )
-        )
+        );
+        Set(aFilter,"전체");
 
     Base_3 As Base:
         logout: =loginScreen
@@ -92,12 +93,12 @@ authorityList As screen:
         FontWeight: =FontWeight.Bold
         Size: =24
         Text: ="권한관리"
-        X: =235
-        Y: =104
+        X: =246
+        Y: =118
         ZIndex: =3
 
     SearchBar_2 As SearchBar:
-        Height: =91
+        Height: =90
         onSearch: |-
             =ClearCollect(
                 authorityListdata,
@@ -109,15 +110,15 @@ authorityList As screen:
             );
         tDate: ="생성일"
         tTitle: ="보고서/데이터명"
-        Width: =1083
-        X: =233
+        Width: =1046
+        X: =252
         Y: =175
         ZIndex: =4
 
     전체버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -136,6 +137,7 @@ authorityList As screen:
                         SearchBar_2.title in BOARD_TITLE
                     )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -151,9 +153,9 @@ authorityList As screen:
         ZIndex: =5
 
     보고서버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -167,10 +169,13 @@ authorityList As screen:
             =ClearCollect(
                 authorityListdata,
                 Filter(
-                    authorityListdata,
-                    RESOURCE_TYPE = "report"
-                )
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE,
+                        RESOURCE_TYPE = "report"
+                    )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -186,9 +191,9 @@ authorityList As screen:
         ZIndex: =6
 
     데이터버튼 As button:
-        BorderColor: =RGBA(122, 138, 143, 1)
+        BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         BorderThickness: =1
-        Color: =RGBA(122, 138, 143, 1)
+        Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
         DisabledBorderColor: =RGBA(15, 84, 140, 1)
         DisabledColor: =RGBA(15, 84, 140, 1)
         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -202,10 +207,13 @@ authorityList As screen:
             =ClearCollect(
                 authorityListdata,
                 Filter(
-                    authorityListdata,
-                    RESOURCE_TYPE = "data"
-                )
+                        Filter(authoritydata,OWNER_ID=User),
+                        SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                        SearchBar_2.title in BOARD_TITLE,
+                        RESOURCE_TYPE = "data"
+                    )
             );
+            Set(aFilter,Self.Text);
         PressedBorderColor: =RGBA(15, 84, 140, 1)
         PressedColor: =RGBA(15, 84, 140, 1)
         PressedFill: =RGBA(0, 0, 0, 0)
@@ -228,8 +236,8 @@ authorityList As screen:
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =38
-        Width: =1042
+        TemplateSize: =44
+        Width: =1046
         X: =252
         Y: =339
         ZIndex: =8
@@ -247,7 +255,7 @@ authorityList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =382
             X: =24
-            Y: =6
+            Y: =13
             ZIndex: =2
 
         resourceType As label:
@@ -263,7 +271,7 @@ authorityList As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =140
             X: =451
-            Y: =10
+            Y: =15
             ZIndex: =3
 
         Separator1 As rectangle:
@@ -275,7 +283,7 @@ authorityList As screen:
             ZIndex: =5
 
         regiDate As label:
-            Height: =38
+            Height: =44
             OnSelect: =Select(Parent)
             Size: =11
             Text: =ThisItem.REGI_DATE
@@ -297,23 +305,23 @@ authorityList As screen:
             Text: ="권한관리"
             Width: =115
             X: =914
-            Y: =5
+            Y: =7
             ZIndex: =7
 
     Container11 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
         Fill: =RGBA(245, 249, 255, 1)
-        Height: =42
-        Width: =1042
+        Height: =50
+        Width: =1046
         X: =252
-        Y: =297
+        Y: =287
         ZIndex: =9
 
         Rectangle6 As rectangle:
             Fill: =RGBA(15, 84, 140, 1)
             Height: =1
             Width: =1077
-            Y: =40
+            Y: =49
             ZIndex: =1
 
         Label13 As label:
@@ -345,9 +353,9 @@ authorityList As screen:
             ZIndex: =4
 
     PageControl_2 As PageControl:
-        perPage: =7
+        perPage: =6
         TotalItems: =CountRows(authorityListdata)
         X: =475
-        Y: =642
+        Y: =650
         ZIndex: =10
 

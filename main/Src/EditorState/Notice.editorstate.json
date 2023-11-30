@@ -5308,6 +5308,8 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
+        "cData",
+        "cList",
         "forUser",
         "OnReset",
         "title",
@@ -5350,6 +5352,16 @@
         {
           "Category": "Data",
           "PropertyName": "tDate",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "cData",
+          "RuleProviderType": "System"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "cList",
           "RuleProviderType": "System"
         },
         {
