@@ -1194,11 +1194,39 @@
           "HoverFill",
           "Font",
           "FontWeight",
-          "Align",
-          "VerticalAlign",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Align",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "VerticalAlign",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "1023",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Height",
           "DisplayMode",
           "ZIndex",
@@ -1219,7 +1247,14 @@
           "PaddingTop",
           "PaddingRight",
           "PaddingBottom",
-          "PaddingLeft"
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "PaddingLeft",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          }
         ],
         "ControlUniqueId": "11",
         "HasDynamicProperties": false,
@@ -1245,7 +1280,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Base.loginDate",
+            "InvariantScript": "\"(최종접속일 \" & Base.loginDate & \")\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1293,7 +1328,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "5",
+            "InvariantScript": "0",
             "Property": "PaddingLeft",
             "RuleProviderType": "Unknown"
           },
@@ -1305,13 +1340,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "41",
+            "InvariantScript": "51",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "150",
+            "InvariantScript": "220",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1329,7 +1364,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "45",
+            "InvariantScript": "35",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1341,7 +1376,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1071",
+            "InvariantScript": "Image2_1.X - 220",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1525,12 +1560,40 @@
           "PressedFill",
           "HoverFill",
           "Font",
-          "FontWeight",
-          "Align",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "FontWeight",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Align",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "VerticalAlign",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "900",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Y",
-          "Width",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "96",
+            "InvariantPropertyName": "Width",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Height",
           "DisplayMode",
           "ZIndex",
@@ -1577,7 +1640,7 @@
           },
           {
             "Category": "Data",
-            "InvariantScript": "Base.userId",
+            "InvariantScript": "Base.userId & \" 님\"",
             "Property": "Text",
             "RuleProviderType": "Unknown"
           },
@@ -1589,7 +1652,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "13",
+            "InvariantScript": "12",
             "Property": "Size",
             "RuleProviderType": "Unknown"
           },
@@ -1637,13 +1700,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "41",
+            "InvariantScript": "51",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "118",
+            "InvariantScript": "Len(Self.Text)*14",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1661,7 +1724,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "46",
+            "InvariantScript": "35",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1673,7 +1736,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "975",
+            "InvariantScript": "loginDate_1.X - Self.Width",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1697,13 +1760,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Align.Left",
+            "InvariantScript": "Align.Center",
             "Property": "Align",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "FontWeight.Normal",
+            "InvariantScript": "FontWeight.Bold",
             "Property": "FontWeight",
             "RuleProviderType": "Unknown"
           },
@@ -1834,8 +1897,22 @@
           "PressedFill",
           "HoverFill",
           "DisplayMode",
-          "X",
-          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "867",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Y",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Width",
           "Height",
           "BorderStyle",
@@ -1926,13 +2003,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "921",
+            "InvariantScript": "loginId_1.X - 35",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "49",
+            "InvariantScript": "45",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -2034,7 +2111,14 @@
           "ImagePosition",
           "ImageRotation",
           "X",
-          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Y",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Width",
           "Height",
           "Fill",
@@ -2110,7 +2194,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "51",
+            "InvariantScript": "46",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -6107,7 +6191,7 @@
           "Height",
           "ZIndex"
         ],
-        "ControlUniqueId": "31",
+        "ControlUniqueId": "511",
         "GroupedControlsKey": [
           "Image2_1",
           "loginId_1",
@@ -6123,22 +6207,22 @@
         "IsLocked": false,
         "LayoutName": "",
         "MetaDataIDKey": "",
-        "Name": "base_header",
+        "Name": "Group2",
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 16,
+        "PublishOrderIndex": 0,
         "Rules": [
           {
             "Category": "Design",
-            "InvariantScript": "21",
-            "Property": "ZIndex",
+            "InvariantScript": "40",
+            "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "5",
-            "Property": "Height",
+            "InvariantScript": "40",
+            "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
@@ -6149,14 +6233,14 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "164",
-            "Property": "Y",
+            "InvariantScript": "5",
+            "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "-835",
-            "Property": "X",
+            "InvariantScript": "16",
+            "Property": "ZIndex",
             "RuleProviderType": "Unknown"
           }
         ],
@@ -6362,7 +6446,7 @@
       "userId",
       "loginDate"
     ],
-    "LastModifiedTimestamp": "638369239147030625",
+    "LastModifiedTimestamp": "638369283601036134",
     "Name": "Base",
     "Rules": [
       {
@@ -6497,7 +6581,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369239147030625",
+  "LastModifiedTimestamp": "638369283601036134",
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"

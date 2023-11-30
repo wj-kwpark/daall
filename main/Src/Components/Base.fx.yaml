@@ -241,6 +241,52 @@ Base As CanvasComponent:
             Y: =13
             ZIndex: =7
 
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =16
+
+        Image2_1 As image:
+            Height: =30
+            Image: =icon_logout
+            OnSelect: =Navigate(Base.logout)
+            Width: =49
+            X: =1242
+            Y: =46
+            ZIndex: =10
+
+        loginId_1 As label:
+            Align: =Align.Center
+            Color: =Color.Black
+            FontWeight: =FontWeight.Bold
+            Height: =51
+            Size: =12
+            Text: =Base.userId & " 님"
+            Width: =Len(Self.Text)*14
+            X: =loginDate_1.X - Self.Width
+            Y: =35
+            ZIndex: =11
+
+        Icon1_1 As icon.Person:
+            Height: =33
+            Icon: =Icon.Person
+            Width: =33
+            X: =loginId_1.X - 35
+            Y: =45
+            ZIndex: =13
+
+        loginDate_1 As label:
+            Height: =51
+            PaddingLeft: =0
+            Size: =10
+            Text: ="(최종접속일 " & Base.loginDate & ")"
+            Width: =220
+            X: =Image2_1.X - 220
+            Y: =35
+            ZIndex: =14
+
     toHome As group:
         Height: =5
         Width: =5
@@ -348,45 +394,4 @@ Base As CanvasComponent:
             X: =30
             Y: =27
             ZIndex: =7
-
-    base_header As group:
-        Height: =5
-        Width: =5
-        X: =-835
-        Y: =164
-        ZIndex: =21
-
-        Image2_1 As image:
-            Height: =30
-            Image: =icon_logout
-            OnSelect: =Navigate(Base.logout)
-            Width: =49
-            X: =1242
-            Y: =51
-            ZIndex: =10
-
-        loginId_1 As label:
-            Color: =Color.Black
-            Height: =41
-            Text: =Base.userId
-            Width: =118
-            X: =975
-            Y: =46
-            ZIndex: =11
-
-        Icon1_1 As icon.Person:
-            Height: =33
-            Icon: =Icon.Person
-            Width: =33
-            X: =921
-            Y: =49
-            ZIndex: =13
-
-        loginDate_1 As label:
-            Height: =41
-            Size: =10
-            Text: =Base.loginDate
-            X: =1071
-            Y: =45
-            ZIndex: =14
 

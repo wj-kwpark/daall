@@ -27,7 +27,6 @@
     "Base_7": 307,
     "Base_8": 304,
     "Base_9": 186,
-    "base_header": 31,
     "Board": 51,
     "Board_1": 177,
     "BoardAuthority": 483,
@@ -175,6 +174,7 @@
     "Group1_3": 204,
     "Group1_4": 205,
     "Group1_5": 206,
+    "Group2": 511,
     "Group2_2": 148,
     "Group3_1": 32,
     "Header": 84,
@@ -433,7 +433,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/30/2023 07:54:02",
+  "HeaderLastSavedDateTimeUTC": "11/30/2023 08:06:23",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -564,12 +564,6 @@
     "비즈니스 카드 판독기": 1
   },
   "OrderGroupControls": {
-    "base_header": {
-      "Icon1_1": 2,
-      "Image2_1": 0,
-      "loginDate_1": 3,
-      "loginId_1": 1
-    },
     "CompositeColumnChart1_1": {
       "ColumnChart1_1": 1,
       "Title2_1": 0
@@ -603,6 +597,12 @@
       "curPawd_5": 1,
       "Rectangle8_24": 2,
       "기존비밀번호_5": 0
+    },
+    "Group2": {
+      "Icon1_1": 2,
+      "Image2_1": 0,
+      "loginDate_1": 3,
+      "loginId_1": 1
     },
     "Group2_2": {
       "Circle2_2": 1,
@@ -698,7 +698,6 @@
     "Base_7": {},
     "Base_8": {},
     "Base_9": {},
-    "base_header": {},
     "Board": {},
     "Board_1": {},
     "BoardAuthority": {},
@@ -846,6 +845,7 @@
     "Group1_3": {},
     "Group1_4": {},
     "Group1_5": {},
+    "Group2": {},
     "Group2_2": {},
     "Group3_1": {},
     "Header": {},
@@ -1495,7 +1495,6 @@
     "Base_7": 117,
     "Base_8": 114,
     "Base_9": 297,
-    "base_header": 16,
     "Board": 31,
     "Board_1": 279,
     "BoardAuthority": 85,
@@ -1643,6 +1642,7 @@
     "Group1_3": 318,
     "Group1_4": 319,
     "Group1_5": 320,
+    "Group2": 0,
     "Group2_2": 260,
     "Group3_1": 17,
     "Header": 64,
@@ -1960,7 +1960,7 @@
       "lineChart": 1,
       "PowerApps_CoreControls_ButtonCanvas": 4,
       "PowerApps_CoreControls_DatePickerCanvas": 4,
-      "PowerApps_CoreControls_TextCanvas": 9,
+      "PowerApps_CoreControls_TextCanvas": 12,
       "PowerApps_CoreControls_TextInputCanvas": 9,
       "powerbi": 2,
       "rectangle": 46,
