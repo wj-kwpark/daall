@@ -17,6 +17,9 @@ Notice As screen:
                 "FILE_ID"
                 )
         );
+        ClearCollect(
+            noticeList,
+            noticeData)
 
     Base_10 As Base:
         logout: =loginScreen
