@@ -225,7 +225,7 @@ userDetail As screen:
 
             Label11_2 As label:
                 FontWeight: =FontWeight.Bold
-                Text: =userRecord.USER_NAME & "|" & userRecord.COMPANY_NAME
+                Text: =userRecord.USER_NAME & "|" & userRecord.companyName
                 X: =150
                 Y: =22
                 ZIndex: =3

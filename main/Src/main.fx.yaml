@@ -153,3 +153,13 @@ main As screen:
         Y: =599
         ZIndex: =13
 
+    ButtonCanvas2 As 버튼:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |-
+            =Launch("https://apps.powerapps.com/play/e/f6a1f068-1728-e700-bd01-f7cb6839bb87/a/1c4e6ae1-2e28-49da-a282-ec866f7a5a14?tenantId=a7da4436-e498-4245-8b58-1e0554afa193&hint=1995692b-9591-4237-8b43-48f6487a01ee&sourcetime=1701323588282")
+        Width: =96
+        X: =220
+        Y: =109
+        ZIndex: =14
+
