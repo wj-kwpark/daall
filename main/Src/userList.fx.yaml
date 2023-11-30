@@ -46,7 +46,25 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =300
                 Items: |-
-                    =LastN(FirstN(SearchUserList,PageControl_3.firstN),PageControl_3.lastN)
+                    =Switch(
+                        User_Orderby,
+                            "name",
+                                If(User_OrderName,
+                                    LastN(FirstN(Sort(SearchUserList,USER_NAME),PageControl_3.firstN),PageControl_3.lastN),
+                                    LastN(FirstN(Sort(SearchUserList,USER_NAME,SortOrder.Descending),PageControl_3.firstN),PageControl_3.lastN)),
+                            "id",
+                                If(User_OrderID,
+                                    LastN(FirstN(Sort(SearchUserList,USER_ID,SortOrder.Descending),PageControl_3.firstN),PageControl_3.lastN),
+                                    LastN(FirstN(Sort(SearchUserList,USER_ID),PageControl_3.firstN),PageControl_3.lastN)),
+                            "report",
+                                If(User_OrderReport,
+                                    LastN(FirstN(Sort(SearchUserList,REPORT_CNT,SortOrder.Descending),PageControl_3.firstN),PageControl_3.lastN),
+                                    LastN(FirstN(Sort(SearchUserList,REPORT_CNT),PageControl_3.firstN),PageControl_3.lastN)),
+                            "data",
+                                If(User_OrderData,
+                                    LastN(FirstN(Sort(SearchUserList,DATA_CNT),PageControl_3.firstN),PageControl_3.lastN),
+                                    LastN(FirstN(Sort(SearchUserList,DATA_CNT,SortOrder.Descending),PageControl_3.firstN),PageControl_3.lastN)),
+                        LastN(FirstN(Sort(SearchUserList,regi_date,SortOrder.Descending),PageControl_3.firstN),PageControl_3.lastN))
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -105,7 +123,7 @@ userList As screen:
                     Size: =11
                     Text: =ThisItem.REPORT_CNT
                     Width: =161
-                    X: =565
+                    X: =575
                     ZIndex: =6
 
                 dataCount As label:
@@ -115,7 +133,7 @@ userList As screen:
                     Size: =11
                     Text: =ThisItem.DATA_CNT
                     Width: =170
-                    X: =834
+                    X: =841
                     ZIndex: =7
 
             Container11_1 As groupContainer.manualLayoutContainer:
@@ -178,6 +196,50 @@ userList As screen:
                     Width: =1046
                     Y: =48
                     ZIndex: =5
+
+                OrderTitle_4 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(User_Orderby,"name");
+                        If(User_OrderName,Set(User_OrderName,false),Set(User_OrderName,true));
+                    Width: =18
+                    X: =144
+                    Y: =17
+                    ZIndex: =6
+
+                OrderTitle_5 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(User_Orderby,"id");
+                        If(User_OrderID,Set(User_OrderID,false),Set(User_OrderID,true));
+                    Width: =18
+                    X: =380
+                    Y: =16
+                    ZIndex: =7
+
+                OrderTitle_6 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(User_Orderby,"report");
+                        If(User_OrderReport,Set(User_OrderReport,false),Set(User_OrderReport,true));
+                    Width: =18
+                    X: =693
+                    Y: =17
+                    ZIndex: =8
+
+                OrderTitle_7 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(User_Orderby,"data");
+                        If(User_OrderData,Set(User_OrderData,false),Set(User_OrderData,true));
+                    Width: =18
+                    X: =962
+                    Y: =16
+                    ZIndex: =9
 
         SearchBar_3 As SearchBar:
             forUser: =true
