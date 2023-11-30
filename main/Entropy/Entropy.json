@@ -440,7 +440,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/30/2023 04:01:20",
+  "HeaderLastSavedDateTimeUTC": "11/30/2023 04:05:31",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "0d3f3df5-cbdc-4b13-9853-6b514c8e07da": "\"/providers/microsoft.powerapps/apis/shared_azuremysql/connections/91a8eec01d9543489e4ac936a4a4f2d6\"",
@@ -554,6 +554,7 @@
     "reportList": 33,
     "reportStatus": 34,
     "reportStatusChart": 35,
+    "SearchUserList": 39,
     "shareDataCnt": 36,
     "shareReportCnt": 37,
     "Tables": 19,
@@ -564,7 +565,6 @@
     "user\\cre6f_user_statecode": 3,
     "user\\cre6f_user_statuscode": 4,
     "user\\default.cds_cre6f_user_views": 6,
-    "UserList": 39,
     "userListTest": 0,
     "userScreenList": 38
   },

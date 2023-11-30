@@ -1,6 +1,8 @@
 userList As screen:
     BackgroundImage: =bg_login
-    OnVisible: =ClearCollect(userScreenList,userListTest.Run().return);
+    OnVisible: |-
+        =ClearCollect(userScreenList,userListTest.Run().return);
+        ClearCollect(SearchUserList,userScreenList);
 
     Base_4 As Base:
         logout: =loginScreen
@@ -100,7 +102,7 @@ userList As screen:
                 DelayItemLoading: =true
                 Height: =342
                 Items: |-
-                    =LastN(FirstN(UserList,PageControl_3.firstN),PageControl_3.lastN)
+                    =LastN(FirstN(SearchUserList,PageControl_3.firstN),PageControl_3.lastN)
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -162,7 +164,7 @@ userList As screen:
                     Align: =Align.Center
                     OnSelect: =
                     Size: =11
-                    Text: =ThisItem.REPORT_COUNT
+                    Text: =ThisItem.REPORT_CNT
                     Width: =161
                     X: =681
                     Y: =9
@@ -172,7 +174,7 @@ userList As screen:
                     Align: =Align.Center
                     OnSelect: =
                     Size: =11
-                    Text: =ThisItem.DATA_COUNT
+                    Text: =ThisItem.DATA_CNT
                     Width: =170
                     X: =877
                     Y: =14
@@ -233,7 +235,7 @@ userList As screen:
 
             PageControl_3 As PageControl:
                 perPage: =6
-                TotalItems: =CountRows(SearchBar_3.cList)
+                TotalItems: =CountRows(userScreenList)
                 X: =223
                 Y: =403
                 ZIndex: =3
@@ -247,9 +249,9 @@ userList As screen:
         Height: =100
         onSearch: |-
             =ClearCollect(
-                UserList,
+                SearchUserList,
                 Filter(
-                        'nocode-test.user',
+                        userScreenList,
                         SearchBar_3.name in USER_NAME
                     )
             );
