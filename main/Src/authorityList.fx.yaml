@@ -264,6 +264,7 @@ authorityList As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =38
         Width: =1042
@@ -382,9 +383,8 @@ authorityList As screen:
             ZIndex: =4
 
     PageControl_2 As PageControl:
-        OnSelect: =true
         TotalPage: =RoundUp(CountRows(SearchBar_1.cList)/7,0)
         X: =475
-        Y: =641
+        Y: =642
         ZIndex: =10
 

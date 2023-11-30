@@ -1,7 +1,4 @@
 PageControl As CanvasComponent:
-    OnSelect():
-        ThisProperty:
-            Default: =true
     CurrentPage: =Selected
     Fill: =RGBA(0, 0, 0, 0)
     Height: =40
@@ -9,7 +6,6 @@ PageControl As CanvasComponent:
         =Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), "Value", "Index"));
         Set(Selected,1);
     TotalPage: =10
-    TotalPages: =Self.TotalPage
     Width: =600
     X: =0
     Y: =0
@@ -36,9 +32,7 @@ PageControl As CanvasComponent:
             HoverBorderColor: =
             HoverColor: =Self.Color
             HoverFill: =Self.Fill
-            OnSelect: |-
-                =Set(Selected,ThisItem.Index);
-                PageControl.OnSelect();
+            OnSelect: =Set(Selected,ThisItem.Index);
             PressedBorderColor: =
             PressedColor: =Self.Color
             PressedFill: =Self.Fill

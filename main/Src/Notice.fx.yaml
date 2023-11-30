@@ -377,7 +377,6 @@ Notice As screen:
             ZIndex: =4
 
     PageControl_1 As PageControl:
-        OnSelect: =true
         TotalPage: =RoundUp(CountRows(SearchBar_1.cList)/6,0)
         X: =432
         Y: =650

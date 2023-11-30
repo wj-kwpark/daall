@@ -98,9 +98,13 @@ userList As screen:
 
             "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =418
+                Height: =342
                 Items: |-
-                    =SearchBar_3.cList
+                    =If(PageControl_3.CurrentPage=PageControl_3.TotalPage,
+                        LastN(FirstN(SearchBar_3.cList,PageControl_3.CurrentPage*6),
+                            CountRows(SearchBar_3.cList)-((RoundUp(CountRows(SearchBar_3.cList)/6,0)-1)*6)),
+                        LastN(FirstN(SearchBar_3.cList,PageControl_3.CurrentPage*6),6)
+                    )
                     //'nocode-test.user_detail'
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
@@ -109,6 +113,7 @@ userList As screen:
                     //Select(Parent);
                     false;
                     Navigate(userDetail);
+                ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =54
                 Width: =1047
@@ -229,6 +234,12 @@ userList As screen:
                     X: =882
                     Y: =2
                     ZIndex: =5
+
+            PageControl_3 As PageControl:
+                TotalPage: =RoundUp(CountRows(SearchBar_3.cList)/6,0)
+                X: =223
+                Y: =403
+                ZIndex: =3
 
     SearchBar_3 As SearchBar:
         cData: |-

@@ -27,7 +27,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 317,
+            "PublishOrderIndex": 318,
             "Rules": [
               {
                 "Category": "Design",
@@ -254,7 +254,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 318,
+            "PublishOrderIndex": 319,
             "Rules": [
               {
                 "Category": "Data",
@@ -468,7 +468,7 @@
               },
               {
                 "Category": "Behavior",
-                "InvariantScript": "Set(Selected,ThisItem.Index);\nPageControl.OnSelect();",
+                "InvariantScript": "Set(Selected,ThisItem.Index);",
                 "Property": "OnSelect",
                 "RuleProviderType": "Unknown"
               }
@@ -583,7 +583,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "PageControl",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 316,
+        "PublishOrderIndex": 317,
         "Rules": [
           {
             "Category": "Data",
@@ -862,7 +862,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "PageControl",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 319,
+        "PublishOrderIndex": 320,
         "Rules": [
           {
             "Category": "Data",
@@ -1159,7 +1159,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "PageControl",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 320,
+        "PublishOrderIndex": 321,
         "Rules": [
           {
             "Category": "Data",
@@ -1456,7 +1456,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "PageControl",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 321,
+        "PublishOrderIndex": 322,
         "Rules": [
           {
             "Category": "Data",
@@ -1753,7 +1753,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "PageControl",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 322,
+        "PublishOrderIndex": 323,
         "Rules": [
           {
             "Category": "Data",
@@ -2003,18 +2003,9 @@
         "InvariantPropertyName": "OnReset",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      },
-      "OnSelect",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "100",
-        "InvariantPropertyName": "TotalPages",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638369098964804123",
+    "LastModifiedTimestamp": "638369102848870703",
     "Name": "PageControl",
     "Rules": [
       {
@@ -2027,12 +2018,6 @@
         "Category": "Data",
         "InvariantScript": "Selected",
         "Property": "CurrentPage",
-        "RuleProviderType": "System"
-      },
-      {
-        "Category": "Data",
-        "InvariantScript": "Self.TotalPage",
-        "Property": "TotalPages",
         "RuleProviderType": "System"
       },
       {
@@ -2076,12 +2061,6 @@
         "InvariantScript": "Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), \"Value\", \"Index\"));\nSet(Selected,1);",
         "Property": "OnReset",
         "RuleProviderType": "System"
-      },
-      {
-        "Category": "Behavior",
-        "InvariantScript": "true",
-        "Property": "OnSelect",
-        "RuleProviderType": "System"
       }
     ]
   },
@@ -2113,28 +2092,6 @@
       "PropertyDataTypeKey": "Number",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 2,
-      "DisplayName": "OnSelect",
-      "Hidden": false,
-      "Name": "OnSelect",
-      "PropertyDataTypeKey": "Boolean",
-      "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "76",
-        "PropertyScopeRulesKey": []
-      },
-      "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
-      "DisplayName": "TotalPages",
-      "Hidden": true,
-      "Name": "TotalPages",
-      "PropertyDataTypeKey": "Number",
-      "Tooltip": "사용자 지정 속성",
-      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2145,7 +2102,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369098964804123",
+  "LastModifiedTimestamp": "638369102848870703",
   "Name": "f4017991d841427180630d9c4cb076e1",
   "OverridableProperties": {},
   "Version": "1.0"
