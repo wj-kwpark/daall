@@ -1,8 +1,98 @@
 PageControl As CanvasComponent:
+    CurrentPage: =Selected
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
-    Width: =640
+    firstN: =Self.CurrentPage*Self.perPage
+    Height: =40
+    isLast: =If(Self.CurrentPage=Self.TotalPage,true,false)
+    lastN: |-
+        =If(Self.isLast,
+            Self.TotalItems-((RoundUp(Self.TotalItems/Self.perPage,0)-1)*Self.perPage),
+            Self.perPage
+        )
+    OnReset: |-
+        =Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), "Value", "Index"));
+        Set(Selected,1);
+    perPage: =100
+    TotalItems: =100
+    TotalPage: =RoundUp(Self.TotalItems/Self.perPage,0)
+    Width: =600
     X: =0
     Y: =0
     ZIndex: =1
+
+    Gallery1 As gallery.galleryHorizontal:
+        DelayItemLoading: =true
+        Height: =40
+        Items: =PageNumb
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplateSize: =29
+        Visible: =If(Parent.TotalPage > 1,true,false)
+        Width: =Gallery1.AllItemsCount * 35
+        X: =(Parent.Width/2) - (Gallery1.Width/2)
+        ZIndex: =1
+
+        Button6 As button:
+            BorderColor: =If(Selected=ThisItem.Index,RGBA(0, 0, 255, 0),RGBA(200, 200, 200, 1))
+            BorderThickness: =1
+            Color: =If(Selected=ThisItem.Index,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
+            Fill: =If(Selected=ThisItem.Index,RGBA(0, 0, 255, 1),RGBA(255, 255, 255, 1))
+            Height: =25
+            HoverBorderColor: =
+            HoverColor: =Self.Color
+            HoverFill: =Self.Fill
+            OnSelect: =Set(Selected,ThisItem.Index);
+            PressedBorderColor: =
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Size: =9
+            Text: =ThisItem.Index
+            Width: =25
+            X: =2
+            Y: =2
+            ZIndex: =1
+
+    Image6 As image:
+        Height: =30
+        Image: =icon_end_btn
+        OnSelect: =Set(Selected,Parent.TotalPage)
+        Visible: =If(Parent.TotalPage > 2,true,false)
+        Width: =30
+        X: =Gallery1.X+Gallery1.Width+30
+        Y: =5
+        ZIndex: =2
+
+    Image7 As image:
+        Height: =30
+        Image: =icon_next_btn
+        OnSelect: =If(Selected < Parent.TotalPage,Set(Selected,Selected+1),false)
+        Visible: =If(Parent.TotalPage > 1,true,false)
+        Width: =30
+        X: =Gallery1.X+Gallery1.Width
+        Y: =5
+        ZIndex: =3
+
+    Image12 As image:
+        Height: =30
+        Image: =icon_prev_btn
+        OnSelect: =If(Selected > 1,Set(Selected,Selected-1),false)
+        Visible: =If(Parent.TotalPage > 1,true,false)
+        Width: =30
+        X: =Gallery1.X-30
+        Y: =5
+        ZIndex: =4
+
+    Image8 As image:
+        Height: =30
+        Image: =icon_strat_btn
+        OnSelect: =Set(Selected,1)
+        Visible: =If(Parent.TotalPage > 2,true,false)
+        Width: =30
+        X: =Gallery1.X-60
+        Y: =5
+        ZIndex: =5
 

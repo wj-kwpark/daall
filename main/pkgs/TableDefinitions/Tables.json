@@ -1,11 +1,4 @@
 {
-  "components": [
-    {
-      "ComponentName": "msdyn_AIModel",
-      "Identifier": "a0440df3-2656-e911-8194-000d3a6cd5a5",
-      "IdentifierType": 1
-    }
-  ],
   "DatasetName": "default.cds",
   "EntityName": "Tables",
   "environmentVariableName": "",

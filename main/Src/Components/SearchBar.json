@@ -3839,7 +3839,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638368983277678700",
+    "LastModifiedTimestamp": "638368383064681726",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3971,6 +3971,42 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.335\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "endDate",
+      "Hidden": true,
+      "Name": "endDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "name",
+      "Hidden": true,
+      "Name": "name",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "startDate",
+      "Hidden": true,
+      "Name": "startDate",
+      "PropertyDataTypeKey": "DateTime",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "title",
+      "Hidden": true,
+      "Name": "title",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -3981,7 +4017,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638368983277678700",
+  "LastModifiedTimestamp": "638368383064681726",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

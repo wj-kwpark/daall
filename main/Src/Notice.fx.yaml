@@ -347,7 +347,7 @@ Notice As screen:
                 ZIndex: =12
 
         Board_1 As Board:
-            BoardData: =SearchBar_1.cList
+            BoardData: =LastN(FirstN(noticeList,PageControl_1.firstN),PageControl_1.lastN)
             Height: =354
             Width: =1046
             X: =20
@@ -366,8 +366,24 @@ Notice As screen:
         SearchBar_1 As SearchBar:
             cData: =noticeData
             Height: =91
+            onSearch: |-
+                =ClearCollect(
+                    noticeList,
+                    Filter(
+                            noticeData,
+                            SearchBar_1.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_1.endDate,
+                            SearchBar_1.title in BOARD_TITLE
+                        )
+                );
             Width: =1046
             X: =20
             Y: =4
             ZIndex: =4
+
+    PageControl_1 As PageControl:
+        perPage: =6
+        TotalItems: =CountRows(noticeList)
+        X: =432
+        Y: =650
+        ZIndex: =6
 

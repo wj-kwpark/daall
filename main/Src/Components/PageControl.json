@@ -10,7 +10,73 @@
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
-  "CustomProperties": [],
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "CurrentPage",
+      "Hidden": true,
+      "Name": "CurrentPage",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "firstN",
+      "Hidden": true,
+      "Name": "firstN",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "isLast",
+      "Hidden": true,
+      "Name": "isLast",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "lastN",
+      "Hidden": true,
+      "Name": "lastN",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "perPage",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "perPage",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TotalItems",
+      "Hidden": false,
+      "IsResettable": true,
+      "Name": "TotalItems",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "TotalPage",
+      "Hidden": true,
+      "Name": "TotalPage",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
   "FirstParty": true,
   "Id": "http://microsoft.com/appmagic/Component",
   "IsComponentLocked": false,
@@ -19,7 +85,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638368983277671748",
+  "LastModifiedTimestamp": "638368383064719427",
   "Name": "f4017991d841427180630d9c4cb076e1",
   "OverridableProperties": {},
   "Version": "1.0"
