@@ -4238,7 +4238,7 @@
             "Rules": [
               {
                 "Category": "Design",
-                "InvariantScript": "If(clickedMenu = ThisItem.MenuLabel, Icon.ChevronUp, Icon.ChevronDown)",
+                "InvariantScript": "If(CountRows(ThisItem.SubMenu) > 1,If(clickedMenu = ThisItem.MenuLabel, Icon.ChevronUp, Icon.ChevronDown),false)",
                 "Property": "Icon",
                 "RuleProviderType": "Unknown"
               },
@@ -6362,7 +6362,7 @@
       "userId",
       "loginDate"
     ],
-    "LastModifiedTimestamp": "638369164268503924",
+    "LastModifiedTimestamp": "638369175419380063",
     "Name": "Base",
     "Rules": [
       {
@@ -6497,7 +6497,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369164268503924",
+  "LastModifiedTimestamp": "638369175419380063",
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"
