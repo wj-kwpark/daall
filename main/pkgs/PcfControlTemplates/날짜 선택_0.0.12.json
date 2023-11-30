@@ -78,6 +78,17 @@
         "Type": 0,
         "WizardStep": null
       },
+      "Visible": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 3,
+        "SectionName": null,
+        "Type": 0,
+        "WizardStep": null
+      },
       "Width": {
         "EnabledForFlyout": false,
         "HelperUI": null,
@@ -119,7 +130,8 @@
       "DisplayName": "OnChange",
       "Hidden": false,
       "IsPrimaryInput": false,
-      "Name": "OnChange"
+      "Name": "OnChange",
+      "PfxDefaultValue": null
     }
   ],
   "ControlConstructor": "DatePickerCanvas",
@@ -866,7 +878,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 9,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.11\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.12\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
@@ -1225,5 +1237,5 @@
     "supportResettableProperties": "true",
     "supportSetFocus": "true"
   },
-  "Version": "0.0.11"
+  "Version": "0.0.12"
 }

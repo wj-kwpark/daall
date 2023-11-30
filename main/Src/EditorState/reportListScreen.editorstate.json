@@ -65,6 +65,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Base_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -201,6 +202,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pageTitle_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -432,6 +434,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "reportListScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

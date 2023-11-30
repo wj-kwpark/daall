@@ -371,3 +371,9 @@ Notice As screen:
             Y: =4
             ZIndex: =4
 
+    PageControl_1 As PageControl:
+        TotalPage: =4
+        X: =432
+        Y: =650
+        ZIndex: =6
+

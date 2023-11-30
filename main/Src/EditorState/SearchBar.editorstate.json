@@ -52,6 +52,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "endDate_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -174,6 +175,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle8_15",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -319,6 +321,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle8_16",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -464,6 +467,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle8_17",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -609,6 +613,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle8_18",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -826,6 +831,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "resourceEdit_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1151,6 +1157,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "resourceEdit_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1372,6 +1379,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "sDate",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1471,6 +1479,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "SearchBar",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1557,6 +1566,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "sName",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1641,6 +1651,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "startDate_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1717,6 +1728,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "sTitle",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1838,6 +1850,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "-text",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2186,6 +2199,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "검색버튼_5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2462,6 +2476,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "기간-text",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2765,6 +2780,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "보고서데이터명_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3054,6 +3070,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "보고서데이터명_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [

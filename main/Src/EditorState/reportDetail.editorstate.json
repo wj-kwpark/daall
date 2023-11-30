@@ -65,6 +65,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Base_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -186,6 +187,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ButtonCanvas1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -343,6 +345,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container7_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -539,6 +542,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pageTitle_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -787,6 +791,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "PowerBI1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -878,6 +883,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "reportDetail",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

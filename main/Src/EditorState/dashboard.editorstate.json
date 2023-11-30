@@ -65,6 +65,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Base_5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -156,6 +157,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "dashboard",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -282,6 +284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "pageTitle_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [

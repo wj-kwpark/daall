@@ -36,6 +36,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "authority",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -189,6 +190,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "banner",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -342,6 +344,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "data-chart",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -495,6 +498,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "demo-report",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -648,6 +652,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "favority",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -810,6 +815,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HtmlText4_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -939,6 +945,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "main",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1032,6 +1039,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "report-chart",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1185,6 +1193,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "report-count-chart",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1381,6 +1390,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "resource-count",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1539,6 +1549,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "user-count-chart",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
