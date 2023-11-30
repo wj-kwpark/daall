@@ -14,8 +14,8 @@ userList As screen:
         Size: =24
         Text: ="사용자 관리"
         Width: =185
-        X: =245
-        Y: =90
+        X: =246
+        Y: =118
         ZIndex: =2
 
     Container7_1 As groupContainer.manualLayoutContainer:
@@ -24,83 +24,27 @@ userList As screen:
         BorderThickness: =1
         DropShadow: =DropShadow.None
         Fill: =Color.White
-        Height: =577
+        Height: =537
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
         RadiusTopRight: =10
-        Width: =1083
-        X: =236
-        Y: =140
+        Width: =1086
+        X: =232
+        Y: =171
         ZIndex: =3
-
-        검색필드_1 As groupContainer.manualLayoutContainer:
-            DropShadow: =DropShadow.None
-            Height: =91
-            Visible: =false
-            Width: =1085
-            X: =5
-            Y: =5
-            ZIndex: =1
-
-            검색버튼_1 As button:
-                Fill: =RGBA(71, 158, 245, 1)
-                Height: =37
-                RadiusBottomLeft: =20
-                RadiusBottomRight: =20
-                RadiusTopLeft: =20
-                RadiusTopRight: =20
-                Size: =10
-                Text: ="검색"
-                Width: =97
-                X: =970
-                Y: =33
-                ZIndex: =1
-
-            보고서데이터명_1 As label:
-                FontWeight: =FontWeight.Bold
-                Height: =20
-                Size: =9
-                Text: ="사용자/아이디"
-                Width: =116
-                X: =691
-                Y: =13
-                ZIndex: =2
-
-            resourceEdit_1 As text:
-                BorderThickness: =0
-                Color: =Color.Black
-                Default: =""
-                FocusedBorderColor: =Color.Transparent
-                Height: =36
-                HoverBorderColor: =Color.Transparent
-                HoverColor: =Color.Black
-                HoverFill: =Color.Transparent
-                PressedColor: =Color.Transparent
-                Width: =221
-                X: =707
-                Y: =40
-                ZIndex: =3
-
-            Rectangle8_5 As rectangle:
-                Fill: =RGBA(0, 0, 0, 1)
-                Height: =1
-                Width: =221
-                X: =707
-                Y: =73
-                ZIndex: =4
 
         검색목록_1 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.None
-            Height: =461
+            Height: =355
             Width: =1047
-            X: =19
-            Y: =96
+            X: =20
+            Y: =110
             ZIndex: =2
 
             "gal_userList As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
                 DelayItemLoading: =true
-                Height: =342
+                Height: =300
                 Items: |-
                     =LastN(FirstN(SearchUserList,PageControl_3.firstN),PageControl_3.lastN)
                     //'nocode-test.user_detail'
@@ -113,15 +57,15 @@ userList As screen:
                     Navigate(userDetail);
                 ShowScrollbar: =false
                 TemplatePadding: =0
-                TemplateSize: =54
+                TemplateSize: =50
                 Width: =1047
-                Y: =42
+                Y: =50
                 ZIndex: =1
 
                 userName As label:
                     Align: =Align.Center
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =30
+                    Height: =50
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -129,16 +73,14 @@ userList As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: =ThisItem.USER_NAME
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =382
-                    X: =35
-                    Y: =19
+                    X: =36
                     ZIndex: =2
 
                 userId As label:
                     Align: =Align.Center
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                    Height: =30
+                    Height: =50
                     OnSelect: =
                     PaddingBottom: =0
                     PaddingLeft: =0
@@ -146,10 +88,8 @@ userList As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: =ThisItem.USER_ID
-                    VerticalAlign: =VerticalAlign.Top
                     Width: =186
                     X: =461
-                    Y: =19
                     ZIndex: =3
 
                 Separator1_1 As rectangle:
@@ -162,97 +102,110 @@ userList As screen:
 
                 reportCount As label:
                     Align: =Align.Center
+                    Height: =50
                     OnSelect: =
                     Size: =11
                     Text: =ThisItem.REPORT_CNT
                     Width: =161
                     X: =681
-                    Y: =9
                     ZIndex: =6
 
                 dataCount As label:
                     Align: =Align.Center
+                    Height: =50
                     OnSelect: =
                     Size: =11
                     Text: =ThisItem.DATA_CNT
                     Width: =170
                     X: =877
-                    Y: =14
                     ZIndex: =7
 
             Container11_1 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.None
                 Fill: =RGBA(245, 249, 255, 1)
-                Height: =42
+                Height: =50
                 Width: =1047
                 ZIndex: =2
-
-                Rectangle6_1 As rectangle:
-                    Fill: =RGBA(15, 84, 140, 1)
-                    Height: =1
-                    Width: =1085
-                    Y: =40
-                    ZIndex: =1
 
                 Label13_3 As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
+                    Height: =49
                     Size: =11
                     Text: ="사용자명"
                     Width: =458
                     Y: =1
-                    ZIndex: =2
+                    ZIndex: =1
 
                 Label13_4 As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
+                    Height: =49
                     Size: =11
                     Text: ="아이디"
                     Width: =123
                     X: =477
                     Y: =1
-                    ZIndex: =3
+                    ZIndex: =2
 
                 Label13_5 As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
+                    Height: =49
                     Size: =11
                     Text: ="보유보고서수"
                     Width: =169
                     X: =675
                     Y: =1
-                    ZIndex: =4
+                    ZIndex: =3
 
                 Label13_6 As label:
                     Align: =Align.Center
                     FontWeight: =FontWeight.Bold
+                    Height: =48
                     Size: =11
                     Text: ="보유데이터수"
                     Width: =159
                     X: =882
                     Y: =2
+                    ZIndex: =4
+
+                Rectangle6_1 As rectangle:
+                    Fill: =RGBA(15, 84, 140, 1)
+                    Height: =1
+                    Width: =1046
+                    Y: =49
                     ZIndex: =5
 
-            PageControl_3 As PageControl:
-                perPage: =6
-                TotalItems: =CountRows(SearchUserList)
-                X: =223
-                Y: =403
-                ZIndex: =3
+        SearchBar_3 As SearchBar:
+            forUser: =true
+            Height: =90
+            onSearch: |-
+                =ClearCollect(
+                    SearchUserList,
+                    Filter(
+                            userScreenList,
+                            SearchBar_3.name in USER_NAME
+                        )
+                );
+            Width: =1047
+            X: =20
+            Y: =6
+            ZIndex: =4
 
-    SearchBar_3 As SearchBar:
-        forUser: =true
-        Height: =100
-        onSearch: |-
-            =ClearCollect(
-                SearchUserList,
-                Filter(
-                        userScreenList,
-                        SearchBar_3.name in USER_NAME
-                    )
-            );
-        Width: =1074
-        X: =245
-        Y: =140
+        Rectangle8_8 As rectangle:
+            BorderColor: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =1
+            Width: =1046
+            X: =20
+            Y: =96
+            ZIndex: =5
+
+    PageControl_3 As PageControl:
+        perPage: =6
+        TotalItems: =CountRows(noticeList)
+        X: =475
+        Y: =650
         ZIndex: =4
 
