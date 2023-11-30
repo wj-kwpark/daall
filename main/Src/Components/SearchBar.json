@@ -2468,7 +2468,7 @@
           },
           {
             "Category": "Behavior",
-            "InvariantScript": "Parent.onSearch();",
+            "InvariantScript": "Set(\n    boardList,\n    If(Parent.forUser,\n        Filter(\n            Parent.cData,\n            resourceEdit_7.Text in USER_NAME\n        ),\n        Filter(\n            Parent.cData,\n            startDate_3.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_3.SelectedDate,\n            resourceEdit_6.Text in BOARD_TITLE\n        )\n    )\n);\nParent.onSearch();",
             "Property": "OnSelect",
             "RuleProviderType": "Unknown"
           }
@@ -3836,15 +3836,31 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "forUser",
-      "OnReset",
+      "cData",
+      "cList",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "forUser",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "OnReset",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       "title",
       "startDate",
       "endDate",
       "name",
       "onSearch"
     ],
-    "LastModifiedTimestamp": "638369140910740142",
+    "LastModifiedTimestamp": "638369133062496335",
     "Name": "SearchBar",
     "Rules": [
       {
@@ -3857,6 +3873,18 @@
         "Category": "Data",
         "InvariantScript": "\"기간\"",
         "Property": "tDate",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "Table(\n    {\n        BOARD_TITLE: \"제목\",\n        REGI_DATE: Date(\n            2022,\n            01,\n            01\n        ),\n        USER_NAME: \"이름\",\n        USER_ID: \"ID\",\n        RESOURCE_TYPE: \"TYPE\",\n        REPORT_CNT: 0,\n        DATA_CNT: 0\n    }\n)",
+        "Property": "cData",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "boardList",
+        "Property": "cList",
         "RuleProviderType": "System"
       },
       {
@@ -3927,7 +3955,7 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "",
+        "InvariantScript": "Set(boardList,Self.cData);",
         "Property": "OnReset",
         "RuleProviderType": "System"
       },
@@ -4034,7 +4062,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369140910740142",
+  "LastModifiedTimestamp": "638369133062496335",
   "Name": "823d5afd64d843d298cf05a300665fea",
   "OverridableProperties": {},
   "Version": "1.0"

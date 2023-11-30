@@ -2544,6 +2544,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.boardList"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.boardList",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "boardList",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.LoginDate"
                 }
               ],
