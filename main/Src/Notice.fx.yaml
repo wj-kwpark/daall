@@ -212,8 +212,175 @@ Notice As screen:
             Height: =350
             Width: =1046
             X: =20
-            Y: =110
-            ZIndex: =5
+            Y: =119
+            ZIndex: =6
+
+            "BoardBody As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
+                DelayItemLoading: =true
+                DisplayMode: =DisplayMode.View
+                Height: =300
+                Items: |-
+                    =Switch(
+                        Notice_Orderby,
+                            "title",
+                                If(Notice_OrderTitle,
+                                    LastN(FirstN(Sort(noticeList,BOARD_TITLE),PageControl_1.firstN),PageControl_1.lastN),
+                                    LastN(FirstN(Sort(noticeList,BOARD_TITLE,SortOrder.Descending),PageControl_1.firstN),PageControl_1.lastN)),
+                            "date",
+                                If(Notice_OrderDate,
+                                    LastN(FirstN(Sort(noticeList,REGI_DATE,SortOrder.Descending),PageControl_1.firstN),PageControl_1.lastN),
+                                    LastN(FirstN(Sort(noticeList,REGI_DATE),PageControl_1.firstN),PageControl_1.lastN)),
+                            "name",
+                                If(Notice_OrderName,
+                                    LastN(FirstN(Sort(noticeList,REGI_ID),PageControl_1.firstN),PageControl_1.lastN),
+                                    LastN(FirstN(Sort(noticeList,REGI_ID,SortOrder.Descending),PageControl_1.firstN),PageControl_1.lastN)),
+                        LastN(FirstN(Sort(noticeList,REGI_DATE,SortOrder.Descending),PageControl_1.firstN),PageControl_1.lastN))
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowScrollbar: =false
+                TemplatePadding: =0
+                TemplateSize: =50
+                Width: =Parent.Width
+                Y: =50
+                ZIndex: =1
+
+                BoardTitle As label:
+                    Color: =RGBA(85, 26, 139, 1)
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Normal, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =50
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    PressedColor: =RGBA(255,0,0,100)
+                    Text: =ThisItem.BOARD_TITLE
+                    Width: =Parent.Width-400
+                    Y: =10
+                    ZIndex: =1
+
+                BoardDate As label:
+                    Align: =Align.Center
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =ThisItem.REGI_DATE
+                    Width: =200
+                    X: =Parent.Width-400
+                    Y: =10
+                    ZIndex: =2
+
+                BoardName As label:
+                    Align: =Align.Center
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =30
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =50
+                    PaddingTop: =0
+                    Text: =ThisItem.REGI_ID
+                    Width: =200
+                    X: =Parent.Width-200
+                    Y: =10
+                    ZIndex: =3
+
+                BoardSeparator As rectangle:
+                    Fill: =RGBA(128, 128, 128, 0.51)
+                    Height: =1
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+            BoardHeader As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.None
+                Fill: =RGBA(244, 247, 252, 1)
+                Height: =50
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Width: =Parent.Width
+                ZIndex: =2
+
+                HeaderSeparator As rectangle:
+                    Fill: =RGBA(16, 87, 192, 1)
+                    Height: =2
+                    OnSelect: =
+                    Width: =Parent.Width
+                    Y: =48
+                    ZIndex: =9
+
+                HeaderDate As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =30
+                    Text: ="생성일"
+                    Width: =200
+                    X: =Parent.Width-400
+                    Y: =10
+                    ZIndex: =10
+
+                HeaderName As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =30
+                    PaddingRight: =50
+                    Text: ="생성자"
+                    Width: =200
+                    X: =Parent.Width-200
+                    Y: =10
+                    ZIndex: =11
+
+                HeaderTitle As label:
+                    Align: =Align.Center
+                    FontWeight: =FontWeight.Bold
+                    Height: =30
+                    PaddingLeft: =50
+                    Text: ="제목"
+                    Width: =Parent.Width-400
+                    X: |
+                        =0
+                    Y: =10
+                    ZIndex: =12
+
+                OrderTitle_1 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(Notice_Orderby,"title");
+                        If(Notice_OrderTitle,Set(Notice_OrderTitle,false),Set(Notice_OrderTitle,true));
+                    Width: =18
+                    X: =(Parent.Width-400)/2 + 40
+                    Y: =16
+                    ZIndex: =13
+
+                OrderDate_1 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(Notice_Orderby,"date");
+                        If(Notice_OrderDate,Set(Notice_OrderDate,false),Set(Notice_OrderDate,true))
+                    Width: =18
+                    X: =Parent.Width-275
+                    Y: =16
+                    ZIndex: =14
+
+                OrderName_1 As image:
+                    Height: =18
+                    Image: =icon_sort_btn
+                    OnSelect: |-
+                        =Set(Notice_Orderby,"name");
+                        If(Notice_OrderName,Set(Notice_OrderName,false),Set(Notice_OrderName,true))
+                    Width: =18
+                    X: =Parent.Width-100
+                    Y: =16
+                    ZIndex: =15
 
     PageControl_1 As PageControl:
         perPage: =6
