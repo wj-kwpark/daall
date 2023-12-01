@@ -426,7 +426,7 @@ reportListScreen As screen:
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: =//Today()
+                SelectedDate: =Today()
                 Visible: =true
                 Width: =130
                 X: =417
@@ -438,7 +438,9 @@ reportListScreen As screen:
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: =//Date(Year(Today()),Month(Today())-1,Day(Today()))
+                SelectedDate: |-
+                    =//Date(Year(Today()),Month(Today())-1,Day(Today()))
+                    Date(Year(Today())-1,Month(Today()),Day(Today()))
                 Visible: =true
                 Width: =130
                 X: =248
@@ -480,10 +482,17 @@ reportListScreen As screen:
             FocusedBorderThickness: =1
             Height: =30
             HoverBorderColor: =
-            OnSelect: |+
-                =ClearCollect(galReportList,Filter('nocode-test.report',REPORT_TITLE=resourceEdit_8.Text,startDate_4.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_4.SelectedDate);
+            OnSelect: |
+                =ClearCollect(galReportList,'nocode-test.report');
                 
-                
+                ClearCollect(
+                    galReportList,
+                    Filter(
+                        galReportList,
+                        REPORT_TITLE = resourceEdit_8.Text,
+                        startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate
+                    )
+                );
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
