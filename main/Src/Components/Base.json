@@ -1217,14 +1217,7 @@
             "NameMapSourceSchema": "?"
           },
           "VerticalAlign",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "900",
-            "InvariantPropertyName": "X",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "X",
           "Y",
           {
             "AFDDataSourceName": "",
@@ -1346,7 +1339,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Len(Self.Text)*14",
+            "InvariantScript": "111",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1376,7 +1369,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "loginDate_1.X - Self.Width",
+            "InvariantScript": "904",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1400,7 +1393,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Align.Center",
+            "InvariantScript": "Align.Left",
             "Property": "Align",
             "RuleProviderType": "Unknown"
           },
@@ -1706,7 +1699,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "220",
+            "InvariantScript": "226",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1736,7 +1729,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "Image2_1.X - 220",
+            "InvariantScript": "1015",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1897,14 +1890,7 @@
           "PressedFill",
           "HoverFill",
           "DisplayMode",
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "867",
-            "InvariantPropertyName": "X",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "X",
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -2003,7 +1989,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "loginId_1.X - 35",
+            "InvariantScript": "862",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -2015,7 +2001,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "33",
+            "InvariantScript": "39",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -2188,7 +2174,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1242",
+            "InvariantScript": "1232",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -2200,7 +2186,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "49",
+            "InvariantScript": "58",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -6446,7 +6432,7 @@
       "userId",
       "loginDate"
     ],
-    "LastModifiedTimestamp": "638369883820768632",
+    "LastModifiedTimestamp": "638369885128182604",
     "Name": "Base",
     "Rules": [
       {
@@ -6581,7 +6567,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369883820768632",
+  "LastModifiedTimestamp": "638369885128182604",
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"

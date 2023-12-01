@@ -2398,14 +2398,7 @@
         "PressedFill",
         "HoverFill",
         "DisplayMode",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "867",
-          "InvariantPropertyName": "X",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "X",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -4475,14 +4468,7 @@
           "NameMapSourceSchema": "?"
         },
         "VerticalAlign",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "900",
-          "InvariantPropertyName": "X",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "X",
         "Y",
         {
           "AFDDataSourceName": "",

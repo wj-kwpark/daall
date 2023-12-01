@@ -252,28 +252,27 @@ Base As CanvasComponent:
             Height: =30
             Image: =icon_logout
             OnSelect: =Navigate(Base.logout)
-            Width: =49
-            X: =1242
+            Width: =58
+            X: =1232
             Y: =46
             ZIndex: =10
 
         loginId_1 As label:
-            Align: =Align.Center
             Color: =Color.Black
             FontWeight: =FontWeight.Bold
             Height: =51
             Size: =12
             Text: =Base.userId & " 님"
-            Width: =Len(Self.Text)*14
-            X: =loginDate_1.X - Self.Width
+            Width: =111
+            X: =904
             Y: =35
             ZIndex: =11
 
         Icon1_1 As icon.Person:
             Height: =33
             Icon: =Icon.Person
-            Width: =33
-            X: =loginId_1.X - 35
+            Width: =39
+            X: =862
             Y: =45
             ZIndex: =13
 
@@ -282,8 +281,8 @@ Base As CanvasComponent:
             PaddingLeft: =0
             Size: =10
             Text: ="(최종접속일 " & Base.loginDate & ")"
-            Width: =220
-            X: =Image2_1.X - 220
+            Width: =226
+            X: =1015
             Y: =35
             ZIndex: =14
 
