@@ -1,5 +1,9 @@
 reportListScreen As screen:
     BackgroundImage: =bg_login
+    OnVisible: |-
+        =ClearCollect(galReportList,'nocode-test.report');
+        Set(galReportListTotalCount,CountRows('nocode-test.report'));
+        Set(galListFilter,"전체보고서");
 
     Base_9 As Base:
         logout: =loginScreen
@@ -32,8 +36,8 @@ reportListScreen As screen:
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =277
-            Items: ='nocode-test.report'
+            Height: =345
+            Items: =galReportList
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -277,9 +281,9 @@ reportListScreen As screen:
             ZIndex: =5
 
         전체버튼_1 As button:
-            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderColor: =If(galListFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
             BorderThickness: =1
-            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            Color: =If(galListFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
             DisabledBorderColor: =RGBA(15, 84, 140, 1)
             DisabledColor: =RGBA(15, 84, 140, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -290,16 +294,7 @@ reportListScreen As screen:
             HoverBorderColor: =RGBA(15, 84, 140, 1)
             HoverColor: =RGBA(15, 84, 140, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =ClearCollect(
-                    authorityListdata,
-                    Filter(
-                            Filter(authoritydata,OWNER_ID=User),
-                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
-                            SearchBar_2.title in BOARD_TITLE
-                        )
-                );
-                Set(aFilter,Self.Text);
+            OnSelect: =ClearCollect(galReportList,'nocode-test.report');
             PressedBorderColor: =RGBA(15, 84, 140, 1)
             PressedColor: =RGBA(15, 84, 140, 1)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -368,17 +363,7 @@ reportListScreen As screen:
             HoverBorderColor: =RGBA(15, 84, 140, 1)
             HoverColor: =RGBA(15, 84, 140, 1)
             HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =ClearCollect(
-                    authorityListdata,
-                    Filter(
-                            Filter(authoritydata,OWNER_ID=User),
-                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
-                            SearchBar_2.title in BOARD_TITLE,
-                            RESOURCE_TYPE = "report"
-                        )
-                );
-                Set(aFilter,Self.Text);
+            OnSelect: =ClearCollect(galReportList,Filter('nocode-test.report',OWNER_ID=User));
             PressedBorderColor: =RGBA(15, 84, 140, 1)
             PressedColor: =RGBA(15, 84, 140, 1)
             PressedFill: =RGBA(0, 0, 0, 0)
@@ -460,45 +445,6 @@ reportListScreen As screen:
                 Y: =46
                 ZIndex: =14
 
-        보고서버튼_2 As button:
-            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
-            BorderThickness: =1
-            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
-            DisabledBorderColor: =RGBA(15, 84, 140, 1)
-            DisabledColor: =RGBA(15, 84, 140, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =1
-            FontWeight: =FontWeight.Bold
-            Height: =32
-            HoverBorderColor: =RGBA(15, 84, 140, 1)
-            HoverColor: =RGBA(15, 84, 140, 1)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            OnSelect: |-
-                =ClearCollect(
-                    authorityListdata,
-                    Filter(
-                            Filter(authoritydata,OWNER_ID=User),
-                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
-                            SearchBar_2.title in BOARD_TITLE,
-                            RESOURCE_TYPE = "report"
-                        )
-                );
-                Set(aFilter,Self.Text);
-            PressedBorderColor: =RGBA(15, 84, 140, 1)
-            PressedColor: =RGBA(15, 84, 140, 1)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            RadiusBottomLeft: =15
-            RadiusBottomRight: =15
-            RadiusTopLeft: =15
-            RadiusTopRight: =15
-            Size: =9
-            Text: ="공유보고서"
-            Width: =71
-            X: =762
-            Y: =35
-            ZIndex: =17
-
         보고서버튼_3 As button:
             BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
             BorderThickness: =1
@@ -561,4 +507,33 @@ reportListScreen As screen:
             X: =39
             Y: =92
             ZIndex: =21
+
+        보고서버튼_4 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="공유보고서"
+            Width: =71
+            X: =760
+            Y: =35
+            ZIndex: =22
 
