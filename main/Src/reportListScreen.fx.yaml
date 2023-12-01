@@ -44,8 +44,9 @@ reportListScreen As screen:
             ZIndex: =1
 
             reportTitle As label:
+                AutoHeight: =true
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =30
+                Height: =47
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -55,12 +56,13 @@ reportListScreen As screen:
                 Text: =ThisItem.REPORT_TITLE
                 VerticalAlign: =VerticalAlign.Top
                 Width: =239
-                X: =14
-                Y: =17
+                X: =15
+                Y: =14
                 ZIndex: =1
 
             regiDate As label:
                 Align: =Align.Center
+                AutoHeight: =true
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =23
                 OnSelect: =Select(Parent)
@@ -72,13 +74,13 @@ reportListScreen As screen:
                 VerticalAlign: =VerticalAlign.Top
                 Width: =159
                 X: =254
-                Y: =18
+                Y: =14
                 ZIndex: =2
 
             modyDate As label:
                 Align: =Align.Center
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =19
+                Height: =16
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -87,12 +89,13 @@ reportListScreen As screen:
                 Text: =ThisItem.MODY_DATE
                 VerticalAlign: =VerticalAlign.Top
                 Width: =121
-                X: =413
-                Y: =18
+                X: =424
+                Y: =14
                 ZIndex: =3
 
             owner As label:
                 Align: =Align.Center
+                AutoHeight: =true
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                 Height: =21
                 OnSelect: =Select(Parent)
@@ -103,14 +106,14 @@ reportListScreen As screen:
                 Text: =ThisItem.OWNER
                 VerticalAlign: =VerticalAlign.Top
                 Width: =180
-                X: =536
-                Y: =16
+                X: =545
+                Y: =11
                 ZIndex: =4
 
             modyId As label:
                 Align: =Align.Center
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =23
+                Height: =19
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
@@ -119,24 +122,9 @@ reportListScreen As screen:
                 Text: =ThisItem.MODY_ID
                 VerticalAlign: =VerticalAlign.Top
                 Width: =144
-                X: =716
-                Y: =14
+                X: =725
+                Y: =12
                 ZIndex: =5
-
-            favor As label:
-                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =23
-                OnSelect: =Select(Parent)
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =ThisItem.FAVORITES
-                VerticalAlign: =VerticalAlign.Top
-                Width: =98
-                X: =862
-                Y: =18
-                ZIndex: =6
 
             Rectangle6 As rectangle:
                 Height: =Parent.TemplateHeight - Separator2.Height
@@ -153,6 +141,17 @@ reportListScreen As screen:
                 Width: =Parent.TemplateWidth
                 Y: =47
                 ZIndex: =8
+
+            Star1 As star:
+                BorderColor: =RGBA(255, 191, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =20
+                OnSelect: =Select(Parent)
+                Width: =21
+                X: =928
+                Y: =14
+                ZIndex: =9
 
         Container6 As groupContainer.manualLayoutContainer:
             BorderColor: =RGBA(244, 247, 252, 1)
