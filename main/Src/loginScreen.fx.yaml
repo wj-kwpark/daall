@@ -247,7 +247,7 @@ loginScreen As screen:
             RadiusTopRight: =20
             Size: =12
             Text: ="Demo"
-            X: =668
+            X: =723
             Y: =516
             ZIndex: =10
 
