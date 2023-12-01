@@ -489,8 +489,8 @@ reportListScreen As screen:
                     galReportList,
                     Filter(
                         galReportListdata,
-                        REPORT_TITLE = resourceEdit_8.Text//,
-                       // startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate
+                        resourceEdit_8.Text in REPORT_TITLE ,
+                        startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate
                     )
                 );
             RadiusBottomLeft: =20
