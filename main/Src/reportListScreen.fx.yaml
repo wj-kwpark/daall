@@ -483,12 +483,12 @@ reportListScreen As screen:
             Height: =30
             HoverBorderColor: =
             OnSelect: |
-                =ClearCollect(galReportList,'nocode-test.report');
+                =ClearCollect(galReportListdata,'nocode-test.report');
                 
                 ClearCollect(
                     galReportList,
                     Filter(
-                        galReportList,
+                        galReportListdata,
                         REPORT_TITLE = resourceEdit_8.Text,
                         startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate
                     )
