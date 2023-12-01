@@ -6,12 +6,27 @@ masterPage As screen:
         mainScreen: =main2
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
-    pageTitle_4 As label:
+    pageTitle_ As label:
         FontWeight: =FontWeight.Bold
-        Size: =24
+        Size: =20
         Text: ="화면명"
         Width: =185
-        X: =245
-        Y: =90
+        X: =232
+        Y: =104
         ZIndex: =2
+
+    Container3 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(83, 144, 164, 0.12)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =Color.White
+        Height: =547
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1073
+        X: =232
+        Y: =157
+        ZIndex: =3
 
