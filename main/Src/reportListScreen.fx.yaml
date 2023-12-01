@@ -426,7 +426,7 @@ reportListScreen As screen:
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: =Today()
+                SelectedDate: =//Today()
                 Visible: =true
                 Width: =130
                 X: =417
@@ -438,9 +438,8 @@ reportListScreen As screen:
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: |-
+                SelectedDate: |
                     =//Date(Year(Today()),Month(Today())-1,Day(Today()))
-                    Date(Year(Today())-1,Month(Today()),Day(Today()))
                 Visible: =true
                 Width: =130
                 X: =248
