@@ -126,13 +126,6 @@ reportListScreen As screen:
                 Y: =12
                 ZIndex: =5
 
-            Rectangle6 As rectangle:
-                Height: =Parent.TemplateHeight - Separator2.Height
-                OnSelect: =Select(Parent)
-                Visible: =ThisItem.IsSelected
-                Width: =4
-                ZIndex: =7
-
             Separator2 As rectangle:
                 BorderColor: =RGBA(122, 138, 143, 1)
                 Fill: =RGBA(122, 138, 143, 0.29)
@@ -291,6 +284,7 @@ reportListScreen As screen:
             DisabledColor: =RGBA(15, 84, 140, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =32
             HoverBorderColor: =RGBA(15, 84, 140, 1)
@@ -368,6 +362,7 @@ reportListScreen As screen:
             DisabledColor: =RGBA(15, 84, 140, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =32
             HoverBorderColor: =RGBA(15, 84, 140, 1)
@@ -441,24 +436,24 @@ reportListScreen As screen:
                 Y: =79
                 ZIndex: =12
 
-            "endDate_4 As '날짜 선택'":
+            "endDate_4 As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: =Today()
+                SelectedDate: =//Today()
                 Visible: =true
                 Width: =130
                 X: =417
                 Y: =46
                 ZIndex: =13
 
-            "startDate_4 As '날짜 선택'":
+            "startDate_4 As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
-                SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+                SelectedDate: =//Date(Year(Today()),Month(Today())-1,Day(Today()))
                 Visible: =true
                 Width: =130
                 X: =248
@@ -473,6 +468,7 @@ reportListScreen As screen:
             DisabledColor: =RGBA(15, 84, 140, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =32
             HoverBorderColor: =RGBA(15, 84, 140, 1)
@@ -511,6 +507,7 @@ reportListScreen As screen:
             DisabledColor: =RGBA(15, 84, 140, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
             Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
             FontWeight: =FontWeight.Bold
             Height: =32
             HoverBorderColor: =RGBA(15, 84, 140, 1)
@@ -534,6 +531,7 @@ reportListScreen As screen:
         검색버튼_6 As button:
             BorderThickness: =0
             Fill: =RGBA(71, 158, 245, 1)
+            FocusedBorderThickness: =1
             Height: =30
             HoverBorderColor: =
             OnSelect: =

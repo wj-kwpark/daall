@@ -281,8 +281,8 @@ Base As CanvasComponent:
             PaddingLeft: =0
             Size: =10
             Text: ="(최종접속일 " & Base.loginDate & ")"
-            Width: =226
-            X: =1015
+            Width: =242
+            X: =998
             Y: =35
             ZIndex: =14
 

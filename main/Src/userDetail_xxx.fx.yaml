@@ -138,7 +138,7 @@ userDetail_xxx As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey1 As 텍스트:
+            DataCardKey1 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -149,7 +149,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue1 As '텍스트 입력'":
+            "DataCardValue1 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -175,7 +175,7 @@ userDetail_xxx As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey2 As 텍스트:
+            DataCardKey2 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -186,7 +186,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue2 As '텍스트 입력'":
+            "DataCardValue2 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -212,7 +212,7 @@ userDetail_xxx As screen:
             Y: =0
             ZIndex: =1
 
-            DataCardKey3 As 텍스트:
+            DataCardKey3 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -223,7 +223,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue3 As '텍스트 입력'":
+            "DataCardValue3 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -249,7 +249,7 @@ userDetail_xxx As screen:
             Y: =1
             ZIndex: =1
 
-            DataCardKey4 As 텍스트:
+            DataCardKey4 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -260,7 +260,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue4 As '텍스트 입력'":
+            "DataCardValue4 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -286,7 +286,7 @@ userDetail_xxx As screen:
             Y: =1
             ZIndex: =1
 
-            DataCardKey5 As 텍스트:
+            DataCardKey5 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -297,7 +297,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue5 As '텍스트 입력'":
+            "DataCardValue5 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -323,7 +323,7 @@ userDetail_xxx As screen:
             Y: =1
             ZIndex: =1
 
-            DataCardKey6 As 텍스트:
+            DataCardKey6 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -334,7 +334,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue6 As '텍스트 입력'":
+            "DataCardValue6 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -360,7 +360,7 @@ userDetail_xxx As screen:
             Y: =2
             ZIndex: =1
 
-            DataCardKey7 As 텍스트:
+            DataCardKey7 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -371,7 +371,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue7 As '텍스트 입력'":
+            "DataCardValue7 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -398,7 +398,7 @@ userDetail_xxx As screen:
             Y: =2
             ZIndex: =1
 
-            DataCardKey8 As 텍스트:
+            DataCardKey8 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -409,7 +409,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue8 As '텍스트 입력'":
+            "DataCardValue8 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -435,7 +435,7 @@ userDetail_xxx As screen:
             Y: =2
             ZIndex: =1
 
-            DataCardKey9 As 텍스트:
+            DataCardKey9 As Text:
                 DisplayMode: =DisplayMode.Edit
                 Height: =22
                 Text: =Parent.DisplayName
@@ -446,7 +446,7 @@ userDetail_xxx As screen:
                 Y: =10
                 ZIndex: =1
 
-            "DataCardValue9 As '텍스트 입력'":
+            "DataCardValue9 As 'Text input'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
                 Height: =32
@@ -458,7 +458,7 @@ userDetail_xxx As screen:
                 Y: =DataCardKey9.Y + DataCardKey9.Height + 4
                 ZIndex: =2
 
-    ButtonCanvas1_1 As 버튼:
+    ButtonCanvas1_1 As Button:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(12, 59, 94, 1)
         DisplayMode: =DisplayMode.Edit

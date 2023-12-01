@@ -151,7 +151,7 @@ Notice As screen:
                 Y: =72
                 ZIndex: =10
 
-            "startDate As '날짜 선택'":
+            "startDate As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short
@@ -162,7 +162,7 @@ Notice As screen:
                 Y: =38
                 ZIndex: =11
 
-            "endDate As '날짜 선택'":
+            "endDate As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Format: ='DatePickerCanvas.Format'.Short

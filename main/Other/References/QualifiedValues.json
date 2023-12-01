@@ -2,6 +2,20 @@
   "QualifiedValues": [
     {
       "Kind": "default.cds_cre6f_table_forms",
+      "Namespace": "Tables (Forms)",
+      "Values": {
+        "정보": "c15b9c3b-d990-46b5-bde8-97f58e4da005"
+      }
+    },
+    {
+      "Kind": "default.cds_cre6f_user_forms",
+      "Namespace": "user (Forms)",
+      "Values": {
+        "정보": "a3c27ab8-190a-474c-9a74-faeb8735c3eb"
+      }
+    },
+    {
+      "Kind": "default.cds_cre6f_table_forms",
       "Namespace": "Tables (양식)",
       "Values": {
         "정보": "c15b9c3b-d990-46b5-bde8-97f58e4da005"
