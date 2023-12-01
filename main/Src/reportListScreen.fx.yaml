@@ -224,3 +224,69 @@ reportListScreen As screen:
                 Y: =1
                 ZIndex: =6
 
+            Button5 As button:
+                Text: ="버튼"
+                X: =40
+                Y: =40
+                ZIndex: =7
+
+        Button7 As button:
+            BorderThickness: =1
+            Fill: =RGBA(53, 61, 63, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="삭제"
+            Width: =80
+            X: =966
+            Y: =120
+            ZIndex: =3
+
+        Button7_1 As button:
+            BorderThickness: =1
+            Fill: =RGBA(15, 84, 140, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="업로드"
+            Width: =80
+            X: =873
+            Y: =120
+            ZIndex: =4
+
+        Button7_2 As button:
+            BorderThickness: =1
+            Fill: =RGBA(40, 134, 222, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="생성"
+            Width: =80
+            X: =775
+            Y: =120
+            ZIndex: =5
+
