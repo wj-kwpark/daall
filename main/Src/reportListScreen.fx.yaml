@@ -480,7 +480,10 @@ reportListScreen As screen:
             FocusedBorderThickness: =1
             Height: =30
             HoverBorderColor: =
-            OnSelect: =
+            OnSelect: |+
+                =ClearCollect(galReportList,Filter('nocode-test.report',REPORT_TITLE=resourceEdit_8.Text,startDate_4.SelectedDate <= REGI_DATE  && REGI_DATE <= endDate_4.SelectedDate);
+                
+                
             RadiusBottomLeft: =20
             RadiusBottomRight: =20
             RadiusTopLeft: =20
