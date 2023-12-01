@@ -32,7 +32,7 @@ reportListScreen As screen:
 
         "Gallery4 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
-            Height: =265
+            Height: =277
             Items: ='nocode-test.report'
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
@@ -40,7 +40,7 @@ reportListScreen As screen:
             TemplateSize: =50
             Width: =1011
             X: =35
-            Y: =205
+            Y: =192
             ZIndex: =1
 
             reportTitle As label:
@@ -160,7 +160,7 @@ reportListScreen As screen:
             Height: =41
             Width: =1011
             X: =35
-            Y: =163
+            Y: =151
             ZIndex: =2
 
             Label5 As label:
@@ -223,12 +223,6 @@ reportListScreen As screen:
                 Y: =1
                 ZIndex: =6
 
-            Button5 As button:
-                Text: ="버튼"
-                X: =40
-                Y: =40
-                ZIndex: =7
-
         Button7 As button:
             BorderThickness: =1
             Fill: =RGBA(53, 61, 63, 1)
@@ -245,8 +239,8 @@ reportListScreen As screen:
             Size: =9
             Text: ="삭제"
             Width: =80
-            X: =966
-            Y: =120
+            X: =970
+            Y: =108
             ZIndex: =3
 
         Button7_1 As button:
@@ -265,8 +259,8 @@ reportListScreen As screen:
             Size: =9
             Text: ="업로드"
             Width: =80
-            X: =873
-            Y: =120
+            X: =877
+            Y: =108
             ZIndex: =4
 
         Button7_2 As button:
@@ -285,7 +279,288 @@ reportListScreen As screen:
             Size: =9
             Text: ="생성"
             Width: =80
-            X: =775
-            Y: =120
+            X: =779
+            Y: =108
             ZIndex: =5
+
+        전체버튼_1 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: |-
+                =ClearCollect(
+                    authorityListdata,
+                    Filter(
+                            Filter(authoritydata,OWNER_ID=User),
+                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                            SearchBar_2.title in BOARD_TITLE
+                        )
+                );
+                Set(aFilter,Self.Text);
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="전체보고서"
+            Width: =71
+            X: =592
+            Y: =35
+            ZIndex: =15
+
+        sTitle_1 As group:
+            Height: =5
+            Width: =5
+            X: =30
+            Y: =30
+            ZIndex: =15
+
+            보고서데이터명_8 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="제목"
+                Width: =84
+                X: =35
+                Y: =21
+                ZIndex: =6
+
+            resourceEdit_8 As text:
+                BorderThickness: =0
+                Color: =Color.Black
+                Default: =""
+                FocusedBorderColor: =Color.Transparent
+                Height: =30
+                HoverBorderColor: =Color.Transparent
+                HoverColor: =Color.Black
+                HoverFill: =Color.Transparent
+                PressedColor: =Color.Transparent
+                Width: =160
+                X: =50
+                Y: =46
+                ZIndex: =7
+
+            Rectangle8_25 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =160
+                X: =50
+                Y: =79
+                ZIndex: =8
+
+        보고서버튼_1 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: |-
+                =ClearCollect(
+                    authorityListdata,
+                    Filter(
+                            Filter(authoritydata,OWNER_ID=User),
+                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                            SearchBar_2.title in BOARD_TITLE,
+                            RESOURCE_TYPE = "report"
+                        )
+                );
+                Set(aFilter,Self.Text);
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="내보고서"
+            Width: =71
+            X: =676
+            Y: =35
+            ZIndex: =16
+
+        sDate_1 As group:
+            Height: =5
+            Width: =5
+            X: =30
+            Y: =30
+            ZIndex: =16
+
+            "'기간-text_1' As label":
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="생성일"
+                Width: =116
+                X: =232
+                Y: =21
+                ZIndex: =9
+
+            "'-text_1' As label":
+                FontWeight: =FontWeight.Bold
+                Height: =22
+                Size: =9
+                Text: ="-"
+                Width: =27
+                X: =390
+                Y: =51
+                ZIndex: =10
+
+            Rectangle8_26 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =248
+                Y: =79
+                ZIndex: =11
+
+            Rectangle8_27 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =417
+                Y: =79
+                ZIndex: =12
+
+            "endDate_4 As '날짜 선택'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Today()
+                Visible: =true
+                Width: =130
+                X: =417
+                Y: =46
+                ZIndex: =13
+
+            "startDate_4 As '날짜 선택'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
+                Visible: =true
+                Width: =130
+                X: =248
+                Y: =46
+                ZIndex: =14
+
+        보고서버튼_2 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: |-
+                =ClearCollect(
+                    authorityListdata,
+                    Filter(
+                            Filter(authoritydata,OWNER_ID=User),
+                            SearchBar_2.startDate <= REGI_DATE  && REGI_DATE <= SearchBar_2.endDate,
+                            SearchBar_2.title in BOARD_TITLE,
+                            RESOURCE_TYPE = "report"
+                        )
+                );
+                Set(aFilter,Self.Text);
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="공유보고서"
+            Width: =71
+            X: =762
+            Y: =35
+            ZIndex: =17
+
+        보고서버튼_3 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="즐겨찾기"
+            Width: =71
+            X: =844
+            Y: =35
+            ZIndex: =18
+
+        검색버튼_6 As button:
+            BorderThickness: =0
+            Fill: =RGBA(71, 158, 245, 1)
+            Height: =30
+            HoverBorderColor: =
+            OnSelect: =
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =10
+            Text: ="검색"
+            Width: =97
+            X: =953
+            Y: =35
+            ZIndex: =19
+
+        Rectangle7 As rectangle:
+            Fill: =RGBA(15, 108, 189, 1)
+            Height: =1
+            Width: =1011
+            X: =35
+            Y: =191
+            ZIndex: =20
+
+        Rectangle7_1 As rectangle:
+            Fill: =RGBA(180, 214, 250, 0.45)
+            Height: =1
+            Width: =1011
+            X: =39
+            Y: =92
+            ZIndex: =21
 
