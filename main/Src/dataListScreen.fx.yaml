@@ -1,17 +1,651 @@
 dataListScreen As screen:
-    BackgroundImage: =
+    BackgroundImage: =bg_login
+    OnVisible: |-
+        =ClearCollect(galDataList,'nocode-test.data');
+        Set(galDataListTotalCount,CountRows('nocode-test.data'));
+        Set(galDataListFilter,"전체데이터");
 
-    Base_8 As Base:
+    Base_15 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        MenuItems: |-
+            =Table(
+                {
+                    MenuLabel: "자료실",
+                    MenuIcon: icon_gnb_1,
+                    MenuIconHover: icon_gnb_1_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 1,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "공지사항",
+                            SubMenuScreenNavigate: Notice,
+                            SubMenuID: 1,
+                            ParentMenu: "자료실"
+                        },
+                        {
+                            SubMenuLabel: "Demo Report",
+                            SubMenuScreenNavigate: demoList,
+                            SubMenuID: 2,
+                            ParentMenu: "자료실"
+                        }
+                    )
+                },
+                {
+                    MenuLabel: "모니터링",
+                    MenuIcon: icon_gnb_2,
+                    MenuIconHover: icon_gnb_2_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 2,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "Azure",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 1,
+                            ParentMenu: "모니터링"
+                        },
+                        {
+                            SubMenuLabel: "Microsoft365",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 2,
+                            ParentMenu: "모니터링"
+                        },
+                        {
+                            SubMenuLabel: "PowerPlatform",
+                            SubMenuScreenNavigate: App.ActiveScreen,
+                            SubMenuID: 3,
+                            ParentMenu: "모니터링"
+                        }
+                    )
+                },
+                {
+                    MenuLabel: "보고서",
+                    MenuIcon: icon_gnb_3,
+                    MenuIconHover: icon_gnb_3_hover,
+                    MenuScreenNavigate: dataListScreen,
+                    MenuID: 3
+                },
+                {
+                    MenuLabel: "데이터",
+                    MenuIcon: icon_gnb_4,
+                    MenuIconHover: icon_gnb_4_hover,
+                    MenuScreenNavigate: dataListScreen,
+                    MenuID: 4
+                },
+                {
+                    MenuLabel: "관리",
+                    MenuIcon: icon_gnb_5,
+                    MenuIconHover: icon_gnb_5_hover,
+                    MenuScreenNavigate: App.ActiveScreen,
+                    MenuID: 5,
+                    SubMenu: Table(
+                        {
+                            SubMenuLabel: "Dashboard",
+                            SubMenuScreenNavigate: dashboard,
+                            SubMenuID: 1,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "내정보",
+                            SubMenuScreenNavigate: myinfo,
+                            SubMenuID: 2,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "권한관리",
+                            SubMenuScreenNavigate: authorityList,
+                            SubMenuID: 3,
+                            ParentMenu: "관리"
+                        },
+                        {
+                            SubMenuLabel: "사용자관리",
+                            SubMenuScreenNavigate: userList,
+                            SubMenuID: 4,
+                            ParentMenu: "관리"
+                        }
+                    )
+                }
+            )
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
-    pageTitle_6 As label:
+    pageTitle_13 As label:
         FontWeight: =FontWeight.Bold
-        Size: =24
+        Size: =pageTitle_.Size
         Text: ="데이터"
         Width: =185
-        X: =245
-        Y: =90
+        X: =pageTitle_.X
+        Y: =pageTitle_.Y
         ZIndex: =2
+
+    Container3_2 As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(83, 144, 164, 0.12)
+        BorderThickness: =1
+        DropShadow: =DropShadow.None
+        Fill: =Color.White
+        Height: =547
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =1073
+        X: =Container3.X
+        Y: =Container3.Y
+        ZIndex: =3
+
+        "Gallery4_1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =345
+            Items: =galReportList
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =50
+            Width: =1011
+            X: =35
+            Y: =192
+            ZIndex: =1
+
+            reportTitle_1 As label:
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =47
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =12
+                Text: =ThisItem.REPORT_TITLE
+                VerticalAlign: =VerticalAlign.Top
+                Width: =239
+                X: =15
+                Y: =12
+                ZIndex: =1
+
+            regiDate_1 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =23
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.REGI_DATE
+                VerticalAlign: =VerticalAlign.Top
+                Width: =159
+                X: =254
+                Y: =14
+                ZIndex: =2
+
+            modyDate_1 As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =16
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.MODY_DATE
+                VerticalAlign: =VerticalAlign.Top
+                Width: =121
+                X: =424
+                Y: =14
+                ZIndex: =3
+
+            owner_1 As label:
+                Align: =Align.Center
+                AutoHeight: =true
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =21
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.OWNER
+                VerticalAlign: =VerticalAlign.Top
+                Width: =180
+                X: =545
+                Y: =11
+                ZIndex: =4
+
+            modyId_1 As label:
+                Align: =Align.Center
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =19
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.MODY_ID
+                VerticalAlign: =VerticalAlign.Top
+                Width: =144
+                X: =725
+                Y: =12
+                ZIndex: =5
+
+            Separator2_1 As rectangle:
+                BorderColor: =RGBA(122, 138, 143, 1)
+                Fill: =RGBA(122, 138, 143, 0.29)
+                Height: =1
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =47
+                ZIndex: =8
+
+            Star1_1 As star:
+                BorderColor: =RGBA(255, 191, 0, 1)
+                BorderThickness: =1
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =20
+                OnSelect: =Select(Parent)
+                Width: =21
+                X: =928
+                Y: =14
+                ZIndex: =9
+
+        Container6_2 As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(244, 247, 252, 1)
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(244, 247, 252, 1)
+            Height: =41
+            Width: =1011
+            X: =35
+            Y: =151
+            ZIndex: =2
+
+            Label5_8 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="데이터명"
+                Width: =252
+                X: =5
+                Y: =1
+                ZIndex: =1
+
+            Label5_9 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="생성일"
+                Width: =153
+                X: =257
+                Y: =1
+                ZIndex: =2
+
+            Label5_10 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="최근수정일"
+                Width: =132
+                X: =410
+                Y: =1
+                ZIndex: =3
+
+            Label5_11 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="소유자"
+                Width: =177
+                X: =543
+                Y: =1
+                ZIndex: =4
+
+            Label5_12 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="최근작업자"
+                Width: =144
+                X: =721
+                Y: =1
+                ZIndex: =5
+
+            Label5_13 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Size: =11
+                Text: ="즐겨찾기"
+                Width: =144
+                X: =866
+                Y: =1
+                ZIndex: =6
+
+        Button7_3 As button:
+            BorderThickness: =1
+            Fill: =RGBA(53, 61, 63, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="삭제"
+            Width: =80
+            X: =970
+            Y: =108
+            ZIndex: =3
+
+        Button7_4 As button:
+            BorderThickness: =1
+            Fill: =RGBA(15, 84, 140, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="업로드"
+            Width: =80
+            X: =877
+            Y: =108
+            ZIndex: =4
+
+        Button7_5 As button:
+            BorderThickness: =1
+            Fill: =RGBA(40, 134, 222, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
+            Size: =9
+            Text: ="생성"
+            Width: =80
+            X: =779
+            Y: =108
+            ZIndex: =5
+
+        전체버튼_2 As button:
+            BorderColor: =If(galListFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(galListFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =ClearCollect(galDataList,'nocode-test.data');
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="전체데이터"
+            Width: =71
+            X: =592
+            Y: =35
+            ZIndex: =15
+
+        sTitle_2 As group:
+            Height: =5
+            Width: =5
+            X: =30
+            Y: =30
+            ZIndex: =15
+
+            보고서데이터명_9 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="제목"
+                Width: =84
+                X: =35
+                Y: =21
+                ZIndex: =6
+
+            resourceEdit_9 As text:
+                BorderThickness: =0
+                Color: =Color.Black
+                Default: =""
+                FocusedBorderColor: =Color.Transparent
+                Height: =30
+                HoverBorderColor: =Color.Transparent
+                HoverColor: =Color.Black
+                HoverFill: =Color.Transparent
+                PressedColor: =Color.Transparent
+                Width: =160
+                X: =50
+                Y: =46
+                ZIndex: =7
+
+            Rectangle8_28 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =160
+                X: =50
+                Y: =79
+                ZIndex: =8
+
+        보고서버튼_2 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =ClearCollect(galDataList,Filter('nocode-test.data',OWNER_ID=User));
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="내데이터"
+            Width: =71
+            X: =676
+            Y: =35
+            ZIndex: =16
+
+        sDate_2 As group:
+            Height: =5
+            Width: =5
+            X: =30
+            Y: =30
+            ZIndex: =16
+
+            "'기간-text_2' As label":
+                FontWeight: =FontWeight.Bold
+                Height: =20
+                Size: =9
+                Text: ="생성일"
+                Width: =116
+                X: =232
+                Y: =21
+                ZIndex: =9
+
+            "'-text_2' As label":
+                FontWeight: =FontWeight.Bold
+                Height: =22
+                Size: =9
+                Text: ="-"
+                Width: =27
+                X: =390
+                Y: =51
+                ZIndex: =10
+
+            Rectangle8_29 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =248
+                Y: =79
+                ZIndex: =11
+
+            Rectangle8_30 As rectangle:
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =1
+                Width: =130
+                X: =417
+                Y: =79
+                ZIndex: =12
+
+            "endDate_5 As 'Date picker'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: =//Today()
+                Visible: =true
+                Width: =130
+                X: =417
+                Y: =46
+                ZIndex: =13
+
+            "startDate_5 As 'Date picker'":
+                BasePaletteColor: =
+                DisplayMode: =DisplayMode.Edit
+                Format: ='DatePickerCanvas.Format'.Short
+                Height: =30
+                SelectedDate: |
+                    =//Date(Year(Today()),Month(Today())-1,Day(Today()))
+                Visible: =true
+                Width: =130
+                X: =248
+                Y: =46
+                ZIndex: =14
+
+        보고서버튼_6 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="즐겨찾기"
+            Width: =71
+            X: =844
+            Y: =35
+            ZIndex: =18
+
+        검색버튼_7 As button:
+            BorderThickness: =0
+            Fill: =RGBA(71, 158, 245, 1)
+            FocusedBorderThickness: =1
+            Height: =30
+            HoverBorderColor: =
+            OnSelect: |
+                =ClearCollect(galReportListdata,'nocode-test.report');
+                
+                ClearCollect(
+                    galReportList,
+                    Filter(
+                        galReportListdata,
+                        resourceEdit_9.Text in REPORT_TITLE ,
+                        startDate_5.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_5.SelectedDate
+                     //   If(IsBlank(startDate_4.SelectedDate), "")
+                     //   If(IsBlank(startDate_4.SelectedDate), startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate)
+                     //   IF(IsEmpty(startDate_4.SelectedDate),startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate,"")
+                    )
+                );
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Size: =10
+            Text: ="검색"
+            Width: =97
+            X: =953
+            Y: =35
+            ZIndex: =19
+
+        Rectangle7_2 As rectangle:
+            Fill: =RGBA(15, 108, 189, 1)
+            Height: =1
+            Width: =1011
+            X: =35
+            Y: =191
+            ZIndex: =20
+
+        Rectangle7_3 As rectangle:
+            Fill: =RGBA(180, 214, 250, 0.45)
+            Height: =1
+            Width: =1011
+            X: =39
+            Y: =92
+            ZIndex: =21
+
+        보고서버튼_5 As button:
+            BorderColor: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            BorderThickness: =1
+            Color: =If(aFilter=Self.Text,RGBA(15, 84, 140, 1),RGBA(122, 138, 143, 1))
+            DisabledBorderColor: =RGBA(15, 84, 140, 1)
+            DisabledColor: =RGBA(15, 84, 140, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =1
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =RGBA(15, 84, 140, 1)
+            HoverColor: =RGBA(15, 84, 140, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =
+            PressedBorderColor: =RGBA(15, 84, 140, 1)
+            PressedColor: =RGBA(15, 84, 140, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =15
+            RadiusBottomRight: =15
+            RadiusTopLeft: =15
+            RadiusTopRight: =15
+            Size: =9
+            Text: ="공유데이터"
+            Width: =71
+            X: =760
+            Y: =35
+            ZIndex: =22
 
