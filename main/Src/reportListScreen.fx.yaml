@@ -489,7 +489,8 @@ reportListScreen As screen:
                     Filter(
                         galReportListdata,
                         resourceEdit_8.Text in REPORT_TITLE ,
-                        If(IsBlank(startDate_4.SelectedDate), "")
+                        startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate
+                     //   If(IsBlank(startDate_4.SelectedDate), "")
                      //   If(IsBlank(startDate_4.SelectedDate), startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate)
                      //   IF(IsEmpty(startDate_4.SelectedDate),startDate_4.SelectedDate <= REGI_DATE && REGI_DATE <= endDate_4.SelectedDate,"")
                     )
