@@ -8,10 +8,10 @@ reportListScreen As screen:
 
     pageTitle_7 As label:
         FontWeight: =FontWeight.Bold
-        Size: =24
+        Size: =20
         Text: ="보고서"
         Width: =185
-        X: =245
-        Y: =90
+        X: =235
+        Y: =105
         ZIndex: =2
 

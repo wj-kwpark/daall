@@ -21,8 +21,8 @@ Header As CanvasComponent:
     loginId As label:
         Color: =Color.Black
         Text: =Header.userId
-        Width: =118
-        X: =784
+        Width: =139
+        X: =747
         Y: =13
         ZIndex: =3
 
@@ -30,8 +30,8 @@ Header As CanvasComponent:
         Height: =32
         Icon: =Icon.Person
         Width: =33
-        X: =730
-        Y: =16
+        X: =714
+        Y: =17
         ZIndex: =4
 
     Rectangle1 As rectangle:
@@ -44,7 +44,8 @@ Header As CanvasComponent:
     loginDate As label:
         Size: =9
         Text: =Header.loginDate
-        X: =913
+        Width: =187
+        X: =886
         Y: =13
         ZIndex: =6
 
