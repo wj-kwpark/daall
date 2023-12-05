@@ -313,14 +313,14 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "Text",
+  "Name": "텍스트",
   "Properties": [
     {
       "Category": "data",
       "DefaultValue": "Text",
-      "Description": "Text that appears on a control.",
+      "Description": "컨트롤에 나타나는 텍스트입니다.",
       "DescriptionResourceString": "TextCanvas_Text_Desc",
-      "DisplayName": "Text",
+      "DisplayName": "텍스트",
       "DisplayNameResourceString": "TextCanvas_Text",
       "EnumValues": [],
       "HelperUI": null,
@@ -346,9 +346,9 @@
     {
       "Category": "data",
       "DefaultValue": "14",
-      "Description": "Display text using the selected font sizes.",
+      "Description": "선택한 글꼴 크기를 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Size_Desc",
-      "DisplayName": "Font size",
+      "DisplayName": "글꼴 크기",
       "DisplayNameResourceString": "TextCanvas_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -374,35 +374,35 @@
     {
       "Category": "data",
       "DefaultValue": "Regular",
-      "Description": "Display text using the selected font weights.",
+      "Description": "선택한 글꼴 두께를 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Weight_Desc",
-      "DisplayName": "Font weight",
+      "DisplayName": "글꼴 두께",
       "DisplayNameResourceString": "TextCanvas_Weight",
       "EnumValues": [
         {
-          "Description": "Medium",
-          "DisplayName": "Medium",
+          "Description": "중간",
+          "DisplayName": "중간",
           "IsDefaultValue": false,
           "Name": "Medium",
           "Value": "Medium"
         },
         {
-          "Description": "Regular",
-          "DisplayName": "Regular",
+          "Description": "보통",
+          "DisplayName": "보통",
           "IsDefaultValue": true,
           "Name": "Regular",
           "Value": "Regular"
         },
         {
-          "Description": "Semibold",
-          "DisplayName": "Semibold",
+          "Description": "약간 굵게",
+          "DisplayName": "약간 굵게",
           "IsDefaultValue": false,
           "Name": "Semibold",
           "Value": "Semibold"
         },
         {
-          "Description": "Bold",
-          "DisplayName": "Bold",
+          "Description": "굵게",
+          "DisplayName": "굵게",
           "IsDefaultValue": false,
           "Name": "Bold",
           "Value": "Bold"
@@ -431,35 +431,35 @@
     {
       "Category": "data",
       "DefaultValue": "Start",
-      "Description": "Display text using the selected text alignment.",
+      "Description": "선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Align_Desc",
-      "DisplayName": "Align",
+      "DisplayName": "맞춤",
       "DisplayNameResourceString": "TextCanvas_Align",
       "EnumValues": [
         {
-          "Description": "Start",
-          "DisplayName": "Start",
+          "Description": "시작",
+          "DisplayName": "시작",
           "IsDefaultValue": true,
           "Name": "Start",
           "Value": "Start"
         },
         {
-          "Description": "End",
-          "DisplayName": "End",
+          "Description": "종료",
+          "DisplayName": "종료",
           "IsDefaultValue": false,
           "Name": "End",
           "Value": "End"
         },
         {
-          "Description": "Center",
-          "DisplayName": "Center",
+          "Description": "가운데",
+          "DisplayName": "가운데",
           "IsDefaultValue": false,
           "Name": "Center",
           "Value": "Center"
         },
         {
-          "Description": "Justify",
-          "DisplayName": "Justify",
+          "Description": "양쪽 맞춤",
+          "DisplayName": "양쪽 맞춤",
           "IsDefaultValue": false,
           "Name": "Justify",
           "Value": "Justify"
@@ -488,28 +488,28 @@
     {
       "Category": "data",
       "DefaultValue": "Middle",
-      "Description": "Display text using the selected text verlitcal alignment.",
+      "Description": "선택한 텍스트 세로 맞춤을 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_VerticalAlign_Desc",
-      "DisplayName": "Vertical align",
+      "DisplayName": "세로 맞춤",
       "DisplayNameResourceString": "TextCanvas_VerticalAlign",
       "EnumValues": [
         {
-          "Description": "Top",
-          "DisplayName": "Top",
+          "Description": "상단",
+          "DisplayName": "상단",
           "IsDefaultValue": false,
           "Name": "Top",
           "Value": "Top"
         },
         {
-          "Description": "Middle",
-          "DisplayName": "Middle",
+          "Description": "중간",
+          "DisplayName": "중간",
           "IsDefaultValue": true,
           "Name": "Middle",
           "Value": "Middle"
         },
         {
-          "Description": "Bottom",
-          "DisplayName": "Bottom",
+          "Description": "하단",
+          "DisplayName": "하단",
           "IsDefaultValue": false,
           "Name": "Bottom",
           "Value": "Bottom"
@@ -538,9 +538,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Container height will adjust to text content.",
+      "Description": "컨테이너 높이가 텍스트 콘텐츠에 맞춰집니다.",
       "DescriptionResourceString": "TextCanvas_AutoHeight_Desc",
-      "DisplayName": "Auto height",
+      "DisplayName": "자동 높이",
       "DisplayNameResourceString": "TextCanvas_AutoHeight",
       "EnumValues": [],
       "HelperUI": null,
@@ -566,9 +566,9 @@
     {
       "Category": "design",
       "DefaultValue": "32",
-      "Description": "The height of the control.",
+      "Description": "컨트롤의 높이.",
       "DescriptionResourceString": "TextCanvas_Height_Desc",
-      "DisplayName": "Text height",
+      "DisplayName": "텍스트 높이",
       "DisplayNameResourceString": "TextCanvas_Height",
       "EnumValues": [],
       "HelperUI": null,
@@ -594,9 +594,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the italic font style.",
+      "Description": "기울임꼴 글꼴 스타일을 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Italic_Desc",
-      "DisplayName": "Italic",
+      "DisplayName": "기울임꼴",
       "DisplayNameResourceString": "TextCanvas_Italic",
       "EnumValues": [],
       "HelperUI": null,
@@ -622,9 +622,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the strikethrough font style.",
+      "Description": "취소선 글꼴 스타일을 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Strikethrough_Desc",
-      "DisplayName": "Strikethrough",
+      "DisplayName": "취소선",
       "DisplayNameResourceString": "TextCanvas_Strikethrough",
       "EnumValues": [],
       "HelperUI": null,
@@ -650,9 +650,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Display text using the underline font style.",
+      "Description": "밑줄 글꼴 스타일을 사용하여 텍스트를 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Underline_Desc",
-      "DisplayName": "Underline",
+      "DisplayName": "밑줄",
       "DisplayNameResourceString": "TextCanvas_Underline",
       "EnumValues": [],
       "HelperUI": null,
@@ -678,9 +678,9 @@
     {
       "Category": "data",
       "DefaultValue": "true",
-      "Description": "Display overflow text as wrapped.",
+      "Description": "넘치는 텍스트를 줄 바꿈으로 표시합니다.",
       "DescriptionResourceString": "TextCanvas_Wrap_Desc",
-      "DisplayName": "Wrap",
+      "DisplayName": "줄 바꿈",
       "DisplayNameResourceString": "TextCanvas_Wrap",
       "EnumValues": [],
       "HelperUI": null,
@@ -870,7 +870,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 12,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en\",\"formatter\":null,\"languagesByCode\":{\"9\":\"English\",\"-1\":\"All Languages\"}}}",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"오전\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"-\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"yyyy'년' M'월' d'일' dddd tt h:mm:ss\",\"LongDatePattern\":\"yyyy'년' M'월' d'일' dddd\",\"LongTimePattern\":\"tt h:mm:ss\",\"MonthDayPattern\":\"M월 d일\",\"PMDesignator\":\"오후\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"yyyy-MM-dd\",\"ShortTimePattern\":\"tt h:mm\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"yyyy'년' M'월'\",\"AbbreviatedDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"ShortestDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"DayNames\":[\"일요일\",\"월요일\",\"화요일\",\"수요일\",\"목요일\",\"금요일\",\"토요일\"],\"AbbreviatedMonthNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"서기(한글)\",\"AbbreviatedMonthGenitiveNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthGenitiveNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":0,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"₩\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":1,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"ko-KR\",\"formatter\":null,\"languagesByCode\":{\"1042\":\"Korean (Korea)\",\"-1\":\"All Languages\"}}}",
       "Type": 3
     },
     {
@@ -1192,7 +1192,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"Text\",\"TextCanvas_VerticalAlign\":\"Vertical align\",\"TextCanvas_VerticalAlign_Desc\":\"Display text using the selected text verlitcal alignment.\",\"TextCanvas_VerticalAlign_Top\":\"Top\",\"TextCanvas_VerticalAlign_Middle\":\"Middle\",\"TextCanvas_VerticalAlign_Bottom\":\"Bottom\",\"TextCanvas_Height\":\"Text height\",\"TextCanvas_Height_Desc\":\"The height of the control.\",\"TextCanvas_Align\":\"Align\",\"TextCanvas_Align_Desc\":\"Display text using the selected text alignment.\",\"TextCanvas_Align_Start\":\"Start\",\"TextCanvas_Align_End\":\"End\",\"TextCanvas_Align_Center\":\"Center\",\"TextCanvas_Align_Justify\":\"Justify\",\"TextCanvas_Desc\":\"Display text\",\"TextCanvas_AutoHeight\":\"Auto height\",\"TextCanvas_AutoHeight_Desc\":\"Container height will adjust to text content.\",\"TextCanvas_Italic\":\"Italic\",\"TextCanvas_Italic_Desc\":\"Display text using the italic font style.\",\"TextCanvas_Size\":\"Font size\",\"TextCanvas_Size_Desc\":\"Display text using the selected font sizes.\",\"TextCanvas_Strikethrough\":\"Strikethrough\",\"TextCanvas_Strikethrough_Desc\":\"Display text using the strikethrough font style.\",\"TextCanvas_Text\":\"Text\",\"TextCanvas_Text_Desc\":\"Text that appears on a control.\",\"TextCanvas_Underline\":\"Underline\",\"TextCanvas_Underline_Desc\":\"Display text using the underline font style.\",\"TextCanvas_Weight\":\"Font weight\",\"TextCanvas_Weight_Desc\":\"Display text using the selected font weights.\",\"TextCanvas_Weight_Medium\":\"Medium\",\"TextCanvas_Weight_Regular\":\"Regular\",\"TextCanvas_Weight_Semibold\":\"Semibold\",\"TextCanvas_Weight_Bold\":\"Bold\",\"TextCanvas_Wrap\":\"Wrap\",\"TextCanvas_Wrap_Desc\":\"Display overflow text as wrapped.\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextCanvas\":\"텍스트\",\"TextCanvas_VerticalAlign\":\"세로 맞춤\",\"TextCanvas_VerticalAlign_Desc\":\"선택한 텍스트 세로 맞춤을 사용하여 텍스트를 표시합니다.\",\"TextCanvas_VerticalAlign_Top\":\"상단\",\"TextCanvas_VerticalAlign_Middle\":\"중간\",\"TextCanvas_VerticalAlign_Bottom\":\"하단\",\"TextCanvas_Height\":\"텍스트 높이\",\"TextCanvas_Height_Desc\":\"컨트롤의 높이.\",\"TextCanvas_Align\":\"맞춤\",\"TextCanvas_Align_Desc\":\"선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Align_Start\":\"시작\",\"TextCanvas_Align_End\":\"종료\",\"TextCanvas_Align_Center\":\"가운데\",\"TextCanvas_Align_Justify\":\"양쪽 맞춤\",\"TextCanvas_Desc\":\"텍스트 표시\",\"TextCanvas_AutoHeight\":\"자동 높이\",\"TextCanvas_AutoHeight_Desc\":\"컨테이너 높이가 텍스트 콘텐츠에 맞춰집니다.\",\"TextCanvas_Italic\":\"기울임꼴\",\"TextCanvas_Italic_Desc\":\"기울임꼴 글꼴 스타일을 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Size\":\"글꼴 크기\",\"TextCanvas_Size_Desc\":\"선택한 글꼴 크기를 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Strikethrough\":\"취소선\",\"TextCanvas_Strikethrough_Desc\":\"취소선 글꼴 스타일을 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Text\":\"텍스트\",\"TextCanvas_Text_Desc\":\"컨트롤에 나타나는 텍스트입니다.\",\"TextCanvas_Underline\":\"밑줄\",\"TextCanvas_Underline_Desc\":\"밑줄 글꼴 스타일을 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Weight\":\"글꼴 두께\",\"TextCanvas_Weight_Desc\":\"선택한 글꼴 두께를 사용하여 텍스트를 표시합니다.\",\"TextCanvas_Weight_Medium\":\"중간\",\"TextCanvas_Weight_Regular\":\"보통\",\"TextCanvas_Weight_Semibold\":\"약간 굵게\",\"TextCanvas_Weight_Bold\":\"굵게\",\"TextCanvas_Wrap\":\"줄 바꿈\",\"TextCanvas_Wrap_Desc\":\"넘치는 텍스트를 줄 바꿈으로 표시합니다.\"}}}",
       "Type": 3
     },
     {

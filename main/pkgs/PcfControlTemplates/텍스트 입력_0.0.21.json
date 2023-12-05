@@ -318,14 +318,14 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "Text input",
+  "Name": "텍스트 입력",
   "Properties": [
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Label for screen readers.",
+      "Description": "화면 읽기 프로그램의 레이블.",
       "DescriptionResourceString": "TextInputCanvas_AccessibleLabel_Desc",
-      "DisplayName": "Accessible label",
+      "DisplayName": "액세스 가능한 레이블",
       "DisplayNameResourceString": "TextInputCanvas_AccessibleLabel",
       "EnumValues": [],
       "HelperUI": null,
@@ -351,9 +351,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "When set to true, user input is registered after half a second delay. Useful for delaying expensive operations until user completes inputting text (i.e. for filtering when input is used in other formulas).",
+      "Description": "참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).",
       "DescriptionResourceString": "TextInputCanvas_DelayOutput_Desc",
-      "DisplayName": "Delay output",
+      "DisplayName": "출력 지연",
       "DisplayNameResourceString": "TextInputCanvas_DelayOutput",
       "EnumValues": [],
       "HelperUI": "",
@@ -379,9 +379,9 @@
     {
       "Category": "data",
       "DefaultValue": "-1",
-      "Description": "The maximum content length of the Text input.",
+      "Description": "텍스트 입력의 최대 콘텐츠 길이입니다.",
       "DescriptionResourceString": "TextInputCanvas_MaxLength_Desc",
-      "DisplayName": "Maximum length",
+      "DisplayName": "최대 길이",
       "DisplayNameResourceString": "TextInputCanvas_MaxLength",
       "EnumValues": [],
       "HelperUI": "",
@@ -407,21 +407,21 @@
     {
       "Category": "data",
       "DefaultValue": "SingleLine",
-      "Description": "Type of text input: single line or multiline.",
+      "Description": "텍스트 입력 유형: 한 줄 또는 여러 줄.",
       "DescriptionResourceString": "TextInputCanvas_Mode_Desc",
-      "DisplayName": "Mode",
+      "DisplayName": "모드",
       "DisplayNameResourceString": "TextInputCanvas_Mode",
       "EnumValues": [
         {
-          "Description": "Single line",
-          "DisplayName": "Single line",
+          "Description": "한 줄",
+          "DisplayName": "한 줄",
           "IsDefaultValue": true,
           "Name": "SingleLine",
           "Value": "SingleLine"
         },
         {
-          "Description": "Multiline",
-          "DisplayName": "Multiline",
+          "Description": "여러 줄",
+          "DisplayName": "여러 줄",
           "IsDefaultValue": false,
           "Name": "Multiline",
           "Value": "Multiline"
@@ -450,9 +450,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "The placeholder text of the text input.",
+      "Description": "텍스트 입력의 자리 표시자 텍스트입니다.",
       "DescriptionResourceString": "TextInputCanvas_Placeholder_Desc",
-      "DisplayName": "Placeholder text",
+      "DisplayName": "자리 표시자 텍스트",
       "DisplayNameResourceString": "TextInputCanvas_Placeholder",
       "EnumValues": [],
       "HelperUI": null,
@@ -478,9 +478,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "Whether this control must contain text.",
+      "Description": "이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.",
       "DescriptionResourceString": "TextInputCanvas_Required_Desc",
-      "DisplayName": "Required",
+      "DisplayName": "필수",
       "DisplayNameResourceString": "TextInputCanvas_Required",
       "EnumValues": [],
       "HelperUI": "",
@@ -506,28 +506,28 @@
     {
       "Category": "data",
       "DefaultValue": "Text",
-      "Description": "Content type of text input: plain text, password, or search.",
+      "Description": "텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.",
       "DescriptionResourceString": "TextInputCanvas_Type_Desc",
-      "DisplayName": "Type",
+      "DisplayName": "형식",
       "DisplayNameResourceString": "TextInputCanvas_Type",
       "EnumValues": [
         {
-          "Description": "Password",
-          "DisplayName": "Password",
+          "Description": "암호",
+          "DisplayName": "암호",
           "IsDefaultValue": false,
           "Name": "Password",
           "Value": "Password"
         },
         {
-          "Description": "Search",
-          "DisplayName": "Search",
+          "Description": "검색",
+          "DisplayName": "검색",
           "IsDefaultValue": false,
           "Name": "Search",
           "Value": "Search"
         },
         {
-          "Description": "Text",
-          "DisplayName": "Text",
+          "Description": "텍스트",
+          "DisplayName": "텍스트",
           "IsDefaultValue": true,
           "Name": "Text",
           "Value": "Text"
@@ -556,21 +556,21 @@
     {
       "Category": "data",
       "DefaultValue": "None",
-      "Description": "The current status of the Text input, with regard to validation.",
+      "Description": "유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.",
       "DescriptionResourceString": "TextInputCanvas_ValidationState_Desc",
-      "DisplayName": "Validation state",
+      "DisplayName": "유효성 검사 상태",
       "DisplayNameResourceString": "TextInputCanvas_ValidationState",
       "EnumValues": [
         {
-          "Description": "Error",
-          "DisplayName": "Error",
+          "Description": "오류",
+          "DisplayName": "오류",
           "IsDefaultValue": false,
           "Name": "Error",
           "Value": "Error"
         },
         {
-          "Description": "None",
-          "DisplayName": "None",
+          "Description": "없음",
+          "DisplayName": "없음",
           "IsDefaultValue": true,
           "Name": "None",
           "Value": "None"
@@ -599,9 +599,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Text that appears on a control or that the user types into a control.",
+      "Description": "컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.",
       "DescriptionResourceString": "TextInputCanvas_Value_Desc",
-      "DisplayName": "Value",
+      "DisplayName": "값",
       "DisplayNameResourceString": "TextInputCanvas_Value",
       "EnumValues": [],
       "HelperUI": "",
@@ -627,9 +627,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "You can provide a different color palette for the selected item by specifying a base palette color. This color generates a set of similar colors that are then applied to different aspects of the item, most commonly: fill, border, and interaction states. A blank value indicates the item will use the color palette of the app's theme.",
+      "Description": "기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.",
       "DescriptionResourceString": "Base_Palette_Color_description",
-      "DisplayName": "Base palette color",
+      "DisplayName": "기본 팔레트 색상",
       "DisplayNameResourceString": "Base_Palette_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -655,9 +655,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Set the font size for displayed text.",
+      "Description": "표시된 텍스트의 글꼴 크기를 설정합니다.",
       "DescriptionResourceString": "Font_Size_description",
-      "DisplayName": "Font size",
+      "DisplayName": "글꼴 크기",
       "DisplayNameResourceString": "Font_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -847,7 +847,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 12,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en\",\"formatter\":null,\"languagesByCode\":{\"9\":\"English\",\"-1\":\"All Languages\"}}}",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"오전\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"-\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"yyyy'년' M'월' d'일' dddd tt h:mm:ss\",\"LongDatePattern\":\"yyyy'년' M'월' d'일' dddd\",\"LongTimePattern\":\"tt h:mm:ss\",\"MonthDayPattern\":\"M월 d일\",\"PMDesignator\":\"오후\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"yyyy-MM-dd\",\"ShortTimePattern\":\"tt h:mm\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"yyyy'년' M'월'\",\"AbbreviatedDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"ShortestDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"DayNames\":[\"일요일\",\"월요일\",\"화요일\",\"수요일\",\"목요일\",\"금요일\",\"토요일\"],\"AbbreviatedMonthNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"서기(한글)\",\"AbbreviatedMonthGenitiveNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthGenitiveNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":0,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"₩\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":1,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"ko-KR\",\"formatter\":null,\"languagesByCode\":{\"1042\":\"Korean (Korea)\",\"-1\":\"All Languages\"}}}",
       "Type": 3
     },
     {
@@ -1169,7 +1169,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"Text input\",\"TextInputCanvas_AccessibleLabel\":\"Accessible label\",\"TextInputCanvas_AccessibleLabel_Desc\":\"Label for screen readers.\",\"TextInputCanvas_DelayOutput\":\"Delay output\",\"TextInputCanvas_DelayOutput_Desc\":\"When set to true, user input is registered after half a second delay. Useful for delaying expensive operations until user completes inputting text (i.e. for filtering when input is used in other formulas).\",\"TextInputCanvas_Mode\":\"Mode\",\"TextInputCanvas_Mode_Desc\":\"Type of text input: single line or multiline.\",\"TextInputCanvas_Mode_SingleLine\":\"Single line\",\"TextInputCanvas_Mode_Multiline\":\"Multiline\",\"TextInputCanvas_Required\":\"Required\",\"TextInputCanvas_Required_Desc\":\"Whether this control must contain text.\",\"TextInputCanvas_Value\":\"Value\",\"TextInputCanvas_Value_Desc\":\"Text that appears on a control or that the user types into a control.\",\"TextInputCanvas_Placeholder\":\"Placeholder text\",\"TextInputCanvas_Placeholder_Desc\":\"The placeholder text of the text input.\",\"TextInputCanvas_Type\":\"Type\",\"TextInputCanvas_Type_Desc\":\"Content type of text input: plain text, password, or search.\",\"TextInputCanvas_Type_Text\":\"Text\",\"TextInputCanvas_Type_Password\":\"Password\",\"TextInputCanvas_Type_Search\":\"Search\",\"TextInputCanvas_MaxLength\":\"Maximum length\",\"TextInputCanvas_MaxLength_Desc\":\"The maximum content length of the Text input.\",\"Base_Palette_Color\":\"Base palette color\",\"Base_Palette_Color_description\":\"You can provide a different color palette for the selected item by specifying a base palette color. This color generates a set of similar colors that are then applied to different aspects of the item, most commonly: fill, border, and interaction states. A blank value indicates the item will use the color palette of the app's theme.\",\"TextInputCanvas_ValidationState\":\"Validation state\",\"TextInputCanvas_ValidationState_Desc\":\"The current status of the Text input, with regard to validation.\",\"TextInputCanvas_ValidationState_None\":\"None\",\"TextInputCanvas_ValidationState_Error\":\"Error\",\"Font_Size\":\"Font size\",\"Font_Size_description\":\"Set the font size for displayed text.\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"텍스트 입력\",\"TextInputCanvas_AccessibleLabel\":\"액세스 가능한 레이블\",\"TextInputCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램의 레이블.\",\"TextInputCanvas_DelayOutput\":\"출력 지연\",\"TextInputCanvas_DelayOutput_Desc\":\"참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).\",\"TextInputCanvas_Mode\":\"모드\",\"TextInputCanvas_Mode_Desc\":\"텍스트 입력 유형: 한 줄 또는 여러 줄.\",\"TextInputCanvas_Mode_SingleLine\":\"한 줄\",\"TextInputCanvas_Mode_Multiline\":\"여러 줄\",\"TextInputCanvas_Required\":\"필수\",\"TextInputCanvas_Required_Desc\":\"이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.\",\"TextInputCanvas_Value\":\"값\",\"TextInputCanvas_Value_Desc\":\"컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.\",\"TextInputCanvas_Placeholder\":\"자리 표시자 텍스트\",\"TextInputCanvas_Placeholder_Desc\":\"텍스트 입력의 자리 표시자 텍스트입니다.\",\"TextInputCanvas_Type\":\"형식\",\"TextInputCanvas_Type_Desc\":\"텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.\",\"TextInputCanvas_Type_Text\":\"텍스트\",\"TextInputCanvas_Type_Password\":\"암호\",\"TextInputCanvas_Type_Search\":\"검색\",\"TextInputCanvas_MaxLength\":\"최대 길이\",\"TextInputCanvas_MaxLength_Desc\":\"텍스트 입력의 최대 콘텐츠 길이입니다.\",\"Base_Palette_Color\":\"기본 팔레트 색상\",\"Base_Palette_Color_description\":\"기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.\",\"TextInputCanvas_ValidationState\":\"유효성 검사 상태\",\"TextInputCanvas_ValidationState_Desc\":\"유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.\",\"TextInputCanvas_ValidationState_None\":\"없음\",\"TextInputCanvas_ValidationState_Error\":\"오류\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\"}}}",
       "Type": 3
     },
     {

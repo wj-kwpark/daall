@@ -377,7 +377,7 @@ userDetail As screen:
                     Y: =6
                     ZIndex: =5
 
-    ButtonCanvas1_2 As Button:
+    ButtonCanvas1_2 As 버튼:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(53, 61, 63, 1)
         DisplayMode: =DisplayMode.Edit

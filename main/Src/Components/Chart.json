@@ -74,7 +74,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 59,
+        "PublishOrderIndex": 480,
         "Rules": [
           {
             "Category": "Data",
@@ -357,7 +357,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 60,
+        "PublishOrderIndex": 481,
         "Rules": [
           {
             "Category": "Data",
@@ -640,7 +640,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 61,
+        "PublishOrderIndex": 482,
         "Rules": [
           {
             "Category": "Data",
@@ -923,7 +923,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 62,
+        "PublishOrderIndex": 483,
         "Rules": [
           {
             "Category": "Data",
@@ -1206,7 +1206,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 63,
+        "PublishOrderIndex": 484,
         "Rules": [
           {
             "Category": "Data",
@@ -1489,7 +1489,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 64,
+        "PublishOrderIndex": 485,
         "Rules": [
           {
             "Category": "Data",
@@ -1772,7 +1772,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 65,
+        "PublishOrderIndex": 486,
         "Rules": [
           {
             "Category": "Data",
@@ -2055,7 +2055,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 66,
+        "PublishOrderIndex": 487,
         "Rules": [
           {
             "Category": "Data",
@@ -2338,7 +2338,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 67,
+        "PublishOrderIndex": 488,
         "Rules": [
           {
             "Category": "Data",
@@ -2621,7 +2621,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 68,
+        "PublishOrderIndex": 489,
         "Rules": [
           {
             "Category": "Data",
@@ -2904,7 +2904,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Chart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 69,
+        "PublishOrderIndex": 490,
         "Rules": [
           {
             "Category": "Data",
@@ -3155,7 +3155,7 @@
       },
       "OnReset"
     ],
-    "LastModifiedTimestamp": "638369929802096091",
+    "LastModifiedTimestamp": "638373655259771888",
     "Name": "Chart",
     "Rules": [
       {
@@ -3326,7 +3326,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638369929802096091",
+  "LastModifiedTimestamp": "638373655259771888",
   "Name": "11eb2bdcb8cc446f936b6a174302ce25",
   "OverridableProperties": {},
   "TemplateOriginalName": "f06d4642bcff40f091423eb8af2debbc",

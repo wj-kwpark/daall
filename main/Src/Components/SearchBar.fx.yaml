@@ -125,7 +125,7 @@ SearchBar As CanvasComponent:
             Y: =68
             ZIndex: =8
 
-        "endDate_3 As 'Date picker'":
+        "endDate_3 As '날짜 선택'":
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
             Format: ='DatePickerCanvas.Format'.Short
@@ -137,7 +137,7 @@ SearchBar As CanvasComponent:
             Y: =35
             ZIndex: =9
 
-        "startDate_3 As 'Date picker'":
+        "startDate_3 As '날짜 선택'":
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
             Format: ='DatePickerCanvas.Format'.Short

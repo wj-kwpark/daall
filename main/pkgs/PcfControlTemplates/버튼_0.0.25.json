@@ -307,14 +307,14 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "Button",
+  "Name": "버튼",
   "Properties": [
     {
       "Category": "data",
       "DefaultValue": "true",
-      "Description": "Whether this field can be reached with Tab key.",
+      "Description": "탭 키로 이 필드에 도달할 수 있는지를 나타냅니다.",
       "DescriptionResourceString": "ButtonCanvas_AcceptsFocus_Desc",
-      "DisplayName": "Accepts focus",
+      "DisplayName": "포커스 수락",
       "DisplayNameResourceString": "ButtonCanvas_AcceptsFocus",
       "EnumValues": [],
       "HelperUI": "",
@@ -340,9 +340,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Label read out by screen readers.",
+      "Description": "화면 읽기 프로그램이 소리 내 읽은 레이블.",
       "DescriptionResourceString": "ButtonCanvas_AccessibleLabel_Desc",
-      "DisplayName": "Accessible label",
+      "DisplayName": "액세스 가능한 레이블",
       "DisplayNameResourceString": "ButtonCanvas_AccessibleLabel",
       "EnumValues": [],
       "HelperUI": null,
@@ -368,42 +368,42 @@
     {
       "Category": "data",
       "DefaultValue": "Primary",
-      "Description": "Display as one of button types.",
+      "Description": "버튼 유형 중 하나로 표시합니다.",
       "DescriptionResourceString": "ButtonCanvas_Appearance_Desc",
-      "DisplayName": "Type",
+      "DisplayName": "유형",
       "DisplayNameResourceString": "ButtonCanvas_Appearance",
       "EnumValues": [
         {
-          "Description": "Primary",
-          "DisplayName": "Primary",
+          "Description": "기본",
+          "DisplayName": "기본",
           "IsDefaultValue": true,
           "Name": "Primary",
           "Value": "Primary"
         },
         {
-          "Description": "Secondary",
-          "DisplayName": "Secondary",
+          "Description": "보조",
+          "DisplayName": "보조",
           "IsDefaultValue": false,
           "Name": "Secondary",
           "Value": "Secondary"
         },
         {
-          "Description": "Outline",
-          "DisplayName": "Outline",
+          "Description": "윤곽선",
+          "DisplayName": "윤곽선",
           "IsDefaultValue": false,
           "Name": "Outline",
           "Value": "Outline"
         },
         {
-          "Description": "Subtle",
-          "DisplayName": "Subtle",
+          "Description": "은은함",
+          "DisplayName": "은은함",
           "IsDefaultValue": false,
           "Name": "Subtle",
           "Value": "Subtle"
         },
         {
-          "Description": "Transparent",
-          "DisplayName": "Transparent",
+          "Description": "투명",
+          "DisplayName": "투명",
           "IsDefaultValue": false,
           "Name": "Transparent",
           "Value": "Transparent"
@@ -431,10 +431,10 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "Button",
-      "Description": "Text to display in the button.",
+      "DefaultValue": "버튼",
+      "Description": "버튼에 표시할 텍스트입니다.",
       "DescriptionResourceString": "ButtonCanvas_Text_Desc",
-      "DisplayName": "Text",
+      "DisplayName": "텍스트",
       "DisplayNameResourceString": "ButtonCanvas_Text",
       "EnumValues": [],
       "HelperUI": null,
@@ -460,9 +460,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "You can provide a different color palette for the selected item by specifying a base palette color. This color generates a set of similar colors that are then applied to different aspects of the item, most commonly: fill, border, and interaction states. A blank value indicates the item will use the color palette of the app's theme.",
+      "Description": "기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.",
       "DescriptionResourceString": "Base_Palette_Color_description",
-      "DisplayName": "Base palette color",
+      "DisplayName": "기본 팔레트 색상",
       "DisplayNameResourceString": "Base_Palette_Color",
       "EnumValues": [],
       "HelperUI": "color",
@@ -488,9 +488,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "Set the font size for displayed text.",
+      "Description": "표시된 텍스트의 글꼴 크기를 설정합니다.",
       "DescriptionResourceString": "Font_Size_description",
-      "DisplayName": "Font size",
+      "DisplayName": "글꼴 크기",
       "DisplayNameResourceString": "Font_Size",
       "EnumValues": [],
       "HelperUI": null,
@@ -645,7 +645,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 7,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.ButtonCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.ButtonCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"AcceptsFocus\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Appearance\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Primary\"},\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Button\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":{\"OnSelect\":{\"EventName\":\"OnSelect\"}},\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.ButtonCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.ButtonCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"AcceptsFocus\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"true\"},\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Appearance\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Primary\"},\"Text\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"버튼\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":{\"OnSelect\":{\"EventName\":\"OnSelect\"}},\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
       "Type": 3
     },
     {
@@ -680,7 +680,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 12,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"AM\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"/\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"dddd, MMMM d, yyyy h:mm:ss tt\",\"LongDatePattern\":\"dddd, MMMM d, yyyy\",\"LongTimePattern\":\"h:mm:ss tt\",\"MonthDayPattern\":\"MMMM d\",\"PMDesignator\":\"PM\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"M/d/yyyy\",\"ShortTimePattern\":\"h:mm tt\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"MMMM yyyy\",\"AbbreviatedDayNames\":[\"Sun\",\"Mon\",\"Tue\",\"Wed\",\"Thu\",\"Fri\",\"Sat\"],\"ShortestDayNames\":[\"Su\",\"Mo\",\"Tu\",\"We\",\"Th\",\"Fr\",\"Sa\"],\"DayNames\":[\"Sunday\",\"Monday\",\"Tuesday\",\"Wednesday\",\"Thursday\",\"Friday\",\"Saturday\"],\"AbbreviatedMonthNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"Gregorian Calendar\",\"AbbreviatedMonthGenitiveNames\":[\"Jan\",\"Feb\",\"Mar\",\"Apr\",\"May\",\"Jun\",\"Jul\",\"Aug\",\"Sep\",\"Oct\",\"Nov\",\"Dec\",\"\"],\"MonthGenitiveNames\":[\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":2,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"$\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":0,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"en\",\"formatter\":null,\"languagesByCode\":{\"9\":\"English\",\"-1\":\"All Languages\"}}}",
+      "Path": "{\"Id\":\"FormattingData\",\"Data\":{\"timeZoneUtcOffsetMinutes\":0,\"dateTimeFormatInfo\":{\"AMDesignator\":\"오전\",\"Calendar\":{\"MinSupportedDateTime\":\"0001-01-01T00:00:00\",\"MaxSupportedDateTime\":\"9999-12-31T23:59:59.9999999\",\"AlgorithmType\":1,\"CalendarType\":1,\"Eras\":[1],\"TwoDigitYearMax\":2049,\"IsReadOnly\":false},\"DateSeparator\":\"-\",\"FirstDayOfWeek\":0,\"CalendarWeekRule\":0,\"FullDateTimePattern\":\"yyyy'년' M'월' d'일' dddd tt h:mm:ss\",\"LongDatePattern\":\"yyyy'년' M'월' d'일' dddd\",\"LongTimePattern\":\"tt h:mm:ss\",\"MonthDayPattern\":\"M월 d일\",\"PMDesignator\":\"오후\",\"RFC1123Pattern\":\"ddd, dd MMM yyyy HH':'mm':'ss 'GMT'\",\"ShortDatePattern\":\"yyyy-MM-dd\",\"ShortTimePattern\":\"tt h:mm\",\"SortableDateTimePattern\":\"yyyy'-'MM'-'dd'T'HH':'mm':'ss\",\"TimeSeparator\":\":\",\"UniversalSortableDateTimePattern\":\"yyyy'-'MM'-'dd HH':'mm':'ss'Z'\",\"YearMonthPattern\":\"yyyy'년' M'월'\",\"AbbreviatedDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"ShortestDayNames\":[\"일\",\"월\",\"화\",\"수\",\"목\",\"금\",\"토\"],\"DayNames\":[\"일요일\",\"월요일\",\"화요일\",\"수요일\",\"목요일\",\"금요일\",\"토요일\"],\"AbbreviatedMonthNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"],\"IsReadOnly\":false,\"NativeCalendarName\":\"서기(한글)\",\"AbbreviatedMonthGenitiveNames\":[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\",\"\"],\"MonthGenitiveNames\":[\"1월\",\"2월\",\"3월\",\"4월\",\"5월\",\"6월\",\"7월\",\"8월\",\"9월\",\"10월\",\"11월\",\"12월\",\"\"]},\"numberFormatInfo\":{\"CurrencyDecimalDigits\":0,\"CurrencyDecimalSeparator\":\".\",\"IsReadOnly\":false,\"CurrencyGroupSizes\":[3],\"NumberGroupSizes\":[3],\"PercentGroupSizes\":[3],\"CurrencyGroupSeparator\":\",\",\"CurrencySymbol\":\"₩\",\"NaNSymbol\":\"NaN\",\"CurrencyNegativePattern\":1,\"NumberNegativePattern\":1,\"PercentPositivePattern\":1,\"PercentNegativePattern\":1,\"NegativeInfinitySymbol\":\"-∞\",\"NegativeSign\":\"-\",\"NumberDecimalDigits\":2,\"NumberDecimalSeparator\":\".\",\"NumberGroupSeparator\":\",\",\"CurrencyPositivePattern\":0,\"PositiveInfinitySymbol\":\"∞\",\"PositiveSign\":\"+\",\"PercentDecimalDigits\":2,\"PercentDecimalSeparator\":\".\",\"PercentGroupSeparator\":\",\",\"PercentSymbol\":\"%\",\"PerMilleSymbol\":\"‰\",\"NativeDigits\":[\"0\",\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\"],\"DigitSubstitution\":1},\"timeZoneAdjusters\":[],\"formatInfoCultureName\":\"ko-KR\",\"formatter\":null,\"languagesByCode\":{\"1042\":\"Korean (Korea)\",\"-1\":\"All Languages\"}}}",
       "Type": 3
     },
     {
@@ -1002,7 +1002,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 13,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"ButtonCanvas\":\"Button\",\"ButtonCanvas_Desc\":\"Let users to click or tap to perform an action.\",\"ButtonCanvas_Appearance\":\"Type\",\"ButtonCanvas_Appearance_Desc\":\"Display as one of button types.\",\"ButtonCanvas_Appearance_Secondary\":\"Secondary\",\"ButtonCanvas_Appearance_Primary\":\"Primary\",\"ButtonCanvas_Appearance_Outline\":\"Outline\",\"ButtonCanvas_Appearance_Subtle\":\"Subtle\",\"ButtonCanvas_Appearance_Transparent\":\"Transparent\",\"ButtonCanvas_Text\":\"Text\",\"ButtonCanvas_Text_Desc\":\"Text to display in the button.\",\"ButtonCanvas_AcceptsFocus\":\"Accepts focus\",\"ButtonCanvas_AcceptsFocus_Desc\":\"Whether this field can be reached with Tab key.\",\"ButtonCanvas_AccessibleLabel\":\"Accessible label\",\"ButtonCanvas_AccessibleLabel_Desc\":\"Label read out by screen readers.\",\"Base_Palette_Color\":\"Base palette color\",\"Base_Palette_Color_description\":\"You can provide a different color palette for the selected item by specifying a base palette color. This color generates a set of similar colors that are then applied to different aspects of the item, most commonly: fill, border, and interaction states. A blank value indicates the item will use the color palette of the app's theme.\",\"Font_Size\":\"Font size\",\"Font_Size_description\":\"Set the font size for displayed text.\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"ButtonCanvas\":\"버튼\",\"ButtonCanvas_Desc\":\"사용자가 작업을 수행하기 위해 클릭하거나 탭할 수 있게 합니다.\",\"ButtonCanvas_Appearance\":\"유형\",\"ButtonCanvas_Appearance_Desc\":\"버튼 유형 중 하나로 표시합니다.\",\"ButtonCanvas_Appearance_Secondary\":\"보조\",\"ButtonCanvas_Appearance_Primary\":\"기본\",\"ButtonCanvas_Appearance_Outline\":\"윤곽선\",\"ButtonCanvas_Appearance_Subtle\":\"은은함\",\"ButtonCanvas_Appearance_Transparent\":\"투명\",\"ButtonCanvas_Text\":\"텍스트\",\"ButtonCanvas_Text_Desc\":\"버튼에 표시할 텍스트입니다.\",\"ButtonCanvas_AcceptsFocus\":\"포커스 수락\",\"ButtonCanvas_AcceptsFocus_Desc\":\"탭 키로 이 필드에 도달할 수 있는지를 나타냅니다.\",\"ButtonCanvas_AccessibleLabel\":\"액세스 가능한 레이블\",\"ButtonCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램이 소리 내 읽은 레이블.\",\"Base_Palette_Color\":\"기본 팔레트 색상\",\"Base_Palette_Color_description\":\"기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\"}}}",
       "Type": 3
     },
     {

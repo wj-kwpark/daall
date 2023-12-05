@@ -41,21 +41,6 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "Button": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ButtonCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_ButtonCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Button",
-    "Version": "0.0.25"
-  },
   "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -83,21 +68,6 @@
     "Name": "circle",
     "OverridableProperties": {},
     "Version": "2.3.0"
-  },
-  "Date picker": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DatePickerCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_DatePickerCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Date picker",
-    "Version": "0.0.12"
   },
   "form": {
     "CustomGroupControlTemplateName": "",
@@ -338,36 +308,6 @@
     "OverridableProperties": {},
     "Version": "2.3.2"
   },
-  "Text": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_TextCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Text",
-    "Version": "0.0.17"
-  },
-  "Text input": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_TextInputCanvas",
-    "OverridableProperties": {},
-    "TemplateDisplayName": "Text input",
-    "Version": "0.0.21"
-  },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -381,5 +321,65 @@
     "Name": "typedDataCard",
     "OverridableProperties": {},
     "Version": "1.0.6"
+  },
+  "날짜 선택": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DatePickerCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_DatePickerCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "날짜 선택",
+    "Version": "0.0.12"
+  },
+  "버튼": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ButtonCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_ButtonCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "버튼",
+    "Version": "0.0.25"
+  },
+  "텍스트": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "텍스트",
+    "Version": "0.0.17"
+  },
+  "텍스트 입력": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextInputCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "텍스트 입력",
+    "Version": "0.0.21"
   }
 }
