@@ -133,6 +133,12 @@ reportDetail As screen:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(12, 59, 94, 1)
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =32
         OnSelect: =Back()
         Text: ="나가기"

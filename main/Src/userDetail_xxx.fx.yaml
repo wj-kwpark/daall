@@ -140,6 +140,11 @@ userDetail_xxx As screen:
 
             DataCardKey1 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -150,8 +155,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue1 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -177,6 +189,11 @@ userDetail_xxx As screen:
 
             DataCardKey2 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -187,8 +204,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue2 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -214,6 +238,11 @@ userDetail_xxx As screen:
 
             DataCardKey3 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -224,8 +253,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue3 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -251,6 +287,11 @@ userDetail_xxx As screen:
 
             DataCardKey4 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -261,8 +302,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue4 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -288,6 +336,11 @@ userDetail_xxx As screen:
 
             DataCardKey5 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -298,8 +351,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue5 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -325,6 +385,11 @@ userDetail_xxx As screen:
 
             DataCardKey6 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -335,8 +400,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue6 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -362,6 +434,11 @@ userDetail_xxx As screen:
 
             DataCardKey7 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -372,8 +449,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue7 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 OnChange: =false
@@ -400,6 +484,11 @@ userDetail_xxx As screen:
 
             DataCardKey8 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -410,8 +499,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue8 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -437,6 +533,11 @@ userDetail_xxx As screen:
 
             DataCardKey9 As 텍스트:
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
                 Height: =22
                 Text: =Parent.DisplayName
                 Weight: ='TextCanvas.Weight'.Semibold
@@ -447,8 +548,15 @@ userDetail_xxx As screen:
                 ZIndex: =1
 
             "DataCardValue9 As '텍스트 입력'":
+                Align: ="Start"
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.View
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Height: =32
                 Mode: ="'TextInputCanvas.Mode'.TextInputModeSingleLine"
                 ValidationState: =If(IsBlank(Parent.Error), "None", "Error")
@@ -462,6 +570,12 @@ userDetail_xxx As screen:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(12, 59, 94, 1)
         DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontColor: =
+        FontItalic: =false
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
         Height: =32
         OnSelect: =Back()
         Text: ="나가기"

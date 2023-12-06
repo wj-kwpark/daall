@@ -128,6 +128,12 @@ SearchBar As CanvasComponent:
         "endDate_3 As '날짜 선택'":
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Format: ='DatePickerCanvas.Format'.Short
             Height: =30
             SelectedDate: =Today()
@@ -140,6 +146,12 @@ SearchBar As CanvasComponent:
         "startDate_3 As '날짜 선택'":
             BasePaletteColor: =
             DisplayMode: =DisplayMode.Edit
+            Font: =""
+            FontColor: =
+            FontItalic: =false
+            FontStrikethrough: =false
+            FontUnderline: =false
+            FontWeight: =""
             Format: ='DatePickerCanvas.Format'.Short
             Height: =30
             SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))

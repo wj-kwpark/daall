@@ -3155,7 +3155,7 @@
       },
       "OnReset"
     ],
-    "LastModifiedTimestamp": "638373655259771888",
+    "LastModifiedTimestamp": "638374219900901616",
     "Name": "Chart",
     "Rules": [
       {
@@ -3326,7 +3326,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638373655259771888",
+  "LastModifiedTimestamp": "638374219900901616",
   "Name": "11eb2bdcb8cc446f936b6a174302ce25",
   "OverridableProperties": {},
   "TemplateOriginalName": "f06d4642bcff40f091423eb8af2debbc",

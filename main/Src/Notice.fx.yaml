@@ -154,6 +154,12 @@ Notice As screen:
             "startDate As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
                 SelectedDate: =Date(Year(Today())-1,Month(Today()),Day(Today()))
@@ -165,6 +171,12 @@ Notice As screen:
             "endDate As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
                 SelectedDate: =Today()
@@ -240,7 +252,7 @@ Notice As screen:
                     Color: =RGBA(85, 26, 139, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Normal, FontWeight.Normal)
                     Height: =30
-                    OnSelect: =Navigate(NoticeDetail,ScreenTransition.None,ThisItem)
+                    OnSelect: =Select(Parent);
                     PaddingBottom: =0
                     PaddingLeft: =50
                     PaddingRight: =0
@@ -284,7 +296,7 @@ Notice As screen:
                 BoardSeparator As rectangle:
                     Fill: =RGBA(128, 128, 128, 0.51)
                     Height: =1
-                    OnSelect: =Select(Parent)
+                    OnSelect: =Select(Parent);
                     Width: =Parent.TemplateWidth
                     Y: =Parent.TemplateHeight - Self.Height
                     ZIndex: =5

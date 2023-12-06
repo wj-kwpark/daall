@@ -424,6 +424,12 @@ reportListScreen As screen:
             "endDate_4 As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
                 SelectedDate: =//Today()
@@ -436,6 +442,12 @@ reportListScreen As screen:
             "startDate_4 As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
+                Font: =""
+                FontColor: =
+                FontItalic: =false
+                FontStrikethrough: =false
+                FontUnderline: =false
+                FontWeight: =""
                 Format: ='DatePickerCanvas.Format'.Short
                 Height: =30
                 SelectedDate: |
