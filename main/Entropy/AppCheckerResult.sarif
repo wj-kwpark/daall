@@ -1834,19 +1834,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.startDate_1.AccessibleLabel"
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.startDate_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.startDate_1.AccessibleLabel",
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.startDate_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail.Container7_5.검색필드_3.startDate_1"
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.검색필드_3.startDate_1"
               }
             }
           ],
@@ -1864,19 +1864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.resourceEdit_3.AccessibleLabel"
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.resourceEdit_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.resourceEdit_3.AccessibleLabel",
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.resourceEdit_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail.Container7_5.검색필드_3.resourceEdit_3"
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.검색필드_3.resourceEdit_3"
               }
             }
           ],
@@ -1894,19 +1894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.endDate_1.AccessibleLabel"
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.endDate_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.검색필드_3.endDate_1.AccessibleLabel",
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.검색필드_3.endDate_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail.Container7_5.검색필드_3.endDate_1"
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.검색필드_3.endDate_1"
               }
             }
           ],
@@ -3514,6 +3514,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Button2.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Button2.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Button2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Image3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Image3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Image4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Image4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.galReportListTotalCount"
                 }
               ],
@@ -3874,229 +4024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "NoticeDetail.BOARD_TITLE"
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Board_2.BoardData"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "NoticeDetail.BOARD_TITLE",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "BOARD_TITLE",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.CONTENT"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.CONTENT",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "CONTENT",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.FILE_ID"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.FILE_ID",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FILE_ID",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.MODY_DATE"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.MODY_DATE",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "MODY_DATE",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.MODY_ID"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.MODY_ID",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "MODY_ID",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.REGI_DATE"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.REGI_DATE",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "REGI_DATE",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.REGI_ID"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.REGI_ID",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "REGI_ID",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.Board_2.BoardData"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "NoticeDetail.Container7_5.Board_2.BoardData",
+                  "fullyQualifiedName": "NoticeDetailView.Container7_5.Board_2.BoardData",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "BoardData",
-                "module": "NoticeDetail",
-                "type": "NoticeDetail.Container7_5.Board_2"
+                "module": "NoticeDetailView",
+                "type": "NoticeDetailView.Container7_5.Board_2"
               }
             }
           ],

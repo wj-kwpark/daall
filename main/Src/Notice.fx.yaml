@@ -14,7 +14,8 @@ Notice As screen:
                 "MODY_DATE",
                 "MODY_ID",
                 "CONTENT",
-                "FILE_ID"
+                "FILE_ID",
+                "SEQ"
                 )
         );
         ClearCollect(
@@ -220,7 +221,6 @@ Notice As screen:
 
             "BoardBody As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver5.0'":
                 DelayItemLoading: =true
-                DisplayMode: =DisplayMode.View
                 Height: =300
                 Items: |-
                     =Switch(
@@ -240,7 +240,7 @@ Notice As screen:
                         LastN(FirstN(Sort(noticeList,REGI_DATE,SortOrder.Descending),PageControl_1.firstN),PageControl_1.lastN))
                 Layout: =Layout.Vertical
                 LoadingSpinner: =LoadingSpinner.Data
-                OnSelect: =Navigate(NoticeDetail,ScreenTransition.None,ThisItem);
+                OnSelect: =Navigate(NoticeDetailView);
                 ShowScrollbar: =false
                 TemplatePadding: =0
                 TemplateSize: =50
@@ -252,7 +252,9 @@ Notice As screen:
                     Color: =RGBA(85, 26, 139, 1)
                     FontWeight: =If(ThisItem.IsSelected, FontWeight.Normal, FontWeight.Normal)
                     Height: =30
-                    OnSelect: =Select(Parent);
+                    OnSelect: |-
+                        =Select(Parent);
+                        Navigate(NoticeDetailView);
                     PaddingBottom: =0
                     PaddingLeft: =50
                     PaddingRight: =0
@@ -265,7 +267,6 @@ Notice As screen:
 
                 BoardDate As label:
                     Align: =Align.Center
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: =30
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0
@@ -280,7 +281,6 @@ Notice As screen:
 
                 BoardName As label:
                     Align: =Align.Center
-                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                     Height: =30
                     OnSelect: =Select(Parent)
                     PaddingBottom: =0

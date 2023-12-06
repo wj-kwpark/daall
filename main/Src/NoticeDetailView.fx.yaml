@@ -1,4 +1,5 @@
-NoticeDetail As screen:
+NoticeDetailView As screen:
+    OnVisible: =Set(nItem, BoardBody.Selected)
 
     Base_14 As Base:
         logout: =loginScreen
@@ -202,7 +203,7 @@ NoticeDetail As screen:
 
         Label3 As label:
             FontWeight: =FontWeight.Bold
-            Text: ="텍스트"
+            Text: =nItem.BOARD_TITLE
             Width: =895
             X: =20
             Y: =27
@@ -211,7 +212,7 @@ NoticeDetail As screen:
         Label3_3 As label:
             Align: =Align.Right
             FontWeight: =FontWeight.Bold
-            Text: ="텍스트"
+            Text: =nItem.REGI_DATE
             Width: =151
             X: =915
             Y: =27
@@ -219,6 +220,7 @@ NoticeDetail As screen:
 
         HtmlText2 As htmlViewer:
             Height: =328
+            HtmlText: =nItem.CONTENT
             Width: =1046
             X: =20
             Y: =84
@@ -226,6 +228,7 @@ NoticeDetail As screen:
 
         Button2 As button:
             Fill: =RGBA(79, 90, 94, 1)
+            FocusedBorderThickness: =0
             FontWeight: =FontWeight.Bold
             OnSelect: =Navigate(Notice)
             RadiusBottomLeft: =30
@@ -242,7 +245,8 @@ NoticeDetail As screen:
         Label3_4 As label:
             FontWeight: =FontWeight.Bold
             Height: =37
-            Text: ="텍스트"
+            Text: ="이전글"
+            Visible: =If(CountRows(Filter(noticeData,SEQ<nItem.SEQ)) > 0, true, false)
             Width: =67
             X: =77
             Y: =430
@@ -251,6 +255,8 @@ NoticeDetail As screen:
         Image3 As image:
             Height: =40
             Image: =icon_prev_btn
+            OnSelect: =If(CountRows(Filter(noticeData,SEQ<nItem.SEQ)) > 0, Set(nItem,Last(SortByColumns(Filter(noticeData,SEQ<nItem.SEQ),"SEQ",SortOrder.Ascending))))
+            Visible: =If(CountRows(Filter(noticeData,SEQ<nItem.SEQ)) > 0, true, false)
             Width: =40
             X: =37
             Y: =429
@@ -259,6 +265,8 @@ NoticeDetail As screen:
         Image4 As image:
             Height: =40
             Image: =icon_next_btn
+            OnSelect: =If(CountRows(Filter(noticeData,SEQ>nItem.SEQ)) > 0, Set(nItem,First(SortByColumns(Filter(noticeData,SEQ>nItem.SEQ),"SEQ",SortOrder.Ascending))))
+            Visible: =If(CountRows(Filter(noticeData,SEQ>nItem.SEQ)) > 0, true, false)
             Width: =40
             X: =984
             Y: =427
@@ -268,7 +276,8 @@ NoticeDetail As screen:
             Align: =Align.Right
             FontWeight: =FontWeight.Bold
             Height: =37
-            Text: ="텍스트"
+            Text: ="다음글"
+            Visible: =If(CountRows(Filter(noticeData,SEQ>nItem.SEQ)) > 0, true, false)
             Width: =67
             X: =917
             Y: =429
@@ -276,7 +285,7 @@ NoticeDetail As screen:
 
         Label4 As label:
             Height: =35
-            Text: ="텍스트"
+            Text: =Last(SortByColumns(Filter(noticeData,SEQ<nItem.SEQ),"SEQ",SortOrder.Ascending)).BOARD_TITLE
             Width: =399
             X: =144
             Y: =430
@@ -285,7 +294,7 @@ NoticeDetail As screen:
         Label4_3 As label:
             Align: =Align.Right
             Height: =35
-            Text: ="텍스트"
+            Text: =First(SortByColumns(Filter(noticeData,SEQ>nItem.SEQ),"SEQ",SortOrder.Ascending)).BOARD_TITLE
             Width: =374
             X: =543
             Y: =430
