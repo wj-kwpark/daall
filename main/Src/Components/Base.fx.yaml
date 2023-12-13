@@ -237,7 +237,7 @@ Base As CanvasComponent:
             Icon: =If(CountRows(ThisItem.SubMenu) > 1,If(clickedMenu = ThisItem.MenuLabel, Icon.ChevronUp, Icon.ChevronDown),false)
             OnSelect: =Select(Parent)
             Width: =10
-            X: =130
+            X: =135
             Y: =13
             ZIndex: =7
 
