@@ -644,7 +644,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 441,
+        "PublishOrderIndex": 442,
         "Rules": [
           {
             "Category": "Data",
@@ -813,7 +813,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 442,
+        "PublishOrderIndex": 443,
         "Rules": [
           {
             "Category": "Design",
@@ -1012,7 +1012,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 443,
+        "PublishOrderIndex": 444,
         "Rules": [
           {
             "Category": "Design",
@@ -1217,7 +1217,14 @@
             "NameMapSourceSchema": "?"
           },
           "VerticalAlign",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "918",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           "Y",
           {
             "AFDDataSourceName": "",
@@ -1263,7 +1270,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 444,
+        "PublishOrderIndex": 446,
         "Rules": [
           {
             "Category": "Data",
@@ -1333,13 +1340,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "51",
+            "InvariantScript": "41",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "111",
+            "InvariantScript": "Len(loginId_1.Text)*14",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1357,7 +1364,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "35",
+            "InvariantScript": "43",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1369,7 +1376,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "904",
+            "InvariantScript": "loginDate_1.X-loginId_1.Width",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1563,14 +1570,7 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          {
-            "AFDDataSourceName": "",
-            "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "1023",
-            "InvariantPropertyName": "X",
-            "IsLockable": false,
-            "NameMapSourceSchema": "?"
-          },
+          "X",
           "Y",
           {
             "AFDDataSourceName": "",
@@ -1623,7 +1623,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 445,
+        "PublishOrderIndex": 447,
         "Rules": [
           {
             "Category": "Data",
@@ -1693,13 +1693,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "51",
+            "InvariantScript": "41",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "242",
+            "InvariantScript": "216",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1717,7 +1717,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "35",
+            "InvariantScript": "43",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -1729,7 +1729,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "998",
+            "InvariantScript": "1014",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1890,7 +1890,14 @@
           "PressedFill",
           "HoverFill",
           "DisplayMode",
-          "X",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "862",
+            "InvariantPropertyName": "X",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -1989,7 +1996,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "862",
+            "InvariantScript": "loginId_1.X-40",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -3000,7 +3007,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 452,
+        "PublishOrderIndex": 453,
         "Rules": [
           {
             "Category": "Design",
@@ -6211,7 +6218,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 446,
+        "PublishOrderIndex": 445,
         "Rules": [
           {
             "Category": "Design",
@@ -6292,7 +6299,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 447,
+        "PublishOrderIndex": 441,
         "Rules": [
           {
             "Category": "Design",
@@ -6369,7 +6376,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Base",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 453,
+        "PublishOrderIndex": 452,
         "Rules": [
           {
             "Category": "Design",
@@ -6446,7 +6453,7 @@
       "userId",
       "loginDate"
     ],
-    "LastModifiedTimestamp": "638380270779661022",
+    "LastModifiedTimestamp": "638380378803945616",
     "Name": "Base",
     "Rules": [
       {
@@ -6581,7 +6588,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638380270779661022",
+  "LastModifiedTimestamp": "638380378803945616",
   "Name": "b419fb0686d34236bb3d725847c9ffdc",
   "OverridableProperties": {},
   "Version": "1.0"

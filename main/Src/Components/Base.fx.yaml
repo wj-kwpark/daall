@@ -260,30 +260,30 @@ Base As CanvasComponent:
         loginId_1 As label:
             Color: =Color.Black
             FontWeight: =FontWeight.Bold
-            Height: =51
+            Height: =41
             Size: =12
             Text: =Base.userId & " 님"
-            Width: =111
-            X: =904
-            Y: =35
+            Width: =Len(loginId_1.Text)*14
+            X: =loginDate_1.X-loginId_1.Width
+            Y: =43
             ZIndex: =11
 
         Icon1_1 As icon.Person:
             Height: =33
             Icon: =Icon.Person
             Width: =39
-            X: =862
+            X: =loginId_1.X-40
             Y: =45
             ZIndex: =13
 
         loginDate_1 As label:
-            Height: =51
+            Height: =41
             PaddingLeft: =0
             Size: =10
             Text: ="(최종접속일 " & Base.loginDate & ")"
-            Width: =242
-            X: =998
-            Y: =35
+            Width: =216
+            X: =1014
+            Y: =43
             ZIndex: =14
 
     toHome As group:
