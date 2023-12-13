@@ -87,10 +87,10 @@ loginScreen As screen:
 
     Container4_2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.ExtraBold
-        Height: =596
+        Height: =602
         Width: =1204
         X: =75
-        Y: =108
+        Y: =96
         ZIndex: =1
 
     HtmlText4 As htmlViewer:
@@ -104,100 +104,138 @@ loginScreen As screen:
             
             box-shadow: -5px -5px -5px -5px rgba(0, 0, 0, 0.5), inset 5px 5px 5px 5px rgba(255, 255, 255, 0.6), inset 0px 0px 0px 0px rgba(0, 0, 0,0); '> </div>"
         Width: =1231
-        X: =62
-        Y: =92
+        X: =61
+        Y: =81
         ZIndex: =2
 
     Container2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.None
-        Height: =586
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =0
-        RadiusTopLeft: =0
-        RadiusTopRight: =0
-        Width: =958
-        X: =176
-        Y: =108
-        ZIndex: =3
+        Fill: =RGBA(240, 240, 240, 1)
+        Height: =46
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =320
+        X: =517
+        Y: =372
+        ZIndex: =10
 
-        id As text:
+        inputID As text:
             BorderThickness: =0
-            Default: =
-            Fill: =RGBA(237, 237, 237, 1)
-            Font: =Font.'Lato Light'
+            Default: =IdText
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(106, 122, 127, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =32
             HintText: ="아이디"
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =10
-            X: =324
-            Y: =228
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(106, 122, 127, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =TextMode.MultiLine
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =311
+            X: =8
+            Y: =8
             ZIndex: =1
+
+    Container2_1 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.None
+        Fill: =RGBA(240, 240, 240, 1)
+        Height: =46
+        RadiusBottomLeft: =30
+        RadiusBottomRight: =30
+        RadiusTopLeft: =30
+        RadiusTopRight: =30
+        Width: =320
+        X: =517
+        Y: =438
+        ZIndex: =11
+
+        inputPW As text:
+            BorderThickness: =0
+            Default: =""
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(106, 122, 127, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =32
+            HintText: ="비밀번호"
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(106, 122, 127, 1)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Mode: =TextMode.Password
+            RadiusBottomLeft: =30
+            RadiusBottomRight: =30
+            RadiusTopLeft: =30
+            RadiusTopRight: =30
+            Width: =311
+            X: =8
+            Y: =8
+            ZIndex: =1
+
+    Slider1 As slider:
+        Default: =Len(inputID.Text)
+        OnChange: |-
+            =Set(IdText,inputID.Text);
+            If(Find(Char(10), IdText)>0,
+                Set(IdText, Left(IdText, Len(IdText)-1));
+                Select('Button-login');
+                );
+        Visible: =false
+        X: =139
+        Y: =137
+        ZIndex: =12
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =12
 
         Image5 As image:
             Image: =img_logo
-            X: =432
-            Y: =32
-            ZIndex: =2
-
-        Label1 As label:
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            Text: ="Enforce all aspects of your business using data."
-            Width: =435
-            X: =288
-            Y: =132
-            ZIndex: =3
-
-        Label1_1 As label:
-            Font: =Font.Arial
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            Text: ="From data to business insight, DaAll."
-            Width: =435
-            X: =332
-            Y: =155
+            X: =627
+            Y: =177
             ZIndex: =4
 
-        pw As text:
-            BorderThickness: =0
-            Default: =""
-            Fill: =RGBA(237, 237, 237, 1)
-            HintText: ="비밀번호"
-            RadiusBottomLeft: =20
-            RadiusBottomRight: =20
-            RadiusTopLeft: =20
-            RadiusTopRight: =20
-            Size: =10
-            X: =324
+        Label1 As label:
+            Align: =Align.Center
+            Font: =Font.Arial
+            Height: =50
+            Text: |-
+                ="Enforce all aspects of your business using data.
+                From data to business insight, DaAll."
+            Width: =435
+            X: =459
             Y: =290
             ZIndex: =5
 
         "'Button-login' As button":
             Fill: =RGBA(39, 113, 194, 1)
-            OnSelect: |
+            OnSelect: |-
                 =If(
                     IsEmpty(
-                        Search(
-                            'nocode-test.user',
-                            id.Text,
-                            "USER_ID"
-                        )
-                    ) || id.Text = "",
-                    Notify("아이디 혹은 비번 확인요. 제발 "),
+                        Filter('nocode-test.user',USER_ID=IdText)
+                    ) || IdText = "",
+                    Notify("아이디 혹은 비번 확인요. 제발" & IdText),
                    
                     Set(
                         User,
-                        id.Text
+                        IdText
                     );
                     Set(
                         LoginDate,
                         Now()
                     );
                     Navigate(main2);
-                    
                 );
             RadiusBottomLeft: =15
             RadiusBottomRight: =15
@@ -206,37 +244,29 @@ loginScreen As screen:
             Size: =12
             Text: ="로그인"
             Width: =320
-            X: =324
-            Y: =375
+            X: =516
+            Y: =505
             ZIndex: =6
 
         Rectangle2 As rectangle:
             Fill: =RGBA(153, 207, 236, 1)
             Height: =1
             Width: =870
-            X: =52
-            Y: =492
+            X: =242
+            Y: =581
             ZIndex: =7
 
         Label2 As label:
             Font: =Font.Arial
             Height: =34
             Size: =12
-            Text: ="The first step to strengthen your business is using the data."
+            Text: |-
+                ="The first step to strengthen your business is using the data.
+                Everything starts from data."
             Width: =494
-            X: =108
-            Y: =504
+            X: =324
+            Y: =618
             ZIndex: =8
-
-        Label2_1 As label:
-            Font: =Font.Arial
-            Height: =34
-            Size: =12
-            Text: ="Everything starts from data."
-            Width: =494
-            X: =108
-            Y: =538
-            ZIndex: =9
 
         "'Button-Demo' As button":
             Fill: =RGBA(0, 0, 0, 1)
@@ -247,7 +277,7 @@ loginScreen As screen:
             RadiusTopRight: =20
             Size: =12
             Text: ="Demo"
-            X: =723
-            Y: =516
-            ZIndex: =10
+            X: =869
+            Y: =615
+            ZIndex: =9
 
