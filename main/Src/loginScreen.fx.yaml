@@ -281,3 +281,12 @@ loginScreen As screen:
             Y: =615
             ZIndex: =9
 
+    ButtonCanvas4 As Button:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: =Exit();
+        Width: =96
+        X: =1155
+        Y: =49
+        ZIndex: =13
+
