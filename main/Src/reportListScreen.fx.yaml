@@ -421,7 +421,7 @@ reportListScreen As screen:
                 Y: =79
                 ZIndex: =12
 
-            "endDate_4 As 'Date picker'":
+            "endDate_4 As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""
@@ -439,7 +439,7 @@ reportListScreen As screen:
                 Y: =46
                 ZIndex: =13
 
-            "startDate_4 As 'Date picker'":
+            "startDate_4 As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""

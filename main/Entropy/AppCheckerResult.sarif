@@ -3754,6 +3754,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "HorizontalBarChart.BarChartSeparator_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HorizontalBarChart.BarChartSeparator_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "HorizontalBarChart",
+                "type": "HorizontalBarChart.BarChartSeparator_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "HorizontalBarChart.HorizontalBarChartGallery.AccessibleLabel"
                 }
               ],
@@ -3797,6 +3827,36 @@
                 "member": "TabIndex",
                 "module": "HorizontalBarChart",
                 "type": "HorizontalBarChart.HorizontalBarChartGallery"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "HorizontalBarChart.BarChartSeparator_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "HorizontalBarChart.BarChartSeparator_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "HorizontalBarChart",
+                "type": "HorizontalBarChart.BarChartSeparator_2"
               }
             }
           ],

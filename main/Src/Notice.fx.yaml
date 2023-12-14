@@ -152,7 +152,7 @@ Notice As screen:
                 Y: =72
                 ZIndex: =10
 
-            "startDate As 'Date picker'":
+            "startDate As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""
@@ -169,7 +169,7 @@ Notice As screen:
                 Y: =38
                 ZIndex: =11
 
-            "endDate As 'Date picker'":
+            "endDate As '날짜 선택'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""
