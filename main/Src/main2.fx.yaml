@@ -282,7 +282,6 @@ main2 As screen:
                 Align: =Align.Center
                 Height: =25
                 Text: ="보고서 별 사용자 조회수"
-                Visible: =false
                 Width: =400
                 X: =1
                 ZIndex: =2
@@ -296,49 +295,8 @@ main2 As screen:
                 PaddingLeft: =20
                 SeriesAxisMin: =0
                 Size: =CountRows(maindata_chart)
-                Visible: =false
                 X: =1
                 ZIndex: =3
-
-        HorizontalBarChart_1 As HorizontalBarChart:
-            ChartData: |-
-                =Table({Title:"보고서",Value:4})
-            ChartWidth: =50
-            Height: =203
-            LineColor: =RGBA(139, 154, 159, 1)
-            Width: =374
-            X: =15
-            Y: =78
-            ZIndex: =4
-
-        Label7 As label:
-            FontWeight: =FontWeight.Bold
-            Height: =32
-            Text: ="보고서 별 사용자 조회수"
-            VerticalAlign: =VerticalAlign.Bottom
-            Width: =178
-            X: =1
-            Y: =9
-            ZIndex: =5
-
-        Label8 As label:
-            Color: =RGBA(139, 154, 159, 1)
-            Height: =32
-            Size: =10
-            Text: ="(" & Now() & ")"
-            VerticalAlign: =VerticalAlign.Bottom
-            X: =179
-            Y: =9
-            ZIndex: =6
-
-        Label9 As label:
-            Align: =Align.Right
-            Size: =9
-            Text: ="*내 보고서와 내가 공유한 보고서의 조회수 기준"
-            Width: =350
-            X: =51
-            Y: =38
-            ZIndex: =7
 
     "'report-chart_1' As groupContainer.manualLayoutContainer":
         Height: =302
