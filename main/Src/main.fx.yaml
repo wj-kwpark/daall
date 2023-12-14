@@ -153,7 +153,7 @@ main As screen:
         Y: =599
         ZIndex: =13
 
-    ButtonCanvas2 As 버튼:
+    ButtonCanvas2 As Button:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         Font: =""

@@ -519,7 +519,7 @@ dataListScreen As screen:
                 Y: =79
                 ZIndex: =12
 
-            "endDate_5 As '날짜 선택'":
+            "endDate_5 As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""
@@ -537,7 +537,7 @@ dataListScreen As screen:
                 Y: =46
                 ZIndex: =13
 
-            "startDate_5 As '날짜 선택'":
+            "startDate_5 As 'Date picker'":
                 BasePaletteColor: =
                 DisplayMode: =DisplayMode.Edit
                 Font: =""
