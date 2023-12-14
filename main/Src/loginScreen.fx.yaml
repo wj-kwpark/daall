@@ -281,16 +281,3 @@ loginScreen As screen:
             Y: =615
             ZIndex: =9
 
-    "'Button-Demo_1' As button":
-        Fill: =RGBA(0, 0, 0, 1)
-        OnSelect: =Exit();
-        RadiusBottomLeft: =20
-        RadiusBottomRight: =20
-        RadiusTopLeft: =20
-        RadiusTopRight: =20
-        Size: =12
-        Text: ="종료"
-        X: =1070
-        Y: =615
-        ZIndex: =13
-
