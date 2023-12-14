@@ -129,7 +129,7 @@ reportDetail As screen:
         Y: =171
         ZIndex: =3
 
-    ButtonCanvas1 As 버튼:
+    ButtonCanvas1 As Button:
         Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =RGBA(12, 59, 94, 1)
         DisplayMode: =DisplayMode.Edit
