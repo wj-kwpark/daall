@@ -1,0 +1,56 @@
+HorizontalBarChart As CanvasComponent:
+    ChartData: |-
+        =Table({Title:"데이터1",Value:100*Rand()},{Title:"데이터2",Value:100*Rand()},{Title:"데이터3",Value:100*Rand()},{Title:"데이터4",Value:100*Rand()},{Title:"데이터5",Value:100*Rand()},{Title:"데이터6",Value:100*Rand()},{Title:"데이터7",Value:100*Rand()})
+    ChartWidth: =80
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    OnReset: =Set(HorizontalBarChartData,HorizontalBarChartGallery.AllItems)
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    "HorizontalBarChartGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =Parent.Width
+        Items: =Parent.ChartData
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =Parent.Width/Self.AllItemsCount
+        Width: =Parent.Width
+        X: =Parent.X
+        Y: =Parent.Y
+        ZIndex: =1
+
+        BarChartTitle As label:
+            Align: =Align.Right
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =(BarChartTitle.Width-40)/(Len(First(Sort(HorizontalBarChart.ChartData,Len(Title),SortOrder.Descending)).Title))
+            Text: =ThisItem.Title
+            Width: =100
+            ZIndex: =1
+
+        BarChartSeparator As rectangle:
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =Parent.TemplateHeight
+            OnSelect: =Select(Parent)
+            Width: =1
+            X: =BarChartTitle.Width+10
+            ZIndex: =3
+
+        HorizontalBar As rectangle:
+            Fill: =RGBA(30*Rand()+70, 140*Rand()+70, 240, 1)
+            Height: =(Parent.TemplateHeight/100) * HorizontalBarChart.ChartWidth
+            OnSelect: =Select(Parent)
+            Width: =(Parent.Width-Self.X-20)/(First(Sort(HorizontalBarChart.ChartData,Value,SortOrder.Descending)).Value/ThisItem.Value)
+            X: =BarChartSeparator.X+1
+            Y: =(Parent.TemplateHeight-HorizontalBar.Height)/2
+            ZIndex: =4
+
