@@ -1,56 +1,109 @@
 HorizontalBarChart As CanvasComponent:
+    BarWidth: =50
     ChartData: |-
-        =Table({Title:"데이터1",Value:100*Rand()},{Title:"데이터2",Value:100*Rand()},{Title:"데이터3",Value:100*Rand()},{Title:"데이터4",Value:100*Rand()},{Title:"데이터5",Value:100*Rand()},{Title:"데이터6",Value:100*Rand()},{Title:"데이터7",Value:100*Rand()})
-    ChartWidth: =80
+        =Table({Title: "SampleText", Value: 25},{Title: "SampleText2", Value: 50},{Title: "SampleText3", Value: 16},{Title: "SampleText4", Value: 32})
+    DisplayValue: =true
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
-    OnReset: =Set(HorizontalBarChartData,HorizontalBarChartGallery.AllItems)
+    LineColor: =RGBA(0, 0, 0, 1)
+    TextSize: =11
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =1
+    ZIndex: =3
 
     "HorizontalBarChartGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =Parent.Width
+        Height: =Parent.Height-20
         Items: =Parent.ChartData
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
-        ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =Parent.Width/Self.AllItemsCount
+        TemplateSize: =Self.Height/Self.AllItemsCount
         Width: =Parent.Width
-        X: =Parent.X
-        Y: =Parent.Y
         ZIndex: =1
 
-        BarChartTitle As label:
-            Align: =Align.Right
-            Height: =Parent.TemplateHeight
+        HorizontalBarChartSeparator2 As rectangle:
+            Fill: =HorizontalBarChart.LineColor
+            Height: =1
             OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =(BarChartTitle.Width-40)/(Len(First(Sort(HorizontalBarChart.ChartData,Len(Title),SortOrder.Descending)).Title))
-            Text: =ThisItem.Title
-            Width: =100
-            ZIndex: =1
+            Width: =5
+            X: =HorizontalBarChartSeparator.X-Self.Width
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
 
-        BarChartSeparator As rectangle:
-            Fill: =RGBA(214, 221, 224, 1)
+        HorizontalBarChartSeparator As rectangle:
+            Fill: =HorizontalBarChart.LineColor
             Height: =Parent.TemplateHeight
             OnSelect: =Select(Parent)
             Width: =1
-            X: =BarChartTitle.Width+10
-            ZIndex: =3
-
-        HorizontalBar As rectangle:
-            Fill: =RGBA(30*Rand()+70, 140*Rand()+70, 240, 1)
-            Height: =(Parent.TemplateHeight/100) * HorizontalBarChart.ChartWidth
-            OnSelect: =Select(Parent)
-            Width: =(Parent.Width-Self.X-20)/(First(Sort(HorizontalBarChart.ChartData,Value,SortOrder.Descending)).Value/ThisItem.Value)
-            X: =BarChartSeparator.X+1
-            Y: =(Parent.TemplateHeight-HorizontalBar.Height)/2
+            X: =HorizontalBarChartTitle.Width+10
+            Y: |
+                =0
             ZIndex: =4
+
+        HorizontalBar As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.None
+            Fill: =RGBA(30*Rand()+50, 150*Rand()+70, 240, 1)
+            Height: =(Parent.TemplateHeight/100) * HorizontalBarChart.BarWidth
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =100
+            RadiusTopLeft: =0
+            RadiusTopRight: =100
+            Width: =(Parent.Width-Self.X-40)/(First(Sort(HorizontalBarChart.ChartData,Value,SortOrder.Descending)).Value/ThisItem.Value)
+            X: =HorizontalBarChartSeparator.X+1
+            Y: =(Parent.TemplateHeight-Self.Height)/2
+            ZIndex: =5
+
+        HorizontalBarChartTitle As 텍스트:
+            Align: ='TextCanvas.Align'.End
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =
+            Height: =Parent.TemplateHeight
+            Size: =HorizontalBarChart.TextSize
+            Text: =ThisItem.Title
+            Width: =80
+            Wrap: =false
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Label15 As label:
+            Align: =Align.Center
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.Value
+            Visible: =HorizontalBarChart.DisplayValue
+            Width: =40
+            X: =HorizontalBar.X+HorizontalBar.Width
+            Y: =(Parent.TemplateHeight-Self.Height)/2
+            ZIndex: =7
+
+    HorizontalBarChartValueMax As label:
+        Align: =Align.Center
+        Height: =20
+        Size: =9
+        Text: =First(Sort(HorizontalBarChart.ChartData,Value,SortOrder.Descending)).Value
+        Width: =60
+        X: =Parent.Width-Self.Width
+        Y: =HorizontalBarChartGallery.Height
+        ZIndex: =2
+
+    HorizontalBarChartValueZero As label:
+        Align: =Align.Center
+        Height: =20
+        Size: =9
+        Text: =0
+        Width: =60
+        X: =HorizontalBarChartTitle.Width+10-30
+        Y: =HorizontalBarChartGallery.Height
+        ZIndex: =3
+
+    HorizontalBarChartSeparator3 As rectangle:
+        Fill: =HorizontalBarChart.LineColor
+        Height: =1
+        Width: =Parent.Width-HorizontalBar.X
+        X: =HorizontalBarChartTitle.Width+10
+        Y: =HorizontalBarChartGallery.Height-1
+        ZIndex: =4
 

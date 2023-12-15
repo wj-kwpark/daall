@@ -1,0 +1,124 @@
+AlertDialog As CanvasComponent:
+    onCancel():
+        ThisProperty:
+            Default: =true
+    onConfirm():
+        ThisProperty:
+            Default: =true
+    Cancelable: =true
+    CancelText: ="취소"
+    ConfirmText: ="확인"
+    Fill: =RGBA(0, 0, 0, 0.1)
+    Height: =768
+    Message: ="내용"
+    showTitle: =true
+    Title: ="알림"
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    AlertDialogWindow As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Regular
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =AlertDialogMessageLabel.Height+If(AlertDialog.showTitle,132,70)
+        RadiusBottomLeft: =15
+        RadiusBottomRight: =15
+        RadiusTopLeft: =15
+        RadiusTopRight: =15
+        X: =(Parent.Width - Self.Width)/2
+        Y: =(Parent.Height - Self.Height)/2
+        ZIndex: =2
+
+        AlertDialogRectangle3 As rectangle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =AlertDialogConfirmBtn.Height
+            Visible: =If(AlertDialog.Cancelable,true,false)
+            Width: =1
+            X: =(Parent.Width - Self.Width)/2
+            Y: =AlertDialogRectangle.Y
+            ZIndex: =1
+
+        AlertDialogRectangle2 As rectangle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =1
+            Visible: =If(AlertDialog.showTitle,true,false)
+            Width: =Parent.Width
+            Y: =60
+            ZIndex: =2
+
+        AlertDialogRectangle As rectangle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =1
+            Width: =Parent.Width
+            X: =1
+            Y: =Parent.Height-AlertDialogConfirmBtn.Height-1
+            ZIndex: =3
+
+        AlertDialogTitleLabel As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            Text: =AlertDialog.Title
+            Visible: =If(AlertDialog.showTitle,true,false)
+            Width: =Parent.Width-20
+            X: =(Parent.Width - Self.Width)/2
+            Y: =5
+            ZIndex: =4
+
+        AlertDialogMessageLabel As label:
+            Align: =If(AlertDialog.showTitle,Align.Center,Align.Left)
+            AutoHeight: =true
+            Height: =147
+            PaddingBottom: =25
+            PaddingLeft: =20
+            PaddingRight: =20
+            PaddingTop: =25
+            Text: =AlertDialog.Message
+            Width: =Parent.Width-20
+            X: =(Parent.Width - Self.Width)/2
+            Y: =If(AlertDialog.showTitle,AlertDialogRectangle2.Y+5,5)
+            ZIndex: =5
+
+        AlertDialogConfirmBtn As button:
+            Align: =If(AlertDialog.showTitle,Align.Center,If(AlertDialog.Cancelable,Align.Center,Align.Right))
+            Color: =RGBA(0, 134, 208, 1)
+            DisabledColor: =Self.Color
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =60
+            HoverColor: =Self.Color
+            HoverFill: =Self.Fill
+            OnSelect: =AlertDialog.onConfirm()
+            PaddingLeft: =30
+            PaddingRight: =30
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            Size: =13
+            Text: =AlertDialog.ConfirmText
+            Width: =If(AlertDialog.Cancelable,Parent.Width-AlertDialogRectangle3.X-20,Parent.Width-20)
+            X: =10
+            Y: =AlertDialogRectangle.Y
+            ZIndex: =8
+
+        AlertDialogCancelBtn As button:
+            Color: =RGBA(102, 102, 102, 1)
+            DisabledColor: =Self.Color
+            Fill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =0
+            Height: =60
+            HoverColor: =Self.Color
+            HoverFill: =Self.Fill
+            OnSelect: =AlertDialog.onCancel()
+            PaddingLeft: =30
+            PaddingRight: =30
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            Size: =13
+            Text: =AlertDialog.CancelText
+            Visible: =If(AlertDialog.Cancelable,true,false)
+            Width: =Parent.Width-AlertDialogRectangle3.X-20
+            X: =AlertDialogRectangle3.X+11
+            Y: =AlertDialogRectangle.Y
+            ZIndex: =9
+

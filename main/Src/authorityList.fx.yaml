@@ -62,6 +62,7 @@ authorityList As screen:
     Base_3 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        ShowAlert: =true
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     Container7_4 As groupContainer.manualLayoutContainer:

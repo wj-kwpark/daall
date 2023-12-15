@@ -4,6 +4,7 @@ myinfo As screen:
 
     Base_2 As Base:
         logout: =loginScreen
+        ShowAlert: =true
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     pageTitle As label:

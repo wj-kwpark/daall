@@ -161,6 +161,7 @@ userDetail As screen:
                     )
                 }
             )
+        ShowAlert: =true
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     pageTitle_11 As label:

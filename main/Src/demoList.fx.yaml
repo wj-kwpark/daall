@@ -4,6 +4,7 @@ demoList As screen:
     Base_7 As Base:
         logout: =loginScreen
         mainScreen: =main2
+        ShowAlert: =true
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_OneImageThreeColumnVariant_ver5.0'":

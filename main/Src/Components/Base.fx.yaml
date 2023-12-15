@@ -1,4 +1,7 @@
 Base As CanvasComponent:
+    ShowAlert():
+        ThisProperty:
+            Default: =true
     Fill: =RGBA(0, 0, 0, 0)
     Height: =App.Height
     loginDate: =DateTime(2000, 1, 1, 0, 0, 0)
@@ -162,7 +165,7 @@ Base As CanvasComponent:
                 HoverColor: =Color.Transparent
                 HoverFill: =Color.Transparent
                 OnSelect: |-
-                    =Navigate(ThisItem.SubMenuScreenNavigate);
+                    =If(ThisItem.SubMenuLabel="Azure"||ThisItem.SubMenuLabel="Microsoft365"||ThisItem.SubMenuLabel="PowerPlatform",Base.ShowAlert(),Navigate(ThisItem.SubMenuScreenNavigate));
                     //Set(clickedMenu, ThisItem.ParentMenu);
                 PressedColor: =Color.Transparent
                 PressedFill: =Color.Transparent

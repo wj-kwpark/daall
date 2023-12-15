@@ -114,6 +114,7 @@ main2 As screen:
     Base_1 As Base:
         loginDate: =Now()
         logout: =loginScreen
+        ShowAlert: =Set(mainAlertVisible,true)
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
 
     "'resource-count_1' As groupContainer.manualLayoutContainer":
@@ -271,32 +272,56 @@ main2 As screen:
         Y: =97
         ZIndex: =4
 
-        CompositeColumnChart1_1 As group:
-            Height: =5
-            Width: =5
-            X: =40
-            Y: =40
+        HorizontalBarChart_1 As HorizontalBarChart:
+            ChartData: |-
+                =ShowColumns(
+                    RenameColumns(
+                        maindata_chart,
+                        "report_title",
+                        "Title",
+                        "count",
+                        "Value"
+                    ),
+                    "Title",
+                    "Value"
+                )
+            Height: =204
+            LineColor: =RGBA(139, 154, 159, 1)
+            Width: =381
+            X: =8
+            Y: =72
             ZIndex: =1
 
-            Title2_1 As label:
-                Align: =Align.Center
-                Height: =25
-                Text: ="보고서 별 사용자 조회수"
-                Width: =400
-                X: =1
-                ZIndex: =2
+        Label7 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =29
+            Text: ="보고서 별 사용자 조회수"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =177
+            X: =8
+            Y: =12
+            ZIndex: =2
 
-            ColumnChart1_1 As barChart:
-                GridStyle: =GridStyle.All
-                Height: =302
-                Items: =maindata_chart
-                ItemsGap: =2
-                Markers: =false
-                PaddingLeft: =20
-                SeriesAxisMin: =0
-                Size: =CountRows(maindata_chart)
-                X: =1
-                ZIndex: =3
+        Label8 As label:
+            Color: =RGBA(106, 122, 127, 1)
+            Height: =29
+            Size: =11
+            Text: ="(" & Now() & ")"
+            VerticalAlign: =VerticalAlign.Bottom
+            Width: =167
+            X: =185
+            Y: =12
+            ZIndex: =3
+
+        Label9 As label:
+            Align: =Align.Right
+            Height: =31
+            Size: =9
+            Text: ="*내 보고서와 내가 공유한 보고서의 조회수 기준"
+            Width: =240
+            X: =148
+            Y: =41
+            ZIndex: =4
 
     "'report-chart_1' As groupContainer.manualLayoutContainer":
         Height: =302
@@ -718,4 +743,14 @@ main2 As screen:
             Text: ="권한관리"
             Width: =83
             ZIndex: =2
+
+    AlertDialog_1 As AlertDialog:
+        Cancelable: =false
+        ConfirmText: ="닫기"
+        Message: ="준비중입니다."
+        onCancel: =true
+        onConfirm: =Set(mainAlertVisible,false)
+        showTitle: =false
+        Visible: =mainAlertVisible
+        ZIndex: =11
 
