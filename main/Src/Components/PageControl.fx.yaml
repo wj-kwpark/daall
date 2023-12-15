@@ -66,7 +66,7 @@ PageControl As CanvasComponent:
             RadiusBottomRight: =30
             RadiusTopLeft: =30
             RadiusTopRight: =30
-            Size: =9
+            Size: =If(Len(Self.Text)>2,6,9)
             Text: =ThisItem.Index
             Width: =25
             X: =2
