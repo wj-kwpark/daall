@@ -64,6 +64,7 @@ authorityList As screen:
         mainScreen: =main2
         ShowAlert: =true
         userId: =First(Search('nocode-test.user',User,"USER_ID")).USER_NAME
+        Visible: =true
 
     Container7_4 As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(214, 221, 224, 1)
@@ -281,6 +282,12 @@ authorityList As screen:
                     Y: =16
                     ZIndex: =15
 
+        PageControl_2 As PageControl:
+            TotalItems: =CountRows(authorityListdata)
+            X: =243
+            Y: =484
+            ZIndex: =9
+
     pageTitle_1 As label:
         FontWeight: =FontWeight.Bold
         Size: =24
@@ -419,11 +426,4 @@ authorityList As screen:
         X: =1065
         Y: =210
         ZIndex: =7
-
-    PageControl_2 As PageControl:
-        perPage: =6
-        TotalItems: =CountRows(authorityListdata)
-        X: =475
-        Y: =650
-        ZIndex: =10
 

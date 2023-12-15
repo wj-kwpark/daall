@@ -9,11 +9,28 @@ PageControl As CanvasComponent:
             Self.TotalItems-((RoundUp(Self.TotalItems/Self.perPage,0)-1)*Self.perPage),
             Self.perPage
         )
-    OnReset: |-
-        =Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), "Value", "Index"));
-        Set(Selected,1);
-    perPage: =100
-    TotalItems: =100
+    OnReset: =Set(Selected,1);
+    PageNum: |-
+        =If(Self.TotalPage<10,
+            RenameColumns(
+                Sequence(Self.TotalPage), 
+                "Value", "Index"),
+            RenameColumns(
+                Sequence(
+                    If(Self.CurrentPage>=(RoundDown(Self.TotalPage,-1)),
+                    Self.TotalPage-RoundDown(Self.CurrentPage,-1)+1,10
+                    ),
+                    If(Self.CurrentPage>=(RoundDown(Self.TotalPage,-1)),
+                        RoundDown(Self.CurrentPage,-1),
+                        If(
+                                RoundDown(Self.CurrentPage,-1)=0,
+                                RoundDown(Self.CurrentPage,-1)+1,
+                                RoundDown(Self.CurrentPage,-1))
+                    )
+                ),
+                "Value", "Index"))
+    perPage: =6
+    TotalItems: =25
     TotalPage: =RoundUp(Self.TotalItems/Self.perPage,0)
     Width: =600
     X: =0
@@ -23,7 +40,7 @@ PageControl As CanvasComponent:
     Gallery1 As gallery.galleryHorizontal:
         DelayItemLoading: =true
         Height: =40
-        Items: =PageNumb
+        Items: =Parent.PageNum
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplateSize: =29
@@ -60,7 +77,7 @@ PageControl As CanvasComponent:
         Height: =30
         Image: =icon_end_btn
         OnSelect: =Set(Selected,Parent.TotalPage)
-        Visible: =If(Parent.TotalPage > 2,true,false)
+        Visible: =If(Parent.TotalPage > 2 && Selected <Parent.TotalPage,true,false)
         Width: =30
         X: =Gallery1.X+Gallery1.Width+30
         Y: =5
@@ -70,7 +87,7 @@ PageControl As CanvasComponent:
         Height: =30
         Image: =icon_next_btn
         OnSelect: =If(Selected < Parent.TotalPage,Set(Selected,Selected+1),false)
-        Visible: =If(Parent.TotalPage > 1,true,false)
+        Visible: =If(Parent.TotalPage > 1 && Selected <Parent.TotalPage,true,false)
         Width: =30
         X: =Gallery1.X+Gallery1.Width
         Y: =5
@@ -80,7 +97,7 @@ PageControl As CanvasComponent:
         Height: =30
         Image: =icon_prev_btn
         OnSelect: =If(Selected > 1,Set(Selected,Selected-1),false)
-        Visible: =If(Parent.TotalPage > 1,true,false)
+        Visible: =If(Parent.TotalPage > 1 && Selected > 1,true,false)
         Width: =30
         X: =Gallery1.X-30
         Y: =5
@@ -90,7 +107,7 @@ PageControl As CanvasComponent:
         Height: =30
         Image: =icon_strat_btn
         OnSelect: =Set(Selected,1)
-        Visible: =If(Parent.TotalPage > 2,true,false)
+        Visible: =If(Parent.TotalPage > 2 && Selected > 1,true,false)
         Width: =30
         X: =Gallery1.X-60
         Y: =5

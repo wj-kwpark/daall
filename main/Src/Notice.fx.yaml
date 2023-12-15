@@ -388,7 +388,6 @@ Notice As screen:
                     ZIndex: =15
 
     PageControl_1 As PageControl:
-        perPage: =6
         TotalItems: =CountRows(noticeList)
         X: =475
         Y: =650

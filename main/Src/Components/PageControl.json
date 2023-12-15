@@ -588,7 +588,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "PageNumb",
+            "InvariantScript": "Parent.PageNum",
             "Property": "Items",
             "RuleProviderType": "Unknown"
           },
@@ -1047,7 +1047,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(Parent.TotalPage > 2,true,false)",
+            "InvariantScript": "If(Parent.TotalPage > 2 && Selected > 1,true,false)",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           },
@@ -1344,7 +1344,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(Parent.TotalPage > 1,true,false)",
+            "InvariantScript": "If(Parent.TotalPage > 1 && Selected > 1,true,false)",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           },
@@ -1641,7 +1641,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(Parent.TotalPage > 1,true,false)",
+            "InvariantScript": "If(Parent.TotalPage > 1 && Selected <Parent.TotalPage,true,false)",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           },
@@ -1938,7 +1938,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(Parent.TotalPage > 2,true,false)",
+            "InvariantScript": "If(Parent.TotalPage > 2 && Selected <Parent.TotalPage,true,false)",
             "Property": "Visible",
             "RuleProviderType": "Unknown"
           },
@@ -2011,8 +2011,22 @@
         "IsLockable": false,
         "NameMapSourceSchema": "?"
       },
-      "TotalItems",
-      "perPage",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "TotalItems",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "100",
+        "InvariantPropertyName": "perPage",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
       {
         "AFDDataSourceName": "",
         "AutoRuleBindingEnabled": false,
@@ -2036,9 +2050,10 @@
         "InvariantPropertyName": "isLast",
         "IsLockable": false,
         "NameMapSourceSchema": "?"
-      }
+      },
+      "PageNum"
     ],
-    "LastModifiedTimestamp": "638382138271907250",
+    "LastModifiedTimestamp": "638382269434689636",
     "Name": "PageControl",
     "Rules": [
       {
@@ -2055,13 +2070,13 @@
       },
       {
         "Category": "Data",
-        "InvariantScript": "100",
+        "InvariantScript": "25",
         "Property": "TotalItems",
         "RuleProviderType": "System"
       },
       {
         "Category": "Data",
-        "InvariantScript": "100",
+        "InvariantScript": "6",
         "Property": "perPage",
         "RuleProviderType": "System"
       },
@@ -2081,6 +2096,12 @@
         "Category": "Data",
         "InvariantScript": "If(Self.CurrentPage=Self.TotalPage,true,false)",
         "Property": "isLast",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "If(Self.TotalPage<10,\n    RenameColumns(\n        Sequence(Self.TotalPage), \n        \"Value\", \"Index\"),\n    RenameColumns(\n        Sequence(\n            If(Self.CurrentPage>=(RoundDown(Self.TotalPage,-1)),\n            Self.TotalPage-RoundDown(Self.CurrentPage,-1)+1,10\n            ),\n            If(Self.CurrentPage>=(RoundDown(Self.TotalPage,-1)),\n                RoundDown(Self.CurrentPage,-1),\n                If(\n                        RoundDown(Self.CurrentPage,-1)=0,\n                        RoundDown(Self.CurrentPage,-1)+1,\n                        RoundDown(Self.CurrentPage,-1))\n            )\n        ),\n        \"Value\", \"Index\"))",
+        "Property": "PageNum",
         "RuleProviderType": "System"
       },
       {
@@ -2121,7 +2142,7 @@
       },
       {
         "Category": "Behavior",
-        "InvariantScript": "Set(PageNumb,RenameColumns(Sequence(Self.TotalPage), \"Value\", \"Index\"));\nSet(Selected,1);",
+        "InvariantScript": "Set(Selected,1);",
         "Property": "OnReset",
         "RuleProviderType": "System"
       }
@@ -2201,6 +2222,15 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "사용자 지정 속성",
       "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "PageNum",
+      "Hidden": true,
+      "Name": "PageNum",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "사용자 지정 속성",
+      "Type": "{\"Version\":\"1.336\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Index\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}}"
     }
   ],
   "FirstParty": true,
@@ -2211,7 +2241,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638382138271907250",
+  "LastModifiedTimestamp": "638382269434689636",
   "Name": "f4017991d841427180630d9c4cb076e1",
   "OverridableProperties": {},
   "Version": "1.0"

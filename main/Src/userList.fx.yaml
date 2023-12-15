@@ -268,7 +268,6 @@ userList As screen:
             ZIndex: =5
 
     PageControl_3 As PageControl:
-        perPage: =6
         TotalItems: =CountRows(noticeList)
         X: =475
         Y: =650
