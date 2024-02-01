@@ -5,8 +5,8 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "gnb-boundary",
-    "TemplateGuid": "d34f1d1c13014e4abfa1941c0c20473d"
+    "Name": "urlComponent",
+    "TemplateGuid": "f9f89ee8f3c74f16b1f7738fd93b3467"
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
@@ -19,8 +19,8 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638424278187054377",
-  "Name": "d34f1d1c13014e4abfa1941c0c20473d",
+  "LastModifiedTimestamp": "638424281817907724",
+  "Name": "f9f89ee8f3c74f16b1f7738fd93b3467",
   "OverridableProperties": {},
   "Version": "1.0"
 }

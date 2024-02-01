@@ -365,7 +365,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "텍스트",
-    "Version": "0.0.20"
+    "Version": "0.0.21"
   },
   "텍스트 입력": {
     "CustomGroupControlTemplateName": "",
