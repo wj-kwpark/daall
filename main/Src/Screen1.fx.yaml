@@ -1,0 +1,16 @@
+Screen1 As screen:
+
+    Base_8 As Base:
+        ShowAlert: =true
+
+    urlComponent_1 As urlComponent:
+        X: =231
+        Y: =36
+        ZIndex: =2
+
+    SearchBar_4 As SearchBar:
+        onSearch: =true
+        X: =231
+        Y: =100
+        ZIndex: =3
+

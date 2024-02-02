@@ -7,7 +7,9 @@ urlComponent As CanvasComponent:
     ZIndex: =1
 
     ButtonCanvas3 As 버튼:
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
+        FontColor: =
         Height: =32
         Text: ="url호출"
         Width: =96
