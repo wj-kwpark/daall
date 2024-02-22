@@ -598,7 +598,7 @@ userDetail_xxx As screen:
         ZIndex: =6
 
     Label14_2 As label:
-        Text: =userRecord.reportCount
+        Text: =userRecord.reportCount.Text
         X: =262
         Y: =364
         ZIndex: =7

@@ -335,7 +335,7 @@
     "Name": "PowerApps_CoreControls_DatePickerCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "날짜 선택",
-    "Version": "0.0.15"
+    "Version": "0.0.19"
   },
   "버튼": {
     "CustomGroupControlTemplateName": "",
@@ -350,7 +350,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "버튼",
-    "Version": "0.0.27"
+    "Version": "0.0.29"
   },
   "텍스트": {
     "CustomGroupControlTemplateName": "",
@@ -365,7 +365,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "텍스트",
-    "Version": "0.0.21"
+    "Version": "0.0.24"
   },
   "텍스트 입력": {
     "CustomGroupControlTemplateName": "",
@@ -380,6 +380,6 @@
     "Name": "PowerApps_CoreControls_TextInputCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "텍스트 입력",
-    "Version": "0.0.24"
+    "Version": "0.0.26"
   }
 }

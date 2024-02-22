@@ -7,21 +7,9 @@
         "Hidden": false,
         "PropertyGroupName": "",
         "PropertyKind": 1,
-        "SectionIndex": 2,
+        "SectionIndex": 0,
         "SectionName": null,
-        "SectionType": null,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "Align": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 3,
-        "SectionName": null,
-        "SectionType": null,
+        "SectionType": "GeneralSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -33,7 +21,7 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 53,
         "WizardStep": null
       },
@@ -43,9 +31,9 @@
         "Hidden": false,
         "PropertyGroupName": "",
         "PropertyKind": 1,
-        "SectionIndex": 2,
+        "SectionIndex": 1,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "BehaviorSection",
         "Type": 27,
         "WizardStep": null
       },
@@ -57,7 +45,7 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 33,
         "WizardStep": null
       },
@@ -69,7 +57,7 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 31,
         "WizardStep": null
       },
@@ -81,7 +69,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 35,
         "WizardStep": null
       },
@@ -93,7 +81,7 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -105,7 +93,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 37,
         "WizardStep": null
       },
@@ -117,7 +105,7 @@
         "PropertyKind": 2,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 36,
         "WizardStep": null
       },
@@ -129,8 +117,20 @@
         "PropertyKind": 1,
         "SectionIndex": 3,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "StyleAndThemeSection",
         "Type": 34,
+        "WizardStep": null
+      },
+      "Format": {
+        "EnabledForFlyout": false,
+        "HelperUI": null,
+        "Hidden": false,
+        "PropertyGroupName": "",
+        "PropertyKind": 1,
+        "SectionIndex": 0,
+        "SectionName": null,
+        "SectionType": "GeneralSection",
+        "Type": 0,
         "WizardStep": null
       },
       "Height": {
@@ -139,21 +139,9 @@
         "Hidden": false,
         "PropertyGroupName": "Size",
         "PropertyKind": 2,
-        "SectionIndex": 4,
+        "SectionIndex": 2,
         "SectionName": null,
-        "SectionType": null,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "Mode": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 1,
-        "SectionName": null,
-        "SectionType": null,
+        "SectionType": "SizeAndPositioningSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -165,19 +153,7 @@
         "PropertyKind": 1,
         "SectionIndex": 0,
         "SectionName": null,
-        "SectionType": null,
-        "Type": 0,
-        "WizardStep": null
-      },
-      "Type": {
-        "EnabledForFlyout": false,
-        "HelperUI": null,
-        "Hidden": false,
-        "PropertyGroupName": "",
-        "PropertyKind": 1,
-        "SectionIndex": 1,
-        "SectionName": null,
-        "SectionType": null,
+        "SectionType": "GeneralSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -187,9 +163,9 @@
         "Hidden": false,
         "PropertyGroupName": "",
         "PropertyKind": 1,
-        "SectionIndex": 4,
+        "SectionIndex": 0,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "GeneralSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -199,9 +175,9 @@
         "Hidden": false,
         "PropertyGroupName": "Size",
         "PropertyKind": 2,
-        "SectionIndex": 4,
+        "SectionIndex": 2,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "SizeAndPositioningSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -211,9 +187,9 @@
         "Hidden": false,
         "PropertyGroupName": "Position",
         "PropertyKind": 2,
-        "SectionIndex": 4,
+        "SectionIndex": 2,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "SizeAndPositioningSection",
         "Type": 0,
         "WizardStep": null
       },
@@ -223,9 +199,9 @@
         "Hidden": false,
         "PropertyGroupName": "Position",
         "PropertyKind": 2,
-        "SectionIndex": 4,
+        "SectionIndex": 2,
         "SectionName": null,
-        "SectionType": null,
+        "SectionType": "SizeAndPositioningSection",
         "Type": 0,
         "WizardStep": null
       }
@@ -241,9 +217,9 @@
       "PfxDefaultValue": null
     }
   ],
-  "ControlConstructor": "TextInputCanvas",
+  "ControlConstructor": "DatePickerCanvas",
   "ControlNamespace": "PowerApps.CoreControls",
-  "DisplayNameKey": "TextInputCanvas",
+  "DisplayNameKey": "DatePickerCanvas",
   "IncludedProperties": [
     {
       "Category": "design",
@@ -414,72 +390,15 @@
       "WebDefaultValue": ""
     }
   ],
-  "Name": "텍스트 입력",
+  "Name": "날짜 선택",
   "Properties": [
-    {
-      "Category": "data",
-      "DefaultValue": "Start",
-      "Description": "선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.",
-      "DescriptionResourceString": "TextInputCanvas_Align_Desc",
-      "DisplayName": "맞춤",
-      "DisplayNameResourceString": "TextInputCanvas_Align",
-      "EnumValues": [
-        {
-          "Description": "시작",
-          "DisplayName": "시작",
-          "IsDefaultValue": true,
-          "Name": "Start",
-          "Value": "Start"
-        },
-        {
-          "Description": "끝",
-          "DisplayName": "끝",
-          "IsDefaultValue": false,
-          "Name": "End",
-          "Value": "End"
-        },
-        {
-          "Description": "가운데",
-          "DisplayName": "가운데",
-          "IsDefaultValue": false,
-          "Name": "Center",
-          "Value": "Center"
-        },
-        {
-          "Description": "양쪽 맞춤",
-          "DisplayName": "양쪽 맞춤",
-          "IsDefaultValue": false,
-          "Name": "Justify",
-          "Value": "Justify"
-        }
-      ],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Align",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "Start",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 2,
-      "WebDefaultValue": "Start"
-    },
     {
       "Category": "data",
       "DefaultValue": "",
       "Description": "화면 읽기 프로그램의 레이블.",
-      "DescriptionResourceString": "TextInputCanvas_AccessibleLabel_Desc",
-      "DisplayName": "액세스 가능한 레이블",
-      "DisplayNameResourceString": "TextInputCanvas_AccessibleLabel",
+      "DescriptionResourceString": "DatePickerCanvas_AccessibleLabel_Desc",
+      "DisplayName": "접근성 레이블",
+      "DisplayNameResourceString": "DatePickerCanvas_AccessibleLabel",
       "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
@@ -498,16 +417,44 @@
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 6,
-      "Usage": 0,
+      "Usage": 2,
       "WebDefaultValue": ""
     },
     {
       "Category": "data",
-      "DefaultValue": "false",
-      "Description": "참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).",
-      "DescriptionResourceString": "TextInputCanvas_DelayOutput_Desc",
-      "DisplayName": "출력 지연",
-      "DisplayNameResourceString": "TextInputCanvas_DelayOutput",
+      "DefaultValue": "",
+      "Description": "이 컨트롤에서 선택한 날짜.",
+      "DescriptionResourceString": "DatePickerCanvas_SelectedDate_Desc",
+      "DisplayName": "선택한 날짜",
+      "DisplayNameResourceString": "DatePickerCanvas_SelectedDate",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": true,
+      "IsResettableToManifestDefault": false,
+      "Name": "SelectedDate",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 23,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "",
+      "Description": "선택할 수 있는 가장 이른 연도.",
+      "DescriptionResourceString": "DatePickerCanvas_StartYear_Desc",
+      "DisplayName": "시작 연도",
+      "DisplayNameResourceString": "DatePickerCanvas_StartYear",
       "EnumValues": [],
       "HelperUI": "",
       "Hidden": false,
@@ -518,24 +465,24 @@
       "IsPrimaryOutput": false,
       "IsResettable": false,
       "IsResettableToManifestDefault": false,
-      "Name": "DelayOutput",
+      "Name": "StartDate",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
       "PhoneDefaultValue": "",
       "Required": false,
       "ShouldAutoBind": false,
-      "Type": 20,
+      "Type": 23,
       "Usage": 0,
       "WebDefaultValue": ""
     },
     {
       "Category": "data",
-      "DefaultValue": "-1",
-      "Description": "텍스트 입력의 최대 콘텐츠 길이입니다.",
-      "DescriptionResourceString": "TextInputCanvas_MaxLength_Desc",
-      "DisplayName": "최대 길이",
-      "DisplayNameResourceString": "TextInputCanvas_MaxLength",
+      "DefaultValue": "",
+      "Description": "선택할 수 있는 마지막 연도.",
+      "DescriptionResourceString": "DatePickerCanvas_EndYear_Desc",
+      "DisplayName": "마지막 연도",
+      "DisplayNameResourceString": "DatePickerCanvas_EndYear",
       "EnumValues": [],
       "HelperUI": "",
       "Hidden": false,
@@ -546,38 +493,45 @@
       "IsPrimaryOutput": false,
       "IsResettable": false,
       "IsResettableToManifestDefault": false,
-      "Name": "MaxLength",
+      "Name": "EndDate",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
       "PhoneDefaultValue": "",
       "Required": false,
       "ShouldAutoBind": false,
-      "Type": 16,
+      "Type": 23,
       "Usage": 0,
       "WebDefaultValue": ""
     },
     {
       "Category": "data",
-      "DefaultValue": "SingleLine",
-      "Description": "텍스트 입력 유형: 한 줄 또는 여러 줄.",
-      "DescriptionResourceString": "TextInputCanvas_Mode_Desc",
-      "DisplayName": "모드",
-      "DisplayNameResourceString": "TextInputCanvas_Mode",
+      "DefaultValue": "Long Abbreviated",
+      "Description": "날짜 표시 형식.",
+      "DescriptionResourceString": "DatePickerCanvas_Format_Desc",
+      "DisplayName": "형식",
+      "DisplayNameResourceString": "DatePickerCanvas_Format",
       "EnumValues": [
         {
-          "Description": "한 줄",
-          "DisplayName": "한 줄",
-          "IsDefaultValue": true,
-          "Name": "SingleLine",
-          "Value": "SingleLine"
+          "Description": "짧은 형식",
+          "DisplayName": "짧은 형식",
+          "IsDefaultValue": false,
+          "Name": "Short",
+          "Value": "Short"
         },
         {
-          "Description": "여러 줄",
-          "DisplayName": "여러 줄",
+          "Description": "축약된 긴 형식",
+          "DisplayName": "축약된 긴 형식",
+          "IsDefaultValue": true,
+          "Name": "LongAbbreviated",
+          "Value": "Long Abbreviated"
+        },
+        {
+          "Description": "월/년",
+          "DisplayName": "월/년",
           "IsDefaultValue": false,
-          "Name": "Multiline",
-          "Value": "Multiline"
+          "Name": "YearMonth",
+          "Value": "Year Month"
         }
       ],
       "HelperUI": null,
@@ -589,24 +543,130 @@
       "IsPrimaryOutput": false,
       "IsResettable": false,
       "IsResettableToManifestDefault": false,
-      "Name": "Mode",
+      "Name": "Format",
       "ParentDataSetName": "",
       "PassThroughProperty": "",
       "PfxDefaultValue": "",
-      "PhoneDefaultValue": "SingleLine",
+      "PhoneDefaultValue": "Long Abbreviated",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 1,
+      "Usage": 2,
+      "WebDefaultValue": "Long Abbreviated"
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "사용자가 날짜를 입력할 수 있는지 여부.",
+      "DescriptionResourceString": "DatePickerCanvas_IsEditable_Desc",
+      "DisplayName": "편집 가능 여부",
+      "DisplayNameResourceString": "DatePickerCanvas_IsEditable",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "IsEditable",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "Sunday",
+      "Description": "달력의 한 주가 시작되는 요일.",
+      "DescriptionResourceString": "DatePickerCanvas_StartOfWeek_Desc",
+      "DisplayName": "시작 요일",
+      "DisplayNameResourceString": "DatePickerCanvas_StartOfWeek",
+      "EnumValues": [
+        {
+          "Description": "일요일",
+          "DisplayName": "일요일",
+          "IsDefaultValue": true,
+          "Name": "Sunday",
+          "Value": "Sunday"
+        },
+        {
+          "Description": "월요일",
+          "DisplayName": "월요일",
+          "IsDefaultValue": false,
+          "Name": "Monday",
+          "Value": "Monday"
+        },
+        {
+          "Description": "화요일",
+          "DisplayName": "화요일",
+          "IsDefaultValue": false,
+          "Name": "Tuesday",
+          "Value": "Tuesday"
+        },
+        {
+          "Description": "수요일",
+          "DisplayName": "수요일",
+          "IsDefaultValue": false,
+          "Name": "Wednesday",
+          "Value": "Wednesday"
+        },
+        {
+          "Description": "목요일",
+          "DisplayName": "목요일",
+          "IsDefaultValue": false,
+          "Name": "Thursday",
+          "Value": "Thursday"
+        },
+        {
+          "Description": "금요일",
+          "DisplayName": "금요일",
+          "IsDefaultValue": false,
+          "Name": "Friday",
+          "Value": "Friday"
+        },
+        {
+          "Description": "토요일",
+          "DisplayName": "토요일",
+          "IsDefaultValue": false,
+          "Name": "Saturday",
+          "Value": "Saturday"
+        }
+      ],
+      "HelperUI": "",
+      "Hidden": false,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "StartOfWeek",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "Sunday",
       "Required": false,
       "ShouldAutoBind": false,
       "Type": 1,
       "Usage": 0,
-      "WebDefaultValue": "SingleLine"
+      "WebDefaultValue": "Sunday"
     },
     {
       "Category": "data",
-      "DefaultValue": "",
-      "Description": "텍스트 입력의 자리 표시자 텍스트입니다.",
-      "DescriptionResourceString": "TextInputCanvas_Placeholder_Desc",
-      "DisplayName": "자리 표시자 텍스트",
-      "DisplayNameResourceString": "TextInputCanvas_Placeholder",
+      "DefaultValue": "날짜 선택...",
+      "Description": "날짜를 선택하지 않은 경우 표시되는 텍스트.",
+      "DescriptionResourceString": "DatePickerCanvas_Placeholder_Desc",
+      "DisplayName": "자리 표시자",
+      "DisplayNameResourceString": "DatePickerCanvas_Placeholder",
       "EnumValues": [],
       "HelperUI": null,
       "Hidden": false,
@@ -630,89 +690,11 @@
     },
     {
       "Category": "data",
-      "DefaultValue": "false",
-      "Description": "이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.",
-      "DescriptionResourceString": "TextInputCanvas_Required_Desc",
-      "DisplayName": "필수",
-      "DisplayNameResourceString": "TextInputCanvas_Required",
-      "EnumValues": [],
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Required",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 20,
-      "Usage": 0,
-      "WebDefaultValue": ""
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "Text",
-      "Description": "텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.",
-      "DescriptionResourceString": "TextInputCanvas_Type_Desc",
-      "DisplayName": "형식",
-      "DisplayNameResourceString": "TextInputCanvas_Type",
-      "EnumValues": [
-        {
-          "Description": "암호",
-          "DisplayName": "암호",
-          "IsDefaultValue": false,
-          "Name": "Password",
-          "Value": "Password"
-        },
-        {
-          "Description": "검색",
-          "DisplayName": "검색",
-          "IsDefaultValue": false,
-          "Name": "Search",
-          "Value": "Search"
-        },
-        {
-          "Description": "텍스트",
-          "DisplayName": "텍스트",
-          "IsDefaultValue": true,
-          "Name": "Text",
-          "Value": "Text"
-        }
-      ],
-      "HelperUI": null,
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": false,
-      "IsPrimaryOutput": false,
-      "IsResettable": false,
-      "IsResettableToManifestDefault": false,
-      "Name": "Type",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "Text",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 1,
-      "Usage": 0,
-      "WebDefaultValue": "Text"
-    },
-    {
-      "Category": "data",
       "DefaultValue": "None",
-      "Description": "유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.",
-      "DescriptionResourceString": "TextInputCanvas_ValidationState_Desc",
+      "Description": "유효성 검사와 관련하여 날짜 선택기의 현재 상태입니다.",
+      "DescriptionResourceString": "DatePickerCanvas_ValidationState_Desc",
       "DisplayName": "유효성 검사 상태",
-      "DisplayNameResourceString": "TextInputCanvas_ValidationState",
+      "DisplayNameResourceString": "DatePickerCanvas_ValidationState",
       "EnumValues": [
         {
           "Description": "오류",
@@ -748,34 +730,6 @@
       "Type": 1,
       "Usage": 2,
       "WebDefaultValue": "None"
-    },
-    {
-      "Category": "data",
-      "DefaultValue": "",
-      "Description": "컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.",
-      "DescriptionResourceString": "TextInputCanvas_Value_Desc",
-      "DisplayName": "값",
-      "DisplayNameResourceString": "TextInputCanvas_Value",
-      "EnumValues": [],
-      "HelperUI": "",
-      "Hidden": false,
-      "IsDataSourceProperty": false,
-      "IsLinkableToParentTheme": false,
-      "IsPrimaryBehavioral": false,
-      "IsPrimaryInput": true,
-      "IsPrimaryOutput": true,
-      "IsResettable": true,
-      "IsResettableToManifestDefault": false,
-      "Name": "Value",
-      "ParentDataSetName": "",
-      "PassThroughProperty": "",
-      "PfxDefaultValue": "",
-      "PhoneDefaultValue": "",
-      "Required": false,
-      "ShouldAutoBind": false,
-      "Type": 6,
-      "Usage": 2,
-      "WebDefaultValue": ""
     },
     {
       "Category": "data",
@@ -920,9 +874,9 @@
     {
       "Category": "data",
       "DefaultValue": "false",
-      "Description": "이탤릭체",
+      "Description": "기울임꼴",
       "DescriptionResourceString": "Italic",
-      "DisplayName": "이탤릭체",
+      "DisplayName": "기울임꼴",
       "DisplayNameResourceString": "Italic",
       "EnumValues": [],
       "HelperUI": null,
@@ -999,6 +953,34 @@
       "ShouldAutoBind": false,
       "Type": 20,
       "Usage": 0,
+      "WebDefaultValue": ""
+    },
+    {
+      "Category": "data",
+      "DefaultValue": "false",
+      "Description": "이 컨트롤에 값이 있어야 하는지 여부입니다.",
+      "DescriptionResourceString": "DatePickerCanvas_Required_Desc",
+      "DisplayName": "필수",
+      "DisplayNameResourceString": "DatePickerCanvas_Required",
+      "EnumValues": [],
+      "HelperUI": "",
+      "Hidden": true,
+      "IsDataSourceProperty": false,
+      "IsLinkableToParentTheme": false,
+      "IsPrimaryBehavioral": false,
+      "IsPrimaryInput": false,
+      "IsPrimaryOutput": false,
+      "IsResettable": false,
+      "IsResettableToManifestDefault": false,
+      "Name": "Required",
+      "ParentDataSetName": "",
+      "PassThroughProperty": "",
+      "PfxDefaultValue": "",
+      "PhoneDefaultValue": "",
+      "Required": false,
+      "ShouldAutoBind": false,
+      "Type": 20,
+      "Usage": 2,
       "WebDefaultValue": ""
     },
     {
@@ -1140,35 +1122,35 @@
       "IsControlSpecific": false,
       "LoadingOrder": 8,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.TextInputCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.TextInputCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"Align\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Start\"},\"AccessibleLabel\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"DelayOutput\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"MaxLength\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"-1\"},\"Mode\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"SingleLine\"},\"Placeholder\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Required\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Type\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Text\"},\"ValidationState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"None\"},\"Value\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":null},\"Events\":null,\"CommonEvents\":{\"OnChange\":{\"EventName\":\"OnChange\"}},\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
+      "Path": "{\"Id\":\"ManifestTemplate\",\"Data\":{\"ConstructorName\":\"PowerApps.CoreControls.DatePickerCanvas\",\"CustomControlId\":\"PowerApps.CoreControls.DatePickerCanvas\",\"IsVirtual\":true,\"Properties\":{\"Resources\":[{\"Name\":\"/PCF/prop-types.js\",\"LoadOrder\":1,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/react-fela.js\",\"LoadOrder\":2,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela.js\",\"LoadOrder\":3,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/PCF/fela-dom.js\",\"LoadOrder\":4,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/common/js/container.js\",\"LoadOrder\":5,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PCFControls/js/PCFControlWrapper.js\",\"LoadOrder\":6,\"Type\":0,\"LibraryName\":null},{\"Name\":\"/ctrllib/PcfControlProxy/js/PcfControlProxy.js\",\"LoadOrder\":7,\"Type\":0,\"LibraryName\":null}],\"GroupDefinitions\":null,\"DataSetDefinitions\":{},\"Properties\":{\"AccessibleLabel\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"SelectedDate\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"\"},\"StartDate\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"EndDate\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Format\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"Long Abbreviated\"},\"IsEditable\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"StartOfWeek\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"Sunday\"},\"Placeholder\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"날짜 선택...\"},\"ValidationState\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"None\"},\"BasePaletteColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Font\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontSize\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontColor\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontWeight\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"FontItalic\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontUnderline\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"FontStrikethrough\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"false\"},\"Required\":{\"Required\":true,\"Usage\":0,\"DefaultValue\":\"false\"},\"TabIndex\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"},\"Tooltip\":{\"Required\":true,\"Usage\":1,\"DefaultValue\":\"\"}},\"FeatureUsage\":[{\"IsRequired\":true,\"Name\":\"ExplicitCommonEvents\"}]},\"Events\":null,\"CommonEvents\":{\"OnChange\":{\"EventName\":\"OnChange\"}},\"DesignMap\":null,\"PropertyDependencies\":[],\"Children\":null}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 9,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"Align\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"AccessibleLabel\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"DelayOutput\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"MaxLength\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Mode\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Placeholder\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Required\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Type\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ValidationState\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Value\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":true,\"IsIncluded\":false},{\"Name\":\"BasePaletteColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontSize\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontWeight\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontWeight\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
+      "Path": "{\"Id\":\"ManifestPropertyTypes\",\"Data\":{\"Properties\":[{\"Name\":\"AccessibleLabel\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"SelectedDate\",\"Type\":\"DateAndTime_DateOnly\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"StartDate\",\"Type\":\"DateAndTime_DateOnly\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"EndDate\",\"Type\":\"DateAndTime_DateOnly\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Format\",\"Type\":\"Enum\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"IsEditable\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"StartOfWeek\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Placeholder\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"ValidationState\",\"Type\":\"Enum\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"BasePaletteColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"ColorPalette\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Font\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"Font\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontSize\",\"Type\":\"Whole_None\",\"ComplexType\":\"None\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontColor\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontColor\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontWeight\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"FontWeight\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontItalic\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Italics\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontUnderline\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Underline\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"FontStrikethrough\",\"Type\":\"TwoOptions\",\"ComplexType\":\"Strikethrough\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Required\",\"Type\":\"TwoOptions\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"TabIndex\",\"Type\":\"Whole_None\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"Tooltip\",\"Type\":\"SingleLine_Text\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":false},{\"Name\":\"PCFTeamsTheme\",\"Type\":\"String\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"X\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Y\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Width\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Height\",\"Type\":\"Number\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"Visible\",\"Type\":\"Boolean\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true},{\"Name\":\"DisplayMode\",\"Type\":\"DisplayMode\",\"ComplexType\":\"\",\"IsPrimary\":false,\"IsIncluded\":true}]}}",
       "Type": 3
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.24\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"0.0.19\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 11,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/TextInputCanvas.js",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/DatePickerCanvas.js",
       "Type": 0
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1033.resx",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1033.resx",
       "Type": 2
     },
     {
@@ -1182,322 +1164,322 @@
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1025.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1025.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1026.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1026.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1027.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1027.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1028.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1028.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1029.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1029.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1030.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1030.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1031.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1031.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1032.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1032.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1033.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1033.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1035.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1035.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1036.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1036.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1037.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1037.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1038.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1038.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1040.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1040.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1041.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1041.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1042.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1042.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1043.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1043.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1044.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1044.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1045.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1045.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1046.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1046.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1048.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1048.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1049.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1049.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1050.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1050.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1051.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1051.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1053.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1053.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1054.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1054.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1055.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1055.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1057.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1057.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1058.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1058.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1060.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1060.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1061.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1061.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1062.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1062.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1063.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1063.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1066.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1066.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1069.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1069.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1081.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1081.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1086.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1086.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1087.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1087.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.1110.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.1110.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2052.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.2052.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2070.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.2070.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.2074.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.2074.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3076.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.3076.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3082.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.3082.json",
       "Type": 5
     },
     {
       "IsControlSpecific": true,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "/PCFControls/PowerApps_CoreControls_TextInputCanvas/strings/TextInputCanvas.3098.json",
+      "Path": "/PCFControls/PowerApps_CoreControls_DatePickerCanvas/strings/DatePickerCanvas.3098.json",
       "Type": 5
     },
     {
       "IsControlSpecific": false,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"텍스트 입력\",\"TextInputCanvas_Align\":\"맞춤\",\"TextInputCanvas_Align_Desc\":\"선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.\",\"TextInputCanvas_Align_Start\":\"시작\",\"TextInputCanvas_Align_End\":\"끝\",\"TextInputCanvas_Align_Center\":\"가운데\",\"TextInputCanvas_Align_Justify\":\"양쪽 맞춤\",\"TextInputCanvas_AccessibleLabel\":\"액세스 가능한 레이블\",\"TextInputCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램의 레이블.\",\"TextInputCanvas_DelayOutput\":\"출력 지연\",\"TextInputCanvas_DelayOutput_Desc\":\"참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).\",\"TextInputCanvas_Mode\":\"모드\",\"TextInputCanvas_Mode_Desc\":\"텍스트 입력 유형: 한 줄 또는 여러 줄.\",\"TextInputCanvas_Mode_SingleLine\":\"한 줄\",\"TextInputCanvas_Mode_Multiline\":\"여러 줄\",\"TextInputCanvas_Required\":\"필수\",\"TextInputCanvas_Required_Desc\":\"이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.\",\"TextInputCanvas_Value\":\"값\",\"TextInputCanvas_Value_Desc\":\"컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.\",\"TextInputCanvas_Placeholder\":\"자리 표시자 텍스트\",\"TextInputCanvas_Placeholder_Desc\":\"텍스트 입력의 자리 표시자 텍스트입니다.\",\"TextInputCanvas_Type\":\"형식\",\"TextInputCanvas_Type_Desc\":\"텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.\",\"TextInputCanvas_Type_Text\":\"텍스트\",\"TextInputCanvas_Type_Password\":\"암호\",\"TextInputCanvas_Type_Search\":\"검색\",\"TextInputCanvas_MaxLength\":\"최대 길이\",\"TextInputCanvas_MaxLength_Desc\":\"텍스트 입력의 최대 콘텐츠 길이입니다.\",\"Base_Palette_Color\":\"기본 팔레트 색상\",\"Base_Palette_Color_description\":\"기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.\",\"TextInputCanvas_ValidationState\":\"유효성 검사 상태\",\"TextInputCanvas_ValidationState_Desc\":\"유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.\",\"TextInputCanvas_ValidationState_None\":\"없음\",\"TextInputCanvas_ValidationState_Error\":\"오류\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\",\"Font\":\"글꼴\",\"Font_description\":\"텍스트가 표시되는 글꼴 패밀리의 이름\",\"Font_Color\":\"글꼴 색상\",\"Font_Color_description\":\"컨트롤의 텍스트 색상\",\"Font_Weight\":\"글꼴 두께\",\"Font_Weight_description\":\"컨트롤의 텍스트 두께\",\"Italic\":\"이탤릭체\",\"Underline\":\"밑줄\",\"Strikethrough\":\"취소선\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"DatePickerCanvas\":\"날짜 선택\",\"DatePickerCanvas_Placeholder\":\"자리 표시자\",\"DatePickerCanvas_AccessibleLabel\":\"접근성 레이블\",\"DatePickerCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램의 레이블.\",\"DatePickerCanvas_Calendar_GoToToday\":\"오늘로 이동\",\"DatePickerCanvas_Calendar_NextMonth\":\"다음 달로 이동\",\"DatePickerCanvas_Calendar_NextYearRange\":\"다음 연도 범위로 이동\",\"DatePickerCanvas_Calendar_NextYear\":\"다음 연도로 이동\",\"DatePickerCanvas_Calendar_PreviousMonth\":\"이전 달로 이동\",\"DatePickerCanvas_Calendar_PreviousYear\":\"이전 연도로 이동\",\"DatePickerCanvas_Calendar_PreviousYearRange\":\"이전 연도 범위로 이동\",\"DatePickerCanvas_InvalidInputMessage\":\"{0}에 입력한 날짜가 잘못되어 이전 값으로 되돌아갔습니다. {1} 형식으로 날짜를 입력하세요.\",\"DatePickerCanvas_Required\":\"필수\",\"DatePickerCanvas_Required_Desc\":\"이 컨트롤에 값이 있어야 하는지 여부입니다.\",\"DatePickerCanvas_SelectedDate\":\"선택한 날짜\",\"DatePickerCanvas_SelectedDate_Desc\":\"이 컨트롤에서 선택한 날짜.\",\"DatePickerCanvas_StartYear\":\"시작 연도\",\"DatePickerCanvas_StartYear_Desc\":\"선택할 수 있는 가장 이른 연도.\",\"DatePickerCanvas_EndYear\":\"마지막 연도\",\"DatePickerCanvas_EndYear_Desc\":\"선택할 수 있는 마지막 연도.\",\"DatePickerCanvas_Placeholder_Desc\":\"날짜를 선택하지 않은 경우 표시되는 텍스트.\",\"DatePickerCanvas_IsEditable\":\"편집 가능 여부\",\"DatePickerCanvas_IsEditable_Desc\":\"사용자가 날짜를 입력할 수 있는지 여부.\",\"DatePickerCanvas_StartOfWeek\":\"시작 요일\",\"DatePickerCanvas_StartOfWeek_Desc\":\"달력의 한 주가 시작되는 요일.\",\"DatePickerCanvas_StartOfWeek_Sunday\":\"일요일\",\"DatePickerCanvas_StartOfWeek_Monday\":\"월요일\",\"DatePickerCanvas_StartOfWeek_Tuesday\":\"화요일\",\"DatePickerCanvas_StartOfWeek_Wednesday\":\"수요일\",\"DatePickerCanvas_StartOfWeek_Thursday\":\"목요일\",\"DatePickerCanvas_StartOfWeek_Friday\":\"금요일\",\"DatePickerCanvas_StartOfWeek_Saturday\":\"토요일\",\"DatePickerCanvas_Format\":\"형식\",\"DatePickerCanvas_Format_Desc\":\"날짜 표시 형식.\",\"DatePickerCanvas_Format_Short\":\"짧은 형식\",\"DatePickerCanvas_Format_Long\":\"긴 형식\",\"DatePickerCanvas_Format_LongAbbreviated\":\"축약된 긴 형식\",\"DatePickerCanvas_Format_YearMonth\":\"월/년\",\"Base_Palette_Color\":\"기본 팔레트 색상\",\"Base_Palette_Color_description\":\"기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.\",\"DatePickerCanvas_ValidationState\":\"유효성 검사 상태\",\"DatePickerCanvas_ValidationState_Desc\":\"유효성 검사와 관련하여 날짜 선택기의 현재 상태입니다.\",\"DatePickerCanvas_ValidationState_None\":\"없음\",\"DatePickerCanvas_ValidationState_Error\":\"오류\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\",\"Default_Value_Placeholder\":\"날짜 선택...\",\"Font\":\"글꼴\",\"Font_description\":\"텍스트가 표시되는 글꼴 패밀리의 이름\",\"Font_Color\":\"글꼴 색상\",\"Font_Color_description\":\"컨트롤의 텍스트 색상\",\"Font_Weight\":\"글꼴 두께\",\"Font_Weight_description\":\"컨트롤의 텍스트 두께\",\"Italic\":\"기울임꼴\",\"Underline\":\"밑줄\",\"Strikethrough\":\"취소선\"}}}",
       "Type": 3
     },
     {
@@ -1513,5 +1495,5 @@
     "supportResettableProperties": "true",
     "supportSetFocus": "true"
   },
-  "Version": "0.0.24"
+  "Version": "0.0.19"
 }
