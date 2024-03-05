@@ -50,7 +50,7 @@ main As screen:
             )
         );
         ClearCollect(
-            shareReportCnt,
+            shareReportCnt1,
             AddColumns(
                 Filter(
                     'nocode-test.share_authority',
