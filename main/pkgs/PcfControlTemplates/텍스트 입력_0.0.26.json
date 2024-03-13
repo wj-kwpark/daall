@@ -10,6 +10,7 @@
         "SectionIndex": 0,
         "SectionName": null,
         "SectionType": "GeneralSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -22,6 +23,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -34,6 +36,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 53,
         "WizardStep": null
       },
@@ -46,6 +49,7 @@
         "SectionIndex": 1,
         "SectionName": null,
         "SectionType": "BehaviorSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 27,
         "WizardStep": null
       },
@@ -58,6 +62,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 33,
         "WizardStep": null
       },
@@ -70,6 +75,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 31,
         "WizardStep": null
       },
@@ -82,6 +88,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 35,
         "WizardStep": null
       },
@@ -94,6 +101,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -106,6 +114,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 37,
         "WizardStep": null
       },
@@ -118,6 +127,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 36,
         "WizardStep": null
       },
@@ -130,6 +140,7 @@
         "SectionIndex": 3,
         "SectionName": null,
         "SectionType": "StyleAndThemeSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 34,
         "WizardStep": null
       },
@@ -142,6 +153,7 @@
         "SectionIndex": 2,
         "SectionName": null,
         "SectionType": "SizeAndPositioningSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -154,6 +166,7 @@
         "SectionIndex": 1,
         "SectionName": null,
         "SectionType": "BehaviorSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -166,6 +179,7 @@
         "SectionIndex": 0,
         "SectionName": null,
         "SectionType": "GeneralSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -178,6 +192,7 @@
         "SectionIndex": 1,
         "SectionName": null,
         "SectionType": "BehaviorSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -190,6 +205,7 @@
         "SectionIndex": 0,
         "SectionName": null,
         "SectionType": "GeneralSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -202,6 +218,7 @@
         "SectionIndex": 2,
         "SectionName": null,
         "SectionType": "SizeAndPositioningSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -214,6 +231,7 @@
         "SectionIndex": 2,
         "SectionName": null,
         "SectionType": "SizeAndPositioningSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       },
@@ -226,6 +244,7 @@
         "SectionIndex": 2,
         "SectionName": null,
         "SectionType": "SizeAndPositioningSection",
+        "ShowInCanvasInlineActionBar": false,
         "Type": 0,
         "WizardStep": null
       }
@@ -780,9 +799,9 @@
     {
       "Category": "data",
       "DefaultValue": "",
-      "Description": "기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.",
+      "Description": "테마와 다른 색상 팔레트를 선택합니다.",
       "DescriptionResourceString": "Base_Palette_Color_description",
-      "DisplayName": "기본 팔레트 색상",
+      "DisplayName": "색상표",
       "DisplayNameResourceString": "Base_Palette_Color",
       "EnumValues": [],
       "HelperUI": null,
@@ -1497,7 +1516,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 14,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"텍스트 입력\",\"TextInputCanvas_Align\":\"맞춤\",\"TextInputCanvas_Align_Desc\":\"선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.\",\"TextInputCanvas_Align_Start\":\"시작\",\"TextInputCanvas_Align_End\":\"끝\",\"TextInputCanvas_Align_Center\":\"가운데\",\"TextInputCanvas_Align_Justify\":\"양쪽 맞춤\",\"TextInputCanvas_AccessibleLabel\":\"액세스 가능한 레이블\",\"TextInputCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램의 레이블.\",\"TextInputCanvas_DelayOutput\":\"출력 지연\",\"TextInputCanvas_DelayOutput_Desc\":\"참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).\",\"TextInputCanvas_Mode\":\"모드\",\"TextInputCanvas_Mode_Desc\":\"텍스트 입력 유형: 한 줄 또는 여러 줄.\",\"TextInputCanvas_Mode_SingleLine\":\"한 줄\",\"TextInputCanvas_Mode_Multiline\":\"여러 줄\",\"TextInputCanvas_Required\":\"필수\",\"TextInputCanvas_Required_Desc\":\"이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.\",\"TextInputCanvas_Value\":\"값\",\"TextInputCanvas_Value_Desc\":\"컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.\",\"TextInputCanvas_Placeholder\":\"자리 표시자 텍스트\",\"TextInputCanvas_Placeholder_Desc\":\"텍스트 입력의 자리 표시자 텍스트입니다.\",\"TextInputCanvas_Type\":\"형식\",\"TextInputCanvas_Type_Desc\":\"텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.\",\"TextInputCanvas_Type_Text\":\"텍스트\",\"TextInputCanvas_Type_Password\":\"암호\",\"TextInputCanvas_Type_Search\":\"검색\",\"TextInputCanvas_MaxLength\":\"최대 길이\",\"TextInputCanvas_MaxLength_Desc\":\"텍스트 입력의 최대 콘텐츠 길이입니다.\",\"Base_Palette_Color\":\"기본 팔레트 색상\",\"Base_Palette_Color_description\":\"기본 팔레트 색상을 지정하여 선택한 항목에 대해 다른 색상 팔레트를 제공할 수 있습니다. 이 색상은 항목의 다양한 측면(가장 일반적으로 채우기, 테두리 및 상호 작용 상태)에 적용되는 유사한 색상 세트를 생성합니다. 빈 값은 항목이 앱 테마의 색상 팔레트를 사용함을 나타냅니다.\",\"TextInputCanvas_ValidationState\":\"유효성 검사 상태\",\"TextInputCanvas_ValidationState_Desc\":\"유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.\",\"TextInputCanvas_ValidationState_None\":\"없음\",\"TextInputCanvas_ValidationState_Error\":\"오류\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\",\"Font\":\"글꼴\",\"Font_description\":\"텍스트가 표시되는 글꼴 패밀리의 이름\",\"Font_Color\":\"글꼴 색상\",\"Font_Color_description\":\"컨트롤의 텍스트 색상\",\"Font_Weight\":\"글꼴 두께\",\"Font_Weight_description\":\"컨트롤의 텍스트 두께\",\"Italic\":\"이탤릭체\",\"Underline\":\"밑줄\",\"Strikethrough\":\"취소선\"}}}",
+      "Path": "{\"Id\":\"LocalizedStrings\",\"Data\":{\"LocStrings\":{\"TextInputCanvas\":\"텍스트 입력\",\"TextInputCanvas_Align\":\"맞춤\",\"TextInputCanvas_Align_Desc\":\"선택한 텍스트 맞춤을 사용하여 텍스트를 표시합니다.\",\"TextInputCanvas_Align_Start\":\"시작\",\"TextInputCanvas_Align_End\":\"끝\",\"TextInputCanvas_Align_Center\":\"가운데\",\"TextInputCanvas_Align_Justify\":\"양쪽 맞춤\",\"TextInputCanvas_AccessibleLabel\":\"액세스 가능한 레이블\",\"TextInputCanvas_AccessibleLabel_Desc\":\"화면 읽기 프로그램의 레이블.\",\"TextInputCanvas_DelayOutput\":\"출력 지연\",\"TextInputCanvas_DelayOutput_Desc\":\"참으로 설정하면 0.5초 지연 후 사용자 입력이 등록됩니다. 사용자가 텍스트 입력을 완료할 때까지 비용이 높은 작업을 지연하는 데 유용합니다(예: 다른 수식에서 입력이 사용될 때 필터링).\",\"TextInputCanvas_Mode\":\"모드\",\"TextInputCanvas_Mode_Desc\":\"텍스트 입력 유형: 한 줄 또는 여러 줄.\",\"TextInputCanvas_Mode_SingleLine\":\"한 줄\",\"TextInputCanvas_Mode_Multiline\":\"여러 줄\",\"TextInputCanvas_Required\":\"필수\",\"TextInputCanvas_Required_Desc\":\"이 컨트롤에 텍스트를 포함해야 하는지 여부입니다.\",\"TextInputCanvas_Value\":\"값\",\"TextInputCanvas_Value_Desc\":\"컨트롤에 표시되거나 사용자가 컨트롤에 입력하는 텍스트입니다.\",\"TextInputCanvas_Placeholder\":\"자리 표시자 텍스트\",\"TextInputCanvas_Placeholder_Desc\":\"텍스트 입력의 자리 표시자 텍스트입니다.\",\"TextInputCanvas_Type\":\"형식\",\"TextInputCanvas_Type_Desc\":\"텍스트 입력의 콘텐츠 형식: 일반 텍스트, 암호 또는 검색입니다.\",\"TextInputCanvas_Type_Text\":\"텍스트\",\"TextInputCanvas_Type_Password\":\"암호\",\"TextInputCanvas_Type_Search\":\"검색\",\"TextInputCanvas_MaxLength\":\"최대 길이\",\"TextInputCanvas_MaxLength_Desc\":\"텍스트 입력의 최대 콘텐츠 길이입니다.\",\"Base_Palette_Color\":\"색상표\",\"Base_Palette_Color_description\":\"테마와 다른 색상 팔레트를 선택합니다.\",\"TextInputCanvas_ValidationState\":\"유효성 검사 상태\",\"TextInputCanvas_ValidationState_Desc\":\"유효성 검사와 관련하여 텍스트 입력의 현재 상태입니다.\",\"TextInputCanvas_ValidationState_None\":\"없음\",\"TextInputCanvas_ValidationState_Error\":\"오류\",\"Font_Size\":\"글꼴 크기\",\"Font_Size_description\":\"표시된 텍스트의 글꼴 크기를 설정합니다.\",\"Font\":\"글꼴\",\"Font_description\":\"텍스트가 표시되는 글꼴 패밀리의 이름\",\"Font_Color\":\"글꼴 색상\",\"Font_Color_description\":\"컨트롤의 텍스트 색상\",\"Font_Weight\":\"글꼴 두께\",\"Font_Weight_description\":\"컨트롤의 텍스트 두께\",\"Italic\":\"이탤릭체\",\"Underline\":\"밑줄\",\"Strikethrough\":\"취소선\"}}}",
       "Type": 3
     },
     {

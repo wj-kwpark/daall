@@ -5,8 +5,8 @@
       "displayName": "Azure Database for MySQL",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
-        "appVer": "3.24023.13",
-        "modifiedOn": "2024-03-05 04:51:08",
+        "appVer": "3.24024.12",
+        "modifiedOn": "2024-03-13 08:40:37",
         "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
@@ -77,8 +77,8 @@
       "displayName": "Azure Database for MySQL",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
-        "appVer": "3.24023.13",
-        "modifiedOn": "2024-03-05 04:51:08",
+        "appVer": "3.24024.12",
+        "modifiedOn": "2024-03-13 08:40:37",
         "policy": "{\"type\":\"unused\"}",
         "version": 1
       },
