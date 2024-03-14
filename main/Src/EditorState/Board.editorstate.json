@@ -9,7 +9,14 @@
         "X",
         "Y",
         "ZIndex",
-        "BoardData",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table({BOARD_TITLE: \"제목\", REGI_DATE: Date(1999,01,01), REGI_ID: \"이름\"})",
+          "InvariantPropertyName": "BoardData",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "hTitle",
         "hDate",
         "hName"

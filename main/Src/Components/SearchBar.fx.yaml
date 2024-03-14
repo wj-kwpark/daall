@@ -173,7 +173,7 @@ SearchBar As CanvasComponent:
             Height: =20
             Size: =9
             Text: ="사용자/아이디"
-            Visible: =If(Parent.forUser,true,false)
+            Visible: =If(Parent.forUser,false,true)
             Width: =116
             X: =630
             Y: =10
@@ -189,7 +189,7 @@ SearchBar As CanvasComponent:
             HoverColor: =Color.Black
             HoverFill: =Color.Transparent
             PressedColor: =Color.Transparent
-            Visible: =If(Parent.forUser,true,false)
+            Visible: =If(Parent.forUser,false,true)
             Width: =221
             X: =646
             Y: =37
@@ -198,7 +198,7 @@ SearchBar As CanvasComponent:
         Rectangle8_18 As rectangle:
             Fill: =RGBA(0, 0, 0, 1)
             Height: =1
-            Visible: =If(Parent.forUser,true,false)
+            Visible: =If(Parent.forUser,false,true)
             Width: =221
             X: =646
             Y: =68

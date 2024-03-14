@@ -5,9 +5,10 @@
       "displayName": "Azure Database for MySQL",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+        "apiVer": 1,
         "appVer": "3.24024.12",
-        "modifiedOn": "2024-03-13 08:40:37",
-        "policy": "{\"type\":\"unused\"}",
+        "modifiedOn": "2024-03-14 01:54:09",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
         "version": 1
       },
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1665/1.0.1665.3485/azuremysql/icon.png",
@@ -77,9 +78,10 @@
       "displayName": "Azure Database for MySQL",
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
+        "apiVer": 1,
         "appVer": "3.24024.12",
-        "modifiedOn": "2024-03-13 08:40:37",
-        "policy": "{\"type\":\"unused\"}",
+        "modifiedOn": "2024-03-14 01:54:09",
+        "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"],\"nocode-test.user_detail\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1665/1.0.1665.3485/azuremysql/icon.png",
