@@ -27,7 +27,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 451,
+            "PublishOrderIndex": 452,
             "Rules": [
               {
                 "Category": "Design",
@@ -138,7 +138,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 452,
+            "PublishOrderIndex": 453,
             "Rules": [
               {
                 "Category": "Data",
@@ -295,7 +295,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 453,
+            "PublishOrderIndex": 454,
             "Rules": [
               {
                 "Category": "Design",
@@ -521,7 +521,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 454,
+            "PublishOrderIndex": 455,
             "Rules": [
               {
                 "Category": "Design",
@@ -781,7 +781,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 455,
+            "PublishOrderIndex": 456,
             "Rules": [
               {
                 "Category": "Data",
@@ -1116,7 +1116,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "HorizontalBarChartGallery",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 456,
+            "PublishOrderIndex": 457,
             "Rules": [
               {
                 "Category": "Design",
@@ -1308,7 +1308,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HorizontalBarChart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 450,
+        "PublishOrderIndex": 451,
         "Rules": [
           {
             "Category": "Data",
@@ -1554,7 +1554,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HorizontalBarChart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 457,
+        "PublishOrderIndex": 458,
         "Rules": [
           {
             "Category": "Design",
@@ -1776,7 +1776,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HorizontalBarChart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 458,
+        "PublishOrderIndex": 459,
         "Rules": [
           {
             "Category": "Data",
@@ -2136,7 +2136,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "HorizontalBarChart",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 459,
+        "PublishOrderIndex": 460,
         "Rules": [
           {
             "Category": "Data",
@@ -2424,7 +2424,7 @@
       },
       "DisplayValue"
     ],
-    "LastModifiedTimestamp": "638459731333456584",
+    "LastModifiedTimestamp": "638464063803377509",
     "Name": "HorizontalBarChart",
     "Rules": [
       {
@@ -2564,7 +2564,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638459731333456584",
+  "LastModifiedTimestamp": "638464063803377509",
   "Name": "3b96606c37234c8dadee9014bb3135e9",
   "OverridableProperties": {},
   "TemplateOriginalName": "eae0cf9d36354d258a4530ef46174c49",

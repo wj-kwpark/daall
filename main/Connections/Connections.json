@@ -6,8 +6,8 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
-        "appVer": "3.24024.12",
-        "modifiedOn": "2024-03-14 01:54:09",
+        "appVer": "3.24031.25",
+        "modifiedOn": "2024-03-19 01:27:54",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[daall].[url_history]\":[\"get\"]}}",
         "version": 1
       },
@@ -79,8 +79,8 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
         "apiVer": 1,
-        "appVer": "3.24024.12",
-        "modifiedOn": "2024-03-14 01:54:09",
+        "appVer": "3.24031.25",
+        "modifiedOn": "2024-03-19 01:27:54",
         "policy": "{\"type\":\"tabular\",\"dataSources\":{\"[nocode-test].[data]\":[\"get\"],\"[nocode-test].[notice]\":[\"get\"],\"[nocode-test].[report]\":[\"get\"],\"[nocode-test].[share_authority]\":[\"get\"],\"[nocode-test].[url_history]\":[\"get\"],\"[nocode-test].[user]\":[\"get\"],\"nocode-test.user_detail\":[\"post\",\"patch\",\"get\"]}}",
         "version": 1
       },

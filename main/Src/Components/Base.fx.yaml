@@ -164,9 +164,8 @@ Base As CanvasComponent:
                 Height: =30
                 HoverColor: =Color.Transparent
                 HoverFill: =Color.Transparent
-                OnSelect: |-
+                OnSelect: |
                     =If(ThisItem.SubMenuLabel="Azure"||ThisItem.SubMenuLabel="Microsoft365"||ThisItem.SubMenuLabel="PowerPlatform",Base.ShowAlert(),Navigate(ThisItem.SubMenuScreenNavigate));
-                    //Set(clickedMenu, ThisItem.ParentMenu);
                 PressedColor: =Color.Transparent
                 PressedFill: =Color.Transparent
                 Text: =""
@@ -217,7 +216,7 @@ Base As CanvasComponent:
             Fill: |
                 =Color.Transparent
             HoverFill: =Color.Transparent
-            OnSelect: |
+            OnSelect: |-
                 =Set(
                     open,
                     !open

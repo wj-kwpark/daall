@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_azuremysql",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-11-28T18:18:43.5500000Z",
+      "LastChangedTimeString": "2024-03-18T19:18:24.5380000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
